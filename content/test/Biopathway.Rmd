@@ -3,7 +3,7 @@ title: "Biological pathway annotation"
 output:
   blogdown::html_page:
     toc: true
-weight: 1
+weight: 3
 ---
 
 Pathways are biological networks defining how biomolecules cooperate to accomplish cellular tasks in different conditions. Pathways are assembled from physically interacting molecules such as proteins and thus, it is particularly important to the annotation of those proteins in the pathway. 
@@ -42,7 +42,6 @@ Twenty-four pathway academics databases are summarized in this document.
   <font size = 2>Release 07, Nov 22</font>
              
 - **Web server**: [KEGG](https://www.genome.jp/kegg/pathway.html).
-
 ![KEGG](/images/kegg.jpg?width=50pc)
 
 ---
@@ -53,7 +52,6 @@ Twenty-four pathway academics databases are summarized in this document.
 
              
 - **Web server**: [Pathway ontology](https://www.ebi.ac.uk/ols/ontologies/pw).
-
 ![Pathwayontology](/images/Pathwayontology.jpg?width=50pc)
 
 ---
@@ -67,7 +65,6 @@ state:
 4417 gene-pathway associations
 
 - **Web server**: [Biocarta](https://maayanlab.cloud/Harmonizome/dataset/Biocarta+Pathways).
-
 ![Biocarta](/images/Pathwayontology.jpg?width=50pc)
  
 ---
@@ -96,7 +93,6 @@ state:
    <center><b>Database information</b></center>  
 
 - **Web server**: [Biocarta](https://reactome.org/).
-
 ![reactome](/images/reactome.jpg?width=50pc)
 ![reactome2](/images/reactome2.jpg?width=50pc)
 
@@ -123,7 +119,6 @@ Pathways (curated by PANTHER and by Reactome)
  <center><b>Database information</b></center>  
 
 - **Web server**: [PANTHER](http://www.pantherdb.org/).
-
 ![PANTHER](/images/PANTHER.jpg?width=50pc)
  
 ---
@@ -147,7 +142,6 @@ Curated Pathway/Genome Databases for many organisms have been created using our 
  |	LeishCyc|	[leishcyc](https://www.biocyc.org/LEISH/organism-summary?object=LEISH)|
  
 - **Web server**: [BioCyc](https://biocyc.org/).
-
 ![BioCyc](/images/BioCyc.jpg?width=50pc)
 
 ---
@@ -197,7 +191,6 @@ other installation version:
 * cytoscape: The WikiPathways app offers a [cytoscape](https://apps.cytoscape.org/apps/wikipathways) command for scripting purposes.
 
 - **Web server**: [WikiPathways](https://www.wikipathways.org/index.php/WikiPathways).
-
 ![WikiPathways2](/images/WikiPathways2.jpeg?width=50pc)
 ![WikiPathways](/images/WikiPathways.jpg?width=50pc)
  
@@ -221,7 +214,6 @@ other installation version:
 - **Introduction**: Pathway Commons provides biologists with (i) tools to search this comprehensive resource, (ii) a download site offering integrated bulk sets of pathway data (e.g. tables of interactions and gene sets), (iii) reusable software libraries for working with pathway information in several programming languages (Java, R, Python and Javascript) and (iv) a web service for programmatically querying the entire dataset. Visualization of pathways is supported using the Systems Biological Graphical Notation (SBGN). Pathway Commons currently contains data from 22 databases with 4794 detailed human biochemical processes (i.e. pathways) and ∼2.3 million interactions. 
 
 - **Web server**: [Pathway Commons](https://www.pathwaycommons.org).
-
 ![WikiPathways](/images/PathwayCommons.jpg?width=50pc)
  
  
@@ -254,7 +246,6 @@ other installation version:
  <center><b>Data Source Statistics</b></center>  
 
 - **Web server**: [SMPDB](https://www.smpdb.ca/).
-
 ![SMPDB](/images/SMPDB.jpg?width=50pc)
  
 ---
@@ -279,7 +270,6 @@ other installation version:
 - **Introduction**: NetPath is a manually curated resource of human signal transduction pathways. It is a joint effort between Pandey Lab at the Johns Hopkins University and the Institute of Bioinformatics (IOB), Bangalore, India, and is also worked on by other parties. NetPath hosts 45 signaling pathways, including 10 pathways with a major role in the regulation of immune system and 10 pathways with relevance to regulation of cancer.
 
 - **Web server**: [NetPath](http://www.netpath.org/).
-
 ![NetPath](/images/Netpath.png?width=50pc)
  
  
@@ -299,7 +289,6 @@ other installation version:
 - **Introduction**: PharmGKB pathways are evidence-based diagrams depicting the pharmacokinetics (PK) and/or pharmacodynamics (PD) of a drug with relevant (or potential) pharmacogenetic (PGx) associations. Drugs featured in PharmGKB pathways are chosen through extensive review of a variety of sources, including, but not limited to, the U.S. Food and Drug Administration (FDA) biomarker list and Clinical Pharmacogenetics Implementation Consortium (CPIC) nominations.
 
 - **Web server**: [ParmGKB](https://www.pharmgkb.org/pathways).
-
 ![ParmGKB](/images/ParmGKB.jpg?width=50pc)
  
 ---
@@ -309,7 +298,6 @@ other installation version:
 - **Introduction**: PathCards is an integrated database of human biological pathways and their annotations. Human pathways were clustered into SuperPaths based on gene content similarity. Each PathCard provides information on one SuperPath which represents one or more human pathways. It includes 1570 SuperPath entries, consolidated from 11 sources.
 
 - **Web server**: [PathCards](https://pathcards.genecards.org/).
-
 ![PathCards](/images/PathCards.jpg?width=50pc)
 ![PathCards2](/images/PathCards2.jpg?width=50pc)
 
@@ -351,7 +339,6 @@ other installation version:
 - **Installation**:The NDEx app offers a [cytoscape](https://apps.cytoscape.org/apps/cyndex2) command for scripting purposes.
 
 - **Web server**: [NDEx](http://acsn.curie.fr).
-
 ![NDEx](/images/NDEx.jpg?width=50pc)
 ![NDEx2](/images/NDEx2.jpg?width=50pc)
 
@@ -363,7 +350,6 @@ other installation version:
 
 
 - **Web server**: [SIGNOR](https://signor.uniroma2.it/).
-
 ![SIGNOR](/images/SIGNOR.jpg?width=50pc)
 ![SIGNOR2](/images/SIGNOR2.jpg?width=50pc)
 ![SIGNOR3](/images/Signor3.jpg?width=50pc)
@@ -375,7 +361,6 @@ other installation version:
 
 - **Introduction**: Plant Reactome knowledgebase, a conceptual plant pathway network, is built by biocuration and integrating (bio)chemical entities, gene products, and macromolecular interactions. It provides manually curated pathways for the reference species Oryza sativa (rice) and gene orthology-based projections that extend pathway knowledge to 120 plant species. Currently, it hosts 30,000 reference pathways for plant metabolism, hormone signaling, transport, genetic regulation, plant organ development and differentiation, and biotic and abiotic stress responses. In addition to the pathway browsing and search functions, the Plant Reactome provides the analysis tools for pathway comparison between reference and projected species, pathway enrichment in gene expression data, and overlay of gene–gene interaction data on pathways. 
 - **Web server**: [Plant Reactome](https://plantreactome.gramene.org).
-
 ![PlantReactome](/images/PlantReactome.jpg?width=50pc)
 
  
@@ -406,7 +391,6 @@ other installation version:
 - **Installation**:The NDEx app offers the [Python and docker](https://github.com/ComPath/ComPath) command for scripting purposes.
 
 - **Web server**: [ComPath](https://compath.scai.fraunhofer.de/).
-
 ![ComPath](/images/ComPath.jpg?width=50pc)
 ![ComPath2](/images/ComPath2.jpg?width=50pc)
 ![ComPath3](/images/CamPath3.jpg?width=50pc)
@@ -437,7 +421,6 @@ BiocManager::install("pcxn")
 ```
 
 - **Web server**: [PCxN](http://pcxn.org/).
-
 ![PCxN](/images/PCxN.jpg?width=50pc)
 ![PCxN1](/images/PCxN1.jpg?width=50pc)
 
@@ -461,11 +444,9 @@ pathDIP annotates 122,131 unique proteins in 6,401 pathways in 17 organisms (inc
 
 
 <center><b>Data Source Statistics</b></center>
- 
 ![pathDIP](/images/pathPID.jpg?width=50pc)
 
 - **Web server**: [pathDIP](http://ophid.utoronto.ca/pathDIP/).
-
 ![pathDIP1](/images/pathDIP1.jpg?width=50pc)
 
 ---
@@ -477,11 +458,9 @@ pathDIP annotates 122,131 unique proteins in 6,401 pathways in 17 organisms (inc
 
 
 <center><b>Data Source Statistics</b></center>
-
 ![PathBank2](/images/Pathbank2.jpg?width=50pc)
 
 - **Web server**: [PathBank](https://www.pathbank.org/).
-
 ![PathBank](/images/Pathbank.jpg?width=50pc)
 
 
@@ -517,7 +496,6 @@ pathDIP annotates 122,131 unique proteins in 6,401 pathways in 17 organisms (inc
 
 
 - **Web server**: [AOP](https://aopkb.oecd.org/).
-
 ![AOP](/images/AOP.jpg?width=50pc)
 
 ---
@@ -527,6 +505,5 @@ pathDIP annotates 122,131 unique proteins in 6,401 pathways in 17 organisms (inc
 - **Introduction**: A novel web application for network-based pathway analysis, based on the recently published ANUBIX algorithm which has been shown to be more accurate than previous network-based methods. The PathBIX website performs pathway annotation for 21 species, and utilizes prefetched and preprocessed network data from FunCoup 5.0 networks and pathway data from three databases: KEGG, Reactome, and WikiPathways.
 
 - **Web server**: [PathBIX](https://pathbix.sbc.su.se/).
-
 ![PathBIX](/images/PathBIX.jpg?width=50pc)
 ![PathBIX1](/images/PathBIX1.jpg?width=50pc)

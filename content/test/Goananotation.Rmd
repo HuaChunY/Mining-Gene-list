@@ -1,0 +1,121 @@
+---
+title: "Gene ontology annotation "
+output:
+  blogdown::html_page:
+    toc: true
+weight: 2
+---
+
+
+Gene Ontology project is established to standardized describe the gene product’s functional information and help the biologist answer the specific queries about gene function. The formal vocabulary about gene functions and products promotes a high level of annotation review integration from various databases.
+![GO](/images/GO.png?width=10pc)
+
+**Breaking**: A plethora of tools linking the Gene Ontology knowledgebase exist to annotate and visualize the genes function.
+
+---
+
+## 1.2.1 **WEGO 2.0**
+
+- **Introduction**: WEGO (Web Gene Ontology Annotation Plot), created in 2006, is a simple but useful tool for visualizing, comparing and plotting GO (Gene Ontology) annotation results. WEGO uses the GO annotation results as input. Based on GO’s standardized DAG (Directed Acyclic Graph) structured vocabulary system, the number of genes corresponding to each GO ID is calculated and shown in a graphical format. WEGO provide multiple datasets analysis. Also added are the reference datasets of nine model species that can be adopted as baselines in genomic comparative analyses. 
+
+- **Web server**: [WEGO v2.0](https://wego.genomics.cn/).
+![WEGO](/images/WEGO.png?width=50pc)
+
+---
+
+## 1.2.2 **g:GOSt**
+
+- **Introduction**: g:GOSt (part of the g:Profiler) performs functional enrichment analysis, also known as over-representation analysis (ORA) or gene set enrichment analysis, on input gene list. It maps genes to known functional information sources and detects statistically significantly enriched terms. We regularly retrieve data from Ensembl database and fungi, plants or metazoa specific versions of Ensembl Genomes, and parasite specific data from WormBase ParaSite. In addition to Gene Ontology, we include pathways from KEGG Reactome and WikiPathways; miRNA targets from miRTarBase and regulatory motif matches from TRANSFAC; tissue specificity from Human Protein Atlas; protein complexes from CORUM and human disease phenotypes from Human Phenotype Ontology. g:GOSt supports close to 500 organisms and accepts hundreds of identifier types.
+
+- **Installation**: To install this package, start R and enter:
+
+```{r eval=FALSE}
+install.packages("gprofiler2")
+```
+
+- **Aplication**: 
+```{r}
+library(gprofiler2)
+gostres <- gost(query = c("X:1000:1000000", "rs17396340", "GO:0005005", "ENSG00000156103", "NLRP1"),
+organism = "hsapiens")
+
+# The result is a named list where “result” is a data.frame with the enrichment analysis results
+# and “meta” containing a named list with all the metadata for the query.
+head(gostres$result)
+```
+The package can be used to plot the enrichment results.
+```{r}
+p <- gostplot(gostres, capped = FALSE, interactive = FALSE)
+p
+```
+
+- **Web server**: [g:GOSt](https://biit.cs.ut.ee/gprofiler/gost).
+![g:GOSt](/images/gOrth.jpg?width=50pc)
+ 
+---
+
+## 1.2.3 **agriGO 2.0**
+ 
+- **Introduction**: AgriGO v2.0 is a web-based tool and database for gene ontology analyses. It specifically focuses on agricultural species and is user-friendly. AgriGO v2.0 is designed to provide deep support to the agricultural community in the realm of ontology analyses. New advantages and features of agriGO v2.0 are as follows:
+1). The agriGO v2.0 focuses on agricultural species in particular. It    supports species and datatypes. 
+2). A new species’ classification system, single species analysis and    reference datatype priorities help users to perform fast and accurate    analyses.
+3). Analysis tools, including the Singular Enrichment Analysis (SEA),    Parametric Analysis of Gene set Enrichment (PAGE), BLAST4ID (Transfer IDs by    BLAST) and SEACOMPARE (Cross comparison of SEA) were retained. These tools    provide users with means for data mining and systematic result exploration    and will allow better data analyses and interpretations.
+4). Custom analysis tools including custom direct acyclic graph (DAG) tree    and Scatter Plot were developed. These tools increase input flexibility.
+5). A Batch SEA tool of multiple inputs, such as time-course samples, was    provided, as well as the distributions of the p-values (PVD) of the    significant GO terms randomly generated.
+
+  <center><b>Species information</b></center>
+  | Category   | Classification | Species counts   |  
+  | :--------- | :------------- | :--------------- |  
+  | Plant      | Brassicaceae   | 12          |  
+  |            | Poaceae        | 29          |  
+  |            | Malvaceae      | 6           |  
+  |            | Fabaceae       | 16          |  
+  |            | Solanaceae     | 12          | 
+  |            | Tree           | 29          |  
+  |            | Algae          | 18          | 
+  | Animal     | Fish           | 20          |  
+  |            | Aves           | 11          |  
+  |            | Amphibia       | 3           |  
+  |            | Insecta        | 56          |  
+  |            | Mammalia       | 58          | 
+  | Fungi      | Sordariomycetes| 5           |  
+ 
+- **Web server**: [agriGO](http://systemsbiology.cpolar.cn/agriGOv2/index.php).
+![agriGO](/images/agriGO.jpeg?width=50pc)
+
+---
+
+## 1.2.4 **UniProtKB**
+
+- **Introduction**: The UniProt Knowledgebase (UniProtKB) is the central hub for the collection of functional information on proteins, with accurate, consistent and rich annotation. In addition to capturing the core data mandatory for each UniProtKB entry (mainly, the amino acid sequence, protein name or description, taxonomic data and citation information), as much annotation information as possible is added. This includes widely accepted biological ontologies, classifications and cross-references, and clear indications of the quality of annotation in the form of evidence attribution of experimental and computational data.
+
+The UniProt Knowledgebase consists of two sections: a section containing    manually-annotated records with information extracted from literature and    curator-evaluated computational analysis, and a section with computationally    analyzed records that await full manual annotation. For the sake of    continuity and name recognition, the two sections are referred to as    "UniProtKB/Swiss-Prot" (reviewed, manually annotated) and "UniProtKB/TrEMBL"    (unreviewed, automatically annotated), respectively.
+   
+SPECIES: 250
+
+- **Web server**: [UniProtKB](https://www.uniprot.org/).
+![UniProtKB](/images/uniprot.jpg?width=50pc)
+ 
+---
+## 1.2.5 **PANTHER**
+
+- **Introduction**: The PANTHER (Protein ANalysis THrough Evolutionary Relationships) Classification System was designed to classify proteins (and their genes) in order to facilitate high-throughput analysis. The core of PANTHER is a comprehensive, annotated “library” of gene family phylogenetic trees. All nodes in the tree have persistent identifiers that are maintained between versions of PANTHER, providing a stable substrate for annotations of protein properties like subfamily and function. Each phylogenetic tree is used to annotate each protein member of the family by its:
+Family and Protein Class (supergrouping of protein families)
+Subfamily (subgroup within the family phylogenetic tree)
+Orthologs (genes in other organisms that derive from the same gene in the MRCA)
+Paralogs (genes in the same organism that are related by gene duplication)
+Function (using GO terms annotated on the trees by the GO Phylogenetic Annotation Project)
+Pathways (curated by PANTHER and by Reactome)
+
+  <center><b>Database information</b></center>  
+  | Type            | Number           | 
+  | :-------------- | :--------------- | 
+  | species         | 143 |
+  | pathways        | 177 |
+  | Ontologies      | 3361 terms     | 
+  |                 | 2267 biological process terms   | 
+  |                 | 544 cellular component terms | 
+  |                 | 550 molecular function terms |
+
+- **Web server**: [PANTHER](http://www.pantherdb.org/).
+![PANTHER](/images/PANTHER.jpg?width=50pc)
