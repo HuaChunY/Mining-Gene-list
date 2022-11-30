@@ -101,7 +101,7 @@ TIGRFAMs is a collection of protein families, featuring curated multiple sequenc
 -**Introduction**: UCSC Genome Browser database is a web-based viewer for genome sequence data and annotations, the ability to juxtapose annotations of many types is one of the reasons for the popularity. The gene annotations including clinical variant interpretation, chromosome band location, pseudogene annotation, domain, cis-regulatory elements combination, organs/tissue/cell types annotation and gene interactions from curated databases and text-mining. 
 
 -**Web server**: [UCSC](https://genome.ucsc.edu/)
-![UCSC](/images/UCSC.jpg?width=10pc)
+![UCSC](/images/UCSC.jpg?width=50pc)
 
 ---
 
@@ -110,8 +110,8 @@ TIGRFAMs is a collection of protein families, featuring curated multiple sequenc
 -**Introduction**: Molecular Signatures Database (MSigDB) is a resource of tens of thousands of annotated gene sets for use with GSEA software, divided into Human and Mouse collections.The 33196 gene sets in the Human Molecular Signatures Database (MSigDB) are divided into 9 major collections, and several sub-collections. 
 
 -**Web server**: [MSigDB](https://genome.ucsc.edu/)
-![MSigDB](/images/MSigDB.jpg?width=10pc)
-![MSigDB1](/images/MSigDB1.jpg?width=10pc)
+![MSigDB](/images/MSigDB.jpg?width=50pc)
+![MSigDB1](/images/MSigDB1.jpg?width=50pc)
 
 ---
 
@@ -132,7 +132,7 @@ TIGRFAMs is a collection of protein families, featuring curated multiple sequenc
 
 
 -**Web server**: [HumanBase](https://hb.flatironinstitute.org/)
-![HumanBase](/images/MSigDB.jpg?width=10pc)
+![HumanBase](/images/MSigDB.jpg?width=50pc)
 
 HumanBase from the following six analysis tools: 
 
@@ -178,17 +178,17 @@ install_bitbucket("ibi_group/disgenet2r")
 
 -**Web server**: [DISGENET](https://www.disgenet.org/home/),
 [DISGENET plus](https://www.disgenetplus.com/)
-![HumanBase](/images/MSigDB.jpg?width=10pc)
+![HumanBase](/images/MSigDB.jpg?width=50pc)
 
 ---
 
 ## 1.4.6 **VaProS**
 
 -**Introduction**: VaProS, VAriation effect on PROtein Structure and function, is a new data cloud for Structural Life Science and is the core technology to lead the collaboration between the discipline in Structural Biology and the whole Life Sciences. Led by the initiative of National Institute of Genetics, VaProS has been developed around the Integrated Structural Biology Database at Institute for Protein Research in Osaka University, together with the selected outcomes from Protein 3000 Project, Targeted Proteins Research Program, Genome Network Project and Cell Innovation Project. 
-![VaProS](/images/VaProS2.jpg?width=10pc)
+![VaProS](/images/VaProS2.jpg?width=50pc)
 
 -**Web server**: [VaProS](https://www.disgenet.org/home/),
-![VaProS](/images/VaProS.jpg?width=10pc)
+![VaProS](/images/VaProS.jpg?width=50pc)
 
 ---
 
@@ -222,14 +222,14 @@ install_bitbucket("ibi_group/disgenet2r")
   |	Other, mainly phenotypes with suspected mendelian basis	|	1,750	|
 
 -**Web server**: [OMIM](https://omim.org/),
-![OMIM](/images/OMIM.jpg?width=10pc)
+![OMIM](/images/OMIM.jpg?width=50pc)
 
 ---
 
 ## 1.4.10 **HGMD**
 
 -**Introduction**: The Human Gene Mutation Database (HGMD) constitutes a comprehensive collection of published germline mutations in nuclear genes that are thought to underlie, or are closely associated with human inherited disease. The database contains in excess of 289,000 different gene lesions identified in over 11,100 genes manually curated from 72,987 articles published in over 3100 peer-reviewed journals. 
-![HGMD](/images/HGMD.jpg?width=10pc)
+![HGMD](/images/HGMD.jpg?width=50pc)
 
 -**Web server**: [HGMD](http://www.hgmd.org)
 
@@ -240,4 +240,4 @@ install_bitbucket("ibi_group/disgenet2r")
 -**Introduction**: CancerSEA is the first dedicated database that aims to comprehensively resolve distinct functional states of cancer cells at the single-cell level. It portrays a cancer single-cell functional state atlas, involving 14 functional states (including stemness, invasion, metastasis, proliferation, EMT, angiogenesis, apoptosis, cell cycle, differentiation, DNA damage, DNA repair, hypoxia, inflammation and quiescence) of 41,900 cancer single cells from 25 cancer types. CancerSEA allows users to query which functional states the gene or gene list of interest is related to in different cancers. Furthermore, it provides PCG/lncRNA repertoires frequently associated with functional states at single-cell resolution across all cancer types, in a specific cancer type and in individual cancer single-cell datasets. Finally, CancerSEA provides a user-friendly interface for comprehensively searching, browsing, visualizing and downloading functional state activity profiles, PCGs/lncRNAs expression profiles and 14 functional state signatures.
 
 -**Web server**: [CancerSEA](http://biocc.hrbmu.edu.cn/CancerSEA/home.jsp)
-![CancerSEA](/images/CancerSEA.jpg?width=10pc)
+![CancerSEA](/images/CancerSEA.jpg?width=50pc)
