@@ -1,0 +1,1 @@
+DEGMiner is a web-based guideline and companion
