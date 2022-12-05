@@ -251,3 +251,20 @@ install_bitbucket("ibi_group/disgenet2r")
              
 - **Web server**: [The Human Phenotype Ontology](https://hpo.jax.org/app/)
 ![HPO](/images/HPO.jpg?width=60pc)
+
+## 1.4.13 **GeneCards**
+
+- **Introduction**: GeneCards is a searchable, integrative database that provides comprehensive, user-friendly information on all annotated and predicted human genes. The knowledgebase automatically integrates gene-centric data from ~150 web sources, including genomic, transcriptomic, proteomic, genetic, clinical and functional information.
+  
+- **Application**: The GeneCards tutorial can be found at
+<https://www.genecards.org/Guide>.
+             
+- **Web server**: [GeneCards](https://hpo.jax.org/app/)
+![GeneCards](/images/GeneCards.jpg?width=60pc)
+
+## 1.4.14 **GeneALaCart**
+
+- **Introduction**: GeneALaCart generates a file of GeneCards annotations associated with your list of genes. For each query, you supply the "batch" of gene identifiers and select the annotations that interest you; GeneALaCart then extracts the information from GeneCards, and produces a customized results file.
+             
+- **Web server**: [GeneALaCart](https://genealacart.genecards.org/)
+![GeneCards](/images/GeneALaCart.jpg?width=60pc)

@@ -128,7 +128,7 @@ devtools::install_github("xia-lab/NetworkAnalystR", build = TRUE, build_opts = c
 ## 3.5.7 **miRTargetLink**
 
 - **Introduction**: miRTargetLink offers detailed information on microRNA-mRNA interactions in the form of interactive network visualizations. miRTargetLink works with validated (miRTarBase) and predicted (mirDIP, miRDB) miRNA targets from Homo sapiens, Mus musculus and Rattus norvegicus. You can query a microRNA, target gene or target pathway using the search box below.
-![miRTargetLink1](/images/miRTargetLink1.png?width=50pc)
+![miRTargetLink1](/images/miRTargetLink1.jpg?width=60pc)
 
 - **Application**: The miRTargetLink tutorial can be found at
 <https://ccb-web.cs.uni-saarland.de/mirtargetlink/manual.php>
