@@ -1,0 +1,150 @@
+---
+title: "Analysis and Visualization Tools"
+output:
+  blogdown::html_page:
+    toc: true
+weight: 5
+---
+
+**Breaking**: 
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+---
+
+## 3.5.1 **GeneMANIA**
+
+- **Introduction**: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data. Association data include protein and genetic interactions, pathways, co-expression, co-localization and protein domain similarity. 
+
+  <center><b>Data Source Statistics</b></center>
+  | Type           | Number           | 
+  | :------------- | :--------------- | 
+  | species        | 9 | 
+  | Data sources   | 22 | 
+  | Network        | 7 | 
+  
+- **Installation**:The GeneMANIA app offers a [cytoscape](https://apps.cytoscape.org/apps/genemania) command for scripting purposes.
+
+- **Application**: The GeneMANIA tutorial can be found at
+<http://pages.genemania.org/help/>
+             
+- **Web server**: [GeneMANIA](https://genemania.org).
+![GeneMANIA](/images/GeneMANIA.jpg?width=60pc)
+
+---
+
+## 3.5.2 **NetworkAnalyst**
+
+- **Introduction**: NetworkAnalyst was first released in 2014 to address the key need for interpreting gene expression data within the context of protein-protein interaction (PPI) networks. It was soon updated for gene expression meta-analysis with improved workflow and performance. Over the years, NetworkAnalyst has been continuously updated based on community feedback and technology progresses. Users can now perform gene expression profiling for 17 different species. In addition to generic PPI networks, users can now create cell-type or tissue specific PPI networks, gene regulatory networks, gene co-expression networks as well as networks for toxicogenomics and pharmacogenomics studies. The resulting networks can be customized and explored in 2D, 3D as well as Virtual Reality (VR) space. For meta-analysis, users can now visually compare multiple gene lists through interactive heatmaps, enrichment networks, Venn diagrams or chord diagrams. In addition, users have the option to create their own data analysis projects, which can be saved and resumed at a later time. 
+
+- **Installation**:To use NetworkAnalystR, make sure your R version is >4.0.3 and install all package dependencies. Ensure that you are able to download packages from Bioconductor. To install package dependencies, use the pacman R package. Note that some of these packages may require additional library dependencies that need to be installed prior to their own successful installation.
+```{r}
+install.packages("pacman")
+
+library(pacman)
+
+pacman::p_load(igraph, RColorBrewer, qs, rjson, RSQLite)
+```
+NetworkAnalystR is freely available from GitHub. The package documentation, including the vignettes for each module and user manual is available within the downloaded R package file. If all package dependencies were installed, you will be able to install the [NetworkAnalystR](https://www.networkanalyst.ca/NetworkAnalyst/docs/RTutorial.xhtml):
+```{r}
+# Step 1: Install devtools
+install.packages('devtools')
+library(devtools)
+
+# Step 2: Install NetworkAnalystR WITHOUT documentation
+devtools::install_github("xia-lab/NetworkAnalystR", build = TRUE, build_opts = c("--no-resave-data", "--no-manual", "--no-build-vignettes"))
+
+# Step 2: Install NetworkAnalystR WITH documentation
+devtools::install_github("xia-lab/NetworkAnalystR", build = TRUE, build_opts = c("--no-resave-data", "--no-manual"), build_vignettes = TRUE)
+```
+
+- **Application**: The NetworkAnalyst web tutorial can be found at
+<https://www.networkanalyst.ca/NetworkAnalyst/docs/Tutorial.xhtml> and the NetworkAnalystR vignettes can be found at
+<https://www.networkanalyst.ca/NetworkAnalyst/docs/RTutorial.xhtml#installation> 
+
+- **Web server**:
+[NetworkAnalyst](https://www.networkanalyst.ca/)
+![NetworkAnalyst](/images/NetworkAnalyst.jpg?width=60pc)
+
+---
+
+## 3.5.3 **ConsensusPathDB**
+
+- **Introduction**: ConsensusPathDB is a database that integrates different types of functional interactions between physical entities in the cell like genes, RNA, proteins, protein complexes and metabolites in order to assemble a more complete and a less biased picture of cellular biology. Currently, ConsensusPathDB contains metabolic and signaling reactions, physical protein interactions, genetic interactions, gene regulatory interactions and drug-target interactions in human, mouse and yeast. The interaction information is collected from 30 public resources and is integrated into a seamless network. Physical entities from the source databases are mapped to each other on the basis of common identifiers like UniProt and Entrez accession numbers. Interactions with matching primary participants (i.e., substrates and products in the case of biochemical reactions, interactors in the case of protein interactions and regulated gene in the case of gene regulatory interactions) are also mapped and grouped together according to similarity.
+![ConsensusPathDB1](/images/ConsensusPathDB1.png?width=90pc)
+
+- **Application**: The ConsensusPathDB tutorial can be found at
+<http://cpdb.molgen.mpg.de/>
+  
+- **Web server**: 
+[ConsensusPathDB](http://consensuspathdb.org/).
+![ConsensusPathDB](/images/ConsensusPathDB.jpg?width=50pc)
+
+---
+
+## 3.5.4 **iRegulon**
+![iRegulon](/images/iRegulon.png?width=30pc)
+  
+- **Introduction**: A regulon consists of a transcription factor (TF) and its direct transcriptional targets, which contain common TF binding sites in their cis-regulatory control elements. The iRegulon plugin allows you to identify regulons using motif discovery in a set of co-regulated genes. The cytoscape plugin works as a java client connected to the server-side daemon over the internet. The prediction of regulons consists of the following steps: motif detection, track discovery, motif2TF mapping, target detection.
+
+- **Installation**: iRegulon is available as a Cytoscape plugin from <http://iregulon.aertslab.org>.
+
+- **Application**: The iRegulon tutorial can be found at
+<http://iregulon.aertslab.org/tutorial.html#start>
+
+---
+
+## 3.5.5 **NAViGaTOR**
+
+- **Introduction**: NAViGaTOR –  Network Analysis, Visualization, & Graphing TORonto is a software system for scalable visualizing and analyzing networks.The current version, NAViGaTOR 3, increases modularity, improves scaleability, extends input/output options, brings new network views and analysis algorithms.
+
+  <center><b>Data Source Statistics</b></center>
+  | Type                   | Number     | 
+  | :--------------------- | :--------- | 
+  | Graphics Libraries     | 2       | 
+  | Data sources           | 3       | 
+  
+- **installation**:NAViGaTOR 3.0 Release notes: [Windows 64 bit](http://navigator.ophid.utoronto.ca/NAViGaTOR/NAViGaTOR_3_0_17_win32_win32_x86_64.exe) and [Linux 64 bit](http://navigator.ophid.utoronto.ca/NAViGaTOR/NAViGaTOR_3_0_17_linux_gtk_x86_64.sh)
+
+- **Web server**: [NAViGaTOR](http://navigator.ophid.utoronto.ca/navigatorwp/index.php/downloads/).
+ 
+---
+
+## 3.5.6 **FunCoup**
+
+- **Introduction**: The name FunCoup stands for functional coupling. FunCoup is a framework to infer genome-wide functional couplings in 21 model organisms. Functional coupling, or functional association, is an unspecific form of association that encompasses direct physical interaction but also more general types of direct or indirect interaction like regulatory interaction or participation the same process or pathway.
+![FunCoup1](/images/FunCoup1.png?width=50pc)
+
+- **Application**: The FunCoup tutorial can be found at
+<https://funcoup5.scilifelab.se/help/#EvidenceTypes>
+
+- **Web server**: [FunCoup](https://funcoup5.scilifelab.se/search/).
+![FunCoup](/images/FunCoup.jpg?width=50pc)
+ 
+---
+
+## 3.5.7 **miRTargetLink**
+
+- **Introduction**: miRTargetLink offers detailed information on microRNA-mRNA interactions in the form of interactive network visualizations. miRTargetLink works with validated (miRTarBase) and predicted (mirDIP, miRDB) miRNA targets from Homo sapiens, Mus musculus and Rattus norvegicus. You can query a microRNA, target gene or target pathway using the search box below.
+![miRTargetLink1](/images/miRTargetLink1.png?width=50pc)
+
+- **Application**: The miRTargetLink tutorial can be found at
+<https://ccb-web.cs.uni-saarland.de/mirtargetlink/manual.php>
+ The miRTargetLink2.0 tutorial can be found at
+<https://ccb-compute.cs.uni-saarland.de/mirtargetlink2/tutorial/>
+- **Web server**: [miRTargetLink](https://ccb-web.cs.uni-saarland.de/mirtargetlink/). and [miRTargetLink 2.0](https://ccb-compute.cs.uni-saarland.de/mirtargetlink2/).
+![miRTargetLink](/images/miRTargetLink.jpg?width=50pc)
+
+---
+
+## 3.5.8 **FFLtool**
+
+- **introduction**: FFLtool is a webserver for analyzing Feed Forward Loop (FFL) regulatory motifs among transcription factors (TFs), microRNAs (miRNAs) and genes. Non-redundant TF-target regulations were curated from hTFtarget database, which contains 4.1 million TF-target regulations of 736 TFs from 773 conditions supported by high confident ChIP-Seq signal peaks. In total, 736 TFs and 21,037 target genes were curated in FFLtool.  FFLtool contains 754,658 experiment validated miRNA-target regulations from 5 databases and 526,981 in-silico prediction pairs from TargetScan V7.2 and miRmap tools. The 296 TFs, 324 miRNAs and 5,097 targets were considered as specifically expressed in these cancers.
+
+- **Application**: The FFLtool tutorial can be found at
+<http://bioinfo.life.hust.edu.cn/FFLtool/#!/document#tf_family>.
+
+- **Web server**: [FFLtool](http://bioinfo.life.hust.edu.cn/FFLtool/).
+![FFLtool](/images/FFLtool.jpg?width=50pc)

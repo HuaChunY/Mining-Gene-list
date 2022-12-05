@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="Gene list">
+<meta name="author" content="Huachun Yin">
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Orthologous gene mapping across species - Gene list mining</title>
+
+    
+    <link href="../../css/nucleus.css?1670203301" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1670203301" rel="stylesheet">
+    <link href="../../css/hybrid.css?1670203301" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1670203301" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1670203301" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1670203301" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1670203301" rel="stylesheet">
+    <link href="../../css/theme.css?1670203301" rel="stylesheet">
+    <link href="../../css/tabs.css?1670203301" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1670203301" rel="stylesheet">
+    
+    <link href="../../css/theme-mine.css?1670203301" rel="stylesheet">
+    
+    <link href="../../css/foo.css?1670203301" rel="stylesheet"><link href="../../css/bar.css?1670203301" rel="stylesheet">
+
+    <script src="../../js/jquery-3.3.1.min.js?1670203301"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="../../gene-annotation/orth/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="../../">
+    <img id="DGEs" src="../../images/logo.jpg" width="162" height="185" class="zoom">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1670203301"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1670203301"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1670203301"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/gene-annotation/" title="Gene Function Annotations" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../gene-annotation/">
+          Gene Function Annotations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/orth/" title="Orthologous gene mapping across species" class="dd-item active">
+        <a href="../../gene-annotation/orth/">
+        Orthologous gene mapping across species
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/goananotation/" title="Gene ontology annotation " class="dd-item ">
+        <a href="../../gene-annotation/goananotation/">
+        Gene ontology annotation 
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/biopathway/" title="Biological pathway annotation" class="dd-item ">
+        <a href="../../gene-annotation/biopathway/">
+        Biological pathway annotation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/other_gene_annotation/" title="Other gene annotation" class="dd-item ">
+        <a href="../../gene-annotation/other_gene_annotation/">
+        Other gene annotation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/conditional-analysis/" title="Condition-specific Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../conditional-analysis/">
+          Condition-specific Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellcomposition/" title="Discovering the cell markers" class="dd-item ">
+        <a href="../../conditional-analysis/cellcomposition/">
+        Discovering the cell markers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/spatialandtemporal/" title="Spatial and temporal variation" class="dd-item ">
+        <a href="../../conditional-analysis/spatialandtemporal/">
+        Spatial and temporal variation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/trajectory/" title="Tajectory inference" class="dd-item ">
+        <a href="../../conditional-analysis/trajectory/">
+        Tajectory inference
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellcomunication/" title="Cell communication" class="dd-item ">
+        <a href="../../conditional-analysis/cellcomunication/">
+        Cell communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>
+  Built by <a href="https://github.com/HuaChunY?tab=repositories">Huachun Yin</a> and <a href="https://github.com/duohongrui?tab=repositories">Hongrui Duo</a>
+</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'></a> > <a href='../../gene-annotation/'>Gene Function Annotations</a> > Orthologous gene mapping across species
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Orthologous gene mapping across species
+            </h1>
+          
+
+        
+
+
+
+
+<div id="TOC">
+<ul>
+<li><a href="#biomart" id="toc-biomart">1.1.1 <strong>biomaRt</strong></a></li>
+<li><a href="#homologene" id="toc-homologene">1.1.2 <strong>homologene</strong></a></li>
+<li><a href="#gorth" id="toc-gorth">1.1.3 <strong>g:Orth</strong></a></li>
+<li><a href="#omadb" id="toc-omadb">1.1.4 <strong>OmaDB</strong></a></li>
+<li><a href="#eggnog" id="toc-eggnog">1.1.5 <strong>EggNOG</strong></a></li>
+<li><a href="#orthovenn2" id="toc-orthovenn2">1.1.6 <strong>OrthoVenn2</strong></a></li>
+<li><a href="#orthodb" id="toc-orthodb">1.1.7 <strong>OrthoDB</strong></a></li>
+<li><a href="#orcan" id="toc-orcan">1.1.8 <strong>ORCAN</strong></a></li>
+<li><a href="#kegg-orthology" id="toc-kegg-orthology">1.1.9 <strong>KEGG Orthology</strong></a></li>
+<li><a href="#inparanoid" id="toc-inparanoid">1.1.10 <strong>InParanoid</strong></a></li>
+<li><a href="#cog" id="toc-cog">1.1.11 <strong>COG</strong></a></li>
+</ul>
+</div>
+
+<p>This document was provided to support the orthologous gene mapping across species (especially non-model taxa) for the downstream data analysis.</p>
+<p><strong>Breaking</strong>: A summary of ten R packages and web services tools,including the number of species, package installation, operating vignettes.</p>
+<hr />
+<div id="biomart" class="section level2">
+<h2>1.1.1 <strong>biomaRt</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: In recent years a wealth of biological data has become available in public data repositories. Easy access to these valuable data resources and firm integration with data analysis is needed for comprehensive bioinformatics data analysis. The biomaRt package, provides an interface to a growing collection of databases implementing the BioMart software suite. The package enables retrieval of large amounts of data in a uniform way without the need to know the underlying database schemas or write complex SQL queries. Examples of BioMart databases are Ensembl, Uniprot and HapMap. These major databases give biomaRt users direct access to a diverse set of data and enable a wide range of powerful online queries from R.</p></li>
+<li><p><strong>Installation</strong>: To install this package, start R (version “4.2”) and enter:</p></li>
+</ul>
+<pre class="r"><code>if (!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+    BiocManager::install(&quot;biomaRt&quot;)</code></pre>
+<p><font size=2>For older versions of R, please refer to the appropriate <a href="https://bioconductor.org/about/release-announcements/">Bioconductor release</a>.</font></p>
+<ul>
+<li><strong>Aplication</strong>: This vignette details provide a number of example usecases that can be used as the basis for specifying your own queries. <em>biomaRt</em> provides a number of functions that are tailored to work specifically with the BioMart instances provided by <a href="https://bioconductor.org/packages/3.15/bioc/vignettes/biomaRt/inst/doc/accessing_ensembl.html">Ensembl</a>.</li>
+</ul>
+<hr />
+</div>
+<div id="homologene" class="section level2">
+<h2>1.1.2 <strong>homologene</strong></h2>
+<ul>
+<li><strong>Introduction</strong>: A wrapper for the homologene database by the National Center for Biotechnology Information (‘NCBI’). It allows searching for gene homologs across species. The package also includes an updated version of the homologene database where
+gene identifiers and symbols are replaced with their latest (at the time of submission) version and functions to fetch latest annotation data to keep updated. Given a list of genes and a taxid, returns a data frame inlcuding the genes and their corresponding homologues.</li>
+</ul>
+<p>Available species are: Homo sapiens|Mus musculus|Rattus norvegicus|Danio rerio|Caenorhabditis elegans|Drosophila melanogaster|Rhesus macaque|.</p>
+<p>More species can be added on request.</p>
+<ul>
+<li><strong>Installation</strong>: Install the latest version of this package by entering the following in R:</li>
+</ul>
+<pre class="r"><code> install.packages(&quot;homologene&quot;)</code></pre>
+<pre class="r"><code>library(devtools)
+install_github(&#39;oganm/homologene&#39;)</code></pre>
+<ul>
+<li><strong>Aplication</strong>: Given a list of genes and a taxid, returns a data frame inlcuding the genes and their corresponding homologues according to the <a href="https://cran.r-project.org/web/packages/homologene/homologene.pdf">manual</a>.</li>
+</ul>
+<p><em>Examples:</em></p>
+<pre class="r"><code>homologene::homologene(c(&#39;Eno2&#39;,&#39;17441&#39;), inTax = 10090, outTax = 9606)</code></pre>
+<pre><code>##   10090 9606 10090_ID 9606_ID
+## 1  Eno2 ENO2    13807    2026
+## 2   Mog  MOG    17441    4340</code></pre>
+<hr />
+</div>
+<div id="gorth" class="section level2">
+<h2>1.1.3 <strong>g:Orth</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: g:Orth (part of the g:Profiler) translates gene identifiers between organisms. We provide orthologous gene mappings based on the information retrieved from the 199 Ensembl database.</p></li>
+<li><p><strong>Installation</strong>: To install this package, start R (version “4.2”) and enter:</p></li>
+</ul>
+<pre class="r"><code>install.packages(&quot;gprofiler2&quot;)</code></pre>
+<ul>
+<li><strong>Aplication</strong>: g:Orth translates gene identifiers between organisms. For example, to convert gene list between mouse (source_organism = mmusculus) and human (target_organism = hsapiens):</li>
+</ul>
+<pre class="r"><code>library(gprofiler2)
+gorth(query = c(&quot;Klf4&quot;, &quot;Sox2&quot;, &quot;71950&quot;), source_organism = &quot;mmusculus&quot;,
+target_organism = &quot;hsapiens&quot;, numeric_ns = &quot;ENTREZGENE_ACC&quot;)</code></pre>
+<pre><code>##   input_number input         input_ensg ensg_number ortholog_name
+## 1            1  Klf4 ENSMUSG00000003032       1.1.1          KLF4
+## 2            2  Sox2 ENSMUSG00000074637       2.1.1          SOX2
+## 3            3 71950 ENSMUSG00000012396       3.1.1         NANOG
+## 4            3 71950 ENSMUSG00000012396       3.1.2       NANOGP8
+##     ortholog_ensg
+## 1 ENSG00000136826
+## 2 ENSG00000181449
+## 3 ENSG00000111704
+## 4 ENSG00000255192
+##                                                          description
+## 1           Kruppel like factor 4 [Source:HGNC Symbol;Acc:HGNC:6348]
+## 2 SRY-box transcription factor 2 [Source:HGNC Symbol;Acc:HGNC:11195]
+## 3                 Nanog homeobox [Source:HGNC Symbol;Acc:HGNC:20857]
+## 4    Nanog homeobox retrogene P8 [Source:HGNC Symbol;Acc:HGNC:23106]</code></pre>
+<ul>
+<li><strong>Web server</strong>: <a href="https://biit.cs.ut.ee/gprofiler/orth">g:Orth</a>
+<img src="../../images/gOrth.jpg?width=50pc" alt="g:Orth" /></li>
+</ul>
+<hr />
+</div>
+<div id="omadb" class="section level2">
+<h2>1.1.4 <strong>OmaDB</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: OmaDB is a wrapper for the REST API for the Orthologous MAtrix project (OMA) which is a database for the inference of orthologs among complete genomes. OMA’s inference algorithm consists of three main phases. First, to infer homologous sequences (sequences of common ancestry), all-against-all Smith-Waterman alignments are computed and significant matches are retained. Second, to infer orthologous pairs (the subset of homologs related by speciation events), mutually closest homologs are identified based on evolutionary distances, taking into account distance inference uncertainty and the possibility for differential gene losses (for more details, see Roth et al 2008). Third, these orthologs are clustered in two different ways, which are useful for different purposes: 1) We identify cliques of orthologous pairs (“OMA groups” ), which are useful as marker genes for phylogenetic reconstruction and tend to be very specific; 2) We identify hierarchical orthologous groups (“HOGs”), groups of genes defined for particular taxonomic ranges and identify all genes that have descended from a common ancestral gene in that taxonomic range.</p>
+<center>
+<p><b>Species information</b></p>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">species</td>
+<td align="left">2496</td>
+</tr>
+<tr class="even">
+<td align="left">proteins</td>
+<td align="left">18871762</td>
+</tr>
+<tr class="odd">
+<td align="left">OMA groups</td>
+<td align="left">962065</td>
+</tr>
+<tr class="even">
+<td align="left">deepest level HOGs</td>
+<td align="left">846849</td>
+</tr>
+<tr class="odd">
+<td align="left">proteins in a HOG</td>
+<td align="left">14029907 (74.3%)</td>
+</tr>
+<tr class="even">
+<td align="left">proteins in an OMA Group</td>
+<td align="left">13481594 (71.4%)</td>
+</tr>
+</tbody>
+</table></li>
+<li><p><strong>Installation</strong>: To install this package, start R (version “4.2”) and enter:</p></li>
+</ul>
+<pre class="r"><code>  if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+    BiocManager::install(&quot;OmaDB&quot;)</code></pre>
+<p><font size = 2>For older versions of R, please refer to the appropriate <a href="https://bioconductor.org/about/release-announcements/">Bioconductor release</a>.</font></p>
+<ul>
+<li><strong>Aplication</strong>: This little vignette shows you how to get started with the <a href="https://bioconductor.org/packages/release/bioc/vignettes/OmaDB/inst/doc/OmaDB.html">OmaDB package</a>. For more details on the <a href="https://omabrowser.org/oma/home/">OMA project</a>.</li>
+</ul>
+<p>Another useful function of the OmaDB package is its functionality to exactly and partially match sequences. <a href="https://bioconductor.org/packages/release/bioc/vignettes/OmaDB/inst/doc/sequence_mapping.html">A case of sequence as a example</a> was provided in this vignette.
+<img src="../../images/OMA.jpeg?width=50pc" alt="Chapter page" /></p>
+<hr />
+</div>
+<div id="eggnog" class="section level2">
+<h2>1.1.5 <strong>EggNOG</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: A hierarchical, functionally and phylogenetically annotated orthology resource based on 5090 organisms and 2502 viruses. The initial step in the EggNOG pipeline is the clustering of the 9.6 million proteins from 2031 genomes. Homology comparisons are executed by the SIMAP initiative and processed by the EggNOG orthology prediction pipeline. Orthologous groups are automatically generated by dividing species space into ‘core’ species, which are central for defining orthologous groups using the strict triangular criterion, and ‘periphery’ species.</p></li>
+<li><p><strong>Web server</strong>: <a href="http://eggnog5.embl.de/#/app/home">EggNOG v5.0</a>.
+<img src="../../images/eggNOG.jpg?width=50pc" alt="Chapter page" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="orthovenn2" class="section level2">
+<h2>1.1.6 <strong>OrthoVenn2</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: OrthoVenn is a powerful web platform for the comparison and analysis of whole-genome orthologous clusters among up to 12 species. A larger number of species, including 142 vertebrates, 71 metazoa, 65 protists, 94 fungi, 57 plants and 111 bacteria species, have been added in OrthoVenn2.</p></li>
+<li><p><strong>Installation</strong>: The tool provides three stand-alone installation versions:
+<br> 1) Install Docker: The release of OrthoVenn2 as a Docker provides an isolated and self-contained package without the need to install dependencies and change environmental settings.</p></li>
+</ul>
+<p>Visit <a href="https://docs.docker.com/get-docker/">Official install document</a> to install docker on your server. It supports different systems, such as <a href="https://docs.docker.com/engine/install/ubuntu/">unbuntu</a>, <a href="https://docs.docker.com/engine/install/centos/">centos</a>, <a href="https://docs.docker.com/desktop/install/mac-install/">mac</a>, <a href="https://docs.docker.com/desktop/install/windows-install/">windows</a>;</br></p>
+<p><br> 2) Install Database: The analysis result data was stored in mongodb, so run the command below to install and start mongodb. <font size = 2><code>your_mongo_data_path</code> is your mongo data path on your local server , if not exist it will create automatically.</font></br></p>
+<pre><code>sudo docker run --name venns-mongo -v /your_mongodb_path:/data/db -d -p   27017:27017 mongo:latest</code></pre>
+<p><br>3) Install Web API/Front: Web API is the main analysis program, so install and run it.</br>
+<br><font size = 2><code>your_work_path</code> is your mongo data path on your local server , if not exist it will create automatically.</font></br></p>
+<pre><code>sudo docker run -d --name venns -p 6001:6001 --link venns-mongo -v  /your_work_path:/data/orthovenn2 -e MONGO_HOST=venns-mongo lufang0411/orthovenn2:latest</code></pre>
+<p><br>At last, install and run the Web Front server to load the UI.</p>
+<pre><code>sudo docker run --name venns-front -p 9999:80 --link venns -v /your_work_path:/data/orthovenn2 -e API_HOST=venns -e API_PORT=6001 -d    lufang0411/orthovenn2-front:latest</code></pre>
+<p>You can use command <code>sudo docker ps</code> to check is all the three service start successfully. If all the sercies is ok, congratulations, you can visit <code>http://localhost:9999</code> or <code>http://your-machine-ip:9999</code> to use the local version ortho_venns program.<br></p>
+<ul>
+<li><strong>Web server</strong>: <a href="https://orthovenn2.bioinfotoolkits.net/home">OrthoVenn2</a>.
+<img src="../../images/OrthoVenn2.png?width=50pc" alt="Chapter page" /></li>
+</ul>
+<hr />
+</div>
+<div id="orthodb" class="section level2">
+<h2>1.1.7 <strong>OrthoDB</strong></h2>
+<ul>
+<li><strong>Introduction</strong>: OrthoDB presents a catalog of orthologous protein-coding genes across vertebrates, arthropods, fungi, plants, and bacteria. The database of orthologs presents available protein descriptors, together with Gene Ontology and InterPro attributes, which serve to provide general descriptive annotations of the orthologous groups, and facilitate comprehensive orthology database querying. OrthoDB also provides computed evolutionary traits of orthologs, such as gene duplicability and loss profiles, divergence rates, sibling groups, and gene intron-exon architectures.
+<br>OrthoDB can be queried using a gene name, identifier, annotation keywords, protein sequence, etc. Then it indexed many relevant identifiers of proteins and genes, including UniProtKB, Ensembl, InterPro, KEGG, GenBank, RefSeq, etc.</br></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Eukaryotes</th>
+<th align="left">Prokaryotes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1,271</td>
+<td align="left">6,013</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Web server</strong>: <a href="https://www.orthodb.org/">OrthoDB</a>.
+<img src="../../images/OrthoDB.jpeg?width=50pc" alt="Chapter page" /></li>
+</ul>
+<hr />
+</div>
+<div id="orcan" class="section level2">
+<h2>1.1.8 <strong>ORCAN</strong></h2>
+<ul>
+<li><strong>Introduction</strong>: ORCAN (ORtholog sCANner) is a web-based meta-server for one-click evolutionary and functional annotation of protein sequences. The server combines information from the most popular orthology-prediction resources, including four tools and four online databases. Functional annotation utilizes five additional comparisons between the query and identified homologs, including: sequence similarity, protein domain architectures, functional motifs, Gene Ontology term assignments and a list of associated articles. Furthermore, the server uses a plurality-based rating system to evaluate the orthology relationships and to rank the reference proteins by their evolutionary and functional relevance to the query.</li>
+</ul>
+<p><img src="../../images/ORCAN.jpeg?width=50pc" alt="Chapter page" />
+- <strong>Web server</strong>: <a href="http://150.254.123.165/orcan/">ORCAN</a></p>
+<hr />
+</div>
+<div id="kegg-orthology" class="section level2">
+<h2>1.1.9 <strong>KEGG Orthology</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: The KO (KEGG Orthology) database is a database of molecular functions represented in terms of functional orthologs, includig 8504 species(813 eukaryotes,7291 bacteria, 400 archaea). A functional ortholog is manually defined in the context of KEGG molecular networks, namely, KEGG pathway maps, BRITE hierarchies and KEGG modules. Each node of the network, such as a box in the KEGG pathway map, is given a KO identifier (called K number) as a functional ortholog defined from experimentally characterized genes and proteins in specific organisms, which are then used to assign orthologous genes in other organisms based on sequence similarity.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://www.kegg.jp/kegg/ko.html">KEGG Orthology</a>
+<img src="../../images/KEGGOrthology.jpg?width=50pc" alt="KEGGOrthology" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="inparanoid" class="section level2">
+<h2>1.1.10 <strong>InParanoid</strong></h2>
+<ul>
+<li><strong>Introduction</strong>: InParanoid is a program for automatic identification of orthologs while differentiating between inparalogs and outparalogs. An
+InParanoid cluster is seeded by a reciprocally bestmatching ortholog pair, around which inparalogs are gathered independently, while outparalogs are excluded. The InParanoid database is a collection of pairwise ortholog groups aiming to include all ‘completely sequenced’ eukaryotic genomes.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Species</td>
+<td align="left">273</td>
+</tr>
+<tr class="even">
+<td align="left">Species_pairs</td>
+<td align="left">37128</td>
+</tr>
+<tr class="odd">
+<td align="left">Ortholog_groups</td>
+<td align="left">79717666</td>
+</tr>
+<tr class="even">
+<td align="left">Proteins_processed</td>
+<td align="left">3718323</td>
+</tr>
+<tr class="odd">
+<td align="left">Orthologous_proteins</td>
+<td align="left">2999062</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Web server</strong>: <a href="https://inparanoid.sbc.su.se/cgi-bin/index.cgi">InParanoid</a>
+<img src="../../images/InParanoid.jpg?width=50pc" alt="InParanoid" /></li>
+</ul>
+<hr />
+</div>
+<div id="cog" class="section level2">
+<h2>1.1.11 <strong>COG</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: The Clusters of Orthologous Genes (COG) database, also referred to as the Clusters of Orthologous Groups of proteins, was created in 1997 and went through several rounds of updates, most recently, in 2022. The current release includes 4877 COGs.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://www.ncbi.nlm.nih.gov/research/cog/">COG</a>
+<img src="../../images/COG.jpg?width=50pc" alt="COG" /></p></li>
+</ul>
+</div>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../gene-annotation/" title="Gene Function Annotations"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../gene-annotation/goananotation/" title="Gene ontology annotation " style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1670203301"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1670203301"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1670203301"></script>
+    <script src="../../js/jquery.sticky.js?1670203301"></script>
+    <script src="../../js/featherlight.min.js?1670203301"></script>
+    <script src="../../js/highlight.pack.js?1670203301"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1670203301"></script>
+    <script src="../../js/learn.js?1670203301"></script>
+    <script src="../../js/hugo-learn.js?1670203301"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

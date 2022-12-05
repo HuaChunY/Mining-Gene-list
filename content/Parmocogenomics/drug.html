@@ -1,0 +1,370 @@
+---
+title: "Prediction of Potential Drug (Pharmocogenomics)"
+output:
+  blogdown::html_page:
+    toc: true
+weight: 1
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#clue" id="toc-clue">4.1.1 <strong>Clue</strong></a></li>
+<li><a href="#creeds" id="toc-creeds">4.1.2 <strong>CREEDS</strong></a></li>
+<li><a href="#l1000cds²" id="toc-l1000cds²">4.1.3 <strong>L1000CDS²</strong></a></li>
+<li><a href="#pharmacogx" id="toc-pharmacogx">4.1.4 <strong>PharmacoGx</strong></a></li>
+<li><a href="#drugcomboranker" id="toc-drugcomboranker">4.1.5 <strong>DrugComboRanker</strong></a></li>
+<li><a href="#sep-l1000" id="toc-sep-l1000">4.1.6 <strong>SEP-L1000</strong></a></li>
+<li><a href="#l1000fwd" id="toc-l1000fwd">4.1.7 <strong>L1000FWD</strong></a></li>
+<li><a href="#mantra" id="toc-mantra">4.1.8 <strong>Mantra</strong></a></li>
+<li><a href="#dvd" id="toc-dvd">4.1.9 <strong>DvD</strong></a></li>
+<li><a href="#dsea" id="toc-dsea">4.1.10 <strong>DSEA</strong></a></li>
+<li><a href="#cogena" id="toc-cogena">4.1.11 <strong>cogena</strong></a></li>
+<li><a href="#gene2drug" id="toc-gene2drug">4.1.12 <strong>gene2drug</strong></a></li>
+<li><a href="#design" id="toc-design">4.1.13 <strong>DeSigN</strong></a></li>
+<li><a href="#ksrepo" id="toc-ksrepo">4.1.14 <strong>ksRepo</strong></a></li>
+<li><a href="#ilincs" id="toc-ilincs">4.1.15 <strong>iLINCS</strong></a></li>
+<li><a href="#gene-expression-signature" id="toc-gene-expression-signature">4.1.16 <strong>Gene Expression Signature</strong></a></li>
+<li><a href="#pdod" id="toc-pdod">4.1.17 <strong>PDOD</strong></a></li>
+<li><a href="#sigcom-lincs" id="toc-sigcom-lincs">4.1.18 <strong>SigCom LINCS</strong></a></li>
+<li><a href="#dtx" id="toc-dtx">4.1.19 <strong>DTX</strong></a></li>
+<li><a href="#phosprof" id="toc-phosprof">4.1.20 <strong>Phosprof</strong></a></li>
+</ul>
+</div>
+
+<p><strong>Breaking</strong>:</p>
+<hr />
+<div id="clue" class="section level2">
+<h2>4.1.1 <strong>Clue</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: CLUE is a cloud-based software platform for the analysis of perturbational datasets generated using gene expression (L1000) and proteomic (P100 and GCP) assays. The CLUE platform provides integrated access to datasets, results from the processing and analysis of these data, and software tools that the community can leverage to advance their research.</p>
+<center>
+<p><b>Data Source Statistics</b></p>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Projects</td>
+<td align="left">11</td>
+</tr>
+<tr class="even">
+<td align="left">Datasets</td>
+<td align="left">14</td>
+</tr>
+<tr class="odd">
+<td align="left">Signatures</td>
+<td align="left">12900</td>
+</tr>
+</tbody>
+</table></li>
+<li><p><strong>Installation</strong>: In addition to apps, such as Touchstone and Query, that can facilitate analysis of these perturbational datasets, our team also offers easy access to open source software packages available in Python, R, Matlab, and Java. We will continue to expand the availability of code to further enable command line access of CLUE tools and data.</p></li>
+</ul>
+<p>1.CMap R code: R modules integrated with tidyverse for analysis and io of a variety of file formats (including GCTx and GCT files).In R version 4.0 or newer:</p>
+<pre class="r"><code>if (!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+
+BiocManager::install(&quot;cmapR&quot;)</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>A docker container with a slightly earlier version of cmapR can be obtained here: <a href="https://github.com/cmap/cmapR" class="uri">https://github.com/cmap/cmapR</a></li>
+</ol>
+<ul>
+<li><p><strong>Application</strong>: The cmapR tutorial can be found <a href="https://bioconductor.org/packages/release/bioc/vignettes/cmapR/inst/doc/tutorial.html">here</a>. The other tutorials can be found <a href="https://clue.io/developer-resources#codesection">here</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://clue.io/command">Clue</a>.
+<img src="/images/Clue.jpg?width=50pc" alt="Clue" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="creeds" class="section level2">
+<h2>4.1.2 <strong>CREEDS</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: CREEDS is a knowledgebase for associations between drugs, genes and diseases based on the data from a crowdsourcing microtask project implemented to annotate and reanalyze gene expression profiles from GEO. Signatures of these data are unique and are manually validated for quality. This database visualizes all of the signatures in a packed circles layout in which similar signatures are closer to each other. Furthermore, it has interactive heatmaps of hierarchically clustered matrices of all signatures.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://maayanlab.cloud/CREEDS/">CREEDS</a>.
+<img src="/images/CREEDS.png?width=50pc" alt="CREEDS" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="l1000cds²" class="section level2">
+<h2>4.1.3 <strong>L1000CDS²</strong></h2>
+<ul>
+<li><strong>Introduction</strong>: L1000CDS² is a LINCS L1000 characteristic direction signature search engine. It enables users to find consensus L1000 small molecule signatures that match user input signatures. The underlying dataset for the search engine is a portion of the LINCS L1000 small molecule expression profiles generated at the Broad Institute by the Connectivity Map team. The differentially expressed (DE) genes of these profiles were calculated using the characteristic direction method. Depending on the user’s input, L1000CDS² uses either a gene-set method or cosine distance method to compare the input signatures to the L1000 signatures to perform the search. When up/down gene lists are submitted to L1000CDS², the search engine compares the input gene lists to the DE genes computed from the LINCS L1000 data and descriptive information of the top 50 matched signatures is returned. When a signature is submitted to L1000CDS² in the format of “gene symbol, expression value”, the search engine calculates a cosine distance between the input signature and every characteristic direction signature in the underlying dataset, and the top 50 signatures of either the largest (reverse mode) or the smallest (mimic mode) cosine distances are returned. L1000CDS² leverages the efficiency of matrix operations to perform the search. The search finishes a query against more than 20,000 signatures in less than a decisecond using the gene-set method or less than 4 seconds using the cosine distance method.</li>
+</ul>
+<p>L1000CDS² emained with 33,197 significant signatures served by the default search.These signatures cover 62 unique cell-lines and 3,924 different small molecues. The top six cell-lines with the most number of small molecule perturbations are:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Cell-line</th>
+<th align="left">Small Molecule Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">MCF7</td>
+<td align="left">2,052</td>
+</tr>
+<tr class="even">
+<td align="left">VCAP</td>
+<td align="left">1,893</td>
+</tr>
+<tr class="odd">
+<td align="left">PC3</td>
+<td align="left">1,803</td>
+</tr>
+<tr class="even">
+<td align="left">HA1E</td>
+<td align="left">1,505</td>
+</tr>
+<tr class="odd">
+<td align="left">A375</td>
+<td align="left">1,499</td>
+</tr>
+<tr class="even">
+<td align="left">A549</td>
+<td align="left">1,479</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><strong>Application</strong>: The SigCom LINCS tutorial can be found at <a href="https://maayanlab.cloud/L1000CDS2/help/" class="uri">https://maayanlab.cloud/L1000CDS2/help/</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://maayanlab.cloud/L1000CDS2/#/index">L1000CDS²</a>.
+<img src="/images/L1000CDS2.jpg?width=50pc" alt="L1000CDS2" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="pharmacogx" class="section level2">
+<h2>4.1.4 <strong>PharmacoGx</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: Contains a set of functions to perform large-scale analysis of pharmaco-genomic data. These include the PharmacoSet object for storing the results of pharmacogenomic experiments, as well as a number of functions for computing common summaries of drug-dose response and correlating them with the molecular features in a cancer cell-line.</p></li>
+<li><p><strong>Installation</strong>: To install this package, start R (version “4.2”) and enter:</p></li>
+</ul>
+<pre class="r"><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+
+BiocManager::install(&quot;PharmacoGx&quot;)</code></pre>
+<p>Or install package from <a href="https://github.com/bhklab/PharmacoGx">github</a></p>
+<ul>
+<li><strong>Application</strong>: The PharmacoGx vignette can be found at <a href="https://www.bioconductor.org/packages/release/bioc/vignettes/PharmacoGx/inst/doc/PharmacoGx.html" class="uri">https://www.bioconductor.org/packages/release/bioc/vignettes/PharmacoGx/inst/doc/PharmacoGx.html</a>.</li>
+</ul>
+<hr />
+</div>
+<div id="drugcomboranker" class="section level2">
+<h2>4.1.5 <strong>DrugComboRanker</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>:DrugComboRanker is a computational tool that prioritizes synergistic drug combinations and uncovers their mechanisms of action. It can identify drug combinations by searching for drugs whose targets are enriched in the complementary signaling modules of the disease signaling network to predict top ranked drug combinations and map the drug targets on the disease signaling network to highlight the mechanisms of action of the drug combinations.</p></li>
+<li><p><strong>Installation</strong>: DrugComboRanker is a Java-based application. If Java is not installed on your computer, please download and install Java SE7 or higher. The JRE package is available from: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html" class="uri">http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html</a>. Install R languuage and dependent packages, DrugComboRanker uses igraph R package. To install this package, open RGui and run the command below.</p></li>
+</ul>
+<pre class="r"><code>install.packages(&quot;ligraph&quot;)</code></pre>
+<p>The Python code download from <a href="https://github.com/methodistsmab/DrugComboRanker">github</a></p>
+<ul>
+<li><strong>Application</strong>: The DrugComboRanker vignette can be found at <a href="https://github.com/methodistsmab/DrugComboRanker/blob/master/DrugComboRanker_user_guide_v1.pdf" class="uri">https://github.com/methodistsmab/DrugComboRanker/blob/master/DrugComboRanker_user_guide_v1.pdf</a>.
+<img src="/images/DrugComboRanker.png?width=80pc" alt="DrugComboRanker" /></li>
+</ul>
+<hr />
+</div>
+<div id="sep-l1000" class="section level2">
+<h2>4.1.6 <strong>SEP-L1000</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>:A web portal for browsing and searching predictive small-molecule/ADR connections. A machine learning classifier was presented to prioritize ADRs for approved drugs and pre-clinical small-molecule compounds by combining chemical structure (CS) and gene expression (GE) features. The GE data is from the Library of Integrated Network-based Cellular Signatures (LINCS) L1000 dataset that measured changes in GE before and after treatment of human cells with over 20,000 small molecule compounds including most of the FDA-approved drugs.</p></li>
+<li><p><strong>Application</strong>: The SEP-L1000 tutorial can be found at <a href="http://maayanlab.net/SEP-L1000/#" class="uri">http://maayanlab.net/SEP-L1000/#</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="http://maayanlab.net/SEP-L1000/">SEP-L1000</a>.
+<img src="/images/SEP.png?width=40pc" alt="SEP" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="l1000fwd" class="section level2">
+<h2>4.1.7 <strong>L1000FWD</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: L1000 fireworks display (L1000FWD) is a web application that provides interactive visualization of over 16,000 drug and small-molecule induced gene expression signatures. L1000FWD enables coloring of signatures by different attributes such as cell type, time point, concentration, as well as drug attributes such as MOA and clinical phase. Signature similarity search is implemented to enable the search for mimicking or opposing signatures given as input of up and down gene sets. Each point on the L1000FWD interactive map is linked to a signature landing page, which provides multifaceted knowledge from various sources about the signature and the drug. Notably such information includes most frequent diagnoses, co-prescribed drugs and age distribution of prescriptions as extracted from the Mount Sinai Health System electronic medical records (EMR). Overall, L1000FWD serves as a platform for identifying functions for novel small molecules using unsupervised clustering, as well as for exploring drug MOA.
+<img src="/images/L1000FWD.png?width=40pc" alt="L1000FWD" /></p></li>
+<li><p><strong>Application</strong>: The L1000FWD tutorial can be found at <a href="https://maayanlab.cloud/L1000FWD/api_page" class="uri">https://maayanlab.cloud/L1000FWD/api_page</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://maayanlab.cloud/L1000FWD/">L1000FWD</a>.</p></li>
+</ul>
+<hr />
+</div>
+<div id="mantra" class="section level2">
+<h2>4.1.8 <strong>Mantra</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: Mode of Action by NeTwoRk Analysis (MANTRA) is a computational tool for the analysis of the Mode of Action (MoA) of novel drugs and the identification of known and approved candidates for “drug repositioning”. It is based on network theory and non-parametric statistics on gene expression data. In order to study a novel drug users have to give to MANTRA one or more genome-wide ranked list of genes sorted according to their differential expression in a treatment with the drug. On the basis of this input, MANTRA automatically integrates this novel drug in a huge network of compounds in which the topology reveals similarities and differences in MoA. To make novel hypothesis on known and FDA approved drugs, hence to find “repositionable drugs”, users have just to explore this drug network.</p></li>
+<li><p><strong>Application</strong>: The Mantra tutorial can be found at <a href="https://mantra.tigem.it/About/MantraTutorial.pdf" class="uri">https://mantra.tigem.it/About/MantraTutorial.pdf</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://mantra.tigem.it/Default.aspx">Mantra</a>.
+<img src="/images/Mantra.jpg?width=50pc" alt="Mantra" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="dvd" class="section level2">
+<h2>4.1.9 <strong>DvD</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: Drug versus Disease (DvD) provides a pipeline, available through R or Cytoscape, for the comparison of drug and disease gene expression profiles from public microarray repositories. Dynamic access to both Array Express and GEO is provided, with automatic annotation and generation of differential expression profiles. These profiles can be compared to a reference set of profiles from the Connectivity Map or to a users own set of data. Correlations between profiles are calculated using Gene Set Enrichment Analysis. Resulting matches between drug and disease profiles can be viewed in a network representation within the Cytoscape plug-in. Negatively correlated (enriched) profiles can be used to generate hypotheses of drug-repurposing whilst positively correlated (enriched) profiles may be used to infer side-effects of drugs.</p></li>
+<li><p><strong>Installation</strong>: To install this package, start R (version “4.2”) and enter:</p></li>
+</ul>
+<pre class="r"><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+
+BiocManager::install(&quot;DvDdata&quot;)</code></pre>
+<p>Installation instructions for Cytoscape plug-in: Make sure you have installed DvD, DvDdata and dependencies as above. Install Rserve. It is a R package that enables communication between Java and R. Enter the following commands in R console:</p>
+<pre class="r"><code>install.packages(&quot;Rserve&quot;) # This command only needs to be typed once
+library(Rserve)
+Rserve(args=&quot;--vanilla&quot;)</code></pre>
+<p>Make sure you have Cytoscape installed. You can download it from <a href="http://www.cytoscape.org/download.html" class="uri">http://www.cytoscape.org/download.html</a>.</p>
+<ul>
+<li><strong>Application</strong>: The DvD vignette can be found at <a href="https://saezlab.github.io/DrugVsDisease/" class="uri">https://saezlab.github.io/DrugVsDisease/</a>.</li>
+</ul>
+<hr />
+</div>
+<div id="dsea" class="section level2">
+<h2>4.1.10 <strong>DSEA</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: The Drug Set Enrichment Analysis (DSEA) works on the same principles as GSEA, but using an inverse preparation and interpretation of the data. A set of drugs of interest is tested against a database of pathways. Each pathway in the database is stored as a ranked list of drugs (Perturbagen Expression Profile), sorted from the one most up-regulating the pathway (or gene) to the one most down-regulating it. Current data is based on the Cmap 2.0.
+Pathways analyzed by the DSEA are defined as gene sets collected by various sources, as summarized in the following table:
+<img src="/images/DSEA.png?width=50pc" alt="DSEA" /></p></li>
+<li><p><strong>Application</strong>: The DSEA tutorial can be found at <a href="https://dsea.tigem.it/about.php" class="uri">https://dsea.tigem.it/about.php</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://dsea.tigem.it/index.php">DSEA</a>.
+<img src="/images/DSEA1.jpg?width=50pc" alt="DSEA1" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="cogena" class="section level2">
+<h2>4.1.11 <strong>cogena</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: cogena is a workflow for co-expressed gene-set enrichment analysis. It aims to discovery smaller scale, but highly correlated cellular events that may be of great biological relevance. A novel pipeline for drug discovery and drug repositioning based on the cogena workflow is proposed. Particularly, candidate drugs can be predicted based on the gene expression of disease-related data, or other similar drugs can be identified based on the gene expression of drug-related data. Moreover, the drug mode of action can be disclosed by the associated pathway analysis. In summary, cogena is a flexible workflow for various gene set enrichment analysis for co-expressed genes, with a focus on pathway/GO analysis and drug repositioning.</p></li>
+<li><p><strong>Installation</strong>: To install this package, start R (version “4.2”) and enter:</p></li>
+</ul>
+<pre class="r"><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+
+BiocManager::install(&quot;cogena&quot;)</code></pre>
+<ul>
+<li><strong>Application</strong>: The cogena vignette can be found at <a href="https://www.bioconductor.org/packages/release/bioc/vignettes/cogena/inst/doc/cogena-vignette_html.html" class="uri">https://www.bioconductor.org/packages/release/bioc/vignettes/cogena/inst/doc/cogena-vignette_html.html</a>.</li>
+</ul>
+<hr />
+</div>
+<div id="gene2drug" class="section level2">
+<h2>4.1.12 <strong>gene2drug</strong></h2>
+<ul>
+<li><strong>Introduction</strong>: Gene2drug ranks small molecules according to their ability to dysregulate an input set of pathways. Sets of pathways can be defined starting from a gene and exploiting its pathway annotations from a number of publicly available databases.The list of 10 databases supported is: Gene Ontology BP, MF, CC (through BiomaRt); CP, KEGG, BIOCARTA, REACTOME, CGP, TFT (through MSigDB); MIPS Corum; Single-gene Sets.</li>
+</ul>
+<p>The following data are stored in tab-separated plain text files:
+1.List of 12012 genes considered by Gene2drug when computing Enrichment Scores for any gene set.
+2.List of 1309 small molecules.<br />
+3.10 lists of pathways, one for each of the 10 databases (gene set contents omitted, they can be obtained through their respective public sources).
+4.Pathway-wise converted microarray data in 20 matrices (10 for the Enrichment Scores and 10 for the corresponding P-values) of size Nx1309 each, where N is the number of pathways in the database. For row and column mapping use (3) and (2) respectively. 5.List of 22261 selectable pathways.
+6.gep2pep data (this section is under construction).</p>
+<ul>
+<li><p><strong>Application</strong>: The gene2drug tutorial can be found at <a href="https://gene2drug.tigem.it/about.php" class="uri">https://gene2drug.tigem.it/about.php</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://gene2drug.tigem.it/">gene2drug</a>.
+<img src="/images/Gene2Drug.jpg?width=50pc" alt="gene2drug" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="design" class="section level2">
+<h2>4.1.13 <strong>DeSigN</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: DeSigN (Differentially Expressed Gene Signatures - Inhibitors) is a CMap-inspired bioinformatics pipeline that enables gene expression patterns from experimental data to be linked to gene expression patterns associated with drug response in a cancer cell line database.</p></li>
+<li><p><strong>Web server</strong>: <a href="http://design.cancerresearch.my/">DeSigN</a>.
+<img src="/images/DeSigN.jpg?width=50pc" alt="DeSigN" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="ksrepo" class="section level2">
+<h2>4.1.14 <strong>ksRepo</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: This package enables investigators to mix and match various types of case/control gene lists with any gene::drug interaction database to predict repositioning oportunities.</p></li>
+<li><p><strong>Installation</strong>: In order to use <code>ksRepo</code>, you’ll need to first install and load it into your R environment. You can either do so by downloading/forking the <a href="http://github.com/adam-sam-brown/ksRepo">GitHub Repository</a> and installing it manually (for experienced users) or by using the <code>Devtools</code> package:</p></li>
+</ul>
+<pre class="r"><code># Install devtools if necessary
+install.packages(&#39;devtools&#39;)
+# Load the package
+require(devtools)
+# Download and install ksRepo from GitHub directly
+install_github(&#39;adam-sam-brown/ksRepo&#39;)
+library(ksRepo)</code></pre>
+<ul>
+<li><strong>Application</strong>: The cogena vignette can be found <a href="https://github.com/adam-sam-brown/ksRepo/blob/master/vignette/vignette.Rmd">here</a>.</li>
+</ul>
+<hr />
+</div>
+<div id="ilincs" class="section level2">
+<h2>4.1.15 <strong>iLINCS</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: iLINCS (Integrative LINCS) is an integrative web platform for analysis of LINCS data and signatures. The portal provides biologists-friendly user interfaces for analyzing transcriptomics and proteomics LINCS datasets. The portal integrates R analytical engine via several R tools for web-computing (rserve, opencpu, Shiny, rgl) and DCIC developed web tools and applications (FTreeView, Enrichr) into a coherent web platform for LINCS data analysis. Users can follow several workflows which allow them to identify differentially expressed genes, proteins and phosphoproteins in LINCS datasets and use them in analysis of other LINCS and non-LINCS dataset (eg TCGA and GEO transcriptomic datasets), and in the analysis of LINCS L1000 signatures. In this way, the platform facilitates integrative analysis of LINCS data and signatures. The mechanistic interpretation of LINCS transcriptomic and proteomics signatures is facilitated by the enrichment analysis via Enrichr and DAVID, and by pathways analysis using the R implementation of the SPIA algorithm.</p></li>
+<li><p><strong>Installation</strong>: There is an extensive workflow in iLINCS API repository <a href="https://github.com/uc-bd2k/ilincsAPI" class="uri">https://github.com/uc-bd2k/ilincsAPI</a> to show how to embed iLINCS functionalities in R. This repository consists of set of examples to showcase the ways of interacting with iLINCS APIs.</p></li>
+</ul>
+<pre class="r"><code>install.packages(c(&quot;knitr&quot;, &quot;tinytex&quot;, &quot;httr&quot;, &quot;jsonlite&quot;, &quot;htmltools&quot;, &quot;data.table&quot;),repos = &quot;http://cran.us.r-project.org&quot;)
+if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;,repos = &quot;http://cran.us.r-project.org&quot;);
+    
+BiocManager::install(&quot;Biobase&quot;)</code></pre>
+<ul>
+<li><p><strong>Application</strong>: The iLINCS tutorial can be found at <a href="http://www.ilincs.org/help/what-is-ilincs" class="uri">http://www.ilincs.org/help/what-is-ilincs</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="http://www.ilincs.org/ilincs/">iLINCS</a>.
+<img src="/images/iLINCS.jpg?width=50pc" alt="iLINCS" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="gene-expression-signature" class="section level2">
+<h2>4.1.16 <strong>Gene Expression Signature</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: This package gives the implementations of the gene expression signature and its distance to each. Gene expression signature is represented as a list of genes whose expression is correlated with a biological state of interest. And its distance is defined using a nonparametric, rank-based pattern-matching strategy based on the Kolmogorov-Smirnov statistic. Gene expression signature and its distance can be used to detect similarities among the signatures of drugs, diseases, and biological states of interest.</p></li>
+<li><p><strong>Installation</strong>:To install this package, start R (version “4.2”) and enter:</p></li>
+</ul>
+<pre class="r"><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+
+BiocManager::install(&quot;GeneExpressionSignature&quot;)</code></pre>
+<p>Or install the development version from github:</p>
+<pre class="r"><code>if (!requireNamespace(&quot;remotes&quot;, quietly=TRUE))
+    install.packages(&quot;remotes&quot;)
+remotes::install_github(&quot;yiluheihei/GeneExpressionSignature&quot;)</code></pre>
+<ul>
+<li><strong>Application</strong>: The GeneExpressionSignature vignette can be found <a href="https://www.bioconductor.org/packages/release/bioc/vignettes/GeneExpressionSignature/inst/doc/GeneExpressionSignature.html">here</a>.</li>
+</ul>
+<hr />
+</div>
+<div id="pdod" class="section level2">
+<h2>4.1.17 <strong>PDOD</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: This web page presents implementation of our PDOD approach. PDOD (Prediction of Drugs having Opposite effects on Diseases) can discover drugs likely to restore altered states of disease genes. You can submit a gene list with their Entrez gene IDs and altered states in diseases. Scoring function of PDOD gives a high score to a drug satisfying two conditions: (i) target proteins of the drug are close to disease genes; (ii) the drug activates down-regulated disease genes and inhibits up-regulated genes through drug-target interactions (DTIs) and molecular pathway. DTIs in our PDOD were obtained from DrugBank and backbone network was constructed from relations of KEGG human pathways including activation, inhibition, expression, and repression. Then, you will get top 10 high scored drugs likely to have reverse effects on your genes if more than one gene existed in our backbone network.</p></li>
+<li><p><strong>Web server</strong>: <a href="http://gto.kaist.ac.kr/pdod/index.php/main">PDOD</a>.</p></li>
+</ul>
+<hr />
+</div>
+<div id="sigcom-lincs" class="section level2">
+<h2>4.1.18 <strong>SigCom LINCS</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: Millions of transcriptomics samples were generated by the Library of Integrated Network-Based Cellular Signatures (LINCS) program. When these data are processed into searchable signatures along with signatures extracted from Genotype-Tissue Expression (GTEx), and Gene Expression Omnibus, connections between drugs, genes, pathways, and diseases can be illuminated. SigCom LINCS is a web-based search engine that serves over 1.5 million gene expression signatures processed, analyzed, and visualized from LINCS, GTEx, and GEO. SigCom LINCS is built from the Signature Commons framework, a cloud-agnostic generic platform that can be used to stand up Data Commons with a focus on searchable signatures. SigCom LINCS provides rapid signature similarity search for mimickers and reversers given sets of up and down genes. Additionally, users of SigCom LINCS can perform a metadata search to find and analyze subsets of signatures, and find information about genes and drugs. SigCom LINCS is findable, accessible, interoperable, and reusable (FAIR) compliant with metadata linked to standard ontologies and vocabularies while all data and signatures within SigCom LINCS are available for download and via a well-documented API.
+<img src="/images/SigComLINCS.jpg?width=50pc" alt="SigComLINCS" /></p></li>
+<li><p><strong>Installation</strong>:The SigCom LINCS app provide Python code that users can use as a template for more complex queries. To start, make sure you have the request library installed via pip. More technical information about the SigCom LINCS API is available from here: <a href="https://maayanlab.cloud/sigcom-lincs/#/API" class="uri">https://maayanlab.cloud/sigcom-lincs/#/API</a>.</p></li>
+<li><p><strong>Application</strong>: The SigCom LINCS tutorial can be found at <a href="https://youtu.be/mupAIqTXceE" class="uri">https://youtu.be/mupAIqTXceE</a> and <a href="https://maayanlab.cloud/sigcom-lincs/#/Help" class="uri">https://maayanlab.cloud/sigcom-lincs/#/Help</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://maayanlab.cloud/sigcom-lincs">SigCom LINCS</a>.
+<img src="/images/SigComLINCS2.jpg?width=50pc" alt="SigComLINCS2" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="dtx" class="section level2">
+<h2>4.1.19 <strong>DTX</strong></h2>
+<ul>
+<li><strong>Introduction</strong>: Calculate a drug-target-likeness score of a protein of interest for a given disease according to molecular features of nodes/edges in the shortest paths between them by a machine learning approach.</li>
+</ul>
+<p>Database relations:
+<img src="/images/DTX2.jpg?width=50pc" alt="DTX2" /></p>
+<ul>
+<li><strong>Web server</strong>: <a href="https://harrier.nagahama-i-bio.ac.jp/dtx/">DTX</a>.
+<img src="/images/DTX.jpg?width=50pc" alt="DTX" /></li>
+</ul>
+<hr />
+</div>
+<div id="phosprof" class="section level2">
+<h2>4.1.20 <strong>Phosprof</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: Phosprof (phosphorylation profiling database) is a database to present cellular response to representative drugs as the significant pathways. It based on the analysis of collected experimental data of phosphorylation activities using protein arrays. Phosphorylation activity measurement allows evaluation of signal transduction activity directly and provides direct estimation of responsible pathway of a cellular event. Comparison between various approved drugs, whose target phen-type is already known, can be helpful for drug development.</p></li>
+<li><p><strong>Application</strong>: The Phosprof tutorial can be found at
+<a href="https://phosprof.medals.jp/static/guide/Phosprof_UserGuide_ver1.1.pdf" class="uri">https://phosprof.medals.jp/static/guide/Phosprof_UserGuide_ver1.1.pdf</a></p></li>
+<li><p><strong>Web server</strong>: <a href="https://phosprof.medals.jp/">Phosprof</a>.
+<img src="/images/Phosprof.jpg?width=50pc" alt="Phosprof" /></p></li>
+</ul>
+</div>

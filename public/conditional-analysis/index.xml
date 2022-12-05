@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Condition-specific Analysis on Gene list mining</title>
+    <link>/conditional-analysis/</link>
+    <description>Recent content in Condition-specific Analysis on Gene list mining</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/conditional-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Discovering the cell markers</title>
+      <link>/conditional-analysis/cellcomposition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/conditional-analysis/cellcomposition/</guid>
+      <description>9.2.1 CIERSORT 9.2.2 ESTIMATE 9.2.2 xCell 9.2.3 TIMER 9.2.4 MCPcounter 9.2.5 Bseq_SC 9.2.6 EPIC 9.2.7 quanTIseq 9.2.8 Abbas et al. 9.2.7 ABIS 9.2.8 ImmuCellAI 9.2.9 MuSiC 9.2.10 DeconRNASeq 9.2.11 Max Schelker et al. 9.2.12 DSA 9.2.13 singscore 9.2.13 Ting Gong et al. 9.2.14 PERT 9.2.14 ImmuCC 9.2.15 immunoStates 9.2.16 DCQ 9.2.17 SCDC 9.2.18 Edec 9.2.19 MMAD 9.2.20 scBio 9.2.21 debCAM 9.2.22 TEMT 9.2.23 DeMixT 9.2.24 Dtangle 9.2.25 FARDEEP 9.2.26 TOAST 9.</description>
+    </item>
+    
+    <item>
+      <title>Spatial and temporal variation</title>
+      <link>/conditional-analysis/spatialandtemporal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/conditional-analysis/spatialandtemporal/</guid>
+      <description>9.1.1 GEPIA 9.1.2 HumanBase-ExPecto 9.1.3 Expression Atlas 9.1.4 ToppCluster 9.1.5 TISSUES Breaking:
+9.1.1 GEPIA Introduction: GEPIA is a newly developed interactive web server for analyzing the RNA sequencing expression data of 9,736 tumors and 8,587 normal samples from the TCGA and the GTEx projects, using a standard processing pipeline. GEPIA provides customizable functions such as tumor/normal differential expression analysis, profiling according to cancer types or pathological stages, patient survival analysis, similar gene detection, correlation analysis and dimensionality reduction analysis.</description>
+    </item>
+    
+    <item>
+      <title>Tajectory inference</title>
+      <link>/conditional-analysis/trajectory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/conditional-analysis/trajectory/</guid>
+      <description>9.3.1 slingshot 9.3.2 CellRank 9.3.3 CytoTree 9.3.4 VeloViz 9.3.5 Asc-Seurat 9.3.6 VeTra 9.3.7 TIMEOR 9.3.8 UniTVelo 9.3.9 TIPS 9.3.10 Velo-Predictor 9.3.11 ORIGINS Breaking:
+9.3.1 slingshot Introduction: Provides functions for inferring continuous, branching lineage structures in low-dimensional data. Slingshot was designed to model developmental trajectories in single-cell RNA sequencing data and serve as a component in an analysis pipeline after dimensionality reduction and clustering. It is flexible enough to handle arbitrarily many branching events and allows for the incorporation of prior knowledge through supervised graph construction.</description>
+    </item>
+    
+    <item>
+      <title>Cell communication</title>
+      <link>/conditional-analysis/cellcomunication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/conditional-analysis/cellcomunication/</guid>
+      <description>9.4.1 IUPHAR Breaking:
+cell-cell communication database and tools
+9.4.1 IUPHAR Introduction: The International Union of Basic and Clinical Pharmacology (IUPHAR) / British Pharmacological Society (BPS) Guide to PHARMACOLOGY is an expert-curated resource of ligand-activity-target relationships, the majority of which come from high-quality pharmacological and medicinal chemistry literature. It is intended as a “one-stop shop” portal to pharmacological information and its main aim is to provide a searchable database with quantitative information on drug targets and the prescription medicines and experimental drugs that act on them.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gene Function Annotations on Gene list mining</title>
+    <link>/gene-annotation/</link>
+    <description>Recent content in Gene Function Annotations on Gene list mining</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/gene-annotation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Orthologous gene mapping across species</title>
+      <link>/gene-annotation/orth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gene-annotation/orth/</guid>
+      <description>1.1.1 biomaRt 1.1.2 homologene 1.1.3 g:Orth 1.1.4 OmaDB 1.1.5 EggNOG 1.1.6 OrthoVenn2 1.1.7 OrthoDB 1.1.8 ORCAN 1.1.9 KEGG Orthology 1.1.10 InParanoid 1.1.11 COG This document was provided to support the orthologous gene mapping across species (especially non-model taxa) for the downstream data analysis.
+Breaking: A summary of ten R packages and web services tools,including the number of species, package installation, operating vignettes.
+1.1.1 biomaRt Introduction: In recent years a wealth of biological data has become available in public data repositories.</description>
+    </item>
+    
+    <item>
+      <title>Gene ontology annotation </title>
+      <link>/gene-annotation/goananotation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gene-annotation/goananotation/</guid>
+      <description>1.2.1 WEGO 2.0 1.2.2 g:GOSt 1.2.3 agriGO 2.0 1.2.4 UniProtKB 1.2.5 PANTHER Gene Ontology project is established to standardized describe the gene product’s functional information and help the biologist answer the specific queries about gene function. The formal vocabulary about gene functions and products promotes a high level of annotation review integration from various databases. Breaking: A plethora of tools linking the Gene Ontology knowledgebase exist to annotate and visualize the genes function.</description>
+    </item>
+    
+    <item>
+      <title>Biological pathway annotation</title>
+      <link>/gene-annotation/biopathway/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gene-annotation/biopathway/</guid>
+      <description>3.1 KEGG 3.2 Pathway ontology 3.3 Biocarta 3.4 Reactome 3.5 PANTHER 3.6 BioCyc 3.7 INOH 3.8 EHMN 3.9 WikiPathways 3.10 PID 3.11 Pathway Commons 3.12 SMPDB 3.13 Signalink 3.14 NetPath 3.15 iPAVS 3.16 ParmGKB 3.17 PathCards 3.18 ACSN 2.0 3.19 NDEx 3.20 SIGNOR 3.21 Plant Reactome 3.22 HAMdb 3.23 ComPath 3.24 BIOPYDB 3.25 PCxN 3.26 PathMe 3.27 pathDIP 3.28 PathBank 3.29 AOP 3.30 PathBIX Pathways are biological networks defining how biomolecules cooperate to accomplish cellular tasks in different conditions.</description>
+    </item>
+    
+    <item>
+      <title>Other gene annotation</title>
+      <link>/gene-annotation/other_gene_annotation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gene-annotation/other_gene_annotation/</guid>
+      <description>1.4.1 InterPro consortium database 4.2 UCSC Genome Browser database 1.4.2 UCSC Genome Browser database 1.4.3 MSigDB 1.4.4 HumanBase 1.4.5 DISGENET 1.4.6 VaProS 1.4.7 Autophagy Database 1.4.8 MitoCarta3.0 1.4.9 OMIM 1.4.10 HGMD 1.4.11 CancerSEA Interpreting the relationship between molecular mechanisms and phenotypes, in addition to the GO and pathway annotation, other functional attributes also provide a window into the genes, such as, diseases-associated gene annotations, human/mouse phenotypes, hallmark genes, oncogenic signature, immunologic signature, cell type signature, chromosome cytoband, subcellular locations, developmental stage, gene variant, literatures, domains annotaions, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

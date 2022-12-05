@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/gene-annotation/</loc>
+  </url><url>
+    <loc>/gene-annotation/orth/</loc>
+  </url><url>
+    <loc>/conditional-analysis/cellcomposition/</loc>
+  </url><url>
+    <loc>/gene-annotation/goananotation/</loc>
+  </url><url>
+    <loc>/gene-annotation/biopathway/</loc>
+  </url><url>
+    <loc>/conditional-analysis/spatialandtemporal/</loc>
+  </url><url>
+    <loc>/conditional-analysis/trajectory/</loc>
+  </url><url>
+    <loc>/conditional-analysis/cellcomunication/</loc>
+  </url><url>
+    <loc>/conditional-analysis/</loc>
+  </url><url>
+    <loc>/gene-annotation/other_gene_annotation/</loc>
+  </url><url>
+    <loc>/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/tags/</loc>
+  </url>
+</urlset>

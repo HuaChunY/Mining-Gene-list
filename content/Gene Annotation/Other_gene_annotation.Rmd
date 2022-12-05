@@ -241,3 +241,13 @@ install_bitbucket("ibi_group/disgenet2r")
 
 -**Web server**: [CancerSEA](http://biocc.hrbmu.edu.cn/CancerSEA/home.jsp)
 ![CancerSEA](/images/CancerSEA.jpg?width=50pc)
+
+## 1.4.12 **The Human Phenotype Ontology (HPO)**
+
+- **Introduction**: The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Each term in the HPO describes a phenotypic abnormality, such as Atrial septal defect. The HPO is currently being developed using the medical literature, Orphanet, DECIPHER, and OMIM. HPO currently contains over 13,000 terms and over 156,000 annotations to hereditary diseases. The HPO project and others have developed software for phenotype-driven differential diagnostics, genomic diagnostics, and translational research.
+  
+- **Application**: The Human Phenotype Ontology tutorial can be found at
+<https://hpo.jax.org/app/resources/clinician-guide>.
+             
+- **Web server**: [The Human Phenotype Ontology](https://hpo.jax.org/app/)
+![HPO](/images/HPO.jpg?width=60pc)

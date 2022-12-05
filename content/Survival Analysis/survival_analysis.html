@@ -1,0 +1,92 @@
+---
+title: "Survival Analysis"
+output:
+  blogdown::html_page:
+    toc: true
+weight: 1
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#ualcan" id="toc-ualcan">8.1.1 <strong>UALCAN</strong></a></li>
+<li><a href="#survival" id="toc-survival">8.1.2 <strong>survival</strong></a></li>
+<li><a href="#km-plotter" id="toc-km-plotter">8.1.3 <strong>KM plotter</strong></a></li>
+<li><a href="#survminer" id="toc-survminer">8.1.4 <strong>survminer</strong></a></li>
+</ul>
+</div>
+
+<p><strong>Breaking</strong>:</p>
+<hr />
+<div id="ualcan" class="section level2">
+<h2>8.1.1 <strong>UALCAN</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: UALCAN is a comprehensive, user-friendly, and interactive web resource for analyzing cancer OMICS data. It is built on PERL-CGI with high quality graphics using javascript and CSS. UALCAN is designed to, a) provide easy access to publicly available cancer OMICS data (TCGA, MET500, CPTAC and CBTTC), b) allow users to identify biomarkers or to perform in silico validation of potential genes of interest, c) provide graphs and plots depicting expression profile and patient survival information for protein-coding, miRNA-coding and lincRNA-coding genes, d) evaluate epigenetic regulation of gene expression by promoter methylation, e) perform pan-cancer gene expression analysis, f) Provide additional information about the selected genes/targets by linking to HPRD, GeneCards, Pubmed, TargetScan, The human protein atlas, DRUGBANK, Open Targets and the GTEx. These resources allow researchers to gather valuable information and data about the genes/targets of interest, g) provide clinical proteomic consortium data analysis including total/phospho-proteins and h) provide pediatric brain tumor gene expression and protein expression analysis.</p></li>
+<li><p><strong>Application</strong>: The UALCAN tutorial can be found at <a href="http://ualcan.path.uab.edu/tutorial.html" class="uri">http://ualcan.path.uab.edu/tutorial.html</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="http://ualcan.path.uab.edu/">UALCAN</a>.
+<img src="/images/UALCAN.jpg?width=50pc" alt="UALCAN" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="survival" class="section level2">
+<h2>8.1.2 <strong>survival</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: survival is package for survival Analysis, and contains the core survival analysis routines, including definition of Surv objects, Kaplan-Meier and Aalen-Johansen (multi-state) curves, Cox models, and parametric accelerated failure time models.</p></li>
+<li><p><strong>Installation</strong>: - <strong>Installation</strong>:To install this package, start R (version “4.2”) and enter:</p></li>
+</ul>
+<pre class="r"><code>install.packages(&quot;survival&quot;)</code></pre>
+<ul>
+<li><strong>Application</strong>: The survival vignette can be found at <a href="https://cran.r-project.org/web/packages/survival/index.html" class="uri">https://cran.r-project.org/web/packages/survival/index.html</a></li>
+</ul>
+<hr />
+</div>
+<div id="km-plotter" class="section level2">
+<h2>8.1.3 <strong>KM plotter</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: The Kaplan Meier plotter is capable to assess the correlation between the expression of all genes (mRNA, miRNA, protein) and survival in 30k+ samples from 21 tumor types including breast, ovarian, lung, &amp; gastric cancer. Sources for the databases include GEO, EGA, and TCGA. Primary purpose of the tool is a meta-analysis based discovery and validation of survival biomarkers for cancer research.</p>
+<center>
+<p><b>Data Source Statistics</b></p>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">species</td>
+<td align="left">9</td>
+</tr>
+<tr class="even">
+<td align="left">Data sources</td>
+<td align="left">22</td>
+</tr>
+<tr class="odd">
+<td align="left">Network</td>
+<td align="left">7</td>
+</tr>
+</tbody>
+</table></li>
+<li><p><strong>Application</strong>: The KM plotter tutorial can be found at
+<a href="https://youtu.be/-t9m3FcdLfU" class="uri">https://youtu.be/-t9m3FcdLfU</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://kmplot.com/analysis/">KM plotter</a>.
+<img src="/images/KM%20plotter.jpg?width=60pc" alt="KM plotter" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="survminer" class="section level2">
+<h2>8.1.4 <strong>survminer</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: A package contains the function ‘ggsurvplot()’ for drawing easily beautiful
+and ‘ready-to-publish’ survival curves with the ‘number at risk’ table
+and ‘censoring count plot’. Other functions are also available to plot
+adjusted curves for <code>Cox</code> model and to visually examine ‘Cox’ model assumptions</p></li>
+<li><p><strong>Installation</strong>: - <strong>Installation</strong>:To install this package, start R (version “4.2”) and enter:</p></li>
+</ul>
+<pre class="r"><code>install.packages(&quot;survminer&quot;)</code></pre>
+<ul>
+<li><strong>Application</strong>: The survminer vignette can be found at <a href="https://cran.r-project.org/web/packages/survminer/vignettes/Informative_Survival_Plots.html" class="uri">https://cran.r-project.org/web/packages/survminer/vignettes/Informative_Survival_Plots.html</a></li>
+</ul>
+</div>
