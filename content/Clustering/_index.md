@@ -1,8 +1,8 @@
 ---
 title: "Clustering Analysis"
 chapter: true
-weight: 5
+weight: 6
 ---
 
 
-### Chapter 5
+### Chapter 6

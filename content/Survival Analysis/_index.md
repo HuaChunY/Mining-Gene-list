@@ -1,8 +1,8 @@
 ---
 title: "Survival Analysis"
 chapter: true
-weight: 6
+weight: 7
 ---
 
 
-### Chapter 6
+### Chapter 7
