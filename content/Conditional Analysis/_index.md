@@ -9,3 +9,5 @@ weight: 5
 
 # Condition-specific Analysis
 Additional exploration strategies for specific conditions.
+
+![](/images/anatomy.png?width=70pc)

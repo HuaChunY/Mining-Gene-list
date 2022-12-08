@@ -14,7 +14,7 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ---
 
-## 7.1.1 **Nbclust**
+## 6.1.1 **Nbclust**
 
 - **Introduction**: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clus- tering scheme from different results to the user. In addition, it provides a function to perform k-means and hierarchical clustering with different distance measures and aggre- gation methods. Any combination of validation indices and clustering methods can be requested in a single function call. This enables the user to simultaneously evaluate sev- eral clustering schemes while varying the number of clusters, to help determining the most appropriate number of clusters for the data set of interest.
 
@@ -27,7 +27,7 @@ install.packages(Nbclust)
 
 ---
 
-## 7.1.2 **ClustVis**
+## 6.1.2 **ClustVis**
 
 - **Introduction**: This web tool allows users to upload their own data and easily create Principal Component Analysis (PCA) plots and heatmaps. Data can be uploaded as a file or by copy-pasteing it to the text box. Data format is shown under "Help" tab. 
 
@@ -71,7 +71,7 @@ vignette("vignette", "clustvis")
 
 ---
 
-## 7.1.3 **Medusa**
+## 6.1.3 **Medusa**
 
 - **Introduction**: Medusa3 is a java standalone application for visualization and clustering analysis of biological networks in 2D. It is highly interactive and it supports weighted and multi-edged graphs where each edge between two bioentities can represent a different biological concept. Comparing to previous versions, it is currently enriched with a variety of layout and clustering methods for more intuitive visualizations. It is easy to integrate with web application since it is offered as an applet. 
 
@@ -93,7 +93,7 @@ vignette("vignette", "clustvis")
  
 ---
 
-## 7.1.4 **wcd**
+## 6.1.4 **wcd**
 
 - **Introduction**: wcd is an open source tool for clustering expressed sequence tags. It implements matching using either d2 or edit distance, which provides sensitive matching. Heuristics speed up the clustering process. wcd parallelises well under MPI and also provides Pthreads clustering. wcd has a very compact memory representation which means that large files can be clustered on a single processor (and it can run quite happily without MPI or Pthreads headers or libraries being available).  
 
@@ -105,7 +105,7 @@ vignette("vignette", "clustvis")
  
 ---
 
-## 7.1.5 **FUAT** 
+## 6.1.5 **FUAT** 
 
 - **Introduction**: A desktop software, namely FUAT, is developed to analyze, explore and visualize different aspects of obtained fuzzy clusters which are segmented by fuzzy c-means algorithm. Moreover, to obtain and inform optimal cluster count, FUAT is equipped with Expectation Maximization algorithm. 
   
@@ -113,7 +113,7 @@ vignette("vignette", "clustvis")
 
 ---
 
-## 7.1.6 **hiplot**
+## 6.1.6 **hiplot**
 
 - **Introduction**: we newly developed a pool of biomedical visualization and modeling functions (240+), and proposed a scalable and emerging one-stop web service, Hiplot, with versatile task plugins, such as basic statistics, regression, clustering, genomics, transcriptomics, time series, meta-analysis, and risk models. It provides more simple web and command-line interfaces compared with other similar platforms, and is supported and maintained by the openbiox open source community. 
 
@@ -130,7 +130,7 @@ vignette("vignette", "clustvis")
 
 ---
 
-## 7.1.7 **cola**
+## 6.1.7 **cola**
 
 - **Introduction**: The cola package provides a general framework for subgroup classification by consensus partitioning. It has the following features: 1. It modularizes the consensus partitioning processes that various methods can be easily integrated. 2. It provides rich visualizations for interpreting the results. 3. It allows running multiple methods at the same time and provides functionalities to straightforward compare results. 4. It provides a new method to extract features which are more efficient to separate subgroups. 5. It automatically generates detailed reports for the complete analysis. 6. It allows applying consensus partitioning in a hierarchical manner. 
 

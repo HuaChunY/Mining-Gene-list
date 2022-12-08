@@ -88,14 +88,6 @@ TIGRFAMs is a collection of protein families, featuring curated multiple sequenc
 
 ---
 
-## 4.2 **UCSC Genome Browser database**
-
--**Introduction**: UCSC Genome Browser database is a web-based viewer for genome sequence data and annotations, the ability to juxtapose annotations of many types is one of the reasons for the popularity. The gene annotations including clinical variant interpretation, chromosome band location, pseudogene annotation, domain, cis-regulatory elements combination, organs/tissue/cell types annotation and so on. 
-
--**Web server**: [UCSC](https://genome.ucsc.edu/)
-
----
-
 ## 1.4.2 **UCSC Genome Browser database**
 
 -**Introduction**: UCSC Genome Browser database is a web-based viewer for genome sequence data and annotations, the ability to juxtapose annotations of many types is one of the reasons for the popularity. The gene annotations including clinical variant interpretation, chromosome band location, pseudogene annotation, domain, cis-regulatory elements combination, organs/tissue/cell types annotation and gene interactions from curated databases and text-mining. 

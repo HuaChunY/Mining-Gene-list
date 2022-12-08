@@ -14,7 +14,7 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ---
 
-## 3.5.1 **GeneMANIA**
+## 2.5.1 **GeneMANIA**
 
 - **Introduction**: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data. Association data include protein and genetic interactions, pathways, co-expression, co-localization and protein domain similarity. 
 
@@ -35,7 +35,7 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ---
 
-## 3.5.2 **NetworkAnalyst**
+## 2.5.2 **NetworkAnalyst**
 
 - **Introduction**: NetworkAnalyst was first released in 2014 to address the key need for interpreting gene expression data within the context of protein-protein interaction (PPI) networks. It was soon updated for gene expression meta-analysis with improved workflow and performance. Over the years, NetworkAnalyst has been continuously updated based on community feedback and technology progresses. Users can now perform gene expression profiling for 17 different species. In addition to generic PPI networks, users can now create cell-type or tissue specific PPI networks, gene regulatory networks, gene co-expression networks as well as networks for toxicogenomics and pharmacogenomics studies. The resulting networks can be customized and explored in 2D, 3D as well as Virtual Reality (VR) space. For meta-analysis, users can now visually compare multiple gene lists through interactive heatmaps, enrichment networks, Venn diagrams or chord diagrams. In addition, users have the option to create their own data analysis projects, which can be saved and resumed at a later time. 
 
@@ -70,7 +70,7 @@ devtools::install_github("xia-lab/NetworkAnalystR", build = TRUE, build_opts = c
 
 ---
 
-## 3.5.3 **ConsensusPathDB**
+## 2.5.3 **ConsensusPathDB**
 
 - **Introduction**: ConsensusPathDB is a database that integrates different types of functional interactions between physical entities in the cell like genes, RNA, proteins, protein complexes and metabolites in order to assemble a more complete and a less biased picture of cellular biology. Currently, ConsensusPathDB contains metabolic and signaling reactions, physical protein interactions, genetic interactions, gene regulatory interactions and drug-target interactions in human, mouse and yeast. The interaction information is collected from 30 public resources and is integrated into a seamless network. Physical entities from the source databases are mapped to each other on the basis of common identifiers like UniProt and Entrez accession numbers. Interactions with matching primary participants (i.e., substrates and products in the case of biochemical reactions, interactors in the case of protein interactions and regulated gene in the case of gene regulatory interactions) are also mapped and grouped together according to similarity.
 ![ConsensusPathDB1](/images/ConsensusPathDB1.png?width=90pc)
@@ -84,7 +84,7 @@ devtools::install_github("xia-lab/NetworkAnalystR", build = TRUE, build_opts = c
 
 ---
 
-## 3.5.4 **iRegulon**
+## 2.5.4 **iRegulon**
 ![iRegulon](/images/iRegulon.png?width=30pc)
   
 - **Introduction**: A regulon consists of a transcription factor (TF) and its direct transcriptional targets, which contain common TF binding sites in their cis-regulatory control elements. The iRegulon plugin allows you to identify regulons using motif discovery in a set of co-regulated genes. The cytoscape plugin works as a java client connected to the server-side daemon over the internet. The prediction of regulons consists of the following steps: motif detection, track discovery, motif2TF mapping, target detection.
@@ -96,7 +96,7 @@ devtools::install_github("xia-lab/NetworkAnalystR", build = TRUE, build_opts = c
 
 ---
 
-## 3.5.5 **NAViGaTOR**
+## 2.5.5 **NAViGaTOR**
 
 - **Introduction**: NAViGaTOR –  Network Analysis, Visualization, & Graphing TORonto is a software system for scalable visualizing and analyzing networks.The current version, NAViGaTOR 3, increases modularity, improves scaleability, extends input/output options, brings new network views and analysis algorithms.
 
@@ -112,7 +112,7 @@ devtools::install_github("xia-lab/NetworkAnalystR", build = TRUE, build_opts = c
  
 ---
 
-## 3.5.6 **FunCoup**
+## 2.5.6 **FunCoup**
 
 - **Introduction**: The name FunCoup stands for functional coupling. FunCoup is a framework to infer genome-wide functional couplings in 21 model organisms. Functional coupling, or functional association, is an unspecific form of association that encompasses direct physical interaction but also more general types of direct or indirect interaction like regulatory interaction or participation the same process or pathway.
 ![FunCoup1](/images/FunCoup1.png?width=50pc)
@@ -125,7 +125,7 @@ devtools::install_github("xia-lab/NetworkAnalystR", build = TRUE, build_opts = c
  
 ---
 
-## 3.5.7 **miRTargetLink**
+## 2.5.7 **miRTargetLink**
 
 - **Introduction**: miRTargetLink offers detailed information on microRNA-mRNA interactions in the form of interactive network visualizations. miRTargetLink works with validated (miRTarBase) and predicted (mirDIP, miRDB) miRNA targets from Homo sapiens, Mus musculus and Rattus norvegicus. You can query a microRNA, target gene or target pathway using the search box below.
 ![miRTargetLink1](/images/miRTargetLink1.jpg?width=60pc)
@@ -139,7 +139,7 @@ devtools::install_github("xia-lab/NetworkAnalystR", build = TRUE, build_opts = c
 
 ---
 
-## 3.5.8 **FFLtool**
+## 2.5.8 **FFLtool**
 
 - **introduction**: FFLtool is a webserver for analyzing Feed Forward Loop (FFL) regulatory motifs among transcription factors (TFs), microRNAs (miRNAs) and genes. Non-redundant TF-target regulations were curated from hTFtarget database, which contains 4.1 million TF-target regulations of 736 TFs from 773 conditions supported by high confident ChIP-Seq signal peaks. In total, 736 TFs and 21,037 target genes were curated in FFLtool.  FFLtool contains 754,658 experiment validated miRNA-target regulations from 5 databases and 526,981 in-silico prediction pairs from TargetScan V7.2 and miRmap tools. The 296 TFs, 324 miRNAs and 5,097 targets were considered as specifically expressed in these cancers.
 

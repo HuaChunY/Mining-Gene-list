@@ -15,7 +15,7 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ---
 
-## 4.1.1 **PubTator central**
+## 3.1.1 **PubTator central**
 
 - **Introduction**: PubTator Central (PTC) is a Web-based system providing automatic annotations of biomedical concepts such as genes and mutations in PubMed abstracts and PMC full-text articles. PTC expands the widely-used PubTator system. 
 
@@ -29,7 +29,7 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ---
 
-## 4.1.2 **Phenomizer**
+## 3.1.2 **Phenomizer**
 
 - **Introduction**: a tool that uses prior information to implicate genes involved in diseases. Phenolyzer exhibits superior performance over competing methods for prioritizing Mendelian and complex disease genes, based on disease or phenotype terms entered as free text.
            
@@ -38,7 +38,7 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ---
 
-## 4.1.3 **BioGraph**
+## 3.1.3 **BioGraph**
 
 - **Introduction**: The BioGraph service integrates heterogeneous knowledge bases and allows for the successful automated formulation and ranking of comprehensible functional hypotheses relating biomedical contexts to candidate targets, e.g., for disease-gene relations. 
 
@@ -53,7 +53,7 @@ knitr::opts_chunk$set(eval = FALSE)
  
 ---
 
-## 4.1.4 **WordCloud**
+## 3.1.4 **WordCloud**
 
 - **Introduction**: The WordCloud Plugin is a Cytsocape plugin that generates a word tag cloud from a user-defined node selection, summarizing an attribute of choice. For instance, if selected nodes are proteins, and the string attribute "full protein name" is selected, every string will be broken down into words, which will be plotted on a panel with size proportional to their frequency.
   
@@ -64,7 +64,7 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ---
 
-## 4.1.5 **BEST**
+## 3.1.5 **BEST**
 
 - **Introduction**: BEST uses a dictionary-based approach to extract biomedical entities from texts, and indexes the entities along with the source texts. The BEST dictionary consists of 12 different databases each covering different subsets of entity types (we will describe it in the Methods section). BEST finds an entity relevant to a query based primarily on the number of co-occurrences between the query terms and the entity in the literature. Besides the co-occurrence, the ranking function of BEST takes into account other various metrics including the authority of journals, the recency of articles, and the term frequency-inverse document frequency (TF-IDF) weighting.  
         
@@ -77,7 +77,7 @@ knitr::opts_chunk$set(eval = FALSE)
  
 ---
 
-## 4.1.6 **iPTMnet**
+## 3.1.6 **iPTMnet**
 
 - **Introduction**: iPTMnet is a bioinformatics resource for integrated understanding of protein post-translational modifications (PTMs) in systems biology context. It connects multiple disparate bioinformatics tools and systems text mining, data mining, analysis and visualization tools, and databases and ontologies into an integrated cross-cutting research resource to address the knowledge gaps in exploring and discovering PTM networks.
 ![iPTMnet](/images/iPTMent.jpg?width=100pc)
@@ -103,7 +103,7 @@ The pyiptmnet vignette can be found at <https://udel-cbcb.github.io/pyiPTMnet/#/
   
 ---
 
-## 4.1.7 **Genes2WordCloud**
+## 3.1.7 **Genes2WordCloud**
 
 - **Introduction**: Genes2WordCloud is a web-based server application and Java Applet that enables users to create biologically-relevant-content WordClouds.A WordCloud is a visual display of a set of words where the font, size, color or angle can represent some underlying information. A WordCloud is an effective way to visually summarize information about a specific topic of interest. The WordCloud is optimized to maximize the display of the most important terms about a specific topic in the minimum amount of space.
 
@@ -114,7 +114,7 @@ The pyiptmnet vignette can be found at <https://udel-cbcb.github.io/pyiPTMnet/#/
  
 ---
 
-## 4.1.8 **TeamTat**
+## 3.1.8 **TeamTat**
 
 - **Introduction**: TeamTat is a web-based annotation tool (local setup available), equipped to manage team annotation projects engagingly and efficiently. TeamTat is a novel tool for managing multi-user, multi-label document annotation, reflecting the entire production life cycle. Project managers can specify annotation schema for entities and relations and select annotator(s) and distribute documents anonymously to prevent bias. Document input format can be plain text, PDF or BioC (uploaded locally or automatically retrieved from PubMed/PMC), and output format is BioC with inline annotations. TeamTat displays figures from the full text for the annotator's convenience. 
             
@@ -123,7 +123,7 @@ The pyiptmnet vignette can be found at <https://udel-cbcb.github.io/pyiPTMnet/#/
  
 ---
 
-## 4.1.9 **CADA**
+## 3.1.9 **CADA**
 
 - **Introduction**: CADA is a phenotype-based gene prioritization tool that harnesses the most recent information from ClinVar. By this means human phenotype ontology (HPO) terms from case annotations as well as disorder annotations (CADA) are used for achieving superior results particularly for all typical clinical presentations of patients with rare disorders. CADA has been evaluated on a data set of 4714 molecularly confirmed cases and is used in the prospective study TRANSLATE NAMSE. 
 
@@ -141,7 +141,7 @@ The pyiptmnet vignette can be found at <https://udel-cbcb.github.io/pyiPTMnet/#/
  
 ---
 
-## 4.1.10 **CROssBAR**
+## 3.1.10 **CROssBAR**
 
 - **Introduction**: CROssBAR is a comprehensive system that integrates large-scale biological/biomedical data from various resources and stores them in a NoSQL database. CROssBAR is enriched with the deep-learning-based prediction of relationships between numerous data entries, which is followed by the rigorous analysis of the enriched data to obtain biologically meaningful modules. These complex sets of entities and relationships are displayed to users via easy-to-interpret, interactive knowledge graphs within an open-access service. CROssBAR knowledge graphs incorporate relevant genes-proteins, molecular interactions, pathways, phenotypes, diseases, as well as known/predicted drugs and bioactive compounds, and they are constructed on-the-fly based on simple non-programmatic user queries. These intensely processed heterogeneous networks are expected to aid systems-level research, especially to infer biological mechanisms in relation to genes, proteins, their ligands, and diseases. 
 

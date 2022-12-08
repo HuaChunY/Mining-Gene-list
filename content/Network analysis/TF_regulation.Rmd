@@ -14,7 +14,7 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ---
 
-## 3.2.1 **JASPAR**
+## 2.2.1 **JASPAR**
 
 - **Introduction**: JASPAR is a regularly maintained open-access database storing manually curated transcription factors (TF) binding profiles as position frequency matrices (PFMs). PFMs summarize occurrences of each nucleotide at each position in a set of observed TF-DNA interactions. PFMs can be transformed to probabilistic or energistic models to construct position weight matrices (PWMs) or position-specific scoring matrices (PSSMs), which can be used to scan any DNA sequence to predict TF binding sites (TFBSs). The JASPAR database provides TFBSs predicted using the profiles in the CORE collection.
 ![JASPAR1](/images/JASPAR1.jpg?width=50pc)
@@ -60,7 +60,7 @@ BiocManager::install("JASPAR2014")
 
 ---
 
-## 3.2.2 **AnimalTFDB**
+## 2.2.2 **AnimalTFDB**
 
 - **Introduction**: AnimalTFDB is a comprehensive database including classification and annotation of genome-wide transcription factors (TFs) and transcription cofactors in 183 animal genomes. In AnimalTFDB v4.0, there are total 270k TFs which are further classified into 73 families and six categories based on their DNA-binding domain (DBD). Meanwhile, there are also 150k cofactors classified into 82 families and six categories.
 
@@ -81,13 +81,13 @@ BiocManager::install("JASPAR2014")
 
 ---
 
-## 3.2.3 **CHEA**
+## 2.2.3 **CHEA**
 
 link to SigCom LINCS
 
 ---
 
-## 3.2.4 **RegNetwork**
+## 2.2.4 **RegNetwork**
 
 - **Introduction**: RegNetwork is a database of transcriptional and posttranscriptional regulatory networks in human and mouse. TF and miRNA are two major regulators controlling gene expression. RegNetwork collects the knowledge-based regulatory relationships, as well as some potentially regulatory relationships between the two regulators and targets. It provides a platform of depositing the known and predicted gene regulations in the transcriptional and posttranscriptional levels simultaneously. The knowledge-derived regulatory networks is expected to be greatly beneficial for identifying critical regulatory programs in various context-specific conditions.
 ![RegNetwork1](/images/RegNetwork1.jpg?width=50pc)
