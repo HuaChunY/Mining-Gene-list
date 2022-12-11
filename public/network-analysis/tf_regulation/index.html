@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="Gene list">
+<meta name="author" content="Huachun Yin">
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>TF gene interaction database - Gene list mining</title>
+
+    
+    <link href="../../css/nucleus.css?1670724083" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1670724083" rel="stylesheet">
+    <link href="../../css/hybrid.css?1670724083" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1670724083" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1670724083" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1670724083" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1670724083" rel="stylesheet">
+    <link href="../../css/theme.css?1670724083" rel="stylesheet">
+    <link href="../../css/tabs.css?1670724083" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1670724083" rel="stylesheet">
+    
+    <link href="../../css/theme-mine.css?1670724083" rel="stylesheet">
+    
+    <link href="../../css/foo.css?1670724083" rel="stylesheet"><link href="../../css/bar.css?1670724083" rel="stylesheet">
+
+    <script src="../../js/jquery-3.3.1.min.js?1670724083"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="../../network-analysis/tf_regulation/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="../../">
+    <img id="DGEs" src="../../images/logo.jpg" width="162" height="185" class="zoom">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1670724083"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1670724083"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1670724083"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/gene-annotation/" title="Gene Function Annotations" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../gene-annotation/">
+          Gene Function Annotations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/orth/" title="Orthologous gene mapping across species" class="dd-item ">
+        <a href="../../gene-annotation/orth/">
+        Orthologous gene mapping across species
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/goananotation/" title="Gene ontology annotation " class="dd-item ">
+        <a href="../../gene-annotation/goananotation/">
+        Gene ontology annotation 
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/biopathway/" title="Biological pathway annotation" class="dd-item ">
+        <a href="../../gene-annotation/biopathway/">
+        Biological pathway annotation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/other_gene_annotation/" title="Other gene annotation" class="dd-item ">
+        <a href="../../gene-annotation/other_gene_annotation/">
+        Other gene annotation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/network-analysis/" title="Network and Module Analysis" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../network-analysis/">
+          Network and Module Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/gene_network/" title="Gene regulatory network analysis" class="dd-item ">
+        <a href="../../network-analysis/gene_network/">
+        Gene regulatory network analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/tf_regulation/" title="TF gene interaction database" class="dd-item active">
+        <a href="../../network-analysis/tf_regulation/">
+        TF gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/mirna_regulation/" title="miRNA-gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/mirna_regulation/">
+        miRNA-gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/cerna_regulation/" title="ceRNA-gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/cerna_regulation/">
+        ceRNA-gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/analysis_visualization/" title="Analysis and Visualization Tools" class="dd-item ">
+        <a href="../../network-analysis/analysis_visualization/">
+        Analysis and Visualization Tools
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/text-mining/" title="Text Mining" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../text-mining/">
+          Text Mining
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/text-mining/text_mining/" title="Knowledge Graph/text mining" class="dd-item ">
+        <a href="../../text-mining/text_mining/">
+        Knowledge Graph/text mining
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/parmocogenomics/" title="Prediction of Potential Drugs" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../parmocogenomics/">
+          Prediction of Potential Drugs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/parmocogenomics/drug/" title="Prediction of Potential Drug (Pharmocogenomics)" class="dd-item ">
+        <a href="../../parmocogenomics/drug/">
+        Prediction of Potential Drug (Pharmocogenomics)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/conditional-analysis/" title="Condition-specific Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../conditional-analysis/">
+          Condition-specific Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/spatialandtemporal/" title="Spatial and temporal variation" class="dd-item ">
+        <a href="../../conditional-analysis/spatialandtemporal/">
+        Spatial and temporal variation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellcomposition/" title="Discovering the cell markers" class="dd-item ">
+        <a href="../../conditional-analysis/cellcomposition/">
+        Discovering the cell markers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/trajectory/" title="Tajectory inference" class="dd-item ">
+        <a href="../../conditional-analysis/trajectory/">
+        Tajectory inference
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellcomunication/" title="Cell communication" class="dd-item ">
+        <a href="../../conditional-analysis/cellcomunication/">
+        Cell communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/clustering/" title="Clustering Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../clustering/">
+          Clustering Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/clustering/clustering/" title="Clustering Analysis" class="dd-item ">
+        <a href="../../clustering/clustering/">
+        Clustering Analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/survival-analysis/" title="Survival Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../survival-analysis/">
+          Survival Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/survival-analysis/survival_analysis/" title="Survival Analysis" class="dd-item ">
+        <a href="../../survival-analysis/survival_analysis/">
+        Survival Analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>
+  Built by <a href="https://github.com/HuaChunY?tab=repositories">Huachun Yin</a> and <a href="https://github.com/duohongrui?tab=repositories">Hongrui Duo</a>
+</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'></a> > <a href='../../network-analysis/'>Network and Module Analysis</a> > TF gene interaction database
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              TF gene interaction database
+            </h1>
+          
+
+        
+
+
+
+
+<div id="TOC">
+<ul>
+<li><a href="#jaspar" id="toc-jaspar">2.2.1 <strong>JASPAR</strong></a></li>
+<li><a href="#animaltfdb" id="toc-animaltfdb">2.2.2 <strong>AnimalTFDB</strong></a></li>
+<li><a href="#chea" id="toc-chea">2.2.3 <strong>CHEA</strong></a></li>
+<li><a href="#regnetwork" id="toc-regnetwork">2.2.4 <strong>RegNetwork</strong></a></li>
+</ul>
+</div>
+
+<p><strong>Breaking</strong>:</p>
+<hr />
+<div id="jaspar" class="section level2">
+<h2>2.2.1 <strong>JASPAR</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: JASPAR is a regularly maintained open-access database storing manually curated transcription factors (TF) binding profiles as position frequency matrices (PFMs). PFMs summarize occurrences of each nucleotide at each position in a set of observed TF-DNA interactions. PFMs can be transformed to probabilistic or energistic models to construct position weight matrices (PWMs) or position-specific scoring matrices (PSSMs), which can be used to scan any DNA sequence to predict TF binding sites (TFBSs). The JASPAR database provides TFBSs predicted using the profiles in the CORE collection.
+<img src="../../images/JASPAR1.jpg?width=50pc" alt="JASPAR1" /></p></li>
+<li><p><strong>Installation</strong>: Different releases of JASPAR can also be accessed through Bioconductor data packages. Currently four JASPAR releases are available, and to install those packages, start R (version “4.2”) and enter:</p></li>
+<li><p>JASPAR2020:</p></li>
+</ul>
+<pre class="r"><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+
+BiocManager::install(&quot;JASPAR2020&quot;)</code></pre>
+<ul>
+<li>JASPAR2018</li>
+</ul>
+<pre class="r"><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+
+BiocManager::install(&quot;JASPAR2018&quot;)</code></pre>
+<ul>
+<li>JASPAR2016</li>
+</ul>
+<pre class="r"><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+
+BiocManager::install(&quot;JASPAR2016&quot;)</code></pre>
+<ul>
+<li>JASPAR2014</li>
+</ul>
+<pre class="r"><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+
+BiocManager::install(&quot;JASPAR2014&quot;)</code></pre>
+<ul>
+<li><p><strong>Application</strong>: The JASPAR tutorial can be found at<a href="https://jaspar.genereg.net/docs/" class="uri">https://jaspar.genereg.net/docs/</a>.
+The JASPAR2020 vignette can be found at <a href="http://bioconductor.org/packages/release/data/annotation/vignettes/JASPAR2020/inst/doc/JASPAR2020.html" class="uri">http://bioconductor.org/packages/release/data/annotation/vignettes/JASPAR2020/inst/doc/JASPAR2020.html</a>.
+The JASPAR2018 vignette can be found at <a href="http://bioconductor.org/packages/release/data/annotation/manuals/JASPAR2018/man/JASPAR2018.pdf" class="uri">http://bioconductor.org/packages/release/data/annotation/manuals/JASPAR2018/man/JASPAR2018.pdf</a>.
+The JASPAR2016 vignette can be found at <a href="http://bioconductor.org/packages/release/data/experiment/manuals/JASPAR2016/man/JASPAR2016.pdf" class="uri">http://bioconductor.org/packages/release/data/experiment/manuals/JASPAR2016/man/JASPAR2016.pdf</a>.
+The JASPAR2016 vignette can be found at &lt;<a href="http://bioconductor.org/packages/release/data/experiment/manuals/JASPAR2014/man/JASPAR2014.pdf" class="uri">http://bioconductor.org/packages/release/data/experiment/manuals/JASPAR2014/man/JASPAR2014.pdf</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://jaspar.genereg.net/">JASPAR</a>.
+<img src="../../images/JASPAR.jpg?width=50pc" alt="JASPAR" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="animaltfdb" class="section level2">
+<h2>2.2.2 <strong>AnimalTFDB</strong></h2>
+<ul>
+<li><strong>Introduction</strong>: AnimalTFDB is a comprehensive database including classification and annotation of genome-wide transcription factors (TFs) and transcription cofactors in 183 animal genomes. In AnimalTFDB v4.0, there are total 270k TFs which are further classified into 73 families and six categories based on their DNA-binding domain (DBD). Meanwhile, there are also 150k cofactors classified into 82 families and six categories.</li>
+</ul>
+<center>
+<b>Database information</b>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Species</td>
+<td align="left">183</td>
+</tr>
+<tr class="even">
+<td align="left">TFs</td>
+<td align="left">2700000</td>
+</tr>
+<tr class="odd">
+<td align="left">TF Cofactors</td>
+<td align="left">1500000</td>
+</tr>
+<tr class="even">
+<td align="left">TF Families</td>
+<td align="left">73</td>
+</tr>
+<tr class="odd">
+<td align="left">TF Cofactor Families</td>
+<td align="left">83</td>
+</tr>
+</tbody>
+</table>
+<div class="figure">
+<img src="../../images/AnimalTFDB.png?width=40pc" alt="" />
+<p class="caption">AnimalTFDB</p>
+</div>
+<ul>
+<li><p><strong>Application</strong>: The AnimalTFDB tutorial can be found at<a href="http://bioinfo.life.hust.edu.cn/AnimalTFDB4/static/site/" class="uri">http://bioinfo.life.hust.edu.cn/AnimalTFDB4/static/site/</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="http://bioinfo.life.hust.edu.cn/AnimalTFDB4/#/">AnimalTFDB</a>.
+<img src="../../images/AnimalTFDB1.jpg?width=90pc" alt="AnimalTFDB1" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="chea" class="section level2">
+<h2>2.2.3 <strong>CHEA</strong></h2>
+<p>link to SigCom LINCS</p>
+<hr />
+</div>
+<div id="regnetwork" class="section level2">
+<h2>2.2.4 <strong>RegNetwork</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: RegNetwork is a database of transcriptional and posttranscriptional regulatory networks in human and mouse. TF and miRNA are two major regulators controlling gene expression. RegNetwork collects the knowledge-based regulatory relationships, as well as some potentially regulatory relationships between the two regulators and targets. It provides a platform of depositing the known and predicted gene regulations in the transcriptional and posttranscriptional levels simultaneously. The knowledge-derived regulatory networks is expected to be greatly beneficial for identifying critical regulatory programs in various context-specific conditions.
+<img src="../../images/RegNetwork1.jpg?width=50pc" alt="RegNetwork1" /></p></li>
+<li><p><strong>Application</strong>: The AnimalTFDB tutorial can be found at <a href="https://regnetworkweb.org/about.jsp" class="uri">https://regnetworkweb.org/about.jsp</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://regnetworkweb.org/">RegNetwork</a>.
+<img src="../../images/RegNetwork.jpg?width=70pc" alt="RegNetwork" /></p></li>
+</ul>
+</div>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../network-analysis/gene_network/" title="Gene regulatory network analysis"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../network-analysis/mirna_regulation/" title="miRNA-gene interaction database" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1670724083"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1670724083"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1670724083"></script>
+    <script src="../../js/jquery.sticky.js?1670724083"></script>
+    <script src="../../js/featherlight.min.js?1670724083"></script>
+    <script src="../../js/highlight.pack.js?1670724083"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1670724083"></script>
+    <script src="../../js/learn.js?1670724083"></script>
+    <script src="../../js/hugo-learn.js?1670724083"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Text Mining on Gene list mining</title>
+    <link>/text-mining/</link>
+    <description>Recent content in Text Mining on Gene list mining</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/text-mining/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Knowledge Graph/text mining</title>
+      <link>/text-mining/text_mining/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/text-mining/text_mining/</guid>
+      <description>3.1.1 PubTator central 3.1.2 Phenomizer 3.1.3 BioGraph 3.1.4 WordCloud 3.1.5 BEST 3.1.6 iPTMnet 3.1.7 Genes2WordCloud 3.1.8 TeamTat 3.1.9 CADA 3.1.10 CROssBAR Breaking:
+3.1.1 PubTator central Introduction: PubTator Central (PTC) is a Web-based system providing automatic annotations of biomedical concepts such as genes and mutations in PubMed abstracts and PMC full-text articles. PTC expands the widely-used PubTator system.
+Installation: In addition to apps, PubTator central offers easy access to download source in Python, Perl and Java.</description>
+    </item>
+    
+  </channel>
+</rss>

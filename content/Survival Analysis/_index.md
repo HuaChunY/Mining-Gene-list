@@ -8,5 +8,5 @@ weight: 7
 ### Chapter 7
 
 # Survival Analysis
-Uncover the risk significance of certain factors to the survival results.
-![](/images/survival.png?width=30pc)
+Uncover the risk significance of certain factors to the survival results. 😷😷😷
+![](/images/survival.jpeg?width=35pc)

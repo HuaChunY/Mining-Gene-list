@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="Gene list">
+<meta name="author" content="Huachun Yin">
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Analysis and Visualization Tools - Gene list mining</title>
+
+    
+    <link href="../../css/nucleus.css?1670724083" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1670724083" rel="stylesheet">
+    <link href="../../css/hybrid.css?1670724083" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1670724083" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1670724083" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1670724083" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1670724083" rel="stylesheet">
+    <link href="../../css/theme.css?1670724083" rel="stylesheet">
+    <link href="../../css/tabs.css?1670724083" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1670724083" rel="stylesheet">
+    
+    <link href="../../css/theme-mine.css?1670724083" rel="stylesheet">
+    
+    <link href="../../css/foo.css?1670724083" rel="stylesheet"><link href="../../css/bar.css?1670724083" rel="stylesheet">
+
+    <script src="../../js/jquery-3.3.1.min.js?1670724083"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="../../network-analysis/analysis_visualization/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="../../">
+    <img id="DGEs" src="../../images/logo.jpg" width="162" height="185" class="zoom">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1670724083"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1670724083"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1670724083"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/gene-annotation/" title="Gene Function Annotations" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../gene-annotation/">
+          Gene Function Annotations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/orth/" title="Orthologous gene mapping across species" class="dd-item ">
+        <a href="../../gene-annotation/orth/">
+        Orthologous gene mapping across species
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/goananotation/" title="Gene ontology annotation " class="dd-item ">
+        <a href="../../gene-annotation/goananotation/">
+        Gene ontology annotation 
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/biopathway/" title="Biological pathway annotation" class="dd-item ">
+        <a href="../../gene-annotation/biopathway/">
+        Biological pathway annotation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/other_gene_annotation/" title="Other gene annotation" class="dd-item ">
+        <a href="../../gene-annotation/other_gene_annotation/">
+        Other gene annotation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/network-analysis/" title="Network and Module Analysis" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../network-analysis/">
+          Network and Module Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/gene_network/" title="Gene regulatory network analysis" class="dd-item ">
+        <a href="../../network-analysis/gene_network/">
+        Gene regulatory network analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/tf_regulation/" title="TF gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/tf_regulation/">
+        TF gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/mirna_regulation/" title="miRNA-gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/mirna_regulation/">
+        miRNA-gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/cerna_regulation/" title="ceRNA-gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/cerna_regulation/">
+        ceRNA-gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/analysis_visualization/" title="Analysis and Visualization Tools" class="dd-item active">
+        <a href="../../network-analysis/analysis_visualization/">
+        Analysis and Visualization Tools
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/text-mining/" title="Text Mining" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../text-mining/">
+          Text Mining
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/text-mining/text_mining/" title="Knowledge Graph/text mining" class="dd-item ">
+        <a href="../../text-mining/text_mining/">
+        Knowledge Graph/text mining
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/parmocogenomics/" title="Prediction of Potential Drugs" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../parmocogenomics/">
+          Prediction of Potential Drugs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/parmocogenomics/drug/" title="Prediction of Potential Drug (Pharmocogenomics)" class="dd-item ">
+        <a href="../../parmocogenomics/drug/">
+        Prediction of Potential Drug (Pharmocogenomics)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/conditional-analysis/" title="Condition-specific Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../conditional-analysis/">
+          Condition-specific Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/spatialandtemporal/" title="Spatial and temporal variation" class="dd-item ">
+        <a href="../../conditional-analysis/spatialandtemporal/">
+        Spatial and temporal variation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellcomposition/" title="Discovering the cell markers" class="dd-item ">
+        <a href="../../conditional-analysis/cellcomposition/">
+        Discovering the cell markers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/trajectory/" title="Tajectory inference" class="dd-item ">
+        <a href="../../conditional-analysis/trajectory/">
+        Tajectory inference
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellcomunication/" title="Cell communication" class="dd-item ">
+        <a href="../../conditional-analysis/cellcomunication/">
+        Cell communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/clustering/" title="Clustering Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../clustering/">
+          Clustering Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/clustering/clustering/" title="Clustering Analysis" class="dd-item ">
+        <a href="../../clustering/clustering/">
+        Clustering Analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/survival-analysis/" title="Survival Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../survival-analysis/">
+          Survival Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/survival-analysis/survival_analysis/" title="Survival Analysis" class="dd-item ">
+        <a href="../../survival-analysis/survival_analysis/">
+        Survival Analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>
+  Built by <a href="https://github.com/HuaChunY?tab=repositories">Huachun Yin</a> and <a href="https://github.com/duohongrui?tab=repositories">Hongrui Duo</a>
+</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'></a> > <a href='../../network-analysis/'>Network and Module Analysis</a> > Analysis and Visualization Tools
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Analysis and Visualization Tools
+            </h1>
+          
+
+        
+
+
+
+
+<div id="TOC">
+<ul>
+<li><a href="#genemania" id="toc-genemania">2.5.1 <strong>GeneMANIA</strong></a></li>
+<li><a href="#networkanalyst" id="toc-networkanalyst">2.5.2 <strong>NetworkAnalyst</strong></a></li>
+<li><a href="#consensuspathdb" id="toc-consensuspathdb">2.5.3 <strong>ConsensusPathDB</strong></a></li>
+<li><a href="#iregulon" id="toc-iregulon">2.5.4 <strong>iRegulon</strong></a></li>
+<li><a href="#navigator" id="toc-navigator">2.5.5 <strong>NAViGaTOR</strong></a></li>
+<li><a href="#funcoup" id="toc-funcoup">2.5.6 <strong>FunCoup</strong></a></li>
+<li><a href="#mirtargetlink" id="toc-mirtargetlink">2.5.7 <strong>miRTargetLink</strong></a></li>
+<li><a href="#ffltool" id="toc-ffltool">2.5.8 <strong>FFLtool</strong></a></li>
+</ul>
+</div>
+
+<p><strong>Breaking</strong>:</p>
+<hr />
+<div id="genemania" class="section level2">
+<h2>2.5.1 <strong>GeneMANIA</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data. Association data include protein and genetic interactions, pathways, co-expression, co-localization and protein domain similarity.</p>
+<center>
+<p><b>Data Source Statistics</b></p>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">species</td>
+<td align="left">9</td>
+</tr>
+<tr class="even">
+<td align="left">Data sources</td>
+<td align="left">22</td>
+</tr>
+<tr class="odd">
+<td align="left">Network</td>
+<td align="left">7</td>
+</tr>
+</tbody>
+</table></li>
+<li><p><strong>Installation</strong>:The GeneMANIA app offers a <a href="https://apps.cytoscape.org/apps/genemania">cytoscape</a> command for scripting purposes.</p></li>
+<li><p><strong>Application</strong>: The GeneMANIA tutorial can be found at
+<a href="http://pages.genemania.org/help/" class="uri">http://pages.genemania.org/help/</a></p></li>
+<li><p><strong>Web server</strong>: <a href="https://genemania.org">GeneMANIA</a>.
+<img src="../../images/GeneMANIA.jpg?width=60pc" alt="GeneMANIA" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="networkanalyst" class="section level2">
+<h2>2.5.2 <strong>NetworkAnalyst</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: NetworkAnalyst was first released in 2014 to address the key need for interpreting gene expression data within the context of protein-protein interaction (PPI) networks. It was soon updated for gene expression meta-analysis with improved workflow and performance. Over the years, NetworkAnalyst has been continuously updated based on community feedback and technology progresses. Users can now perform gene expression profiling for 17 different species. In addition to generic PPI networks, users can now create cell-type or tissue specific PPI networks, gene regulatory networks, gene co-expression networks as well as networks for toxicogenomics and pharmacogenomics studies. The resulting networks can be customized and explored in 2D, 3D as well as Virtual Reality (VR) space. For meta-analysis, users can now visually compare multiple gene lists through interactive heatmaps, enrichment networks, Venn diagrams or chord diagrams. In addition, users have the option to create their own data analysis projects, which can be saved and resumed at a later time.</p></li>
+<li><p><strong>Installation</strong>:To use NetworkAnalystR, make sure your R version is &gt;4.0.3 and install all package dependencies. Ensure that you are able to download packages from Bioconductor. To install package dependencies, use the pacman R package. Note that some of these packages may require additional library dependencies that need to be installed prior to their own successful installation.</p></li>
+</ul>
+<pre class="r"><code>install.packages(&quot;pacman&quot;)
+
+library(pacman)
+
+pacman::p_load(igraph, RColorBrewer, qs, rjson, RSQLite)</code></pre>
+<p>NetworkAnalystR is freely available from GitHub. The package documentation, including the vignettes for each module and user manual is available within the downloaded R package file. If all package dependencies were installed, you will be able to install the <a href="https://www.networkanalyst.ca/NetworkAnalyst/docs/RTutorial.xhtml">NetworkAnalystR</a>:</p>
+<pre class="r"><code># Step 1: Install devtools
+install.packages(&#39;devtools&#39;)
+library(devtools)
+
+# Step 2: Install NetworkAnalystR WITHOUT documentation
+devtools::install_github(&quot;xia-lab/NetworkAnalystR&quot;, build = TRUE, build_opts = c(&quot;--no-resave-data&quot;, &quot;--no-manual&quot;, &quot;--no-build-vignettes&quot;))
+
+# Step 2: Install NetworkAnalystR WITH documentation
+devtools::install_github(&quot;xia-lab/NetworkAnalystR&quot;, build = TRUE, build_opts = c(&quot;--no-resave-data&quot;, &quot;--no-manual&quot;), build_vignettes = TRUE)</code></pre>
+<ul>
+<li><p><strong>Application</strong>: The NetworkAnalyst web tutorial can be found at
+<a href="https://www.networkanalyst.ca/NetworkAnalyst/docs/Tutorial.xhtml" class="uri">https://www.networkanalyst.ca/NetworkAnalyst/docs/Tutorial.xhtml</a> and the NetworkAnalystR vignettes can be found at
+<a href="https://www.networkanalyst.ca/NetworkAnalyst/docs/RTutorial.xhtml#installation" class="uri">https://www.networkanalyst.ca/NetworkAnalyst/docs/RTutorial.xhtml#installation</a></p></li>
+<li><p><strong>Web server</strong>:
+<a href="https://www.networkanalyst.ca/">NetworkAnalyst</a>
+<img src="../../images/NetworkAnalyst.jpg?width=60pc" alt="NetworkAnalyst" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="consensuspathdb" class="section level2">
+<h2>2.5.3 <strong>ConsensusPathDB</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: ConsensusPathDB is a database that integrates different types of functional interactions between physical entities in the cell like genes, RNA, proteins, protein complexes and metabolites in order to assemble a more complete and a less biased picture of cellular biology. Currently, ConsensusPathDB contains metabolic and signaling reactions, physical protein interactions, genetic interactions, gene regulatory interactions and drug-target interactions in human, mouse and yeast. The interaction information is collected from 30 public resources and is integrated into a seamless network. Physical entities from the source databases are mapped to each other on the basis of common identifiers like UniProt and Entrez accession numbers. Interactions with matching primary participants (i.e., substrates and products in the case of biochemical reactions, interactors in the case of protein interactions and regulated gene in the case of gene regulatory interactions) are also mapped and grouped together according to similarity.
+<img src="../../images/ConsensusPathDB1.png?width=90pc" alt="ConsensusPathDB1" /></p></li>
+<li><p><strong>Application</strong>: The ConsensusPathDB tutorial can be found at
+<a href="http://cpdb.molgen.mpg.de/" class="uri">http://cpdb.molgen.mpg.de/</a></p></li>
+<li><p><strong>Web server</strong>:
+<a href="http://consensuspathdb.org/">ConsensusPathDB</a>.
+<img src="../../images/ConsensusPathDB.jpg?width=50pc" alt="ConsensusPathDB" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="iregulon" class="section level2">
+<h2>2.5.4 <strong>iRegulon</strong></h2>
+<div class="figure">
+<img src="../../images/iRegulon.png?width=30pc" alt="" />
+<p class="caption">iRegulon</p>
+</div>
+<ul>
+<li><p><strong>Introduction</strong>: A regulon consists of a transcription factor (TF) and its direct transcriptional targets, which contain common TF binding sites in their cis-regulatory control elements. The iRegulon plugin allows you to identify regulons using motif discovery in a set of co-regulated genes. The cytoscape plugin works as a java client connected to the server-side daemon over the internet. The prediction of regulons consists of the following steps: motif detection, track discovery, motif2TF mapping, target detection.</p></li>
+<li><p><strong>Installation</strong>: iRegulon is available as a Cytoscape plugin from <a href="http://iregulon.aertslab.org" class="uri">http://iregulon.aertslab.org</a>.</p></li>
+<li><p><strong>Application</strong>: The iRegulon tutorial can be found at
+<a href="http://iregulon.aertslab.org/tutorial.html#start" class="uri">http://iregulon.aertslab.org/tutorial.html#start</a></p></li>
+</ul>
+<hr />
+</div>
+<div id="navigator" class="section level2">
+<h2>2.5.5 <strong>NAViGaTOR</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: NAViGaTOR – Network Analysis, Visualization, &amp; Graphing TORonto is a software system for scalable visualizing and analyzing networks.The current version, NAViGaTOR 3, increases modularity, improves scaleability, extends input/output options, brings new network views and analysis algorithms.</p>
+<center>
+<p><b>Data Source Statistics</b></p>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Graphics Libraries</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">Data sources</td>
+<td align="left">3</td>
+</tr>
+</tbody>
+</table></li>
+<li><p><strong>installation</strong>:NAViGaTOR 3.0 Release notes: <a href="http://navigator.ophid.utoronto.ca/NAViGaTOR/NAViGaTOR_3_0_17_win32_win32_x86_64.exe">Windows 64 bit</a> and <a href="http://navigator.ophid.utoronto.ca/NAViGaTOR/NAViGaTOR_3_0_17_linux_gtk_x86_64.sh">Linux 64 bit</a></p></li>
+<li><p><strong>Web server</strong>: <a href="http://navigator.ophid.utoronto.ca/navigatorwp/index.php/downloads/">NAViGaTOR</a>.</p></li>
+</ul>
+<hr />
+</div>
+<div id="funcoup" class="section level2">
+<h2>2.5.6 <strong>FunCoup</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: The name FunCoup stands for functional coupling. FunCoup is a framework to infer genome-wide functional couplings in 21 model organisms. Functional coupling, or functional association, is an unspecific form of association that encompasses direct physical interaction but also more general types of direct or indirect interaction like regulatory interaction or participation the same process or pathway.
+<img src="../../images/FunCoup1.png?width=50pc" alt="FunCoup1" /></p></li>
+<li><p><strong>Application</strong>: The FunCoup tutorial can be found at
+<a href="https://funcoup5.scilifelab.se/help/#EvidenceTypes" class="uri">https://funcoup5.scilifelab.se/help/#EvidenceTypes</a></p></li>
+<li><p><strong>Web server</strong>: <a href="https://funcoup5.scilifelab.se/search/">FunCoup</a>.
+<img src="../../images/FunCoup.jpg?width=50pc" alt="FunCoup" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="mirtargetlink" class="section level2">
+<h2>2.5.7 <strong>miRTargetLink</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: miRTargetLink offers detailed information on microRNA-mRNA interactions in the form of interactive network visualizations. miRTargetLink works with validated (miRTarBase) and predicted (mirDIP, miRDB) miRNA targets from Homo sapiens, Mus musculus and Rattus norvegicus. You can query a microRNA, target gene or target pathway using the search box below.
+<img src="../../images/miRTargetLink1.jpg?width=60pc" alt="miRTargetLink1" /></p></li>
+<li><p><strong>Application</strong>: The miRTargetLink tutorial can be found at
+<a href="https://ccb-web.cs.uni-saarland.de/mirtargetlink/manual.php" class="uri">https://ccb-web.cs.uni-saarland.de/mirtargetlink/manual.php</a>
+The miRTargetLink2.0 tutorial can be found at
+<a href="https://ccb-compute.cs.uni-saarland.de/mirtargetlink2/tutorial/" class="uri">https://ccb-compute.cs.uni-saarland.de/mirtargetlink2/tutorial/</a></p></li>
+<li><p><strong>Web server</strong>: <a href="https://ccb-web.cs.uni-saarland.de/mirtargetlink/">miRTargetLink</a>. and <a href="https://ccb-compute.cs.uni-saarland.de/mirtargetlink2/">miRTargetLink 2.0</a>.
+<img src="../../images/miRTargetLink.jpg?width=50pc" alt="miRTargetLink" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="ffltool" class="section level2">
+<h2>2.5.8 <strong>FFLtool</strong></h2>
+<ul>
+<li><p><strong>introduction</strong>: FFLtool is a webserver for analyzing Feed Forward Loop (FFL) regulatory motifs among transcription factors (TFs), microRNAs (miRNAs) and genes. Non-redundant TF-target regulations were curated from hTFtarget database, which contains 4.1 million TF-target regulations of 736 TFs from 773 conditions supported by high confident ChIP-Seq signal peaks. In total, 736 TFs and 21,037 target genes were curated in FFLtool. FFLtool contains 754,658 experiment validated miRNA-target regulations from 5 databases and 526,981 in-silico prediction pairs from TargetScan V7.2 and miRmap tools. The 296 TFs, 324 miRNAs and 5,097 targets were considered as specifically expressed in these cancers.</p></li>
+<li><p><strong>Application</strong>: The FFLtool tutorial can be found at
+<a href="http://bioinfo.life.hust.edu.cn/FFLtool/#!/document#tf_family" class="uri">http://bioinfo.life.hust.edu.cn/FFLtool/#!/document#tf_family</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="http://bioinfo.life.hust.edu.cn/FFLtool/">FFLtool</a>.
+<img src="../../images/FFLtool.jpg?width=50pc" alt="FFLtool" /></p></li>
+</ul>
+</div>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../network-analysis/cerna_regulation/" title="ceRNA-gene interaction database"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../text-mining/" title="Text Mining" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1670724083"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1670724083"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1670724083"></script>
+    <script src="../../js/jquery.sticky.js?1670724083"></script>
+    <script src="../../js/featherlight.min.js?1670724083"></script>
+    <script src="../../js/highlight.pack.js?1670724083"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1670724083"></script>
+    <script src="../../js/learn.js?1670724083"></script>
+    <script src="../../js/hugo-learn.js?1670724083"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

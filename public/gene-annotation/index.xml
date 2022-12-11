@@ -32,7 +32,7 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/gene-annotation/biopathway/</guid>
-      <description>3.1 KEGG 3.2 Pathway ontology 3.3 Biocarta 3.4 Reactome 3.5 PANTHER 3.6 BioCyc 3.7 INOH 3.8 EHMN 3.9 WikiPathways 3.10 PID 3.11 Pathway Commons 3.12 SMPDB 3.13 Signalink 3.14 NetPath 3.15 iPAVS 3.16 ParmGKB 3.17 PathCards 3.18 ACSN 2.0 3.19 NDEx 3.20 SIGNOR 3.21 Plant Reactome 3.22 HAMdb 3.23 ComPath 3.24 BIOPYDB 3.25 PCxN 3.26 PathMe 3.27 pathDIP 3.28 PathBank 3.29 AOP 3.30 PathBIX Pathways are biological networks defining how biomolecules cooperate to accomplish cellular tasks in different conditions.</description>
+      <description>1.3.1 KEGG 1.3.2 Pathway ontology 1.3.3 Biocarta 1.3.4 Reactome 1.3.5 PANTHER 1.3.6 BioCyc 1.3.7 INOH 1.3.8 EHMN 1.3.9 WikiPathways 1.3.10 PID 1.3.11 Pathway Commons 1.3.12 SMPDB 1.3.13 Signalink 1.3.14 NetPath 1.3.15 iPAVS 1.3.16 ParmGKB 1.3.17 PathCards 1.3.18 ACSN 2.0 1.3.19 NDEx 1.3.20 SIGNOR 1.3.21 Plant Reactome 1.3.22 HAMdb 1.3.23 ComPath 1.3.24 BIOPYDB 1.3.25 PCxN 1.3.26 PathMe 1.3.27 pathDIP 1.3.28 PathBank 1.3.29 AOP 1.3.30 PathBIX Pathways are biological networks defining how biomolecules cooperate to accomplish cellular tasks in different conditions.</description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/gene-annotation/other_gene_annotation/</guid>
-      <description>1.4.1 InterPro consortium database 4.2 UCSC Genome Browser database 1.4.2 UCSC Genome Browser database 1.4.3 MSigDB 1.4.4 HumanBase 1.4.5 DISGENET 1.4.6 VaProS 1.4.7 Autophagy Database 1.4.8 MitoCarta3.0 1.4.9 OMIM 1.4.10 HGMD 1.4.11 CancerSEA Interpreting the relationship between molecular mechanisms and phenotypes, in addition to the GO and pathway annotation, other functional attributes also provide a window into the genes, such as, diseases-associated gene annotations, human/mouse phenotypes, hallmark genes, oncogenic signature, immunologic signature, cell type signature, chromosome cytoband, subcellular locations, developmental stage, gene variant, literatures, domains annotaions, etc.</description>
+      <description>1.4.1 InterPro consortium database 1.4.2 UCSC Genome Browser database 1.4.3 MSigDB 1.4.4 HumanBase 1.4.5 DISGENET 1.4.6 VaProS 1.4.7 Autophagy Database 1.4.8 MitoCarta3.0 1.4.9 OMIM 1.4.10 HGMD 1.4.11 CancerSEA 1.4.12 The Human Phenotype Ontology (HPO) 1.4.13 GeneCards 1.4.14 GeneALaCart Interpreting the relationship between molecular mechanisms and phenotypes, in addition to the GO and pathway annotation, other functional attributes also provide a window into the genes, such as, diseases-associated gene annotations, human/mouse phenotypes, hallmark genes, oncogenic signature, immunologic signature, cell type signature, chromosome cytoband, subcellular locations, developmental stage, gene variant, literatures, domains annotaions, etc.</description>
     </item>
     
   </channel>

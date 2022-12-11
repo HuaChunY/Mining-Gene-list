@@ -8,6 +8,5 @@ weight: 5
 ### Chapter 5
 
 # Condition-specific Analysis
-Additional exploration strategies for specific conditions.
-
-![](/images/anatomy.png?width=70pc)
+Additional exploration strategies for specific conditions. ⏳⏳⏳
+![](/images/condition.jpeg?width=35pc)

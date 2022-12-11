@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="Gene list">
+<meta name="author" content="Huachun Yin">
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>ceRNA-gene interaction database - Gene list mining</title>
+
+    
+    <link href="../../css/nucleus.css?1670724083" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1670724083" rel="stylesheet">
+    <link href="../../css/hybrid.css?1670724083" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1670724083" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1670724083" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1670724083" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1670724083" rel="stylesheet">
+    <link href="../../css/theme.css?1670724083" rel="stylesheet">
+    <link href="../../css/tabs.css?1670724083" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1670724083" rel="stylesheet">
+    
+    <link href="../../css/theme-mine.css?1670724083" rel="stylesheet">
+    
+    <link href="../../css/foo.css?1670724083" rel="stylesheet"><link href="../../css/bar.css?1670724083" rel="stylesheet">
+
+    <script src="../../js/jquery-3.3.1.min.js?1670724083"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="../../network-analysis/cerna_regulation/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="../../">
+    <img id="DGEs" src="../../images/logo.jpg" width="162" height="185" class="zoom">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1670724083"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1670724083"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1670724083"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/gene-annotation/" title="Gene Function Annotations" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../gene-annotation/">
+          Gene Function Annotations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/orth/" title="Orthologous gene mapping across species" class="dd-item ">
+        <a href="../../gene-annotation/orth/">
+        Orthologous gene mapping across species
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/goananotation/" title="Gene ontology annotation " class="dd-item ">
+        <a href="../../gene-annotation/goananotation/">
+        Gene ontology annotation 
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/biopathway/" title="Biological pathway annotation" class="dd-item ">
+        <a href="../../gene-annotation/biopathway/">
+        Biological pathway annotation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/other_gene_annotation/" title="Other gene annotation" class="dd-item ">
+        <a href="../../gene-annotation/other_gene_annotation/">
+        Other gene annotation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/network-analysis/" title="Network and Module Analysis" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../network-analysis/">
+          Network and Module Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/gene_network/" title="Gene regulatory network analysis" class="dd-item ">
+        <a href="../../network-analysis/gene_network/">
+        Gene regulatory network analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/tf_regulation/" title="TF gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/tf_regulation/">
+        TF gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/mirna_regulation/" title="miRNA-gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/mirna_regulation/">
+        miRNA-gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/cerna_regulation/" title="ceRNA-gene interaction database" class="dd-item active">
+        <a href="../../network-analysis/cerna_regulation/">
+        ceRNA-gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/analysis_visualization/" title="Analysis and Visualization Tools" class="dd-item ">
+        <a href="../../network-analysis/analysis_visualization/">
+        Analysis and Visualization Tools
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/text-mining/" title="Text Mining" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../text-mining/">
+          Text Mining
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/text-mining/text_mining/" title="Knowledge Graph/text mining" class="dd-item ">
+        <a href="../../text-mining/text_mining/">
+        Knowledge Graph/text mining
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/parmocogenomics/" title="Prediction of Potential Drugs" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../parmocogenomics/">
+          Prediction of Potential Drugs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/parmocogenomics/drug/" title="Prediction of Potential Drug (Pharmocogenomics)" class="dd-item ">
+        <a href="../../parmocogenomics/drug/">
+        Prediction of Potential Drug (Pharmocogenomics)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/conditional-analysis/" title="Condition-specific Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../conditional-analysis/">
+          Condition-specific Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/spatialandtemporal/" title="Spatial and temporal variation" class="dd-item ">
+        <a href="../../conditional-analysis/spatialandtemporal/">
+        Spatial and temporal variation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellcomposition/" title="Discovering the cell markers" class="dd-item ">
+        <a href="../../conditional-analysis/cellcomposition/">
+        Discovering the cell markers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/trajectory/" title="Tajectory inference" class="dd-item ">
+        <a href="../../conditional-analysis/trajectory/">
+        Tajectory inference
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellcomunication/" title="Cell communication" class="dd-item ">
+        <a href="../../conditional-analysis/cellcomunication/">
+        Cell communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/clustering/" title="Clustering Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../clustering/">
+          Clustering Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/clustering/clustering/" title="Clustering Analysis" class="dd-item ">
+        <a href="../../clustering/clustering/">
+        Clustering Analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/survival-analysis/" title="Survival Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../survival-analysis/">
+          Survival Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/survival-analysis/survival_analysis/" title="Survival Analysis" class="dd-item ">
+        <a href="../../survival-analysis/survival_analysis/">
+        Survival Analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>
+  Built by <a href="https://github.com/HuaChunY?tab=repositories">Huachun Yin</a> and <a href="https://github.com/duohongrui?tab=repositories">Hongrui Duo</a>
+</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'></a> > <a href='../../network-analysis/'>Network and Module Analysis</a> > ceRNA-gene interaction database
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              ceRNA-gene interaction database
+            </h1>
+          
+
+        
+
+
+
+
+<div id="TOC">
+<ul>
+<li><a href="#encode" id="toc-encode">2.4.1 <strong>ENCODE</strong></a></li>
+<li><a href="#starbase" id="toc-starbase">2.4.2 <strong>starBase</strong></a></li>
+<li><a href="#mircode" id="toc-mircode">2.4.3 <strong>miRcode</strong></a></li>
+<li><a href="#diana-lncbase" id="toc-diana-lncbase">2.4.4 <strong>DIANA-LncBase</strong></a></li>
+<li><a href="#omnipath" id="toc-omnipath">2.4.5 <strong>OmniPath</strong></a></li>
+<li><a href="#cerdb" id="toc-cerdb">2.4.6 <strong>ceRDB</strong></a></li>
+<li><a href="#lncactdb" id="toc-lncactdb">2.4.7 <strong>LncACTdb</strong></a></li>
+<li><a href="#pcerbase" id="toc-pcerbase">2.4.8 <strong>PceRBase</strong></a></li>
+</ul>
+</div>
+
+<p><strong>Breaking</strong>:</p>
+<hr />
+<div id="encode" class="section level2">
+<h2>2.4.1 <strong>ENCODE</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: The ENCODE Portal, developed and maintained by the Data Coordination Center (ENCODE DCC), is the canonical source for all experimental metadata and data from ENCODE and associated projects. The ENCODE Portal contains raw and ground-level analysis data generated by participating mapping centers using a wide-range of assays (integrative analysis data are available at the SCREEN portal. The Portal also stores records of the materials and methods used to perform the assays and subsequent analysis.<br />
+<img src="../../images/ENCODE.jpg?width=50pc" alt="ENCODE" /></p></li>
+<li><p><strong>Application</strong>: The ENCODE tutorial can be found at <a href="https://www.encodeproject.org/help/getting-started/" class="uri">https://www.encodeproject.org/help/getting-started/</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://www.encodeproject.org/">ENCODE</a>.</p></li>
+</ul>
+<hr />
+</div>
+<div id="starbase" class="section level2">
+<h2>2.4.2 <strong>starBase</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: starBase is an openly licensed and state-of-the-art platform to decode the cellular interaction networks among thousands of RNA binding proteins (RBPs) and various RNAs. We have identified millions of RBP-RNA and RNA-RNA interactions through analyzing thousands of CLIP-seq and various high-throughput sequencing data by developing new software and tools, and studied their functions and mechanisms in human diseases.</p>
+<center>
+<p><b>Database information</b></p>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Species</td>
+<td align="left">23</td>
+</tr>
+<tr class="even">
+<td align="left">CLIP-seq data</td>
+<td align="left">&gt;700 datasets</td>
+</tr>
+<tr class="odd">
+<td align="left">Degradome-seq</td>
+<td align="left">100 datasets</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-RNA interactome</td>
+<td align="left">&gt;30 datasets</td>
+</tr>
+<tr class="odd">
+<td align="left">RNA-seq data</td>
+<td align="left">&gt;10,800 samples from 32 cancer types</td>
+</tr>
+<tr class="even">
+<td align="left">miRNA-seq data</td>
+<td align="left">&gt;10,500 samples from 32 cancer types</td>
+</tr>
+<tr class="odd">
+<td align="left">Disease data</td>
+<td align="left">&gt;3,236,000 mutations from 366 disease types</td>
+</tr>
+<tr class="even">
+<td align="left">miRNA-ncRNA(CLIP)</td>
+<td align="left">&gt;1,100,000 interactions</td>
+</tr>
+<tr class="odd">
+<td align="left">miRNA-mRNA(CLIP)</td>
+<td align="left">&gt;2,500,000 interactions</td>
+</tr>
+<tr class="even">
+<td align="left">RBP-mRNA</td>
+<td align="left">&gt;1,208,900 interactions</td>
+</tr>
+<tr class="odd">
+<td align="left">RBP-ncRNA</td>
+<td align="left">&gt;117,000 interactions</td>
+</tr>
+<tr class="even">
+<td align="left">RNA-RNA</td>
+<td align="left">&gt;1,530,000 interactions</td>
+</tr>
+</tbody>
+</table></li>
+<li><p><strong>Application</strong>: The starBase tutorial can be found at <a href="https://starbase.sysu.edu.cn/tutorial.php" class="uri">https://starbase.sysu.edu.cn/tutorial.php</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://starbase.sysu.edu.cn/index.php">starBase</a>.
+<img src="../../images/starBase.jpg?width=50pc" alt="starBase" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="mircode" class="section level2">
+<h2>2.4.3 <strong>miRcode</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: MiRcode provides “whole transcriptome” human microRNA target predictions based on the comprehensive GENCODE gene annotation, including &gt;10,000 long non-coding RNA genes. Coding genes are also covered, including atypical regions such as 5’UTRs and CDS. MicroRNA family definitions and names are consistent with TargetScan. Site conservation is evaluated based on 46 vertebrates species. Data sources and stats is found on the data info page, and the FAQ answers many questions. Please cite the miRcode paper if this resource is useful in your research.</p>
+<center>
+<p><b>Database information</b></p>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Species</td>
+<td align="left">10</td>
+</tr>
+<tr class="even">
+<td align="left">Total transcripts</td>
+<td align="left">179,905</td>
+</tr>
+<tr class="odd">
+<td align="left">Total genes</td>
+<td align="left">53,520</td>
+</tr>
+<tr class="even">
+<td align="left">LncRNA genes</td>
+<td align="left">10,419</td>
+</tr>
+<tr class="odd">
+<td align="left">Coding genes</td>
+<td align="left">19,999</td>
+</tr>
+<tr class="even">
+<td align="left">Pseudogenes</td>
+<td align="left">12,549</td>
+</tr>
+</tbody>
+</table></li>
+<li><p><strong>Web server</strong>: <a href="http://www.mircode.org/">miRcode</a>.
+<img src="../../images/miRcode.jpg?width=50pc" alt="miRcode" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="diana-lncbase" class="section level2">
+<h2>2.4.4 <strong>DIANA-LncBase</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: DIANA-LncBase is a reference repository with experimentally supported miRNA targets on non-coding transcripts. It catalogues approximately ~500,000 entries, corresponding to ~240,000 unique tissue and cell-type specific miRNA-lncRNA interactions. The incorporated interactions are defined by 15 distinct low-/high-throughput methodologies, corresponding to 243 distinct cell types/tissues and 162 experimental conditions.</p>
+<center>
+<p><b>Database information</b></p>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">miRNA-lncRNA entries</td>
+<td align="left">730</td>
+</tr>
+<tr class="even">
+<td align="left">miRNA-lncRNA chimeric fragments</td>
+<td align="left">2924</td>
+</tr>
+</tbody>
+</table></li>
+<li><p><strong>Application</strong>: The DIANA-LncBase tutorial can be found at
+<a href="https://diana.e-ce.uth.gr/lncbasev3/help" class="uri">https://diana.e-ce.uth.gr/lncbasev3/help</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://diana.e-ce.uth.gr/lncbasev3">DIANA-LncBase</a>.
+<img src="../../images/DIANA-LncBase.jpg?width=50pc" alt="DIANA-LncBase" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="omnipath" class="section level2">
+<h2>2.4.5 <strong>OmniPath</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: OmniPath is a database of molecular biology prior knowledge. It combines data from over 100 resources and builds 5 integrated databases: signaling network (interactions), enzyme-PTM relationships, protein complexes, protein annotations (function, localization, tissue, disease, structure, etc), and intercellular communication roles (e.g. ligand, receptor; intercell).<br />
+<img src="../../images/OmniPath1.jpg?width=50pc" alt="OmniPath1" /></p>
+<center>
+<p><b>Database information</b></p>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Transcriptional regulation</td>
+<td align="left">8</td>
+</tr>
+<tr class="even">
+<td align="left">RNA regulation</td>
+<td align="left">6</td>
+</tr>
+<tr class="odd">
+<td align="left">Ligand-receptor</td>
+<td align="left">6</td>
+</tr>
+<tr class="even">
+<td align="left">Protein-protein interaction resources</td>
+<td align="left">44</td>
+</tr>
+<tr class="odd">
+<td align="left">Extracellular</td>
+<td align="left">14</td>
+</tr>
+</tbody>
+</table></li>
+<li><p><strong>Installation</strong>: 1.Start R (version “4.2”) and enter:</p></li>
+</ul>
+<pre class="r"><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+
+BiocManager::install(&quot;OmnipathR&quot;)</code></pre>
+<p>Or install R package from <a href="https://github.com/saezlab/OmnipathR">github</a>:</p>
+<pre class="r"><code>require(devtools)
+install_github(&#39;saezlab/OmnipathR&#39;)</code></pre>
+<p>2.Python client for the OmniPath web service:</p>
+<pre class="python"><code>pip install omnipath</code></pre>
+<p>Or install Python package from <a href="https://github.com/saezlab/omnipath">github</a>.
+3. A Cytoscape plug-in <a href="https://apps.cytoscape.org/apps/omnipath">here</a>.</p>
+<ul>
+<li><p><strong>Application</strong>: The OmniPath tutorial can be found at
+<a href="https://workflows.omnipathdb.org/" class="uri">https://workflows.omnipathdb.org/</a>.
+OmnipathR vignette can be found at <a href="http://bioconductor.org/packages/release/bioc/vignettes/OmnipathR/inst/doc/nichenet.html" class="uri">http://bioconductor.org/packages/release/bioc/vignettes/OmnipathR/inst/doc/nichenet.html</a>, <a href="http://bioconductor.org/packages/release/bioc/vignettes/OmnipathR/inst/doc/db_manager.html" class="uri">http://bioconductor.org/packages/release/bioc/vignettes/OmnipathR/inst/doc/db_manager.html</a> and <a href="http://bioconductor.org/packages/release/bioc/vignettes/OmnipathR/inst/doc/drug_targets.html" class="uri">http://bioconductor.org/packages/release/bioc/vignettes/OmnipathR/inst/doc/drug_targets.html</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://omnipathdb.org/">OmniPath</a>.
+<img src="../../images/OmniPath.jpg?width=90pc" alt="OmniPath" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="cerdb" class="section level2">
+<h2>2.4.6 <strong>ceRDB</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: By examining the co-occurrence of miRNA response elements in the mRNAs on a genome-wide basis we predict competing endogenous RNA for specific mRNAs targeted by miRNAs.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://www.oncomir.umn.edu/cefinder/basic_search.php">ceRDB</a>.</p></li>
+</ul>
+<hr />
+</div>
+<div id="lncactdb" class="section level2">
+<h2>2.4.7 <strong>LncACTdb</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: LncACTdb 3.0 is a comprehensive database of experimentally supported competing endogenous RNA (ceRNA) interactions and personalized networks contributing to precision medicine. LncACTdb is a continually updated database that is used specifically to store experimentally validated ceRNA interactions manually curated from different species and disease states.
+<img src="../../images/LncACTdb1.jpg?width=40pc" alt="LncACTdb1" />
+<img src="../../images/LncACTdb2.png?width=40pc" alt="LncACTdb2" /></p></li>
+<li><p><strong>Application</strong>: The LncACTdb tutorial can be found at <a href="https://starbase.sysu.edu.cn/tutorial.php" class="uri">https://starbase.sysu.edu.cn/tutorial.php</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="http://bio-bigdata.hrbmu.edu.cn/LncACTdb/">LncACTdb</a>.
+<img src="../../images/LncACTdb.jpg?width=40pc" alt="LncACTdb" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="pcerbase" class="section level2">
+<h2>2.4.8 <strong>PceRBase</strong></h2>
+<ul>
+<li><strong>Introduction</strong>: Competing endogenous RNA (ceRNA) act as decoys for microRNA (miRNA) binding, thereby regulating the abundance of other RNA transcripts which share the same microRNA response elements (MREs). Plant ceRNA database (PceRBase) uses mRNA, long non-coding RNA and miRNA sequence information to predict potential ceRNA target-target pairs (with identical shared MREs) and ceRNA target-mimic pairs (with one perfect MRE match, and one imperfect MRE match).</li>
+</ul>
+<p>PceRBase currently predicts 696,756 potential ceRNA target-target, and 167,608 ceRNA target-mimic pairs from 28 plant species. Particularly, 239,998 ceRNA target-target and 75,360 ceRNA target-mimic pairs were found in Arabidopsis thaliana.
+<img src="../../images/PceRBase.jpg?width=50pc" alt="PceRBase" /></p>
+<ul>
+<li><p><strong>Application</strong>: The PceRBase tutorial can be found at <a href="http://bis.zju.edu.cn/pcernadb/document/index.jsp" class="uri">http://bis.zju.edu.cn/pcernadb/document/index.jsp</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="http://bis.zju.edu.cn/pcernadb/index.jsp">PceRBase</a>.
+<img src="../../images/PceRBase1.jpg?width=50pc" alt="PceRBase1" /></p></li>
+</ul>
+</div>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../network-analysis/mirna_regulation/" title="miRNA-gene interaction database"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../network-analysis/analysis_visualization/" title="Analysis and Visualization Tools" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1670724083"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1670724083"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1670724083"></script>
+    <script src="../../js/jquery.sticky.js?1670724083"></script>
+    <script src="../../js/featherlight.min.js?1670724083"></script>
+    <script src="../../js/highlight.pack.js?1670724083"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1670724083"></script>
+    <script src="../../js/learn.js?1670724083"></script>
+    <script src="../../js/hugo-learn.js?1670724083"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

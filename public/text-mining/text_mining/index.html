@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="Gene list">
+<meta name="author" content="Huachun Yin">
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Knowledge Graph/text mining - Gene list mining</title>
+
+    
+    <link href="../../css/nucleus.css?1670724083" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1670724083" rel="stylesheet">
+    <link href="../../css/hybrid.css?1670724083" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1670724083" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1670724083" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1670724083" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1670724083" rel="stylesheet">
+    <link href="../../css/theme.css?1670724083" rel="stylesheet">
+    <link href="../../css/tabs.css?1670724083" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1670724083" rel="stylesheet">
+    
+    <link href="../../css/theme-mine.css?1670724083" rel="stylesheet">
+    
+    <link href="../../css/foo.css?1670724083" rel="stylesheet"><link href="../../css/bar.css?1670724083" rel="stylesheet">
+
+    <script src="../../js/jquery-3.3.1.min.js?1670724083"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="../../text-mining/text_mining/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="../../">
+    <img id="DGEs" src="../../images/logo.jpg" width="162" height="185" class="zoom">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1670724083"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1670724083"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1670724083"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/gene-annotation/" title="Gene Function Annotations" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../gene-annotation/">
+          Gene Function Annotations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/orth/" title="Orthologous gene mapping across species" class="dd-item ">
+        <a href="../../gene-annotation/orth/">
+        Orthologous gene mapping across species
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/goananotation/" title="Gene ontology annotation " class="dd-item ">
+        <a href="../../gene-annotation/goananotation/">
+        Gene ontology annotation 
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/biopathway/" title="Biological pathway annotation" class="dd-item ">
+        <a href="../../gene-annotation/biopathway/">
+        Biological pathway annotation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/other_gene_annotation/" title="Other gene annotation" class="dd-item ">
+        <a href="../../gene-annotation/other_gene_annotation/">
+        Other gene annotation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/network-analysis/" title="Network and Module Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../network-analysis/">
+          Network and Module Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/gene_network/" title="Gene regulatory network analysis" class="dd-item ">
+        <a href="../../network-analysis/gene_network/">
+        Gene regulatory network analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/tf_regulation/" title="TF gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/tf_regulation/">
+        TF gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/mirna_regulation/" title="miRNA-gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/mirna_regulation/">
+        miRNA-gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/cerna_regulation/" title="ceRNA-gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/cerna_regulation/">
+        ceRNA-gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/analysis_visualization/" title="Analysis and Visualization Tools" class="dd-item ">
+        <a href="../../network-analysis/analysis_visualization/">
+        Analysis and Visualization Tools
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/text-mining/" title="Text Mining" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../text-mining/">
+          Text Mining
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/text-mining/text_mining/" title="Knowledge Graph/text mining" class="dd-item active">
+        <a href="../../text-mining/text_mining/">
+        Knowledge Graph/text mining
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/parmocogenomics/" title="Prediction of Potential Drugs" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../parmocogenomics/">
+          Prediction of Potential Drugs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/parmocogenomics/drug/" title="Prediction of Potential Drug (Pharmocogenomics)" class="dd-item ">
+        <a href="../../parmocogenomics/drug/">
+        Prediction of Potential Drug (Pharmocogenomics)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/conditional-analysis/" title="Condition-specific Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../conditional-analysis/">
+          Condition-specific Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/spatialandtemporal/" title="Spatial and temporal variation" class="dd-item ">
+        <a href="../../conditional-analysis/spatialandtemporal/">
+        Spatial and temporal variation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellcomposition/" title="Discovering the cell markers" class="dd-item ">
+        <a href="../../conditional-analysis/cellcomposition/">
+        Discovering the cell markers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/trajectory/" title="Tajectory inference" class="dd-item ">
+        <a href="../../conditional-analysis/trajectory/">
+        Tajectory inference
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellcomunication/" title="Cell communication" class="dd-item ">
+        <a href="../../conditional-analysis/cellcomunication/">
+        Cell communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/clustering/" title="Clustering Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../clustering/">
+          Clustering Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/clustering/clustering/" title="Clustering Analysis" class="dd-item ">
+        <a href="../../clustering/clustering/">
+        Clustering Analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/survival-analysis/" title="Survival Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../survival-analysis/">
+          Survival Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/survival-analysis/survival_analysis/" title="Survival Analysis" class="dd-item ">
+        <a href="../../survival-analysis/survival_analysis/">
+        Survival Analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>
+  Built by <a href="https://github.com/HuaChunY?tab=repositories">Huachun Yin</a> and <a href="https://github.com/duohongrui?tab=repositories">Hongrui Duo</a>
+</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'></a> > <a href='../../text-mining/'>Text Mining</a> > Knowledge Graph/text mining
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Knowledge Graph/text mining
+            </h1>
+          
+
+        
+
+
+
+
+<div id="TOC">
+<ul>
+<li><a href="#pubtator-central" id="toc-pubtator-central">3.1.1 <strong>PubTator central</strong></a></li>
+<li><a href="#phenomizer" id="toc-phenomizer">3.1.2 <strong>Phenomizer</strong></a></li>
+<li><a href="#biograph" id="toc-biograph">3.1.3 <strong>BioGraph</strong></a></li>
+<li><a href="#wordcloud" id="toc-wordcloud">3.1.4 <strong>WordCloud</strong></a></li>
+<li><a href="#best" id="toc-best">3.1.5 <strong>BEST</strong></a></li>
+<li><a href="#iptmnet" id="toc-iptmnet">3.1.6 <strong>iPTMnet</strong></a></li>
+<li><a href="#genes2wordcloud" id="toc-genes2wordcloud">3.1.7 <strong>Genes2WordCloud</strong></a></li>
+<li><a href="#teamtat" id="toc-teamtat">3.1.8 <strong>TeamTat</strong></a></li>
+<li><a href="#cada" id="toc-cada">3.1.9 <strong>CADA</strong></a></li>
+<li><a href="#crossbar" id="toc-crossbar">3.1.10 <strong>CROssBAR</strong></a></li>
+</ul>
+</div>
+
+<p><strong>Breaking</strong>:</p>
+<hr />
+<div id="pubtator-central" class="section level2">
+<h2>3.1.1 <strong>PubTator central</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: PubTator Central (PTC) is a Web-based system providing automatic annotations of biomedical concepts such as genes and mutations in PubMed abstracts and PMC full-text articles. PTC expands the widely-used PubTator system.</p></li>
+<li><p><strong>Installation</strong>: In addition to apps, PubTator central offers easy access to download source in <a href="https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/tmTools/download/ExampleCode.Python.zip">Python</a>, <a href="https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/tmTools/download/ExampleCode.Perl.zip">Perl</a> and <a href="https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/tmTools/download/ExampleCode.Java.zip">Java</a>.</p></li>
+<li><p><strong>Application</strong>: The PubTator central tutorial can be found at <a href="https://www.ncbi.nlm.nih.gov/research/pubtator/tutorial.html" class="uri">https://www.ncbi.nlm.nih.gov/research/pubtator/tutorial.html</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://www.ncbi.nlm.nih.gov/research/pubtator/">PubTator central</a>.
+<img src="../../images/PubTator%20central.jpg?width=90pc" alt="PubTator central" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="phenomizer" class="section level2">
+<h2>3.1.2 <strong>Phenomizer</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: a tool that uses prior information to implicate genes involved in diseases. Phenolyzer exhibits superior performance over competing methods for prioritizing Mendelian and complex disease genes, based on disease or phenotype terms entered as free text.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://compbio.charite.de/phenomizer/">Phenomizer</a>.
+<img src="../../images/Phenolyzer.jpg?width=50pc" alt="Phenomizer" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="biograph" class="section level2">
+<h2>3.1.3 <strong>BioGraph</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: The BioGraph service integrates heterogeneous knowledge bases and allows for the successful automated formulation and ranking of comprehensible functional hypotheses relating biomedical contexts to candidate targets, e.g., for disease-gene relations.</p>
+<center>
+<p><b>Data Source Statistics</b></p>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Databases</td>
+<td align="left">19</td>
+</tr>
+<tr class="even">
+<td align="left">Relation Type</td>
+<td align="left">13</td>
+</tr>
+</tbody>
+</table></li>
+<li><p><strong>Web server</strong>: <a href="https://biograph.be/">BioGraph</a>.
+<img src="../../images/BioGraph.jpg?width=90pc" alt="BioGraph" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="wordcloud" class="section level2">
+<h2>3.1.4 <strong>WordCloud</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: The WordCloud Plugin is a Cytsocape plugin that generates a word tag cloud from a user-defined node selection, summarizing an attribute of choice. For instance, if selected nodes are proteins, and the string attribute “full protein name” is selected, every string will be broken down into words, which will be plotted on a panel with size proportional to their frequency.</p></li>
+<li><p><strong>Installation</strong>: Download the cytoscape plug-in at <a href="https://apps.cytoscape.org/apps/wordcloud">here</a>.</p></li>
+<li><p><strong>Application</strong>: The WordCloud tutorial can be found at
+<a href="http://baderlab.org/Software/WordCloudPlugin/UserManual" class="uri">http://baderlab.org/Software/WordCloudPlugin/UserManual</a>.</p></li>
+</ul>
+<hr />
+</div>
+<div id="best" class="section level2">
+<h2>3.1.5 <strong>BEST</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: BEST uses a dictionary-based approach to extract biomedical entities from texts, and indexes the entities along with the source texts. The BEST dictionary consists of 12 different databases each covering different subsets of entity types (we will describe it in the Methods section). BEST finds an entity relevant to a query based primarily on the number of co-occurrences between the query terms and the entity in the literature. Besides the co-occurrence, the ranking function of BEST takes into account other various metrics including the authority of journals, the recency of articles, and the term frequency-inverse document frequency (TF-IDF) weighting.</p></li>
+<li><p><strong>Application</strong>: The BEST tutorial can be found at
+<a href="http://best.korea.ac.kr/help/BEST_Guide.pdf" class="uri">http://best.korea.ac.kr/help/BEST_Guide.pdf</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="http://best.korea.ac.kr/">BEST</a>.
+<img src="../../images/BEST.jpg?width=50pc" alt="BEST" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="iptmnet" class="section level2">
+<h2>3.1.6 <strong>iPTMnet</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: iPTMnet is a bioinformatics resource for integrated understanding of protein post-translational modifications (PTMs) in systems biology context. It connects multiple disparate bioinformatics tools and systems text mining, data mining, analysis and visualization tools, and databases and ontologies into an integrated cross-cutting research resource to address the knowledge gaps in exploring and discovering PTM networks.
+<img src="../../images/iPTMent.jpg?width=100pc" alt="iPTMnet" /></p></li>
+<li><p><strong>Installation</strong>: 1.Start R (version “4.2”) and enter:</p></li>
+</ul>
+<pre class="r"><code>Installation: install.packages(&quot;iptmnetr&quot;)</code></pre>
+<p>2.Python package:</p>
+<pre class="python"><code>pip install pyiptmnet</code></pre>
+<ul>
+<li><strong>Application</strong>: The iPTMnet tutorial can be found at
+<a href="https://proteininformationresource.org/pirwww/support/help.shtml" class="uri">https://proteininformationresource.org/pirwww/support/help.shtml</a>.</li>
+</ul>
+<p>The iPTMnetR vignette can be found at <a href="https://udel-cbcb.github.io/iPTMnetR/#/quickstart" class="uri">https://udel-cbcb.github.io/iPTMnetR/#/quickstart</a>.</p>
+<p>The pyiptmnet vignette can be found at <a href="https://udel-cbcb.github.io/pyiPTMnet/#/quickstart" class="uri">https://udel-cbcb.github.io/pyiPTMnet/#/quickstart</a>.</p>
+<ul>
+<li><strong>Web server</strong>: <a href="http://best.korea.ac.kr/">iPTMnet</a>.
+<img src="../../images/iPTMnet2.jpg?width=90pc" alt="iPTMnet1" /></li>
+</ul>
+<hr />
+</div>
+<div id="genes2wordcloud" class="section level2">
+<h2>3.1.7 <strong>Genes2WordCloud</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: Genes2WordCloud is a web-based server application and Java Applet that enables users to create biologically-relevant-content WordClouds.A WordCloud is a visual display of a set of words where the font, size, color or angle can represent some underlying information. A WordCloud is an effective way to visually summarize information about a specific topic of interest. The WordCloud is optimized to maximize the display of the most important terms about a specific topic in the minimum amount of space.</p></li>
+<li><p><strong>Application</strong>: The Genes2WordCloud tutorial can be found at <a href="http://www.maayanlab.net/G2W/help.php" class="uri">http://www.maayanlab.net/G2W/help.php</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="http://www.maayanlab.net/G2W">Genes2WordCloud</a>.</p></li>
+</ul>
+<hr />
+</div>
+<div id="teamtat" class="section level2">
+<h2>3.1.8 <strong>TeamTat</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: TeamTat is a web-based annotation tool (local setup available), equipped to manage team annotation projects engagingly and efficiently. TeamTat is a novel tool for managing multi-user, multi-label document annotation, reflecting the entire production life cycle. Project managers can specify annotation schema for entities and relations and select annotator(s) and distribute documents anonymously to prevent bias. Document input format can be plain text, PDF or BioC (uploaded locally or automatically retrieved from PubMed/PMC), and output format is BioC with inline annotations. TeamTat displays figures from the full text for the annotator’s convenience.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://www.teamtat.org/">TeamTat</a>.
+<img src="../../images/TeamTat.jpg?width=50pc" alt="TeamTat" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="cada" class="section level2">
+<h2>3.1.9 <strong>CADA</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: CADA is a phenotype-based gene prioritization tool that harnesses the most recent information from ClinVar. By this means human phenotype ontology (HPO) terms from case annotations as well as disorder annotations (CADA) are used for achieving superior results particularly for all typical clinical presentations of patients with rare disorders. CADA has been evaluated on a data set of 4714 molecularly confirmed cases and is used in the prospective study TRANSLATE NAMSE.</p></li>
+<li><p><strong>Installation</strong>:The CADA app offers a project GitHub repository at <a href="https://github.com/Chengyao-Peng/CADA">here</a>. CADA can be installed locally with:</p></li>
+</ul>
+<pre class="bash"><code>    $ git clone https://github.com/Chengyao-Peng/CADA.git
+    $ cd CADA
+    $ pip install -e . </code></pre>
+<ul>
+<li><p><strong>Application</strong>: The CADA tutorial can be found at <a href="https://cada.gene-talk.de/instructions" class="uri">https://cada.gene-talk.de/instructions</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://cada.gene-talk.de/webservice">CADA</a>.
+<img src="../../images/CADA.jpg?width=50pc" alt="CADA" /></p></li>
+</ul>
+<hr />
+</div>
+<div id="crossbar" class="section level2">
+<h2>3.1.10 <strong>CROssBAR</strong></h2>
+<ul>
+<li><p><strong>Introduction</strong>: CROssBAR is a comprehensive system that integrates large-scale biological/biomedical data from various resources and stores them in a NoSQL database. CROssBAR is enriched with the deep-learning-based prediction of relationships between numerous data entries, which is followed by the rigorous analysis of the enriched data to obtain biologically meaningful modules. These complex sets of entities and relationships are displayed to users via easy-to-interpret, interactive knowledge graphs within an open-access service. CROssBAR knowledge graphs incorporate relevant genes-proteins, molecular interactions, pathways, phenotypes, diseases, as well as known/predicted drugs and bioactive compounds, and they are constructed on-the-fly based on simple non-programmatic user queries. These intensely processed heterogeneous networks are expected to aid systems-level research, especially to infer biological mechanisms in relation to genes, proteins, their ligands, and diseases.</p></li>
+<li><p><strong>Installation</strong>:The CROssBAR app offers a project GitHub repository at <a href="https://github.com/cansyl/CROssBAR">here</a>.</p></li>
+<li><p><strong>Application</strong>: The CROssBAR tutorial can be found at <a href="https://crossbar.kansil.org/tutorial.php" class="uri">https://crossbar.kansil.org/tutorial.php</a>.</p></li>
+<li><p><strong>Web server</strong>: <a href="https://crossbar.kansil.org/">CROssBAR</a>.
+<img src="../../images/CROssBAR.jpg?width=50pc" alt="CROssBAR" /></p></li>
+</ul>
+<hr />
+</div>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../text-mining/" title="Text Mining"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../parmocogenomics/" title="Prediction of Potential Drugs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1670724083"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1670724083"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1670724083"></script>
+    <script src="../../js/jquery.sticky.js?1670724083"></script>
+    <script src="../../js/featherlight.min.js?1670724083"></script>
+    <script src="../../js/highlight.pack.js?1670724083"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1670724083"></script>
+    <script src="../../js/learn.js?1670724083"></script>
+    <script src="../../js/hugo-learn.js?1670724083"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+
