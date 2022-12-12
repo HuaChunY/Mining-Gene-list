@@ -4,6 +4,8 @@
 
 ![](/images/schematic.png?width=45pc)
 
+### Citation
+Maximize Biological Information: Tracing Clues from Differentially Expressed Genes.
 
 ### Help and Issues
 If you need help or have any issue, please send an email to duohongrui (duohongrui@cqnu.edu.cn) or raise an issue on [github](https://github.com/HuaChunY/Mining-Gene-list).

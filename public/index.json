@@ -11,7 +11,7 @@
 	"title": "Gene Function Annotations",
 	"tags": [],
 	"description": "",
-	"content": "Chapter 1 Gene Function Annotations Discover the basic biological function of genes. "
+	"content": "Chapter 1 Gene Function Annotations Discover the basic biological function of genes. 👨🏻‍💻👨🏻‍💻👨🏻‍💻\n"
 },
 {
 	"uri": "/network-analysis/gene_network/",
@@ -67,7 +67,7 @@
 	"title": "Network and Module Analysis",
 	"tags": [],
 	"description": "",
-	"content": "Chapter 2 Gene-associated network analysis Find meaningful gene modules and construct the networks. "
+	"content": "Chapter 2 Gene-associated network analysis Find meaningful gene modules and construct the networks. 🌐🌐🌐\n"
 },
 {
 	"uri": "/network-analysis/tf_regulation/",
@@ -102,7 +102,7 @@
 	"title": "Text Mining",
 	"tags": [],
 	"description": "",
-	"content": "Chapter 3 Text Mining Mining useful information literally and draw knowledge graphs. "
+	"content": "Chapter 3 Text Mining Mining useful information literally and draw knowledge graphs. 📖📖📖 "
 },
 {
 	"uri": "/conditional-analysis/cellcomunication/",
@@ -130,7 +130,7 @@
 	"title": "Prediction of Potential Drugs",
 	"tags": [],
 	"description": "",
-	"content": "Chapter 4 Parmocogenomics Infer the potential drugs or small molecules which may have impact on disease and phenotype. "
+	"content": "Chapter 4 Parmocogenomics Infer the potential drugs or small molecules which may have impact on disease and phenotype. 💊💊💊 "
 },
 {
 	"uri": "/network-analysis/analysis_visualization/",
@@ -144,21 +144,21 @@
 	"title": "Condition-specific Analysis",
 	"tags": [],
 	"description": "",
-	"content": "Chapter 5 Condition-specific Analysis Additional exploration strategies for specific conditions.\n"
+	"content": "Chapter 5 Condition-specific Analysis Additional exploration strategies for specific conditions. ⏳⏳⏳ "
 },
 {
 	"uri": "/clustering/",
 	"title": "Clustering Analysis",
 	"tags": [],
 	"description": "",
-	"content": "Chapter 6 Clustering Analysis Recognize clusters that show similar patterns. "
+	"content": "Chapter 6 Clustering Analysis Recognize clusters that show similar patterns. 📈📉 "
 },
 {
 	"uri": "/survival-analysis/",
 	"title": "Survival Analysis",
 	"tags": [],
 	"description": "",
-	"content": "Chapter 7 Survival Analysis Uncover the risk significance of certain factors to the survival results. "
+	"content": "Chapter 7 Survival Analysis Uncover the risk significance of certain factors to the survival results. 😷😷😷 "
 },
 {
 	"uri": "/survival-analysis/survival_analysis/",
@@ -172,7 +172,7 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": "DEGMiner is a web-based repository of the analytical tools and online databases for interpreting and mining the biological information of differential expression genes (DEGs), providing researchers with comprehensively alternative downstream strategies of a specific gene list. Moreover, the features and additional information of databases, the installation and environmental deployment of tools and other metatdata are also collected for users to understand preliminarily.\n"
+	"content": "OverView DEGMiner is a web-based repository of the analytical tools and online databases for interpreting and mining the biological information of differential expression genes (DEGs), providing researchers with comprehensively alternative downstream strategies with a specific gene list. Moreover, the features and additional information of databases, the installation and environmental deployment of tools and other metatdata are also collected for users to know preliminarily.\nCitation Maximize Biological Information: Tracing Clues from Differentially Expressed Genes.\nHelp and Issues If you need help or have any issue, please send an email to duohongrui (duohongrui@cqnu.edu.cn) or raise an issue on github.\n"
 },
 {
 	"uri": "/categories/",

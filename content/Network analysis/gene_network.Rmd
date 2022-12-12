@@ -6,7 +6,6 @@ output:
 weight: 1
 ---
 
-**Breaking**: 
 
 ---
 

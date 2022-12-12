@@ -6,9 +6,6 @@ output:
 weight: 3
 ---
 
-**Breaking**: 
-
-
 ---
 
 ## 5.3.1 **slingshot**

@@ -6,9 +6,6 @@ output:
 weight: 2
 ---
 
-**Breaking**: 
-
-
 ---
 
 ## 5.2.1 **CIERSORT**

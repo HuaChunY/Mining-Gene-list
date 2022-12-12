@@ -6,8 +6,6 @@ output:
 weight: 4
 ---
 
-**Breaking**: 
-
 ---
 
 **cell-cell communication database and tools**
