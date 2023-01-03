@@ -9,4 +9,4 @@ weight: 6
 
 # Clustering Analysis
 Recognize clusters that show similar patterns. 📈📉
-![](/images/clustering.jpeg?width=35pc)
+![](/images/Clustering.gif?width=50pc)

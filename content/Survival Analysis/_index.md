@@ -9,4 +9,4 @@ weight: 7
 
 # Survival Analysis
 Uncover the risk significance of certain factors to the survival results. 😷😷😷
-![](/images/survival.jpeg?width=35pc)
+![](/images/survival.jpg?width=40pc)

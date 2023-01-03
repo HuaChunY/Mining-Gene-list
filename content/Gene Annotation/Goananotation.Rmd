@@ -83,6 +83,7 @@ p
 - **Web server**: [agriGO](http://systemsbiology.cpolar.cn/agriGOv2/index.php).
 ![agriGO](/images/agriGO.jpeg?width=50pc)
 
+
 ---
 
 ## 1.2.4 **UniProtKB**
@@ -97,6 +98,7 @@ SPECIES: 250
 ![UniProtKB](/images/uniprot.jpg?width=50pc)
  
 ---
+
 ## 1.2.5 **PANTHER**
 
 - **Introduction**: The PANTHER (Protein ANalysis THrough Evolutionary Relationships) Classification System was designed to classify proteins (and their genes) in order to facilitate high-throughput analysis. The core of PANTHER is a comprehensive, annotated “library” of gene family phylogenetic trees. All nodes in the tree have persistent identifiers that are maintained between versions of PANTHER, providing a stable substrate for annotations of protein properties like subfamily and function. Each phylogenetic tree is used to annotate each protein member of the family by its:
@@ -119,3 +121,48 @@ Pathways (curated by PANTHER and by Reactome)
 
 - **Web server**: [PANTHER](http://www.pantherdb.org/).
 ![PANTHER](/images/PANTHER.jpg?width=50pc)
+
+---
+
+## 1.2.6 **GOrilla**
+
+- **Introduction**: GOrilla is a web-based application that identifies enriched GO terms in ranked lists of genes, without requiring the user to provide explicit target and background sets. This is particularly useful in many typical cases where genomic data may be naturally represented as a ranked list of genes (e.g. by level of expression or of differential expression).GOrilla employs a flexible threshold statistical approach to discover GO terms that are significantly enriched at the top of a ranked gene list.
+
+- **Web server**: [GOrilla](http://cbl-gorilla.cs.technion.ac.il/).
+![GOrilla](/images/GOrilla.jpg?width=60pc)
+
+---
+
+## 1.2.7 **WEGO 2.0**
+
+- **Introduction**: WEGO uses the GO annotation results as input. Based on GO’s standardized DAG (Directed Acyclic Graph) structured vocabulary system, the number of genes corresponding to each GO ID is calculated and shown in a graphical format. WEGO 2.0 updates have targeted four aspects, aiming to provide a more efficient and upto-date approach for comparative genomic analyses.
+
+- **Web server**: [WEGO 2.0](https://wego.genomics.cn/).
+![WEGO 2.0](/images/WEGO.jpg?width=70pc)
+
+---
+
+## 1.2.8 **GOEAST**
+
+- **Introduction**: Gene Ontology Enrichment Analysis Software Toolkit (GOEAST), an easy-to-use web-based toolkit that identifies statistically over- represented GO terms within given gene sets. Com- pared with available GO analysis tools, GOEAST has the following improved features: (i) GOEAST displays enriched GO terms in graphical format according to their relationships in the hierarchical tree of each GO category (biological process, molecular function and cellular component), therefore, provides better understanding of the correlations among enriched GO terms; (ii) GOEAST supports analysis for data from various sources (probe or probe set IDs of Affymetrix, Illumina, Agilent or customized micro- arrays, as well as different gene identifiers) and multiple species (about 60 prokaryote and eukaryote species); (iii) One unique feature of GOEAST is to allow cross comparison of the GO enrichment status of multiple experiments to identify functional corre- lations among them.
+
+- **Web server**: [GOEAST](http://omicslab.genetics.ac.cn/GOEAST/).
+![GOEAST](/images/GOEAST.jpg?width=60pc)
+
+---
+
+## 1.2.9 **ShinyGO**
+
+- **Introduction**: ShinyGO based on a large annotation database derived from Ensembl and STRING-db for 59 plant, 256 animal, 115 archeal and 1678 bacterial species. ShinyGO’s novel features include graphical visualization of enrichment results and gene characteristics, and application program interface ac- cess to KEGG and STRING for the retrieval of pathway diagrams and protein–protein interaction networks.
+
+- **Web server**: [ShinyGO](http://bioinformatics.sdstate.edu/go/).
+![ShinyGO](/images/ShinyGO.jpg?width=60pc)
+
+---
+
+## 1.2.9 **GOTermFinder**
+
+- **Introduction**: GOTermFinder comprises a set of object- oriented Perl modules for accessing Gene Ontology (GO) information and evaluating and visualizing the collective annotation of a list of genes to GO terms. It can be used to draw conclusions from microarray and other bio- logical data, calculating the statistical significance of each annotation. GO::TermFinder can be used on any system on which Perl can be run, either as a command line applic- ation, in single or batch mode, or as a web-based CGI script.
+
+- **Web server**: [GOTermFinder](https://www.yeastgenome.org/goTermFinder).
+![GOTermFinder](/images/GO_TermFinder.jpg?width=60pc)
