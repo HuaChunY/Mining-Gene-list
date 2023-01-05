@@ -16,6 +16,8 @@
   </url><url>
     <loc>/conditional-analysis/spatialandtemporal/</loc>
   </url><url>
+    <loc>/survival-analysis/survival_analysis/</loc>
+  </url><url>
     <loc>/conditional-analysis/cellcomposition/</loc>
   </url><url>
     <loc>/gene-annotation/goananotation/</loc>
@@ -47,8 +49,6 @@
     <loc>/clustering/</loc>
   </url><url>
     <loc>/survival-analysis/</loc>
-  </url><url>
-    <loc>/survival-analysis/survival_analysis/</loc>
   </url><url>
     <loc>/</loc>
     <priority>0</priority>
