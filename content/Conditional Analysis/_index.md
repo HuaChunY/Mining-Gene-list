@@ -9,4 +9,4 @@ weight: 5
 
 # Condition-specific Analysis
 Additional exploration strategies for specific conditions. ⏳⏳⏳
-![](/images/condition.jpeg?width=35pc)
+![](/images/condition.png?width=30pc)

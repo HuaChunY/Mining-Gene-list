@@ -9,4 +9,4 @@ weight: 3
 
 # Text Mining
 Mining useful information literally and draw knowledge graphs. 📖📖📖
-![](/images/textmining.png?width=45pc)
+![](/images/textmining.png?width=35pc)

@@ -14,30 +14,30 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ## 6.1.1 **Nbclust**
 
-- **Introduction**: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clus- tering scheme from different results to the user. In addition, it provides a function to perform k-means and hierarchical clustering with different distance measures and aggre- gation methods. Any combination of validation indices and clustering methods can be requested in a single function call. This enables the user to simultaneously evaluate sev- eral clustering schemes while varying the number of clusters, to help determining the most appropriate number of clusters for the data set of interest.
+**Introduction**: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user. In addition, it provides a function to perform k-means and hierarchical clustering with different distance measures and aggregation methods. Any combination of validation indices and clustering methods can be requested in a single function call. This enables the user to simultaneously evaluate several clustering schemes while varying the number of clusters, to help determining the most appropriate number of clusters for the data set of interest.
 
-- **Installation**: To install this package, start R (version "4.2") and enter:
+**Installation**: To install this package, start R (version "4.2") and enter:
 ```{r}
 install.packages(Nbclust)
 ```
 
-- **Application**: The Nbclust vignette can be found at <https://cran.r-project.org/web/packages/NbClust/NbClust.pdf>.
+**Application**: The Nbclust vignette can be found at <https://cran.r-project.org/web/packages/NbClust/NbClust.pdf>.
 
 ---
 
 ## 6.1.2 **ClustVis**
 
-- **Introduction**: This web tool allows users to upload their own data and easily create Principal Component Analysis (PCA) plots and heatmaps. Data can be uploaded as a file or by copy-pasteing it to the text box. Data format is shown under "Help" tab. 
+**Introduction**: This web tool allows users to upload their own data and easily create Principal Component Analysis (PCA) plots and heatmaps. Data can be uploaded as a file or by copy-pasteing it to the text box. Data format is shown under "Help" tab. 
 
   <center><b>Data Source Statistics</b></center>
   | Type           | Number           | 
-  | :------------- | :--------------- | 
+  | :------------| :--------------| 
   | species        | 9 | 
   | Data sources   | 22 | 
   | Network        | 7 | 
   
   
-- **Installation**:To use the Docker image, you need to have Docker installed. Then use the following code:
+**Installation**:To use the Docker image, you need to have Docker installed. Then use the following code:
 ```{bash}
 sudo docker pull taunometsalu/clustvis
 mkdir ~/customClustvis/
@@ -61,78 +61,78 @@ install_github("taunometsalu/clustvis/Rpackage", build_vignettes = TRUE)
 vignette("vignette", "clustvis")
 ```
  
-- **Application**: The ClustVis tutorial can be found at
+**Application**: The ClustVis tutorial can be found at
 <https://biit.cs.ut.ee/clustvis/>
              
-- **Web server**: [ClustVis](https://biit.cs.ut.ee/clustvis/).
+**Web server**: [ClustVis](https://biit.cs.ut.ee/clustvis/).
 ![ClustVis](/images/ClustVis.jpg?width=50pc) 
 
 ---
 
 ## 6.1.3 **Medusa**
 
-- **Introduction**: Medusa3 is a java standalone application for visualization and clustering analysis of biological networks in 2D. It is highly interactive and it supports weighted and multi-edged graphs where each edge between two bioentities can represent a different biological concept. Comparing to previous versions, it is currently enriched with a variety of layout and clustering methods for more intuitive visualizations. It is easy to integrate with web application since it is offered as an applet. 
+**Introduction**: Medusa3 is a java standalone application for visualization and clustering analysis of biological networks in 2D. It is highly interactive and it supports weighted and multi-edged graphs where each edge between two bioentities can represent a different biological concept. Comparing to previous versions, it is currently enriched with a variety of layout and clustering methods for more intuitive visualizations. It is easy to integrate with web application since it is offered as an applet. 
 
   <center><b>Data Source Statistics</b></center>
   | Type           | Number           | 
-  | :------------- | :--------------- | 
+  | :------------| :--------------| 
   | species        | 9 | 
   | Data sources   | 22 | 
   | Network        | 7 | 
   
-- **Installation**:The latest version 3.0 can be downloaded directly from here.
+**Installation**:The latest version 3.0 can be downloaded directly from here.
 (https://docs.google.com/uc?id=0B-FSkXfyY2AFZTUxYWIxMTgtMjJiYy00NTMyLTlmMzUtZDdiZDFlZGRhYjUw&export=download&hl=en)
 
-- **Application**: The Medusa tutorial can be found at
+**Application**: The Medusa tutorial can be found at
 <https://sites.google.com/site/medusa3visualization/tutorial>
              
-- **Web server**: [Medusa](https://sites.google.com/site/medusa3visualization/).
+**Web server**: [Medusa](https://sites.google.com/site/medusa3visualization/).
 ![Medusa](/images/Medusa.jpg?width=50pc)
  
 ---
 
 ## 6.1.4 **wcd**
 
-- **Introduction**: wcd is an open source tool for clustering expressed sequence tags. It implements matching using either d2 or edit distance, which provides sensitive matching. Heuristics speed up the clustering process. wcd parallelises well under MPI and also provides Pthreads clustering. wcd has a very compact memory representation which means that large files can be clustered on a single processor (and it can run quite happily without MPI or Pthreads headers or libraries being available).  
+**Introduction**: wcd is an open source tool for clustering expressed sequence tags. It implements matching using either d2 or edit distance, which provides sensitive matching. Heuristics speed up the clustering process. wcd parallelises well under MPI and also provides Pthreads clustering. wcd has a very compact memory representation which means that large files can be clustered on a single processor (and it can run quite happily without MPI or Pthreads headers or libraries being available).  
 
-- **Application**: The wcd tutorial can be found at
+**Application**: The wcd tutorial can be found at
 <https://code.google.com/archive/about>.
 
-- **Web server**: [wcd](https://code.google.com/archive/p/wcdest/).
+**Web server**: [wcd](https://code.google.com/archive/p/wcdest/).
 ![wcd](/images/wcd.jpg?width=50pc)
  
 ---
 
 ## 6.1.5 **FUAT** 
 
-- **Introduction**: A desktop software, namely FUAT, is developed to analyze, explore and visualize different aspects of obtained fuzzy clusters which are segmented by fuzzy c-means algorithm. Moreover, to obtain and inform optimal cluster count, FUAT is equipped with Expectation Maximization algorithm. 
+**Introduction**: A desktop software, namely FUAT, is developed to analyze, explore and visualize different aspects of obtained fuzzy clusters which are segmented by fuzzy c-means algorithm. Moreover, to obtain and inform optimal cluster count, FUAT is equipped with Expectation Maximization algorithm. 
   
-- **Installation**: desktop software: <10.1016/j.eswa.2012.05.038>
+**Installation**: desktop software: <10.1016/j.eswa.2012.05.038>
 
 ---
 
 ## 6.1.6 **hiplot**
 
-- **Introduction**: we newly developed a pool of biomedical visualization and modeling functions (240+), and proposed a scalable and emerging one-stop web service, Hiplot, with versatile task plugins, such as basic statistics, regression, clustering, genomics, transcriptomics, time series, meta-analysis, and risk models. It provides more simple web and command-line interfaces compared with other similar platforms, and is supported and maintained by the openbiox open source community. 
+**Introduction**: we newly developed a pool of biomedical visualization and modeling functions (240+), and proposed a scalable and emerging one-stop web service, Hiplot, with versatile task plugins, such as basic statistics, regression, clustering, genomics, transcriptomics, time series, meta-analysis, and risk models. It provides more simple web and command-line interfaces compared with other similar platforms, and is supported and maintained by the openbiox open source community. 
 
  <center><b>Data Source Statistics</b></center>
   | Type           | Number           | 
-  | :------------- | :--------------- | 
+  | :------------| :--------------| 
   | species        | 9 | 
   | Data sources   | 22 | 
   | Network        | 7 | 
   
-- **Application**: The hiplot tutorial can be found at <https://hiplot-academic.com/docs/>
-- **Web server**: [hiplot](https://hiplot-academic.com/).
+**Application**: The hiplot tutorial can be found at <https://hiplot-academic.com/docs/>
+**Web server**: [hiplot](https://hiplot-academic.com/).
 ![hiplot](/images/hiplot.jpg?width=50pc)
 
 ---
 
 ## 6.1.7 **cola**
 
-- **Introduction**: The cola package provides a general framework for subgroup classification by consensus partitioning. It has the following features: 1. It modularizes the consensus partitioning processes that various methods can be easily integrated. 2. It provides rich visualizations for interpreting the results. 3. It allows running multiple methods at the same time and provides functionalities to straightforward compare results. 4. It provides a new method to extract features which are more efficient to separate subgroups. 5. It automatically generates detailed reports for the complete analysis. 6. It allows applying consensus partitioning in a hierarchical manner. 
+**Introduction**: The cola package provides a general framework for subgroup classification by consensus partitioning. It has the following features: 1. It modularizes the consensus partitioning processes that various methods can be easily integrated. 2. It provides rich visualizations for interpreting the results. 3. It allows running multiple methods at the same time and provides functionalities to straightforward compare results. 4. It provides a new method to extract features which are more efficient to separate subgroups. 5. It automatically generates detailed reports for the complete analysis. 6. It allows applying consensus partitioning in a hierarchical manner. 
 
-- **Installation**:To install this package, start R (version "4.2") and enter:
+**Installation**:To install this package, start R (version "4.2") and enter:
 ```{r}
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
@@ -140,5 +140,5 @@ if (!require("BiocManager", quietly = TRUE))
 BiocManager::install("cola")
 ```
 
-- **Application**: The cola vignette can be found at
+**Application**: The cola vignette can be found at
 <https://bioconductor.org/packages/release/bioc/vignettes/cola/inst/doc/cola.html>

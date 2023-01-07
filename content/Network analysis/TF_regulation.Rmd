@@ -15,10 +15,10 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ## 2.2.1 **JASPAR**
 
-- **Introduction**: JASPAR is a regularly maintained open-access database storing manually curated transcription factors (TF) binding profiles as position frequency matrices (PFMs). PFMs summarize occurrences of each nucleotide at each position in a set of observed TF-DNA interactions. PFMs can be transformed to probabilistic or energistic models to construct position weight matrices (PWMs) or position-specific scoring matrices (PSSMs), which can be used to scan any DNA sequence to predict TF binding sites (TFBSs). The JASPAR database provides TFBSs predicted using the profiles in the CORE collection.
+**Introduction**: JASPAR is a regularly maintained open-access database storing manually curated transcription factors (TF) binding profiles as position frequency matrices (PFMs). PFMs summarize occurrences of each nucleotide at each position in a set of observed TF-DNA interactions. PFMs can be transformed to probabilistic or energistic models to construct position weight matrices (PWMs) or position-specific scoring matrices (PSSMs), which can be used to scan any DNA sequence to predict TF binding sites (TFBSs). The JASPAR database provides TFBSs predicted using the profiles in the CORE collection.
 ![JASPAR1](/images/JASPAR1.jpg?width=50pc)
 
-- **Installation**: Different releases of JASPAR can also be accessed through Bioconductor data packages. Currently four JASPAR releases are available, and to install those packages, start R (version "4.2") and enter:
+**Installation**: Different releases of JASPAR can also be accessed through Bioconductor data packages. Currently four JASPAR releases are available, and to install those packages, start R (version "4.2") and enter:
  + JASPAR2020: 
 ```{r}
 if (!require("BiocManager", quietly = TRUE))
@@ -48,35 +48,35 @@ if (!require("BiocManager", quietly = TRUE))
 BiocManager::install("JASPAR2014")
 ```
 
-- **Application**: The JASPAR tutorial can be found at<https://jaspar.genereg.net/docs/>.
+**Application**: The JASPAR tutorial can be found at<https://jaspar.genereg.net/docs/>.
  The JASPAR2020 vignette can be found at <http://bioconductor.org/packages/release/data/annotation/vignettes/JASPAR2020/inst/doc/JASPAR2020.html>.
  The JASPAR2018 vignette can be found at <http://bioconductor.org/packages/release/data/annotation/manuals/JASPAR2018/man/JASPAR2018.pdf>.
  The JASPAR2016 vignette can be found at <http://bioconductor.org/packages/release/data/experiment/manuals/JASPAR2016/man/JASPAR2016.pdf>.
  The JASPAR2016 vignette can be found at <http://bioconductor.org/packages/release/data/experiment/manuals/JASPAR2014/man/JASPAR2014.pdf. 
 
-- **Web server**: [JASPAR](https://jaspar.genereg.net/).
+**Web server**: [JASPAR](https://jaspar.genereg.net/).
 ![JASPAR](/images/JASPAR.jpg?width=50pc)
 
 ---
 
 ## 2.2.2 **AnimalTFDB**
 
-- **Introduction**: AnimalTFDB is a comprehensive database including classification and annotation of genome-wide transcription factors (TFs) and transcription cofactors in 183 animal genomes. In AnimalTFDB v4.0, there are total 270k TFs which are further classified into 73 families and six categories based on their DNA-binding domain (DBD). Meanwhile, there are also 150k cofactors classified into 82 families and six categories.
+**Introduction**: AnimalTFDB is a comprehensive database including classification and annotation of genome-wide transcription factors (TFs) and transcription cofactors in 183 animal genomes. In AnimalTFDB v4.0, there are total 270k TFs which are further classified into 73 families and six categories based on their DNA-binding domain (DBD). Meanwhile, there are also 150k cofactors classified into 82 families and six categories.
 
  <center><b>Database information</b></center> 
   | Type             | Number           | 
-  | :--------------- | :--------------- | 
+  | :--------------| :--------------| 
   | Species          | 183     |
   | TFs              | 2700000 |
   | TF Cofactors     | 1500000 |
   | TF Families         | 73|
   | TF Cofactor Families| 83|
- ![AnimalTFDB](/images/AnimalTFDB.png?width=40pc)
- 
-- **Application**: The AnimalTFDB tutorial can be found at<http://bioinfo.life.hust.edu.cn/AnimalTFDB4/static/site/>.
 
-- **Web server**: [AnimalTFDB](http://bioinfo.life.hust.edu.cn/AnimalTFDB4/#/).
-![AnimalTFDB1](/images/AnimalTFDB1.jpg?width=90pc)
+![AnimalTFDB](/images/AnimalTFDB.png?width=30pc)
+**Application**: The AnimalTFDB tutorial can be found at<http://bioinfo.life.hust.edu.cn/AnimalTFDB4/static/site/>.
+
+**Web server**: [AnimalTFDB](http://bioinfo.life.hust.edu.cn/AnimalTFDB4/#/).
+![AnimalTFDB1](/images/AnimalTFDB1.jpg?width=50pc)
 
 ---
 
@@ -88,10 +88,10 @@ link to SigCom LINCS
 
 ## 2.2.4 **RegNetwork**
 
-- **Introduction**: RegNetwork is a database of transcriptional and posttranscriptional regulatory networks in human and mouse. TF and miRNA are two major regulators controlling gene expression. RegNetwork collects the knowledge-based regulatory relationships, as well as some potentially regulatory relationships between the two regulators and targets. It provides a platform of depositing the known and predicted gene regulations in the transcriptional and posttranscriptional levels simultaneously. The knowledge-derived regulatory networks is expected to be greatly beneficial for identifying critical regulatory programs in various context-specific conditions.
+**Introduction**: RegNetwork is a database of transcriptional and posttranscriptional regulatory networks in human and mouse. TF and miRNA are two major regulators controlling gene expression. RegNetwork collects the knowledge-based regulatory relationships, as well as some potentially regulatory relationships between the two regulators and targets. It provides a platform of depositing the known and predicted gene regulations in the transcriptional and posttranscriptional levels simultaneously. The knowledge-derived regulatory networks is expected to be greatly beneficial for identifying critical regulatory programs in various context-specific conditions.
 ![RegNetwork1](/images/RegNetwork1.jpg?width=50pc)
 
-- **Application**: The AnimalTFDB tutorial can be found at <https://regnetworkweb.org/about.jsp>.
+**Application**: The AnimalTFDB tutorial can be found at <https://regnetworkweb.org/about.jsp>.
  
-- **Web server**: [RegNetwork](https://regnetworkweb.org/).
+**Web server**: [RegNetwork](https://regnetworkweb.org/).
 ![RegNetwork](/images/RegNetwork.jpg?width=70pc)

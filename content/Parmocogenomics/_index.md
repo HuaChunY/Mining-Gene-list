@@ -9,4 +9,4 @@ weight: 4
 
 # Parmocogenomics
 Infer the potential drugs or small molecules which may have impact on disease and phenotype. 💊💊💊
-![](/images/drug.png?width=40pc)
+![](/images/drug.png?width=30pc)

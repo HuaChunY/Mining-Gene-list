@@ -10,63 +10,63 @@ weight: 1
 
 ## 5.1.1 **GEPIA**
 
-- **Introduction**: GEPIA is a newly developed interactive web server for analyzing the RNA sequencing expression data of 9,736 tumors and 8,587 normal samples from the TCGA and the GTEx projects, using a standard processing pipeline. GEPIA provides customizable functions such as tumor/normal differential expression analysis, profiling according to cancer types or pathological stages, patient survival analysis, similar gene detection, correlation analysis and dimensionality reduction analysis. Meanwhile, the GEPIA2021, a standalone extension with multiple deconvolution-based analysis for GEPIA. We deconvolute each sample tool in TCGA/GTEx with the bioinformatics tools CIBERSORT, EPIC and quanTIseq. 
+**Introduction**: GEPIA is a newly developed interactive web server for analyzing the RNA sequencing expression data of 9,736 tumors and 8,587 normal samples from the TCGA and the GTEx projects, using a standard processing pipeline. GEPIA provides customizable functions such as tumor/normal differential expression analysis, profiling according to cancer types or pathological stages, patient survival analysis, similar gene detection, correlation analysis and dimensionality reduction analysis. Meanwhile, the GEPIA2021, a standalone extension with multiple deconvolution-based analysis for GEPIA. We deconvolute each sample tool in TCGA/GTEx with the bioinformatics tools CIBERSORT, EPIC and quanTIseq. 
 ![GEPIA](/images/GEPIA.jpg?width=50pc)
 
-- **Web server**: [GEPIA](http://gepia.cancer-pku.cn/index.html)
+**Web server**: [GEPIA](http://gepia.cancer-pku.cn/index.html)
 
 ---
 
 ## 5.1.2 **HumanBase-ExPecto**
 
-- **Introduction**: ExPecto is a framework for ab initio sequence-based prediction of mutation gene expression effects and disease risks. With this web interface, we provide an explorer of tissue-specific expression effect predictions. The current release contains all single nucleotide substitutions within 1kb to the representative TSS of a gene and all 1000 Genomes variants that passed a minimum predicted effect threshold (>0.3 log fold-change in any tissue). ExPecto uses exponential basis function-based linear models upon deep convolutional network model of chromatin effects. ExPecto predicts expression levels directly from sequence and is capable of predicting effects of sequence variations.
+**Introduction**: ExPecto is a framework for ab initio sequence-based prediction of mutation gene expression effects and disease risks. With this web interface, we provide an explorer of tissue-specific expression effect predictions. The current release contains all single nucleotide substitutions within 1kb to the representative TSS of a gene and all 1000 Genomes variants that passed a minimum predicted effect threshold (>0.3 log fold-change in any tissue). ExPecto uses exponential basis function-based linear models upon deep convolutional network model of chromatin effects. ExPecto predicts expression levels directly from sequence and is capable of predicting effects of sequence variations.
 ![ExPecto](/images/ExPecto2.jpg?width=50pc)
 
-- **Web server**: [ExPecto](http://gepia.cancer-pku.cn/index.html)
+**Web server**: [ExPecto](http://gepia.cancer-pku.cn/index.html)
 ![ExPecto2](/images/ExPecto.jpg?width=50pc)
 
 ---
 
 ## 5.1.3 **Expression Atlas**
 
-- **Introduction**: Expression Atlas is an open science resource that gives users a powerful way to find information about gene and protein expression. Expression Atlas provide the scientific community with freely available information on the abundance and localisation of RNA (and proteins) across species and biological conditions such as different tissues, cell types, developmental stages and diseases among others.
+**Introduction**: Expression Atlas is an open science resource that gives users a powerful way to find information about gene and protein expression. Expression Atlas provide the scientific community with freely available information on the abundance and localisation of RNA (and proteins) across species and biological conditions such as different tissues, cell types, developmental stages and diseases among others.
 ![ExpressionAtlas](/images/ExpressionAtlas2.png?width=50pc)
 
-- **Web server**: [Expression Atlas](http://www.ebi.ac.uk/gxa)
+**Web server**: [Expression Atlas](http://www.ebi.ac.uk/gxa)
 ![ExpressionAtlas2](/images/ExpressionAtlas.jpg?width=50pc)
 
 ---
 
 ## 5.1.4 **ToppCluster**
 
-- **Introduction**:  ToppCluster is a tool for performing multi-cluster gene functional enrichment analyses on large scale data (microarray experiments with many time-points, cell-types, tissue-types, etc.). ToppCluster facilitates co-analysis of multiple gene lists and yields as output a rich functional map showing the shared and list-specific functional features. The output can be visualized in tabular, heatmap or network formats using built-in options as well as third-party software. ToppCluster uses the hypergeometric test to obtain functional enrichment achieved via the gene list enrichment analysis option available in ToppGene
+**Introduction**:  ToppCluster is a tool for performing multi-cluster gene functional enrichment analyses on large scale data (microarray experiments with many time-points, cell-types, tissue-types, etc.). ToppCluster facilitates co-analysis of multiple gene lists and yields as output a rich functional map showing the shared and list-specific functional features. The output can be visualized in tabular, heatmap or network formats using built-in options as well as third-party software. ToppCluster uses the hypergeometric test to obtain functional enrichment achieved via the gene list enrichment analysis option available in ToppGene
 
-- **Web server**: [ToppCluster](http://toppcluster.cchmc.org)
+**Web server**: [ToppCluster](http://toppcluster.cchmc.org)
 ![ToppCluster](/images/ToppCluster.jpg?width=50pc)
 
 ---
 
 ## 5.1.5 **GENT2**
 
-- **Introduction**:  Gene Expression database of Normal and Tumor tissues 2 (GENT2) is an updated version of GENT, which has provided a user-friendly search platform for gene expression patterns across different normal and tumor tissues compiled from public gene expression data sets. We refactored GENT2 with recent technologies such as Apache Lucene indexing for fast search and Google Web Toolkit (GWT) framework for a user-friendly web interface. Now, GENT2 contains more than 68,000 samples and has several new useful functions. First, GENT2 now provides gene expression across 72 different tissues compared to 57 in GENT. Second, with increasing importance of tumor subtypes, GENT2 provides an option to study the differential expression and its prognostic significance based on tumor subtypes. Third, whenever available, GENT2 provides prognostic information of a gene of interest. Fourth, GENT2 provides a meta-analysis of survival information to provide users more reliable prognostic value of a gene of interest. 
+**Introduction**:  Gene Expression database of Normal and Tumor tissues 2 (GENT2) is an updated version of GENT, which has provided a user-friendly search platform for gene expression patterns across different normal and tumor tissues compiled from public gene expression data sets. We refactored GENT2 with recent technologies such as Apache Lucene indexing for fast search and Google Web Toolkit (GWT) framework for a user-friendly web interface. Now, GENT2 contains more than 68,000 samples and has several new useful functions. First, GENT2 now provides gene expression across 72 different tissues compared to 57 in GENT. Second, with increasing importance of tumor subtypes, GENT2 provides an option to study the differential expression and its prognostic significance based on tumor subtypes. Third, whenever available, GENT2 provides prognostic information of a gene of interest. Fourth, GENT2 provides a meta-analysis of survival information to provide users more reliable prognostic value of a gene of interest. 
 
-- **Web server**: [GENT2](http://gent2.appex.kr)
-![GENT2](/images/GENT2.jpg?width=80pc)
+**Web server**: [GENT2](http://gent2.appex.kr)
+![GENT2](/images/GENT2.jpg?width=60pc)
 
 ---
 
 ## 5.1.6 **TISSUES**
 
-- **Introduction**:  TISSUES is a weekly updated web resource (including four species, human, mouse, rat and pig) that integrates evidence on tissue expression from manually curated literature, proteomics and transcriptomics screens, and automatic text mining. TISSUES map all evidence to common protein identifiers and Brenda Tissue Ontology terms, and further unify it by assigning confidence scores that facilitate comparison of the different types and sources of evidence.
+**Introduction**:  TISSUES is a weekly updated web resource (including four species, human, mouse, rat and pig) that integrates evidence on tissue expression from manually curated literature, proteomics and transcriptomics screens, and automatic text mining. TISSUES map all evidence to common protein identifiers and Brenda Tissue Ontology terms, and further unify it by assigning confidence scores that facilitate comparison of the different types and sources of evidence.
 
-- **Web server**: [TISSUES](https://tissues.jensenlab.org/Search)
+**Web server**: [TISSUES](https://tissues.jensenlab.org/Search)
 
 ---
 
 ## 5.1.7 **TissueEnrich**
 
-- **Introduction**: R package for tissue-specific gene enrichment. TissueEnrich defines tissue-specific genes using RNA-Seq data from the HPA, GTEx, and mouse ENCODE. In order to make the tissue-specific gene calculations more robust, we only used tissues that had ≥2 biological replicates. TissueEnrich enables users to provide the background genes for carrying out tissue-specific gene enrichment. In this case, instead of using all the genes in the dataset, a background gene set is being used to carry out the enrichment analysis. It should be noted that the background gene set must have all the genes of the input gene set. 
-- **Installation**: To install this package, start R (version 3.6 or higher) and enter:
+**Introduction**: R package for tissue-specific gene enrichment. TissueEnrich defines tissue-specific genes using RNA-Seq data from the HPA, GTEx, and mouse ENCODE. In order to make the tissue-specific gene calculations more robust, we only used tissues that had ≥2 biological replicates. TissueEnrich enables users to provide the background genes for carrying out tissue-specific gene enrichment. In this case, instead of using all the genes in the dataset, a background gene set is being used to carry out the enrichment analysis. It should be noted that the background gene set must have all the genes of the input gene set. 
+**Installation**: To install this package, start R (version 3.6 or higher) and enter:
 ```{r eval=FALSE}
 BiocManager::install("TissueEnrich")
 ```
@@ -77,28 +77,28 @@ library(devtools)
 install_github("Tuteja-Lab/TissueEnrich")
 ```
 
-- **Application**: More examples can download from [here](https://bioconductor.org/packages/3.7/bioc/vignettes/TissueEnrich/inst/doc/TissueEnrich.html).
+**Application**: More examples can download from [here](https://bioconductor.org/packages/3.7/bioc/vignettes/TissueEnrich/inst/doc/TissueEnrich.html).
 
-- **Web server**: [TissueEnrich](http://tissueenrich.gdcb.iastate.edu/)
-![TissueEnrich](/images/TissueEnrich.jpeg?width=60pc)
+**Web server**: [TissueEnrich](http://tissueenrich.gdcb.iastate.edu/)
+![TissueEnrich](/images/TissueEnrich.jpeg?width=50pc)
 
 ---
 
 ## 5.1.8 **ORGANizer**
 
-- **Introduction**: Gene ORGANizer is a tool designed to allow users to analyze the relationships between genes and organs. The tool contains annotations for over 7,000 genes, which are linked to ~150 body parts, divided into 4 levels of hierarchy: organs (e.g., stomach), systems (e.g., digestive), regions (e.g., abdomen) and germ layers (e.g., endoderm). Users can either Browse a specific gene to see which body parts the gene affects, or enter a list of genes in ORGANize to find out what body parts are enriched or depleted within the list. Results are displayed in an interactive user-friendly body map visualization and in a summary table. 
+**Introduction**: Gene ORGANizer is a tool designed to allow users to analyze the relationships between genes and organs. The tool contains annotations for over 7,000 genes, which are linked to ~150 body parts, divided into 4 levels of hierarchy: organs (e.g., stomach), systems (e.g., digestive), regions (e.g., abdomen) and germ layers (e.g., endoderm). Users can either Browse a specific gene to see which body parts the gene affects, or enter a list of genes in ORGANize to find out what body parts are enriched or depleted within the list. Results are displayed in an interactive user-friendly body map visualization and in a summary table. 
 
-- **Web server**: [ORGANizer](http://geneorganizer.huji.ac.il/)
-![ORGANizer](/images/ORGANizer.jpg?width=80pc)
-![ORGANizer2](/images/ORGANizer2.png?width=80pc)
+**Web server**: [ORGANizer](http://geneorganizer.huji.ac.il/)
+![ORGANizer](/images/ORGANizer.jpg?width=60pc)
+![ORGANizer2](/images/ORGANizer2.png?width=60pc)
 
 ---
 
 ## 5.1.9 **deTS**
 
-- **Introduction**: An R package conduct tissue-specific enrichment analysis with two built-in reference panels. Statistical methods are developed and implemented for detecting tissue-specific genes and for enrichment test of different forms of query data
+**Introduction**: An R package conduct tissue-specific enrichment analysis with two built-in reference panels. Statistical methods are developed and implemented for detecting tissue-specific genes and for enrichment test of different forms of query data
 
-- **Installation**: To install this package, start R (version 3.6 or higher) and enter:
+**Installation**: To install this package, start R (version 3.6 or higher) and enter:
 ```{r eval=FALSE}
 install.packages("deTS")
 ```
@@ -113,28 +113,28 @@ Then open the R:
 install.packages("deTS_1.0.tar.gz")
 ```
 
-- **Application**: More examples can download from [here](https://github.com/bsml320/deTS).
+**Application**: More examples can download from [here](https://github.com/bsml320/deTS).
 
 ---
 
 ## 5.1.10 **WebCSEA**
 
-- **Introduction**: WebCSEA (Web-based Cell-type Specific Enrichment Analysis of Genes) provides a gene set query among a systematic collection of tissue-cell-type expression signatures. For each query, we will generate cell-type-specific enrichment analysis (CSEA) raw p-value, combined p-value by permutation-based method, genes shared between queried gene list and tissue-cell-type signatures, heatmap that interactively displays the cell-type specificity across 1,355 human tissue-cell types (TCs), summary of cell-type specificity by human organ system and top-ranked tissues and general cell types. Users can also filter, prioritize, and compare the CSEA results from cell types from one or multiple tissues. Users can further download all the results of CSEA and visualize them. Overall, WebCSEA provides a comprehensive map of major human TCs and uses a permutation-based method to overcome the bias raised from different lengths of signature genes among TCs as well as the length of query genes.
+**Introduction**: WebCSEA (Web-based Cell-type Specific Enrichment Analysis of Genes) provides a gene set query among a systematic collection of tissue-cell-type expression signatures. For each query, we will generate cell-type-specific enrichment analysis (CSEA) raw p-value, combined p-value by permutation-based method, genes shared between queried gene list and tissue-cell-type signatures, heatmap that interactively displays the cell-type specificity across 1,355 human tissue-cell types (TCs), summary of cell-type specificity by human organ system and top-ranked tissues and general cell types. Users can also filter, prioritize, and compare the CSEA results from cell types from one or multiple tissues. Users can further download all the results of CSEA and visualize them. Overall, WebCSEA provides a comprehensive map of major human TCs and uses a permutation-based method to overcome the bias raised from different lengths of signature genes among TCs as well as the length of query genes.
 
 
 WebCSEA team manually curated more than 5.5 million cells from 111 human tissues panels and 1,355 TCs from 61 adult and fetal tissues across 12 human organ systems (11 organ systems + sensory system). We used our t-statistic method to obtain the tissue-cell-type signatures panel by tissue. To construct a biological meaningful gene set for permutation shuffle, we curated ~5,600 genome-wide association studies (GWAS) and ~3,700 rare-variants association phenotypes from UK BioBank, GWAS catalog, and Genebass for trait-associated gene sets (TAGs). After stringent quality control criteria, we permutated the null model as a matrix of 19,663 TAGs by 1,355 TCs. For each inquiry gene list, we conduct CSEA across 1,355 TCs and get the permutated p-values by ranking among 19,663 TAGs and 1,355 TCs. Then we use Fisher’s method to combine an overall p-value from the permutated p-values by TAGs and by TCs.
-![WebCSEA](/images/WebCSEA.png?width=80pc)
+![WebCSEA](/images/WebCSEA.png?width=60pc)
 
-- **Application**: More examples can download from [here](https://bioinfo.uth.edu/webcsea/tutorial.php?csrt=8124369579383014372).
-- **Web server**: [WebCSEA](https://bioinfo.uth.edu/webcsea/)
+**Application**: More examples can download from [here](https://bioinfo.uth.edu/webcsea/tutorial.php?csrt=8124369579383014372).
+**Web server**: [WebCSEA](https://bioinfo.uth.edu/webcsea/)
 
 ---
 
 ## 5.1.11 **TEnGExA**
 
-- **Introduction**: R package has been developed to perform tissue-enrichment analysis of any large number of genes with any number of tissues, irrespective of any organism provided only the read count matrix.
+**Introduction**: R package has been developed to perform tissue-enrichment analysis of any large number of genes with any number of tissues, irrespective of any organism provided only the read count matrix.
 
-- **Installation**: TEnGExA R package can be easily installed from Github using devtools <https://github.com/ubagithub/TEnGExA>:
+**Installation**: TEnGExA R package can be easily installed from Github using devtools <https://github.com/ubagithub/TEnGExA>:
 ```{r eval=FALSE}
 install.packages("devtools")
 
@@ -143,26 +143,26 @@ library(devtools)
 install_github("ubagithub/TEnGExA")
 ```
 
-- **Application**: More examples can download from [here](https://github.com/ubagithub/TEnGExA).
+**Application**: More examples can download from [here](https://github.com/ubagithub/TEnGExA).
 
 ---
 
 ## 5.1.12 **Dynamic-BM**
 
-- **Introduction**: Dynamic-BM stands for Dynamic BodyMap, which provides massive and comprehensive dynamic RNA-seq data archives and analyses. The current version of Dynamic-BM contains 2,203 RNA-seq samples (114 datasets) of more than 20 tissues in 5 species. The main sections of this website are Home, Expression, Datasets, Dev-lncRNAs, Analysis and Download. The Navigation bar on the right provides a quick access to the help file of each section.
-![DynamicBM](/images/DynamicBM.png?width=80pc)
+**Introduction**: Dynamic-BM stands for Dynamic BodyMap, which provides massive and comprehensive dynamic RNA-seq data archives and analyses. The current version of Dynamic-BM contains 2,203 RNA-seq samples (114 datasets) of more than 20 tissues in 5 species. The main sections of this website are Home, Expression, Datasets, Dev-lncRNAs, Analysis and Download. The Navigation bar on the right provides a quick access to the help file of each section.
+![DynamicBM](/images/DynamicBM.png?width=50pc)
 
-- **Application**: More examples can download from [here](http://bioinfo.ibp.ac.cn/Dynamic-BM/help.php).
-- **Web server**: [Dynamic-BM](http://bioinfo.ibp.ac.cn/Dynamic-BM/index.php)
+**Application**: More examples can download from [here](http://bioinfo.ibp.ac.cn/Dynamic-BM/help.php).
+**Web server**: [Dynamic-BM](http://bioinfo.ibp.ac.cn/Dynamic-BM/index.php)
 ![DynamicBM2](/images/DynamicBM2.png?width=60pc)
 
 ---
 
 ## 5.1.13 **ADEIP**
 
-- **Introduction**: ADEIP (An integrating platform of age-dependent expression and immune profiles across human tissues) provided the differences of gene expression and cell ratios among different ages and genders. ADEIP includes data on a much larger scale (16704 samples, 54592 genes, 30 tissues, 22 cell types, 34 types of immune function, 2 gender) than previous databases.
+**Introduction**: ADEIP (An integrating platform of age-dependent expression and immune profiles across human tissues) provided the differences of gene expression and cell ratios among different ages and genders. ADEIP includes data on a much larger scale (16704 samples, 54592 genes, 30 tissues, 22 cell types, 34 types of immune function, 2 gender) than previous databases.
 ![ADEIP](/images/ADEIP.png?width=60pc)
 
-- **Application**: More examples can download from [here](http://gb.whu.edu.cn/ADEIP/tutorials).
+**Application**: More examples can download from [here](http://gb.whu.edu.cn/ADEIP/tutorials).
 
-- **Web server**: [ADEIP](http://gb.whu.edu.cn/ADEIP/)
+**Web server**: [ADEIP](http://gb.whu.edu.cn/ADEIP/)

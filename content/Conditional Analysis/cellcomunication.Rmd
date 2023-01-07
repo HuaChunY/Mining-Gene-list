@@ -8,23 +8,21 @@ weight: 4
 
 ---
 
-**cell-cell communication database and tools**
-
 ## 5.4.1 **IUPHAR**
 
-- **Introduction**: The International Union of Basic and Clinical Pharmacology (IUPHAR) / British Pharmacological Society (BPS) Guide to PHARMACOLOGY is an expert-curated resource of ligand-activity-target relationships, the majority of which come from high-quality pharmacological and medicinal chemistry literature. It is intended as a “one-stop shop” portal to pharmacological information and its main aim is to provide a searchable database with quantitative information on drug targets and the prescription medicines and experimental drugs that act on them. 
+**Introduction**: The International Union of Basic and Clinical Pharmacology (IUPHAR) / British Pharmacological Society (BPS) Guide to PHARMACOLOGY is an expert-curated resource of ligand-activity-target relationships, the majority of which come from high-quality pharmacological and medicinal chemistry literature. It is intended as a “one-stop shop” portal to pharmacological information and its main aim is to provide a searchable database with quantitative information on drug targets and the prescription medicines and experimental drugs that act on them. 
 ![IUPHAR2](/images/IUPHAR2.png?width=50pc)
 
-- **Web server**: [DISGENET](https://www.disgenet.org/home/)
+**Web server**: [DISGENET](https://www.disgenet.org/home/)
 ![IUPHAR](/images/IUPHAR.png?width=50pc)
 
 ---
 
 ## 5.4.2 **CellPhoneDB**
 
-- **Introduction**: CellPhoneDB is a publicly available repository of curated receptors, ligands and their interactions. Subunit architecture is included for both ligands and receptors, representing heteromeric complexes accurately. This is crucial, as cell-cell communication relies on multi-subunit protein complexes that go beyond the binary representation used in most databases and studies.CellPhoneDB integrates existing datasets that pertain to cellular communication and new manually reviewed information. CellPhoneDB utilises information from the following data bases: UniProt, Ensembl, PDB, the IMEx consortium, IUPHAR. CellPhoneDB can be used to search for a particular ligand/receptor or interrogate your own single-cell transcriptomics data.
+**Introduction**: CellPhoneDB is a publicly available repository of curated receptors, ligands and their interactions. Subunit architecture is included for both ligands and receptors, representing heteromeric complexes accurately. This is crucial, as cell-cell communication relies on multi-subunit protein complexes that go beyond the binary representation used in most databases and studies.CellPhoneDB integrates existing datasets that pertain to cellular communication and new manually reviewed information. CellPhoneDB utilises information from the following data bases: UniProt, Ensembl, PDB, the IMEx consortium, IUPHAR. CellPhoneDB can be used to search for a particular ligand/receptor or interrogate your own single-cell transcriptomics data.
 
-- **Installation**: To install this package, works with Python v3.6 or greater: If your default Python interpreter is for "v2.x" (you can check it with "python --version"), calls to "python"/"pip" should be substituted by python3/pip3. We highly recommend using an isolated python environment (as described in steps 1 and 2) using conda or virtualenv but you could of course omit these steps and install via "pip" immediately.
+**Installation**: To install this package, works with Python v3.6 or greater: If your default Python interpreter is for "v2.x" (you can check it with "python --version"), calls to "python"/"pip" should be substituted by python3/pip3. We highly recommend using an isolated python environment (as described in steps 1 and 2) using conda or virtualenv but you could of course omit these steps and install via "pip" immediately.
 
 1.Create python=>3.6 environment
 +Using conda: "conda create -n cpdb python=3.7"
@@ -34,16 +32,16 @@ weight: 4
 +Using virtualenv: "source cpdb/bin/activate"
 3.Install CellPhoneDB "pip install cellphonedb"
 
-- **Web server**: [CellPhoneDB](https://www.cellphonedb.org/)
+**Web server**: [CellPhoneDB](https://www.cellphonedb.org/)
 ![CellPhoneDB](/images/CellPhoneDB.jpg?width=50pc)
 
 ---
 
 ## 5.4.3 **FANTOM5**
 
-- **Introduction**: Web tool for exploring cell-cell ligand-receptor mediated communication networks. FANTOM5 present the first large-scale map of cell-to-cell communication between 144 human primary cell types using 2,422 putative and literature supported ligand-receptor pairs. With up to hundreds of potential interactions between any two of these 144 primary cell types, there are millions of possible cell-cell communication paths across the entire network. Static visualization of such complex networks not only can be obscure and impractical but also difficult.
+**Introduction**: Web tool for exploring cell-cell ligand-receptor mediated communication networks. FANTOM5 present the first large-scale map of cell-to-cell communication between 144 human primary cell types using 2,422 putative and literature supported ligand-receptor pairs. With up to hundreds of potential interactions between any two of these 144 primary cell types, there are millions of possible cell-cell communication paths across the entire network. Static visualization of such complex networks not only can be obscure and impractical but also difficult.
 
-- **Installation**: An implementation of the FANTOM5 can be found here: <https://github.com/Hypercubed/connectome>
+**Installation**: An implementation of the FANTOM5 can be found here: <https://github.com/Hypercubed/connectome>
 "git clone https://github.com/Hypercubed/connectome.git
 cd connectome
 npm install
@@ -53,17 +51,18 @@ bower install"
 
 ## 5.4.4 **Cell-Cell Interaction Database**
 
-- **Introduction**:   Cell-cell interaction database was developed by filtering existing curated protein-protein interaction (PPI) data. Cell-cell interactions are important for understanding tissue organization. The resource available from iRefIndex, Pathway Commons and BioGRID website represents an automatically built set of protein-protein interactions that can mediate cell-cell communication that is expanded compared to previous databases we have built.
+**Introduction**:   Cell-cell interaction database was developed by filtering existing curated protein-protein interaction (PPI) data. Cell-cell interactions are important for understanding tissue organization. The resource available from iRefIndex, Pathway Commons and BioGRID website represents an automatically built set of protein-protein interactions that can mediate cell-cell communication that is expanded compared to previous databases we have built.
 
-- **Web server**: [Cell-Cell Interaction Database](http://baderlab.org/CellCellInteractions)
+**Web server**: [Cell-Cell Interaction Database](http://baderlab.org/CellCellInteractions)
 
 ---
 
 ## 5.4.5 **ligand-receptor pairs in literature**
 
-- **Introduction**: This compendium has been created to collect lists of ligand-receptor pairs and interactions for surface-secreted proteins that are available in literature.
+**Introduction**: This compendium has been created to collect lists of ligand-receptor pairs and interactions for surface-secreted proteins that are available in literature.
 
- Information about collected lists:
+Information about collected lists:
+ 
 |		Article		|		Organism		|		Number of LR pairs		|		Downstream genes?		|		Protein Complexes?	|		Functional Annotations?		|		Metabolites?		|		Associated Tool		|
 |		:------		|		:------		|		:------		|		:------		|		:------		|		:------		|		:------		|		:------		|
 |		Kirouac et al. (2010)		|		Human		|		232		|				|				|				|				|				|
@@ -93,44 +92,43 @@ bower install"
 |		Raredon et al. (2019)		|		Mammals		|		269		|				|				|		X		|				|				|
 |		Armingol et al. (2020)		|		C. elegans		|		245		|				|				|		X		|				|		cell2cell		|
 |		Liu et al. (2022)		|		Drosophila		|		197		|				|				|		X		|				|		FlyPhoneDB		|
-|		Xu et al. (2022)		|		Plants		|		1,751 - 3,762		|				|				|				|				|		PlantPhoneDB		|
+|		Xu et al. (2022)		|		Plants		|		1,751 3,762		|				|				|				|				|		PlantPhoneDB		|
 
 
-- **Web server**: [ligand-receptor pairs in literature](https://github.com/LewisLabUCSD/Ligand-Receptor-Pairs)
+**Web server**: [ligand-receptor pairs in literature](https://github.com/LewisLabUCSD/Ligand-Receptor-Pairs)
 
 ---
 
 ## 5.4.6 **DLRP**
 
-- **Introduction**:  The Database of Ligand-Receptor Partners
+**Introduction**:  The Database of Ligand-Receptor Partners
 
-- **Web server**: [DLRP](https://dip.doe-mbi.ucla.edu/dip/DLRP.cgi)
+**Web server**: [DLRP](https://dip.doe-mbi.ucla.edu/dip/DLRP.cgi)
 
 ---
 
 ## 5.4.7 **ConnectomeDB**
 ![ConnectomeDB](/images/ConnectomeDB.png?width=20pc)
+**Introduction**: ConnectomeDB is a data management platform where users can access, explore and download the latest datasets from the Human Connectome Project.
 
-- **Introduction**: ConnectomeDB is a data management platform where users can access, explore and download the latest datasets from the Human Connectome Project.
-
-- **Web server**: [ConnectomeDB](https://db.humanconnectome.org)
+**Web server**: [ConnectomeDB](https://db.humanconnectome.org)
 
 ---
 
 ## 5.4.8 **CellTalkDB**
 
-- **Introduction**: A manually curated database of literature-supported ligand-receptor interactions in human and mouse. Total 5431 ligand-receptor interaction pairs are collected.
+**Introduction**: A manually curated database of literature-supported ligand-receptor interactions in human and mouse. Total 5431 ligand-receptor interaction pairs are collected.
 ![CellTalkDB](/images/CellTalkDB.jpg?width=50pc)
 
-- **Web server**: [CellTalkDB](http://tcm.zju.edu.cn/celltalkdb/)
+**Web server**: [CellTalkDB](http://tcm.zju.edu.cn/celltalkdb/)
 
 ---
 
 ## 5.4.9 **ICELLNET**
 
-- **Introduction**: This repository hosts the source code corresponding to the method described in Noël, F., Massenet-Regad, L., Carmi-Levy, I. et al. to infer intercellular communication networks and dissect intercellular communication between multiples cell types based on their transcriptomic profiles.
+**Introduction**: This repository hosts the source code corresponding to the method described in Noël, F., Massenet-Regad, L., Carmi-Levy, I. et al. to infer intercellular communication networks and dissect intercellular communication between multiples cell types based on their transcriptomic profiles.
 
-- **Installation**: To install it, the easiest way is to use the R package "devtools" and its function "install_github".
+**Installation**: To install it, the easiest way is to use the R package "devtools" and its function "install_github".
 
 If you don't have all the dependancies needed to use ICELLNET package, run the commands below:
 ```{r eval=FALSE}
@@ -150,37 +148,37 @@ install_github("soumelis-lab/ICELLNET",ref="master", subdir="icellnet")
 
 ## 5.4.10 **Cellinker**
 
-- **Introduction**: Cellinker is a platform of ligand-receptor interactions for intercellular communication analysis. The current version of Cellinker documents over 3,700 human and 3,200 mouse L-R protein-protein interactions (PPIs) and embeds a practical and convenient webserver with which researchers can decode intercellular communications based on scRNA-seq data. And over 400 small molecule (sMOL) related L-R interactions were collected as well. Moreover, to help with research on coronavirus (CoV) infection, Cellinker also collects information on over 16 L-R interactions involved in COV-human interactions (including 12 L-R interactions involved in SARS-CoV-2 infection).
+**Introduction**: Cellinker is a platform of ligand-receptor interactions for intercellular communication analysis. The current version of Cellinker documents over 3,700 human and 3,200 mouse L-R protein-protein interactions (PPIs) and embeds a practical and convenient webserver with which researchers can decode intercellular communications based on scRNA-seq data. And over 400 small molecule (sMOL) related L-R interactions were collected as well. Moreover, to help with research on coronavirus (CoV) infection, Cellinker also collects information on over 16 L-R interactions involved in COV-human interactions (including 12 L-R interactions involved in SARS-CoV-2 infection).
 
-- **Web server**: [Cellinker](http://www.rna-society.org/cellinker/)
+**Web server**: [Cellinker](http://www.rna-society.org/cellinker/)
 
 ---
 
 ## 5.4.11 **PlantPhoneDB**
 ![PlantPhoneDB](/images/PlantPhoneDB.jpg?width=50pc)
  
-- **Introduction**: PlantPhoneDB is a ligand-receptor interactions database, which aims to infer cell-cell communications from scRNA-seq datasets in plant. The current PlantPhoneDB contains 3,514 unique reliable ligand-receptor pairs for Arabidopsis thaliana, which curated from seven resources, including plant.MAP, Interactome2.0, IntAct, BioGRID, Text-mining, STRING and Orthologs resources. By assigning orthologs of ligand-receptor pairs between Arabidopsis thaliana and other four plant species proteomes using the InParanoid algorithm, the number of ligand-receptor pairs identified ranged from 1,751 (Solanum lycopersicum) to 3,762 (Oryza sativa).
+**Introduction**: PlantPhoneDB is a ligand-receptor interactions database, which aims to infer cell-cell communications from scRNA-seq datasets in plant. The current PlantPhoneDB contains 3,514 unique reliable ligand-receptor pairs for Arabidopsis thaliana, which curated from seven resources, including plant.MAP, Interactome2.0, IntAct, BioGRID, Text-mining, STRING and Orthologs resources. By assigning orthologs of ligand-receptor pairs between Arabidopsis thaliana and other four plant species proteomes using the InParanoid algorithm, the number of ligand-receptor pairs identified ranged from 1,751 (Solanum lycopersicum) to 3,762 (Oryza sativa).
 ![PlantPhoneDB2](/images/PlantPhoneDB2.jpg?width=50pc)
 
-- **Installation**: PlantPhoneDB requires R v4.0.2 or greater. To install it, the easiest way is to use the R package devtools and its function "install_github". If you don’t have all the dependancies needed to use PlantPhoneDB package, run the commands below:
+**Installation**: PlantPhoneDB requires R v4.0.2 or greater. To install it, the easiest way is to use the R package devtools and its function "install_github". If you don’t have all the dependancies needed to use PlantPhoneDB package, run the commands below:
 
 ```{r eval=FALSE}
-install.packages(c("devtools", "Seurat", "tidyverse", "ggplot2", "ggsci", "pheatmap", "ggpubr", "RColorBrewer", "patchwork", "lsa", "viridis", "hrbrthemes", "circlize", "chorddiag", "ggplotify", "data.table", "parmigene", "infotheo", "igraph", "cowplot", "grid", "dplyr")) ##Installs devtools and the PlantPhoneDB CRAN dependancies
+install.packages(c("devtools", "Seurat", "tidyverse", "ggplot2", "ggsci", "pheatmap", "ggpubr", "RColorBrewer", "patchwork", "lsa", "viridis", "hrbrthemes", "circlize", "chorddiag", "ggplotify", "data.table", "parmigene", "infotheo", "igraph", "cowplot", "grid", "dplyr"))
 
 library(devtools)
 install_github("Jasonxu0109/PlantPhoneDB")
 ```
 
-- **Web server**: [PlantPhoneDB](https://jasonxu.shinyapps.io/PlantPhoneDB/)
+**Web server**: [PlantPhoneDB](https://jasonxu.shinyapps.io/PlantPhoneDB/)
 
 ---
 
 ## 5.4.12 **CellCallEXT**
 
-- **Introduction**: CellCall is an R package tool that is used to analyze cell–cell communication based on transcription factor (TF) activities calculated by cell-type specificity of target genes and thus cannot directly handle two-condition comparisons. CellCallEXT can directly identify ligand–receptor (L–R) interactions that alter the expression profiles of downstream genes between two conditions, such as tumor and healthy tissue. Scoring in CellCallEXT quantitatively integrates expression of ligands, receptors, TFs, and target genes (TGs). The pathway enrichment analysis and visualization modules allow biologists to investigate how disease alters cell–cell communication. Furthermore, Reactome pathways were added into CellCallEXT to expand the L–R–TF database.
+**Introduction**: CellCall is an R package tool that is used to analyze cell–cell communication based on transcription factor (TF) activities calculated by cell-type specificity of target genes and thus cannot directly handle two-condition comparisons. CellCallEXT can directly identify ligand–receptor (L–R) interactions that alter the expression profiles of downstream genes between two conditions, such as tumor and healthy tissue. Scoring in CellCallEXT quantitatively integrates expression of ligands, receptors, TFs, and target genes (TGs). The pathway enrichment analysis and visualization modules allow biologists to investigate how disease alters cell–cell communication. Furthermore, Reactome pathways were added into CellCallEXT to expand the L–R–TF database.
 
 
-- **Installation**: To install this package, start R (version 3.6 or higher) and enter:
+**Installation**: To install this package, start R (version 3.6 or higher) and enter:
 ```{r eval=FALSE}
 library(devtools)
 devtools::install_github("shouguog/cellcallEXT")
@@ -190,8 +188,7 @@ devtools::install_github("shouguog/cellcallEXT")
 
 ## 5.4.13 **CellChat**
 ![CellChat](/images/CellChat.jpg?width=50pc)
- 
-- **Introduction**: CellChat is now applicable to spatial imaging data. We showcase its application to 10X Visium data. When spatial locations of spots/cells are available, CellChat infers spatial-informed cell-cell communication between interacting cell groups. CellChat restricts cell-cell communication within the maximum interaction/diffusion length of molecules. In addition to infer the intercellular communication from any given scRNA-seq data, CellChat provides functionality for further data exploration, analysis, and visualization.
+**Introduction**: CellChat is now applicable to spatial imaging data. We showcase its application to 10X Visium data. When spatial locations of spots/cells are available, CellChat infers spatial-informed cell-cell communication between interacting cell groups. CellChat restricts cell-cell communication within the maximum interaction/diffusion length of molecules. In addition to infer the intercellular communication from any given scRNA-seq data, CellChat provides functionality for further data exploration, analysis, and visualization.
  +It is able to analyze cell-cell communication for continuous states along cellular development trajectories.
  +It can quantitatively characterize and compare the inferred cell-cell communication networks using an integrated approach by combining social network analysis, pattern recognition, and manifold learning approaches.
  +It provides an easy-to-use tool for extracting and visualizing high-order information of the inferred networks. For example, it allows ready prediction of major signaling inputs and outputs for all cell populations and how these populations and signals coordinate together for functions.
@@ -199,23 +196,23 @@ devtools::install_github("shouguog/cellcallEXT")
 ![PlantPhoneDB2](/images/PlantPhoneDB2.jpg?width=50pc)
 
 
-- **Installation**: CellChat R package can be easily installed from Github using devtools, and please make sure you have installed the correct version of "NMF" and "circlize" package:
+**Installation**: CellChat R package can be easily installed from Github using devtools, and please make sure you have installed the correct version of "NMF" and "circlize" package:
 
 ```{r eval=FALSE}
 library(devtools)
 devtools::install_github("sqjin/CellChat")
 ```
 
-- **Web server**: [CellChat](http://www.cellchat.org/)
+**Web server**: [CellChat](http://www.cellchat.org/)
 
 ---
 
 ## 5.4.14 **Giotto**
 
-- **Introduction**: Giotto is a comprehensive and open-source toolbox for spatial data analysis and visualization. The analysis module provides end-to-end analysis by implementing a wide range of algorithms for characterizing tissue composition, spatial expression patterns, and cellular interactions. Furthermore, single-cell RNAseq data can be integrated for spatial cell-type enrichment analysis. The visualization module allows users to interactively visualize analysis outputs and imaging features. Giotto is applicable to a wide range of spatial technologies and platforms.
+**Introduction**: Giotto is a comprehensive and open-source toolbox for spatial data analysis and visualization. The analysis module provides end-to-end analysis by implementing a wide range of algorithms for characterizing tissue composition, spatial expression patterns, and cellular interactions. Furthermore, single-cell RNAseq data can be integrated for spatial cell-type enrichment analysis. The visualization module allows users to interactively visualize analysis outputs and imaging features. Giotto is applicable to a wide range of spatial technologies and platforms.
 
 
-- **Installation**: Giotto is installed via R but there are required Python modules which must be installed in order for Giotto to function properly. 
+**Installation**: Giotto is installed via R but there are required Python modules which must be installed in order for Giotto to function properly. 
 ```{r eval=FALSE}
 library(devtools) # If not installed: install.packages('devtools')
 library(remotes)  #If not installed: install.packages('remotes')
@@ -224,16 +221,16 @@ remotes::install_github("RubD/Giotto")
 
 The python modules will be installed automatically in a miniconda environment when installing Giotto. An implementation of the modules in python can be found here: <https://giottosuite.readthedocs.io/en/master/gettingstarted.html#requirements>
   
-- **Web server**: [Giotto](https://github.com/RubD/Giotto_site)
+**Web server**: [Giotto](https://github.com/RubD/Giotto_site)
 
 ---
 
 ## 5.4.15 **SingleCellSignalR**
 
-- **Introduction**: SingleCellSignalR is the first such tool available in R. It relies on a comprehensive database of known LR interactions, which we called LRdb. It also introduces a new regularized product score aimed at adapting to variable levels of depth in single-cell datasets, i.e. the prevalence of censored read counts or dropouts. LRdb is the result of integrating and curating existing sources plus manual additions. The new scoring approach has the advantage of facilitating the use of stable thresholds on LR interaction scores to control false positives (FPs) and not only rank LR interactions.
+**Introduction**: SingleCellSignalR is the first such tool available in R. It relies on a comprehensive database of known LR interactions, which we called LRdb. It also introduces a new regularized product score aimed at adapting to variable levels of depth in single-cell datasets, i.e. the prevalence of censored read counts or dropouts. LRdb is the result of integrating and curating existing sources plus manual additions. The new scoring approach has the advantage of facilitating the use of stable thresholds on LR interaction scores to control false positives (FPs) and not only rank LR interactions.
 ![SingleCellSignalR](/images/SingleCellSignalR.jpg?width=20pc)
  
-- **Installation**: To install this package, start R (version "4.2") and enter:
+**Installation**: To install this package, start R (version "4.2") and enter:
 
 ```{r eval=FALSE}
 if (!require("BiocManager", quietly = TRUE))
@@ -246,46 +243,46 @@ BiocManager::install("SingleCellSignalR")
 
 ## 5.4.16 **CellCall**
 
-- **Introduction**: CellCall is a toolkit to infer intercellular communication networks and internal regulatory signals by integrating intracellular and intercellular signaling. (1) CellCall collects ligand-receptor-transcript factor (L-R-TF) axis datasets based on KEGG pathways. (2) According to prior knowledge of L-R-TF interactions, CellCall infers intercellular communication by combining the expression of ligands/receptors and downstream TF activities for certain L-R pairs. (3) CellCall embeds a pathway activity analysis method to identify the crucial pathways involved in communications between certain cell types. (4) CellCall offers a rich suite of visualization options (Circos plot, Sankey plot, bubble plot, ridge plot, etc.) to intuitively present the analysis results. The overview figure of CellCall is shown as follows.
+**Introduction**: CellCall is a toolkit to infer intercellular communication networks and internal regulatory signals by integrating intracellular and intercellular signaling. (1) CellCall collects ligand-receptor-transcript factor (L-R-TF) axis datasets based on KEGG pathways. (2) According to prior knowledge of L-R-TF interactions, CellCall infers intercellular communication by combining the expression of ligands/receptors and downstream TF activities for certain L-R pairs. (3) CellCall embeds a pathway activity analysis method to identify the crucial pathways involved in communications between certain cell types. (4) CellCall offers a rich suite of visualization options (Circos plot, Sankey plot, bubble plot, ridge plot, etc.) to intuitively present the analysis results. The overview figure of CellCall is shown as follows.
 
-- **Installation**: To install this package, start R (version 3.6 or higher) and enter:
+**Installation**: To install this package, start R (version 3.6 or higher) and enter:
 ```{r eval=FALSE}
 library(devtools)
 devtools::install_github("ShellyCoder/cellcall")
 ```
 
-- **Application**: More examples can download from [here](https://github.com/ShellyCoder/cellcall).
+**Application**: More examples can download from [here](https://github.com/ShellyCoder/cellcall).
 
 ---
 
 ## 5.4.17 **TraSig**
 
-- **Introduction**: TraSig (Trajectory-based Signalling genes inference) identifies interacting cell types pairs and significant ligand-receptors based on the expression of genes as well as the pseudo-time ordering of cells. For any two groups of cells that are expected to overlap in time, TraSig takes the pseudo-time ordering for each group and the expression of genes along the trajectory as input and then outputs an interaction score and p-value for each possible ligand-receptor pair. It also outputs a summary score for cell type pairs by combining individual ligand-receptors' scores.
+**Introduction**: TraSig (Trajectory-based Signalling genes inference) identifies interacting cell types pairs and significant ligand-receptors based on the expression of genes as well as the pseudo-time ordering of cells. For any two groups of cells that are expected to overlap in time, TraSig takes the pseudo-time ordering for each group and the expression of genes along the trajectory as input and then outputs an interaction score and p-value for each possible ligand-receptor pair. It also outputs a summary score for cell type pairs by combining individual ligand-receptors' scores.
 
-- **Installation**: An implementation of the TraSig in python can be found here: <https://github.com/doraadong/TraSig>
+**Installation**: An implementation of the TraSig in python can be found here: <https://github.com/doraadong/TraSig>
 
 ---
 
 ## 5.4.18 **celltalker**
 
-- **Introduction**: The goal of celltalker is to infer putative ligand and receptor interactions from single-cell RNAseq data. This is accomplished by evaluating known cognate ligand/receptor interactions across groups of cells. Interactions are scored by jointly weighting the expression levels of ligands and receptors, and significance is evaluated by comparing to a background distribution of scrambled ligands and receptors.
+**Introduction**: The goal of celltalker is to infer putative ligand and receptor interactions from single-cell RNAseq data. This is accomplished by evaluating known cognate ligand/receptor interactions across groups of cells. Interactions are scored by jointly weighting the expression levels of ligands and receptors, and significance is evaluated by comparing to a background distribution of scrambled ligands and receptors.
 
-- **Installation**: To install this package, start R (version 3.6 or higher) and enter:
+**Installation**: To install this package, start R (version 3.6 or higher) and enter:
 
 ```{r eval=FALSE}
 install.packages("devtools")
 devtools::install_github("arc85/celltalker")
 ```
 
-- **Application**: More examples can download from [here](https://arc85.github.io/celltalker/index.html).
+**Application**: More examples can download from [here](https://arc85.github.io/celltalker/index.html).
 
 ---
 
 ## 5.4.19 **iTALK**
 
-- **Introduction**:  iTALK is an R toolkit for characterizing and illustrating intercellular communication, developed and maintained by Linghua Wang lab at the University of Texas MD Anderson Cancer Center. iTALK can be used to visualize the complexity, diversity and dynamics of cell-cell communication in a wide range of biological processes.
+**Introduction**:  iTALK is an R toolkit for characterizing and illustrating intercellular communication, developed and maintained by Linghua Wang lab at the University of Texas MD Anderson Cancer Center. iTALK can be used to visualize the complexity, diversity and dynamics of cell-cell communication in a wide range of biological processes.
 
-- **Installation**:To install this package, start R (version 3.6 or higher) and enter:
+**Installation**:To install this package, start R (version 3.6 or higher) and enter:
 ```{r eval=FALSE}
 if(!require(devtools)) install.packages("devtools");
 devtools::install_github("Coolgenome/iTALK", build_vignettes = TRUE)
@@ -295,17 +292,16 @@ devtools::install_github("Coolgenome/iTALK", build_vignettes = TRUE)
 
 ## 5.4.20 **PyMINEr**
 
-- **Introduction**: PyMINEr is a computational pipeline that automates many of the informatics tasks that you might want to do with your dataset - all from a very brief single command line entry. This will bring down the amount of time that you actually need to work with it, and eliminate the need for any custom coding. Once you've got PyMINEr up and running - you can be finished with an informatics collaboration with about 30 seconds of work with a single command-line entry in the style of: pyminer.py -i expression.txt
+**Introduction**: PyMINEr is a computational pipeline that automates many of the informatics tasks that you might want to do with your dataset all from a very brief single command line entry. This will bring down the amount of time that you actually need to work with it, and eliminate the need for any custom coding. Once you've got PyMINEr up and running you can be finished with an informatics collaboration with about 30 seconds of work with a single command-line entry in the style of: pyminer.py -i expression.txt
 
-- **Installation**:  To install it, you'll first need to install python3 (preferably >=3.7). You can do this over at anaconda, or you could install it at the command line.
+**Installation**:  To install it, you'll first need to install python3 (preferably >=3.7). You can do this over at anaconda, or you could install it at the command line.
 
-<big>Using <u>pip<u><big>
+Using pip
 
-Just type:
 ```{bash eval=FALSE}
 python3 -m pip install bio-pyminer
 ```
-<big>Using <u>Docker<u><big>
+Using Docker
 
 Sometimes getting all the right dependencies installed can be a pain & the dependencies of one program can break another. To get around this, you can use Docker. There are plenty of tutorials out there on this. Once you're familiar with how to use docker though, you can pull the latest PyMINEr docker image like so:
 ```{bash eval=FALSE}
@@ -319,16 +315,15 @@ pyminer.py -h
 
 Then, when you're finished with using PyMINEr, you can log out of the docker image by typing "exit" at the command line.
   
-- **Web server**: [PyMINEr](https://www.sciencescott.com/pyminer)
+**Web server**: [PyMINEr](https://www.sciencescott.com/pyminer)
 
 ---
 
 ## 5.4.21 **DeepCCI**
 
-- **Introduction**: DeepCCI is a graph convolutional network (GCN)-based deep learning framework for Cell-Cell Interactions inference from scRNA-seq data.
-![DeepCCI](/images/DeepCCI.jpg?width=50pc)
+**Introduction**: DeepCCI is a graph convolutional network (GCN)-based deep learning framework for Cell-Cell Interactions inference from scRNA-seq data.
  
-- **Installation**:  Start by grabbing this source codes:
+**Installation**:  Start by grabbing this source codes:
 ```{bash eval=FALSE}
 git clone https://github.com/JiangBioLab/DeepCCI.git
 cd DeepCCI
@@ -356,10 +351,10 @@ An implementation of the DeepCCI can be found here: <https://github.com/JiangBio
 
 ## 5.4.22 **NicheNet**
 
-- **Introduction**: the R implementation of the NicheNet method. The goal of NicheNet is to study intercellular communication from a computational perspective. NicheNet uses human or mouse gene expression data of interacting cells as input and combines this with a prior model that integrates existing knowledge on ligand-to-target signaling paths. This allows to predict ligand-receptor interactions that might drive gene expression changes in cells of interest.
+**Introduction**: the R implementation of the NicheNet method. The goal of NicheNet is to study intercellular communication from a computational perspective. NicheNet uses human or mouse gene expression data of interacting cells as input and combines this with a prior model that integrates existing knowledge on ligand-to-target signaling paths. This allows to predict ligand-receptor interactions that might drive gene expression changes in cells of interest.
 
 
-- **Installation**:  Installation typically takes a few minutes, depending on the number of dependencies that has already been installed on your pc. You can install nichenetr (and required dependencies) from github with:
+**Installation**:  Installation typically takes a few minutes, depending on the number of dependencies that has already been installed on your pc. You can install nichenetr (and required dependencies) from github with:
 ```{r eval=FALSE}
 # install.packages("devtools")
 devtools::install_github("saeyslab/nichenetr")
@@ -370,9 +365,9 @@ nichenetr was tested on both Windows and Linux (most recently tested R version: 
 
 ## 5.4.23 **SpaOTsc**
 
-- **Introduction**: SpaOTsc provides utilities to (1) derive a mapping between spatial data and scRNA-seq data, (2) infer spatial cell-cell distance for scRNA-seq data, (3) carry out cell spatial subclustering, (4) infer space-constrained cell-cell communications, (5) infer spatial distance for intercellular signaling, and (6) construct a spatial map of intercellular gene-gene regulatory information flow.
+**Introduction**: SpaOTsc provides utilities to (1) derive a mapping between spatial data and scRNA-seq data, (2) infer spatial cell-cell distance for scRNA-seq data, (3) carry out cell spatial subclustering, (4) infer space-constrained cell-cell communications, (5) infer spatial distance for intercellular signaling, and (6) construct a spatial map of intercellular gene-gene regulatory information flow.
 
-- **Installation**:  SpaOTsc depends on the following packages: pandas, numpy, scipy, networkx, python-igraph, louvain, POT, dit, astropy, scikit-learn, matplotlib, umap-learn. See dependency versions in "requirements.txt". Simply run the following command (preferably in a fresh virtual environment, e.g. "conda create -n spaotsc_env python=3"). The package has been tested on macOS (Mojave) and Ubuntu (16.04, 18.04) and should work in any valid python environment. Installation of SpaOTsc should take less than a minute and it may take several minutes to install the dependencies.
+**Installation**:  SpaOTsc depends on the following packages: pandas, numpy, scipy, networkx, python-igraph, louvain, POT, dit, astropy, scikit-learn, matplotlib, umap-learn. See dependency versions in "requirements.txt". Simply run the following command (preferably in a fresh virtual environment, e.g. "conda create -n spaotsc_env python=3"). The package has been tested on macOS (Mojave) and Ubuntu (16.04, 18.04) and should work in any valid python environment. Installation of SpaOTsc should take less than a minute and it may take several minutes to install the dependencies.
 ```{python eval=FALSE}
 pip install --user Cython
 pip install --user --requirement requirements.txt
@@ -386,15 +381,15 @@ pip install --user .
 
 ## 5.4.24 **CCCExplorer**
 
-- **Introduction**: CCCExplorer is a java-based software that predicts and visualizes the gene signaling network to aid research on crosstalk identification in the tumor microenvironment. CCCExplorer integrates a computational model that we developed to uncover cell-cell communication as a direct and connected network. These cell communications range from ligand-receptor interactions to transcription factors and their target genes.
+**Introduction**: CCCExplorer is a java-based software that predicts and visualizes the gene signaling network to aid research on crosstalk identification in the tumor microenvironment. CCCExplorer integrates a computational model that we developed to uncover cell-cell communication as a direct and connected network. These cell communications range from ligand-receptor interactions to transcription factors and their target genes.
 
-- **Installation**:  ***MacOS verison Download***:<https://www.dropbox.com/s/1y1or8ougjkzu3x/CCCExplorer_MacOS.zip?dl=0>; ***Youtube video URL***: <https://youtu.be/wN4vHV6hoig>
+**Installation**:  ***MacOS verison Download***:<https://www.dropbox.com/s/1y1or8ougjkzu3x/CCCExplorer_MacOS.zip?dl=0>; ***Youtube video URL***: <https://youtu.be/wN4vHV6hoig>
 
 ---
 
 ## 5.4.25 **SoptSC**
 
-- **Introduction**: Package used for the inference of clustering, cell lineage, pseudotime and cell-cell communication network from scRNA-seq data.
+**Introduction**: Package used for the inference of clustering, cell lineage, pseudotime and cell-cell communication network from scRNA-seq data.
  1. Estimation of the number of clusters from the single-cell data.
  2. Identification of cell subpopulations.
  3. Identification of DEGs for each cell subpopulation.
@@ -402,7 +397,7 @@ pip install --user .
  5. Inference of cell lineage and trajectory in an unsupervised manner: i.e., initial cluster is not required. 
  6. Inference of cell-cell communication network given a group of Ligand-Receptor pairs and their downstream target genes.
 
-- **Installation**: To install this package, start R (version 3.6 or higher) and enter:
+**Installation**: To install this package, start R (version 3.6 or higher) and enter:
 
 ```{r eval=FALSE}
 install.packages("devtools")
@@ -415,16 +410,16 @@ An implementation of the SoptSC can be found here:  <https://mkarikom.github.io/
 
 ## 5.4.26 **NATMI**
 
-- **Introduction**:  NATMI (Network Analysis Toolkit for Multicellular Interactions), a Python-based toolkit for multi-cellular communication network construction and network analysis of multispecies single-cell and bulk gene expression and proteomic data.
+**Introduction**:  NATMI (Network Analysis Toolkit for Multicellular Interactions), a Python-based toolkit for multi-cellular communication network construction and network analysis of multispecies single-cell and bulk gene expression and proteomic data.
 
-- **Installation**: Docker Image for NATMI: <https://hub.docker.com/r/asrhou/natmi>
+**Installation**: Docker Image for NATMI: <https://hub.docker.com/r/asrhou/natmi>
  To use NATMI, following software is required:
  1.Python 2 or Python 3
  2.Python libraries pandas, XlsxWriter and xlrd (for general data processing).
  3.Python libraries seaborn, igraph, NetworkX, PyGraphviz, bokeh and holoviews (for cell-to-cell communication network visualization).
  To install NATMI, run the following command in the desired installation directory:
 ```{bash eval=FALSE}
-   git clone https://github.com/asrhou/NATMI.git
+git clone https://github.com/asrhou/NATMI.git
 ```
 An implementation of the NATMI can be found here:  <https://github.com/forrest-lab/NATMI/#2>
 
@@ -432,25 +427,25 @@ An implementation of the NATMI can be found here:  <https://github.com/forrest-l
 
 ## 5.4.27 **scConnect**
 
-- **Introduction**:  scConnect estimate expression of ligands and receptors for cell types in scRNA-seq datasets. scConnect also estimate expression of molecular ligands that are synthezised by many enzymes, hence integrating gene expression related to synthesis, transport, reuptake etc. Using interaction information from Guide to pharmacology putative cell-cell interactions can be identified. Using random permutation of cell type lables, scConnect estimate the specificity of each ligand and receptor for each cell type, and use this information to estimate the specificity of each interaction. All interactions are stored in a multi-directional graph structure and scConnect provide multitude of tools to analyse this data, including an interactive web application and several plotting functions. scConnect integrate well with Scanpy and can be appended to any scanpy analysis pipeline.
+**Introduction**:  scConnect estimate expression of ligands and receptors for cell types in scRNA-seq datasets. scConnect also estimate expression of molecular ligands that are synthezised by many enzymes, hence integrating gene expression related to synthesis, transport, reuptake etc. Using interaction information from Guide to pharmacology putative cell-cell interactions can be identified. Using random permutation of cell type lables, scConnect estimate the specificity of each ligand and receptor for each cell type, and use this information to estimate the specificity of each interaction. All interactions are stored in a multi-directional graph structure and scConnect provide multitude of tools to analyse this data, including an interactive web application and several plotting functions. scConnect integrate well with Scanpy and can be appended to any scanpy analysis pipeline.
 
-- **Installation**:  An implementation of the scConnect can be found here:  <https://github.com/JonETJakobsson/scConnect>
+**Installation**:  An implementation of the scConnect can be found here:  <https://github.com/JonETJakobsson/scConnect>
 
 ---
 
 ## 5.4.28 **FunRes**
 
-- **Introduction**:  a computational method designed for the identification of functional cell states. FunRes relies on scRNA-seq data of a tissue to initially reconstruct the functional cell-cell communication network, which is leveraged for partitioning each cell type into functional cell states. 
+**Introduction**:  a computational method designed for the identification of functional cell states. FunRes relies on scRNA-seq data of a tissue to initially reconstruct the functional cell-cell communication network, which is leveraged for partitioning each cell type into functional cell states. 
 
-- **Installation**:  An implementation of the FunRes can be found here:  <https://git-r3lab.uni.lu/kartikeya.singh/funres>
+**Installation**:  An implementation of the FunRes can be found here:  <https://git-r3lab.uni.lu/kartikeya.singh/funres>
 
 ---
 
 ## 5.4.29 **scTensor**
 
-- **Introduction**:  R package for detection of cell-cell interaction using Non-negative Tensor Decomposition.
+**Introduction**:  R package for detection of cell-cell interaction using Non-negative Tensor Decomposition.
 
-- **Installation**:  To install this package, start R (version 3.6 or higher) and enter:
+**Installation**:  To install this package, start R (version 3.6 or higher) and enter:
 ```{r eval=FALSE}
 # CRAN
 install.packages(c("RSQLite", "igraph", "plotly", "nnTensor",

@@ -22,135 +22,15 @@ weight: 1
 <hr />
 <div id="nbclust" class="section level2">
 <h2>6.1.1 <strong>Nbclust</strong></h2>
-<ul>
-<li><p><strong>Introduction</strong>: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clus- tering scheme from different results to the user. In addition, it provides a function to perform k-means and hierarchical clustering with different distance measures and aggre- gation methods. Any combination of validation indices and clustering methods can be requested in a single function call. This enables the user to simultaneously evaluate sev- eral clustering schemes while varying the number of clusters, to help determining the most appropriate number of clusters for the data set of interest.</p></li>
-<li><p><strong>Installation</strong>: To install this package, start R (version “4.2”) and enter:</p></li>
-</ul>
+<p><strong>Introduction</strong>: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user. In addition, it provides a function to perform k-means and hierarchical clustering with different distance measures and aggregation methods. Any combination of validation indices and clustering methods can be requested in a single function call. This enables the user to simultaneously evaluate several clustering schemes while varying the number of clusters, to help determining the most appropriate number of clusters for the data set of interest.</p>
+<p><strong>Installation</strong>: To install this package, start R (version “4.2”) and enter:</p>
 <pre class="r"><code>install.packages(Nbclust)</code></pre>
-<ul>
-<li><strong>Application</strong>: The Nbclust vignette can be found at <a href="https://cran.r-project.org/web/packages/NbClust/NbClust.pdf" class="uri">https://cran.r-project.org/web/packages/NbClust/NbClust.pdf</a>.</li>
-</ul>
+<p><strong>Application</strong>: The Nbclust vignette can be found at <a href="https://cran.r-project.org/web/packages/NbClust/NbClust.pdf" class="uri">https://cran.r-project.org/web/packages/NbClust/NbClust.pdf</a>.</p>
 <hr />
 </div>
 <div id="clustvis" class="section level2">
 <h2>6.1.2 <strong>ClustVis</strong></h2>
-<ul>
-<li><p><strong>Introduction</strong>: This web tool allows users to upload their own data and easily create Principal Component Analysis (PCA) plots and heatmaps. Data can be uploaded as a file or by copy-pasteing it to the text box. Data format is shown under “Help” tab.</p>
-<center>
-<p><b>Data Source Statistics</b></p>
-</center>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Type</th>
-<th align="left">Number</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">species</td>
-<td align="left">9</td>
-</tr>
-<tr class="even">
-<td align="left">Data sources</td>
-<td align="left">22</td>
-</tr>
-<tr class="odd">
-<td align="left">Network</td>
-<td align="left">7</td>
-</tr>
-</tbody>
-</table></li>
-<li><p><strong>Installation</strong>:To use the Docker image, you need to have Docker installed. Then use the following code:</p></li>
-</ul>
-<pre class="bash"><code>sudo docker pull taunometsalu/clustvis
-mkdir ~/customClustvis/
-cd ~/customClustvis/
-wget https://github.com/taunometsalu/ClustVis/archive/master.zip
-unzip master.zip
-chmod -R go+rx ~/customClustvis/
-sudo docker run -d \
-    --name customClustvis \
-    -p &lt;myPort&gt;:3838 \
-    -v ~/customClustvis/ClustVis-master/:/srv/shiny-server/:ro \
-    taunometsalu/clustvis</code></pre>
-<p>To start using ClustVis R package, you can look at the examples in the vignette that comes with the package from <a href="https://github.com/taunometsalu/ClustVis">github</a>:</p>
-<pre class="r"><code>install.packages(&quot;BiocManager&quot;)
-BiocManager::install(&quot;pcaMethods&quot;)
-library(devtools)
-install_github(&quot;taunometsalu/pheatmap&quot;)
-install_github(&quot;taunometsalu/clustvis/Rpackage&quot;, build_vignettes = TRUE)
-vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
-<ul>
-<li><p><strong>Application</strong>: The ClustVis tutorial can be found at
-<a href="https://biit.cs.ut.ee/clustvis/" class="uri">https://biit.cs.ut.ee/clustvis/</a></p></li>
-<li><p><strong>Web server</strong>: <a href="https://biit.cs.ut.ee/clustvis/">ClustVis</a>.
-<img src="/images/ClustVis.jpg?width=50pc" alt="ClustVis" /></p></li>
-</ul>
-<hr />
-</div>
-<div id="medusa" class="section level2">
-<h2>6.1.3 <strong>Medusa</strong></h2>
-<ul>
-<li><p><strong>Introduction</strong>: Medusa3 is a java standalone application for visualization and clustering analysis of biological networks in 2D. It is highly interactive and it supports weighted and multi-edged graphs where each edge between two bioentities can represent a different biological concept. Comparing to previous versions, it is currently enriched with a variety of layout and clustering methods for more intuitive visualizations. It is easy to integrate with web application since it is offered as an applet.</p>
-<center>
-<p><b>Data Source Statistics</b></p>
-</center>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Type</th>
-<th align="left">Number</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">species</td>
-<td align="left">9</td>
-</tr>
-<tr class="even">
-<td align="left">Data sources</td>
-<td align="left">22</td>
-</tr>
-<tr class="odd">
-<td align="left">Network</td>
-<td align="left">7</td>
-</tr>
-</tbody>
-</table></li>
-<li><p><strong>Installation</strong>:The latest version 3.0 can be downloaded directly from here.
-(<a href="https://docs.google.com/uc?id=0B-FSkXfyY2AFZTUxYWIxMTgtMjJiYy00NTMyLTlmMzUtZDdiZDFlZGRhYjUw&amp;export=download&amp;hl=en" class="uri">https://docs.google.com/uc?id=0B-FSkXfyY2AFZTUxYWIxMTgtMjJiYy00NTMyLTlmMzUtZDdiZDFlZGRhYjUw&amp;export=download&amp;hl=en</a>)</p></li>
-<li><p><strong>Application</strong>: The Medusa tutorial can be found at
-<a href="https://sites.google.com/site/medusa3visualization/tutorial" class="uri">https://sites.google.com/site/medusa3visualization/tutorial</a></p></li>
-<li><p><strong>Web server</strong>: <a href="https://sites.google.com/site/medusa3visualization/">Medusa</a>.
-<img src="/images/Medusa.jpg?width=50pc" alt="Medusa" /></p></li>
-</ul>
-<hr />
-</div>
-<div id="wcd" class="section level2">
-<h2>6.1.4 <strong>wcd</strong></h2>
-<ul>
-<li><p><strong>Introduction</strong>: wcd is an open source tool for clustering expressed sequence tags. It implements matching using either d2 or edit distance, which provides sensitive matching. Heuristics speed up the clustering process. wcd parallelises well under MPI and also provides Pthreads clustering. wcd has a very compact memory representation which means that large files can be clustered on a single processor (and it can run quite happily without MPI or Pthreads headers or libraries being available).</p></li>
-<li><p><strong>Application</strong>: The wcd tutorial can be found at
-<a href="https://code.google.com/archive/about" class="uri">https://code.google.com/archive/about</a>.</p></li>
-<li><p><strong>Web server</strong>: <a href="https://code.google.com/archive/p/wcdest/">wcd</a>.
-<img src="/images/wcd.jpg?width=50pc" alt="wcd" /></p></li>
-</ul>
-<hr />
-</div>
-<div id="fuat" class="section level2">
-<h2>6.1.5 <strong>FUAT</strong></h2>
-<ul>
-<li><p><strong>Introduction</strong>: A desktop software, namely FUAT, is developed to analyze, explore and visualize different aspects of obtained fuzzy clusters which are segmented by fuzzy c-means algorithm. Moreover, to obtain and inform optimal cluster count, FUAT is equipped with Expectation Maximization algorithm.</p></li>
-<li><p><strong>Installation</strong>: desktop software: &lt;10.1016/j.eswa.2012.05.038&gt;</p></li>
-</ul>
-<hr />
-</div>
-<div id="hiplot" class="section level2">
-<h2>6.1.6 <strong>hiplot</strong></h2>
-<ul>
-<li><strong>Introduction</strong>: we newly developed a pool of biomedical visualization and modeling functions (240+), and proposed a scalable and emerging one-stop web service, Hiplot, with versatile task plugins, such as basic statistics, regression, clustering, genomics, transcriptomics, time series, meta-analysis, and risk models. It provides more simple web and command-line interfaces compared with other similar platforms, and is supported and maintained by the openbiox open source community.</li>
-</ul>
+<p><strong>Introduction</strong>: This web tool allows users to upload their own data and easily create Principal Component Analysis (PCA) plots and heatmaps. Data can be uploaded as a file or by copy-pasteing it to the text box. Data format is shown under “Help” tab.</p>
 <center>
 <b>Data Source Statistics</b>
 </center>
@@ -176,25 +56,123 @@ vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
 </tr>
 </tbody>
 </table>
-<ul>
-<li><strong>Application</strong>: The hiplot tutorial can be found at <a href="https://hiplot-academic.com/docs/" class="uri">https://hiplot-academic.com/docs/</a></li>
-<li><strong>Web server</strong>: <a href="https://hiplot-academic.com/">hiplot</a>.
-<img src="/images/hiplot.jpg?width=50pc" alt="hiplot" /></li>
-</ul>
+<p><strong>Installation</strong>:To use the Docker image, you need to have Docker installed. Then use the following code:</p>
+<pre class="bash"><code>sudo docker pull taunometsalu/clustvis
+mkdir ~/customClustvis/
+cd ~/customClustvis/
+wget https://github.com/taunometsalu/ClustVis/archive/master.zip
+unzip master.zip
+chmod -R go+rx ~/customClustvis/
+sudo docker run -d \
+    --name customClustvis \
+    -p &lt;myPort&gt;:3838 \
+    -v ~/customClustvis/ClustVis-master/:/srv/shiny-server/:ro \
+    taunometsalu/clustvis</code></pre>
+<p>To start using ClustVis R package, you can look at the examples in the vignette that comes with the package from <a href="https://github.com/taunometsalu/ClustVis">github</a>:</p>
+<pre class="r"><code>install.packages(&quot;BiocManager&quot;)
+BiocManager::install(&quot;pcaMethods&quot;)
+library(devtools)
+install_github(&quot;taunometsalu/pheatmap&quot;)
+install_github(&quot;taunometsalu/clustvis/Rpackage&quot;, build_vignettes = TRUE)
+vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
+<p><strong>Application</strong>: The ClustVis tutorial can be found at
+<a href="https://biit.cs.ut.ee/clustvis/" class="uri">https://biit.cs.ut.ee/clustvis/</a></p>
+<p><strong>Web server</strong>: <a href="https://biit.cs.ut.ee/clustvis/">ClustVis</a>.
+<img src="/images/ClustVis.jpg?width=50pc" alt="ClustVis" /></p>
+<hr />
+</div>
+<div id="medusa" class="section level2">
+<h2>6.1.3 <strong>Medusa</strong></h2>
+<p><strong>Introduction</strong>: Medusa3 is a java standalone application for visualization and clustering analysis of biological networks in 2D. It is highly interactive and it supports weighted and multi-edged graphs where each edge between two bioentities can represent a different biological concept. Comparing to previous versions, it is currently enriched with a variety of layout and clustering methods for more intuitive visualizations. It is easy to integrate with web application since it is offered as an applet.</p>
+<center>
+<b>Data Source Statistics</b>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">species</td>
+<td align="left">9</td>
+</tr>
+<tr class="even">
+<td align="left">Data sources</td>
+<td align="left">22</td>
+</tr>
+<tr class="odd">
+<td align="left">Network</td>
+<td align="left">7</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Installation</strong>:The latest version 3.0 can be downloaded directly from here.
+(<a href="https://docs.google.com/uc?id=0B-FSkXfyY2AFZTUxYWIxMTgtMjJiYy00NTMyLTlmMzUtZDdiZDFlZGRhYjUw&amp;export=download&amp;hl=en" class="uri">https://docs.google.com/uc?id=0B-FSkXfyY2AFZTUxYWIxMTgtMjJiYy00NTMyLTlmMzUtZDdiZDFlZGRhYjUw&amp;export=download&amp;hl=en</a>)</p>
+<p><strong>Application</strong>: The Medusa tutorial can be found at
+<a href="https://sites.google.com/site/medusa3visualization/tutorial" class="uri">https://sites.google.com/site/medusa3visualization/tutorial</a></p>
+<p><strong>Web server</strong>: <a href="https://sites.google.com/site/medusa3visualization/">Medusa</a>.
+<img src="/images/Medusa.jpg?width=50pc" alt="Medusa" /></p>
+<hr />
+</div>
+<div id="wcd" class="section level2">
+<h2>6.1.4 <strong>wcd</strong></h2>
+<p><strong>Introduction</strong>: wcd is an open source tool for clustering expressed sequence tags. It implements matching using either d2 or edit distance, which provides sensitive matching. Heuristics speed up the clustering process. wcd parallelises well under MPI and also provides Pthreads clustering. wcd has a very compact memory representation which means that large files can be clustered on a single processor (and it can run quite happily without MPI or Pthreads headers or libraries being available).</p>
+<p><strong>Application</strong>: The wcd tutorial can be found at
+<a href="https://code.google.com/archive/about" class="uri">https://code.google.com/archive/about</a>.</p>
+<p><strong>Web server</strong>: <a href="https://code.google.com/archive/p/wcdest/">wcd</a>.
+<img src="/images/wcd.jpg?width=50pc" alt="wcd" /></p>
+<hr />
+</div>
+<div id="fuat" class="section level2">
+<h2>6.1.5 <strong>FUAT</strong></h2>
+<p><strong>Introduction</strong>: A desktop software, namely FUAT, is developed to analyze, explore and visualize different aspects of obtained fuzzy clusters which are segmented by fuzzy c-means algorithm. Moreover, to obtain and inform optimal cluster count, FUAT is equipped with Expectation Maximization algorithm.</p>
+<p><strong>Installation</strong>: desktop software: &lt;10.1016/j.eswa.2012.05.038&gt;</p>
+<hr />
+</div>
+<div id="hiplot" class="section level2">
+<h2>6.1.6 <strong>hiplot</strong></h2>
+<p><strong>Introduction</strong>: we newly developed a pool of biomedical visualization and modeling functions (240+), and proposed a scalable and emerging one-stop web service, Hiplot, with versatile task plugins, such as basic statistics, regression, clustering, genomics, transcriptomics, time series, meta-analysis, and risk models. It provides more simple web and command-line interfaces compared with other similar platforms, and is supported and maintained by the openbiox open source community.</p>
+<center>
+<b>Data Source Statistics</b>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">species</td>
+<td align="left">9</td>
+</tr>
+<tr class="even">
+<td align="left">Data sources</td>
+<td align="left">22</td>
+</tr>
+<tr class="odd">
+<td align="left">Network</td>
+<td align="left">7</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application</strong>: The hiplot tutorial can be found at <a href="https://hiplot-academic.com/docs/" class="uri">https://hiplot-academic.com/docs/</a>
+<strong>Web server</strong>: <a href="https://hiplot-academic.com/">hiplot</a>.
+<img src="/images/hiplot.jpg?width=50pc" alt="hiplot" /></p>
 <hr />
 </div>
 <div id="cola" class="section level2">
 <h2>6.1.7 <strong>cola</strong></h2>
-<ul>
-<li><p><strong>Introduction</strong>: The cola package provides a general framework for subgroup classification by consensus partitioning. It has the following features: 1. It modularizes the consensus partitioning processes that various methods can be easily integrated. 2. It provides rich visualizations for interpreting the results. 3. It allows running multiple methods at the same time and provides functionalities to straightforward compare results. 4. It provides a new method to extract features which are more efficient to separate subgroups. 5. It automatically generates detailed reports for the complete analysis. 6. It allows applying consensus partitioning in a hierarchical manner.</p></li>
-<li><p><strong>Installation</strong>:To install this package, start R (version “4.2”) and enter:</p></li>
-</ul>
+<p><strong>Introduction</strong>: The cola package provides a general framework for subgroup classification by consensus partitioning. It has the following features: 1. It modularizes the consensus partitioning processes that various methods can be easily integrated. 2. It provides rich visualizations for interpreting the results. 3. It allows running multiple methods at the same time and provides functionalities to straightforward compare results. 4. It provides a new method to extract features which are more efficient to separate subgroups. 5. It automatically generates detailed reports for the complete analysis. 6. It allows applying consensus partitioning in a hierarchical manner.</p>
+<p><strong>Installation</strong>:To install this package, start R (version “4.2”) and enter:</p>
 <pre class="r"><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))
     install.packages(&quot;BiocManager&quot;)
 
 BiocManager::install(&quot;cola&quot;)</code></pre>
-<ul>
-<li><strong>Application</strong>: The cola vignette can be found at
-<a href="https://bioconductor.org/packages/release/bioc/vignettes/cola/inst/doc/cola.html" class="uri">https://bioconductor.org/packages/release/bioc/vignettes/cola/inst/doc/cola.html</a></li>
-</ul>
+<p><strong>Application</strong>: The cola vignette can be found at
+<a href="https://bioconductor.org/packages/release/bioc/vignettes/cola/inst/doc/cola.html" class="uri">https://bioconductor.org/packages/release/bioc/vignettes/cola/inst/doc/cola.html</a></p>
 </div>

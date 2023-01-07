@@ -16,24 +16,23 @@ Gene Ontology project is established to standardized describe the gene product�
 
 ## 1.2.1 **WEGO 2.0**
 
-- **Introduction**: WEGO (Web Gene Ontology Annotation Plot), created in 2006, is a simple but useful tool for visualizing, comparing and plotting GO (Gene Ontology) annotation results. WEGO uses the GO annotation results as input. Based on GO’s standardized DAG (Directed Acyclic Graph) structured vocabulary system, the number of genes corresponding to each GO ID is calculated and shown in a graphical format. WEGO provide multiple datasets analysis. Also added are the reference datasets of nine model species that can be adopted as baselines in genomic comparative analyses. 
+**Introduction**: WEGO (Web Gene Ontology Annotation Plot), created in 2006, is a simple but useful tool for visualizing, comparing and plotting GO (Gene Ontology) annotation results. WEGO uses the GO annotation results as input. Based on GO’s standardized DAG (Directed Acyclic Graph) structured vocabulary system, the number of genes corresponding to each GO ID is calculated and shown in a graphical format. WEGO provide multiple datasets analysis. Also added are the reference datasets of nine model species that can be adopted as baselines in genomic comparative analyses. 
 
-- **Web server**: [WEGO v2.0](https://wego.genomics.cn/).
+**Web server**: [WEGO v2.0](https://wego.genomics.cn/).
 ![WEGO](/images/WEGO.png?width=50pc)
 
 ---
 
 ## 1.2.2 **g:GOSt**
 
-- **Introduction**: g:GOSt (part of the g:Profiler) performs functional enrichment analysis, also known as over-representation analysis (ORA) or gene set enrichment analysis, on input gene list. It maps genes to known functional information sources and detects statistically significantly enriched terms. We regularly retrieve data from Ensembl database and fungi, plants or metazoa specific versions of Ensembl Genomes, and parasite specific data from WormBase ParaSite. In addition to Gene Ontology, we include pathways from KEGG Reactome and WikiPathways; miRNA targets from miRTarBase and regulatory motif matches from TRANSFAC; tissue specificity from Human Protein Atlas; protein complexes from CORUM and human disease phenotypes from Human Phenotype Ontology. g:GOSt supports close to 500 organisms and accepts hundreds of identifier types.
+**Introduction**: g:GOSt (part of the g:Profiler) performs functional enrichment analysis, also known as over-representation analysis (ORA) or gene set enrichment analysis, on input gene list. It maps genes to known functional information sources and detects statistically significantly enriched terms. We regularly retrieve data from Ensembl database and fungi, plants or metazoa specific versions of Ensembl Genomes, and parasite specific data from WormBase ParaSite. In addition to Gene Ontology, we include pathways from KEGG Reactome and WikiPathways; miRNA targets from miRTarBase and regulatory motif matches from TRANSFAC; tissue specificity from Human Protein Atlas; protein complexes from CORUM and human disease phenotypes from Human Phenotype Ontology. g:GOSt supports close to 500 organisms and accepts hundreds of identifier types.
 
-- **Installation**: To install this package, start R and enter:
+**Installation**: To install this package, start R and enter:
 
 ```{r eval=FALSE}
 install.packages("gprofiler2")
 ```
 
-- **Aplication**: 
 ```{r}
 library(gprofiler2)
 gostres <- gost(query = c("X:1000:1000000", "rs17396340", "GO:0005005", "ENSG00000156103", "NLRP1"),
@@ -49,14 +48,14 @@ p <- gostplot(gostres, capped = FALSE, interactive = FALSE)
 p
 ```
 
-- **Web server**: [g:GOSt](https://biit.cs.ut.ee/gprofiler/gost).
+**Web server**: [g:GOSt](https://biit.cs.ut.ee/gprofiler/gost).
 ![g:GOSt](/images/gOrth.jpg?width=50pc)
- 
+
 ---
 
 ## 1.2.3 **agriGO 2.0**
  
-- **Introduction**: AgriGO v2.0 is a web-based tool and database for gene ontology analyses. It specifically focuses on agricultural species and is user-friendly. AgriGO v2.0 is designed to provide deep support to the agricultural community in the realm of ontology analyses. New advantages and features of agriGO v2.0 are as follows:
+**Introduction**: AgriGO v2.0 is a web-based tool and database for gene ontology analyses. It specifically focuses on agricultural species and is user-friendly. AgriGO v2.0 is designed to provide deep support to the agricultural community in the realm of ontology analyses. New advantages and features of agriGO v2.0 are as follows:
 1). The agriGO v2.0 focuses on agricultural species in particular. It    supports species and datatypes. 
 2). A new species’ classification system, single species analysis and    reference datatype priorities help users to perform fast and accurate    analyses.
 3). Analysis tools, including the Singular Enrichment Analysis (SEA),    Parametric Analysis of Gene set Enrichment (PAGE), BLAST4ID (Transfer IDs by    BLAST) and SEACOMPARE (Cross comparison of SEA) were retained. These tools    provide users with means for data mining and systematic result exploration    and will allow better data analyses and interpretations.
@@ -65,7 +64,7 @@ p
 
   <center><b>Species information</b></center>
   | Category   | Classification | Species counts   |  
-  | :--------- | :------------- | :--------------- |  
+  | :--------| :------------| :--------------|  
   | Plant      | Brassicaceae   | 12          |  
   |            | Poaceae        | 29          |  
   |            | Malvaceae      | 6           |  
@@ -80,7 +79,7 @@ p
   |            | Mammalia       | 58          | 
   | Fungi      | Sordariomycetes| 5           |  
  
-- **Web server**: [agriGO](http://systemsbiology.cpolar.cn/agriGOv2/index.php).
+**Web server**: [agriGO](http://systemsbiology.cpolar.cn/agriGOv2/index.php).
 ![agriGO](/images/agriGO.jpeg?width=50pc)
 
 
@@ -88,20 +87,20 @@ p
 
 ## 1.2.4 **UniProtKB**
 
-- **Introduction**: The UniProt Knowledgebase (UniProtKB) is the central hub for the collection of functional information on proteins, with accurate, consistent and rich annotation. In addition to capturing the core data mandatory for each UniProtKB entry (mainly, the amino acid sequence, protein name or description, taxonomic data and citation information), as much annotation information as possible is added. This includes widely accepted biological ontologies, classifications and cross-references, and clear indications of the quality of annotation in the form of evidence attribution of experimental and computational data.
+**Introduction**: The UniProt Knowledgebase (UniProtKB) is the central hub for the collection of functional information on proteins, with accurate, consistent and rich annotation. In addition to capturing the core data mandatory for each UniProtKB entry (mainly, the amino acid sequence, protein name or description, taxonomic data and citation information), as much annotation information as possible is added. This includes widely accepted biological ontologies, classifications and cross-references, and clear indications of the quality of annotation in the form of evidence attribution of experimental and computational data.
 
 The UniProt Knowledgebase consists of two sections: a section containing    manually-annotated records with information extracted from literature and    curator-evaluated computational analysis, and a section with computationally    analyzed records that await full manual annotation. For the sake of    continuity and name recognition, the two sections are referred to as    "UniProtKB/Swiss-Prot" (reviewed, manually annotated) and "UniProtKB/TrEMBL"    (unreviewed, automatically annotated), respectively.
    
 SPECIES: 250
 
-- **Web server**: [UniProtKB](https://www.uniprot.org/).
+**Web server**: [UniProtKB](https://www.uniprot.org/).
 ![UniProtKB](/images/uniprot.jpg?width=50pc)
  
 ---
 
 ## 1.2.5 **PANTHER**
 
-- **Introduction**: The PANTHER (Protein ANalysis THrough Evolutionary Relationships) Classification System was designed to classify proteins (and their genes) in order to facilitate high-throughput analysis. The core of PANTHER is a comprehensive, annotated “library” of gene family phylogenetic trees. All nodes in the tree have persistent identifiers that are maintained between versions of PANTHER, providing a stable substrate for annotations of protein properties like subfamily and function. Each phylogenetic tree is used to annotate each protein member of the family by its:
+**Introduction**: The PANTHER (Protein ANalysis THrough Evolutionary Relationships) Classification System was designed to classify proteins (and their genes) in order to facilitate high-throughput analysis. The core of PANTHER is a comprehensive, annotated “library” of gene family phylogenetic trees. All nodes in the tree have persistent identifiers that are maintained between versions of PANTHER, providing a stable substrate for annotations of protein properties like subfamily and function. Each phylogenetic tree is used to annotate each protein member of the family by its:
 Family and Protein Class (supergrouping of protein families)
 Subfamily (subgroup within the family phylogenetic tree)
 Orthologs (genes in other organisms that derive from the same gene in the MRCA)
@@ -111,7 +110,7 @@ Pathways (curated by PANTHER and by Reactome)
 
   <center><b>Database information</b></center>  
   | Type            | Number           | 
-  | :-------------- | :--------------- | 
+  | :-------------| :--------------| 
   | species         | 143 |
   | pathways        | 177 |
   | Ontologies      | 3361 terms     | 
@@ -119,50 +118,50 @@ Pathways (curated by PANTHER and by Reactome)
   |                 | 544 cellular component terms | 
   |                 | 550 molecular function terms |
 
-- **Web server**: [PANTHER](http://www.pantherdb.org/).
+**Web server**: [PANTHER](http://www.pantherdb.org/).
 ![PANTHER](/images/PANTHER.jpg?width=50pc)
 
 ---
 
 ## 1.2.6 **GOrilla**
 
-- **Introduction**: GOrilla is a web-based application that identifies enriched GO terms in ranked lists of genes, without requiring the user to provide explicit target and background sets. This is particularly useful in many typical cases where genomic data may be naturally represented as a ranked list of genes (e.g. by level of expression or of differential expression).GOrilla employs a flexible threshold statistical approach to discover GO terms that are significantly enriched at the top of a ranked gene list.
+**Introduction**: GOrilla is a web-based application that identifies enriched GO terms in ranked lists of genes, without requiring the user to provide explicit target and background sets. This is particularly useful in many typical cases where genomic data may be naturally represented as a ranked list of genes (e.g. by level of expression or of differential expression).GOrilla employs a flexible threshold statistical approach to discover GO terms that are significantly enriched at the top of a ranked gene list.
 
-- **Web server**: [GOrilla](http://cbl-gorilla.cs.technion.ac.il/).
+**Web server**: [GOrilla](http://cbl-gorilla.cs.technion.ac.il/).
 ![GOrilla](/images/GOrilla.jpg?width=60pc)
 
 ---
 
 ## 1.2.7 **WEGO 2.0**
 
-- **Introduction**: WEGO uses the GO annotation results as input. Based on GO’s standardized DAG (Directed Acyclic Graph) structured vocabulary system, the number of genes corresponding to each GO ID is calculated and shown in a graphical format. WEGO 2.0 updates have targeted four aspects, aiming to provide a more efficient and upto-date approach for comparative genomic analyses.
+**Introduction**: WEGO uses the GO annotation results as input. Based on GO’s standardized DAG (Directed Acyclic Graph) structured vocabulary system, the number of genes corresponding to each GO ID is calculated and shown in a graphical format. WEGO 2.0 updates have targeted four aspects, aiming to provide a more efficient and upto-date approach for comparative genomic analyses.
 
-- **Web server**: [WEGO 2.0](https://wego.genomics.cn/).
+**Web server**: [WEGO 2.0](https://wego.genomics.cn/).
 ![WEGO 2.0](/images/WEGO.jpg?width=70pc)
 
 ---
 
 ## 1.2.8 **GOEAST**
 
-- **Introduction**: Gene Ontology Enrichment Analysis Software Toolkit (GOEAST), an easy-to-use web-based toolkit that identifies statistically over- represented GO terms within given gene sets. Com- pared with available GO analysis tools, GOEAST has the following improved features: (i) GOEAST displays enriched GO terms in graphical format according to their relationships in the hierarchical tree of each GO category (biological process, molecular function and cellular component), therefore, provides better understanding of the correlations among enriched GO terms; (ii) GOEAST supports analysis for data from various sources (probe or probe set IDs of Affymetrix, Illumina, Agilent or customized micro- arrays, as well as different gene identifiers) and multiple species (about 60 prokaryote and eukaryote species); (iii) One unique feature of GOEAST is to allow cross comparison of the GO enrichment status of multiple experiments to identify functional corre- lations among them.
+**Introduction**: Gene Ontology Enrichment Analysis Software Toolkit (GOEAST), an easy-to-use web-based toolkit that identifies statistically overrepresented GO terms within given gene sets. Compared with available GO analysis tools, GOEAST has the following improved features: (i) GOEAST displays enriched GO terms in graphical format according to their relationships in the hierarchical tree of each GO category (biological process, molecular function and cellular component), therefore, provides better understanding of the correlations among enriched GO terms; (ii) GOEAST supports analysis for data from various sources (probe or probe set IDs of Affymetrix, Illumina, Agilent or customized microarrays, as well as different gene identifiers) and multiple species (about 60 prokaryote and eukaryote species); (iii) One unique feature of GOEAST is to allow cross comparison of the GO enrichment status of multiple experiments to identify functional correlations among them.
 
-- **Web server**: [GOEAST](http://omicslab.genetics.ac.cn/GOEAST/).
+**Web server**: [GOEAST](http://omicslab.genetics.ac.cn/GOEAST/).
 ![GOEAST](/images/GOEAST.jpg?width=60pc)
 
 ---
 
 ## 1.2.9 **ShinyGO**
 
-- **Introduction**: ShinyGO based on a large annotation database derived from Ensembl and STRING-db for 59 plant, 256 animal, 115 archeal and 1678 bacterial species. ShinyGO’s novel features include graphical visualization of enrichment results and gene characteristics, and application program interface ac- cess to KEGG and STRING for the retrieval of pathway diagrams and protein–protein interaction networks.
+**Introduction**: ShinyGO based on a large annotation database derived from Ensembl and STRING-db for 59 plant, 256 animal, 115 archeal and 1678 bacterial species. ShinyGO’s novel features include graphical visualization of enrichment results and gene characteristics, and application program interface access to KEGG and STRING for the retrieval of pathway diagrams and protein–protein interaction networks.
 
-- **Web server**: [ShinyGO](http://bioinformatics.sdstate.edu/go/).
+**Web server**: [ShinyGO](http://bioinformatics.sdstate.edu/go/).
 ![ShinyGO](/images/ShinyGO.jpg?width=60pc)
 
 ---
 
 ## 1.2.9 **GOTermFinder**
 
-- **Introduction**: GOTermFinder comprises a set of object- oriented Perl modules for accessing Gene Ontology (GO) information and evaluating and visualizing the collective annotation of a list of genes to GO terms. It can be used to draw conclusions from microarray and other bio- logical data, calculating the statistical significance of each annotation. GO::TermFinder can be used on any system on which Perl can be run, either as a command line applic- ation, in single or batch mode, or as a web-based CGI script.
+**Introduction**: GOTermFinder comprises a set of objectoriented Perl modules for accessing Gene Ontology (GO) information and evaluating and visualizing the collective annotation of a list of genes to GO terms. It can be used to draw conclusions from microarray and other biological data, calculating the statistical significance of each annotation. GO::TermFinder can be used on any system on which Perl can be run, either as a command line application, in single or batch mode, or as a web-based CGI script.
 
-- **Web server**: [GOTermFinder](https://www.yeastgenome.org/goTermFinder).
+**Web server**: [GOTermFinder](https://www.yeastgenome.org/goTermFinder).
 ![GOTermFinder](/images/GO_TermFinder.jpg?width=60pc)

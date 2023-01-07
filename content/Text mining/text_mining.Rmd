@@ -16,61 +16,61 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ## 3.1.1 **PubTator central**
 
-- **Introduction**: PubTator Central (PTC) is a Web-based system providing automatic annotations of biomedical concepts such as genes and mutations in PubMed abstracts and PMC full-text articles. PTC expands the widely-used PubTator system. 
+**Introduction**: PubTator Central (PTC) is a Web-based system providing automatic annotations of biomedical concepts such as genes and mutations in PubMed abstracts and PMC full-text articles. PTC expands the widely-used PubTator system. 
 
-- **Installation**: In addition to apps, PubTator central offers easy access to download source in [Python](https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/tmTools/download/ExampleCode.Python.zip), [Perl](https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/tmTools/download/ExampleCode.Perl.zip) and [Java](https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/tmTools/download/ExampleCode.Java.zip).
+**Installation**: In addition to apps, PubTator central offers easy access to download source in [Python](https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/tmTools/download/ExampleCode.Python.zip), [Perl](https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/tmTools/download/ExampleCode.Perl.zip) and [Java](https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/tmTools/download/ExampleCode.Java.zip).
 
-- **Application**: The PubTator central tutorial can be found at <https://www.ncbi.nlm.nih.gov/research/pubtator/tutorial.html>.
+**Application**: The PubTator central tutorial can be found at <https://www.ncbi.nlm.nih.gov/research/pubtator/tutorial.html>.
 
-- **Web server**: [PubTator central](https://www.ncbi.nlm.nih.gov/research/pubtator/).
-![PubTator central](/images/PubTator central.jpg?width=90pc)
+**Web server**: [PubTator central](https://www.ncbi.nlm.nih.gov/research/pubtator/).
+![PubTator central](/images/PubTator central.jpg?width=60pc)
 
 
 ---
 
 ## 3.1.2 **Phenomizer**
 
-- **Introduction**: a tool that uses prior information to implicate genes involved in diseases. Phenolyzer exhibits superior performance over competing methods for prioritizing Mendelian and complex disease genes, based on disease or phenotype terms entered as free text.
+**Introduction**: a tool that uses prior information to implicate genes involved in diseases. Phenolyzer exhibits superior performance over competing methods for prioritizing Mendelian and complex disease genes, based on disease or phenotype terms entered as free text.
            
-- **Web server**: [Phenomizer](https://compbio.charite.de/phenomizer/).
+**Web server**: [Phenomizer](https://compbio.charite.de/phenomizer/).
 ![Phenomizer](/images/Phenolyzer.jpg?width=50pc)
 
 ---
 
 ## 3.1.3 **BioGraph**
 
-- **Introduction**: The BioGraph service integrates heterogeneous knowledge bases and allows for the successful automated formulation and ranking of comprehensible functional hypotheses relating biomedical contexts to candidate targets, e.g., for disease-gene relations. 
+**Introduction**: The BioGraph service integrates heterogeneous knowledge bases and allows for the successful automated formulation and ranking of comprehensible functional hypotheses relating biomedical contexts to candidate targets, e.g., for disease-gene relations. 
 
   <center><b>Data Source Statistics</b></center>
   | Type           | Number           | 
-  | :------------- | :--------------- | 
+  | :------------| :--------------| 
   | Databases      |19|
   | Relation Type  |13|
 
-- **Web server**: [BioGraph](https://biograph.be/).
-![BioGraph](/images/BioGraph.jpg?width=90pc)
+**Web server**: [BioGraph](https://biograph.be/).
+![BioGraph](/images/BioGraph.jpg?width=60pc)
  
 ---
 
 ## 3.1.4 **WordCloud**
 
-- **Introduction**: The WordCloud Plugin is a Cytsocape plugin that generates a word tag cloud from a user-defined node selection, summarizing an attribute of choice. For instance, if selected nodes are proteins, and the string attribute "full protein name" is selected, every string will be broken down into words, which will be plotted on a panel with size proportional to their frequency.
+**Introduction**: The WordCloud Plugin is a Cytsocape plugin that generates a word tag cloud from a user-defined node selection, summarizing an attribute of choice. For instance, if selected nodes are proteins, and the string attribute "full protein name" is selected, every string will be broken down into words, which will be plotted on a panel with size proportional to their frequency.
   
-- **Installation**: Download the cytoscape plug-in at [here](https://apps.cytoscape.org/apps/wordcloud).
+**Installation**: Download the cytoscape plug-in at [here](https://apps.cytoscape.org/apps/wordcloud).
 
-- **Application**: The WordCloud tutorial can be found at
+**Application**: The WordCloud tutorial can be found at
 <http://baderlab.org/Software/WordCloudPlugin/UserManual>.
 
 ---
 
 ## 3.1.5 **BEST**
 
-- **Introduction**: BEST uses a dictionary-based approach to extract biomedical entities from texts, and indexes the entities along with the source texts. The BEST dictionary consists of 12 different databases each covering different subsets of entity types (we will describe it in the Methods section). BEST finds an entity relevant to a query based primarily on the number of co-occurrences between the query terms and the entity in the literature. Besides the co-occurrence, the ranking function of BEST takes into account other various metrics including the authority of journals, the recency of articles, and the term frequency-inverse document frequency (TF-IDF) weighting.  
+**Introduction**: BEST uses a dictionary-based approach to extract biomedical entities from texts, and indexes the entities along with the source texts. The BEST dictionary consists of 12 different databases each covering different subsets of entity types (we will describe it in the Methods section). BEST finds an entity relevant to a query based primarily on the number of co-occurrences between the query terms and the entity in the literature. Besides the co-occurrence, the ranking function of BEST takes into account other various metrics including the authority of journals, the recency of articles, and the term frequency-inverse document frequency (TF-IDF) weighting.  
         
-- **Application**: The BEST tutorial can be found at
+**Application**: The BEST tutorial can be found at
 <http://best.korea.ac.kr/help/BEST_Guide.pdf>.
 
-- **Web server**: [BEST](http://best.korea.ac.kr/).
+**Web server**: [BEST](http://best.korea.ac.kr/).
 ![BEST](/images/BEST.jpg?width=50pc)
 
  
@@ -78,77 +78,79 @@ knitr::opts_chunk$set(eval = FALSE)
 
 ## 3.1.6 **iPTMnet**
 
-- **Introduction**: iPTMnet is a bioinformatics resource for integrated understanding of protein post-translational modifications (PTMs) in systems biology context. It connects multiple disparate bioinformatics tools and systems text mining, data mining, analysis and visualization tools, and databases and ontologies into an integrated cross-cutting research resource to address the knowledge gaps in exploring and discovering PTM networks.
-![iPTMnet](/images/iPTMent.jpg?width=100pc)
+**Introduction**: iPTMnet is a bioinformatics resource for integrated understanding of protein post-translational modifications (PTMs) in systems biology context. It connects multiple disparate bioinformatics tools and systems text mining, data mining, analysis and visualization tools, and databases and ontologies into an integrated cross-cutting research resource to address the knowledge gaps in exploring and discovering PTM networks.
+![iPTMnet](/images/iPTMent.jpg?width=60pc)
   
-- **Installation**: 1.Start R (version "4.2") and enter:
+**Installation**:
+
+1.Start R (version "4.2") and enter:
 ```{r}
-Installation: install.packages("iptmnetr")
+install.packages("iptmnetr")
 ```
- 2.Python package:
-```{python}
+2.Python package:
+```{python eval = FALSE}
 pip install pyiptmnet
 ```
 
-- **Application**: The iPTMnet tutorial can be found at
+**Application**: The iPTMnet tutorial can be found at
 <https://proteininformationresource.org/pirwww/support/help.shtml>.
 
 The iPTMnetR vignette can be found at <https://udel-cbcb.github.io/iPTMnetR/#/quickstart>.
 
 The pyiptmnet vignette can be found at <https://udel-cbcb.github.io/pyiPTMnet/#/quickstart>.
 
-- **Web server**: [iPTMnet](http://best.korea.ac.kr/).
-![iPTMnet1](/images/iPTMnet2.jpg?width=90pc)
+**Web server**: [iPTMnet](http://best.korea.ac.kr/).
+![iPTMnet1](/images/iPTMnet2.jpg?width=60pc)
   
 ---
 
 ## 3.1.7 **Genes2WordCloud**
 
-- **Introduction**: Genes2WordCloud is a web-based server application and Java Applet that enables users to create biologically-relevant-content WordClouds.A WordCloud is a visual display of a set of words where the font, size, color or angle can represent some underlying information. A WordCloud is an effective way to visually summarize information about a specific topic of interest. The WordCloud is optimized to maximize the display of the most important terms about a specific topic in the minimum amount of space.
+**Introduction**: Genes2WordCloud is a web-based server application and Java Applet that enables users to create biologically-relevant-content WordClouds.A WordCloud is a visual display of a set of words where the font, size, color or angle can represent some underlying information. A WordCloud is an effective way to visually summarize information about a specific topic of interest. The WordCloud is optimized to maximize the display of the most important terms about a specific topic in the minimum amount of space.
 
-- **Application**: The Genes2WordCloud tutorial can be found at <http://www.maayanlab.net/G2W/help.php>.
+**Application**: The Genes2WordCloud tutorial can be found at <http://www.maayanlab.net/G2W/help.php>.
 
-- **Web server**: [Genes2WordCloud](http://www.maayanlab.net/G2W).
+**Web server**: [Genes2WordCloud](http://www.maayanlab.net/G2W).
 
  
 ---
 
 ## 3.1.8 **TeamTat**
 
-- **Introduction**: TeamTat is a web-based annotation tool (local setup available), equipped to manage team annotation projects engagingly and efficiently. TeamTat is a novel tool for managing multi-user, multi-label document annotation, reflecting the entire production life cycle. Project managers can specify annotation schema for entities and relations and select annotator(s) and distribute documents anonymously to prevent bias. Document input format can be plain text, PDF or BioC (uploaded locally or automatically retrieved from PubMed/PMC), and output format is BioC with inline annotations. TeamTat displays figures from the full text for the annotator's convenience. 
+**Introduction**: TeamTat is a web-based annotation tool (local setup available), equipped to manage team annotation projects engagingly and efficiently. TeamTat is a novel tool for managing multi-user, multi-label document annotation, reflecting the entire production life cycle. Project managers can specify annotation schema for entities and relations and select annotator(s) and distribute documents anonymously to prevent bias. Document input format can be plain text, PDF or BioC (uploaded locally or automatically retrieved from PubMed/PMC), and output format is BioC with inline annotations. TeamTat displays figures from the full text for the annotator's convenience. 
             
-- **Web server**: [TeamTat](https://www.teamtat.org/).
+**Web server**: [TeamTat](https://www.teamtat.org/).
 ![TeamTat](/images/TeamTat.jpg?width=50pc)
  
 ---
 
 ## 3.1.9 **CADA**
 
-- **Introduction**: CADA is a phenotype-based gene prioritization tool that harnesses the most recent information from ClinVar. By this means human phenotype ontology (HPO) terms from case annotations as well as disorder annotations (CADA) are used for achieving superior results particularly for all typical clinical presentations of patients with rare disorders. CADA has been evaluated on a data set of 4714 molecularly confirmed cases and is used in the prospective study TRANSLATE NAMSE. 
+**Introduction**: CADA is a phenotype-based gene prioritization tool that harnesses the most recent information from ClinVar. By this means human phenotype ontology (HPO) terms from case annotations as well as disorder annotations (CADA) are used for achieving superior results particularly for all typical clinical presentations of patients with rare disorders. CADA has been evaluated on a data set of 4714 molecularly confirmed cases and is used in the prospective study TRANSLATE NAMSE. 
 
-- **Installation**:The CADA app offers a project GitHub repository at [here](https://github.com/Chengyao-Peng/CADA). CADA can be installed locally with:
+**Installation**:The CADA app offers a project GitHub repository at [here](https://github.com/Chengyao-Peng/CADA). CADA can be installed locally with:
 ```{bash}
     $ git clone https://github.com/Chengyao-Peng/CADA.git
     $ cd CADA
     $ pip install -e . 
 ```
 
-- **Application**: The CADA tutorial can be found at <https://cada.gene-talk.de/instructions>.
+**Application**: The CADA tutorial can be found at <https://cada.gene-talk.de/instructions>.
              
-- **Web server**: [CADA](https://cada.gene-talk.de/webservice).
+**Web server**: [CADA](https://cada.gene-talk.de/webservice).
 ![CADA](/images/CADA.jpg?width=50pc)
  
 ---
 
 ## 3.1.10 **CROssBAR**
 
-- **Introduction**: CROssBAR is a comprehensive system that integrates large-scale biological/biomedical data from various resources and stores them in a NoSQL database. CROssBAR is enriched with the deep-learning-based prediction of relationships between numerous data entries, which is followed by the rigorous analysis of the enriched data to obtain biologically meaningful modules. These complex sets of entities and relationships are displayed to users via easy-to-interpret, interactive knowledge graphs within an open-access service. CROssBAR knowledge graphs incorporate relevant genes-proteins, molecular interactions, pathways, phenotypes, diseases, as well as known/predicted drugs and bioactive compounds, and they are constructed on-the-fly based on simple non-programmatic user queries. These intensely processed heterogeneous networks are expected to aid systems-level research, especially to infer biological mechanisms in relation to genes, proteins, their ligands, and diseases. 
+**Introduction**: CROssBAR is a comprehensive system that integrates large-scale biological/biomedical data from various resources and stores them in a NoSQL database. CROssBAR is enriched with the deep-learning-based prediction of relationships between numerous data entries, which is followed by the rigorous analysis of the enriched data to obtain biologically meaningful modules. These complex sets of entities and relationships are displayed to users via easy-to-interpret, interactive knowledge graphs within an open-access service. CROssBAR knowledge graphs incorporate relevant genes-proteins, molecular interactions, pathways, phenotypes, diseases, as well as known/predicted drugs and bioactive compounds, and they are constructed on-the-fly based on simple non-programmatic user queries. These intensely processed heterogeneous networks are expected to aid systems-level research, especially to infer biological mechanisms in relation to genes, proteins, their ligands, and diseases. 
 
-- **Installation**:The CROssBAR app offers a project GitHub repository at [here](https://github.com/cansyl/CROssBAR).
+**Installation**:The CROssBAR app offers a project GitHub repository at [here](https://github.com/cansyl/CROssBAR).
 
-- **Application**: The CROssBAR tutorial can be found at <https://crossbar.kansil.org/tutorial.php>.
+**Application**: The CROssBAR tutorial can be found at <https://crossbar.kansil.org/tutorial.php>.
              
-- **Web server**: [CROssBAR](https://crossbar.kansil.org/).
+**Web server**: [CROssBAR](https://crossbar.kansil.org/).
 ![CROssBAR](/images/CROssBAR.jpg?width=50pc)
  
 ---

@@ -9,4 +9,4 @@ weight: 2
 
 # Gene-associated network analysis
 Find meaningful gene modules and construct the networks. 🌐🌐🌐
-![](/images/network.gif?width=55pc)
+![](/images/network.gif?width=45pc)

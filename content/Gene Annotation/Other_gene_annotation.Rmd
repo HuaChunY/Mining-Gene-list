@@ -9,13 +9,12 @@ weight: 4
 Interpreting the relationship between molecular mechanisms and phenotypes, in addition to the GO and pathway annotation, other functional attributes also provide a window into the genes, such as, diseases-associated gene annotations, human/mouse phenotypes, hallmark genes, oncogenic signature, immunologic signature, cell type signature, chromosome cytoband, subcellular locations, developmental stage, gene variant, literatures, domains annotaions, etc.  
 
 **Breaking**: The comprehensive gene/protein annotation databases are summarized in this document, including  the number of species, package installation, operating vignettes. 
-![otherannotation](/images/otherannotation.tif?width=40pc)
 
 ---
 
 ## 1.4.1 **InterPro consortium database**
 
--**Introduction**: [InterPro](https://www.ebi.ac.uk/interpro/) is the world's most comprehensive resource for protein family and domain information. InterPro integrates protein signatures from 13 member databases, which use a variety of different methods to classify proteins. Each of the databases has a particular focus (e.g. protein domains defined from structure, or full length protein families with shared function). 
+**Introduction**: [InterPro](https://www.ebi.ac.uk/interpro/) is the world's most comprehensive resource for protein family and domain information. InterPro integrates protein signatures from 13 member databases, which use a variety of different methods to classify proteins. Each of the databases has a particular focus (e.g. protein domains defined from structure, or full length protein families with shared function). 
 
 InterPro integrates signatures from the following 13 member databases: CATH,   CDD, HAMAP, MobiDB Lite, Panther, Pfam, PIRSF, PRINTS, Prosite, SFLD, SMART,   SUPERFAMILY AND TIGRfams.
   
@@ -90,18 +89,18 @@ TIGRFAMs is a collection of protein families, featuring curated multiple sequenc
 
 ## 1.4.2 **UCSC Genome Browser database**
 
--**Introduction**: UCSC Genome Browser database is a web-based viewer for genome sequence data and annotations, the ability to juxtapose annotations of many types is one of the reasons for the popularity. The gene annotations including clinical variant interpretation, chromosome band location, pseudogene annotation, domain, cis-regulatory elements combination, organs/tissue/cell types annotation and gene interactions from curated databases and text-mining. 
+**Introduction**: UCSC Genome Browser database is a web-based viewer for genome sequence data and annotations, the ability to juxtapose annotations of many types is one of the reasons for the popularity. The gene annotations including clinical variant interpretation, chromosome band location, pseudogene annotation, domain, cis-regulatory elements combination, organs/tissue/cell types annotation and gene interactions from curated databases and text-mining. 
 
--**Web server**: [UCSC](https://genome.ucsc.edu/)
+**Web server**: [UCSC](https://genome.ucsc.edu/)
 ![UCSC](/images/UCSC.jpg?width=50pc)
 
 ---
 
 ## 1.4.3 **MSigDB**
 
--**Introduction**: Molecular Signatures Database (MSigDB) is a resource of tens of thousands of annotated gene sets for use with GSEA software, divided into Human and Mouse collections.The 33196 gene sets in the Human Molecular Signatures Database (MSigDB) are divided into 9 major collections, and several sub-collections. 
+**Introduction**: Molecular Signatures Database (MSigDB) is a resource of tens of thousands of annotated gene sets for use with GSEA software, divided into Human and Mouse collections.The 33196 gene sets in the Human Molecular Signatures Database (MSigDB) are divided into 9 major collections, and several sub-collections. 
 
--**Web server**: [MSigDB](https://genome.ucsc.edu/)
+**Web server**: [MSigDB](https://genome.ucsc.edu/)
 ![MSigDB](/images/MSigDB.jpg?width=50pc)
 ![MSigDB1](/images/MSigDB1.jpg?width=50pc)
 
@@ -109,11 +108,11 @@ TIGRFAMs is a collection of protein families, featuring curated multiple sequenc
 
 ## 1.4.4 **HumanBase**
 
--**Introduction**: HumanBase is a “one stop shop” for biological researchers interested in data-driven predictions of gene expression, function, regulation, and interactions in human, particularly in the context of specific cell types/tissues and human disease. This resource is not merely a public database of primary genomics data or biological literature. The data-driven integrative analyses (i.e. algorithms that “learn” from large genomic data collections) presented in HumanBase are especially powerful because they separate signal from noise in large biological data collections to reach beyond “existing biological knowledge” represented in the biological literature to identify novel associations that are not biased toward well-studied areas of biomedical research. 
+**Introduction**: HumanBase is a “one stop shop” for biological researchers interested in data-driven predictions of gene expression, function, regulation, and interactions in human, particularly in the context of specific cell types/tissues and human disease. This resource is not merely a public database of primary genomics data or biological literature. The data-driven integrative analyses (i.e. algorithms that “learn” from large genomic data collections) presented in HumanBase are especially powerful because they separate signal from noise in large biological data collections to reach beyond “existing biological knowledge” represented in the biological literature to identify novel associations that are not biased toward well-studied areas of biomedical research. 
 
   <center><b>Data Source Statistics</b></center>  
   |	Type	  |	Resource number	|
-  | :------ | :--------- |
+  | :-----| :--------|
   |	Ontology definitions |	3	|	
   |	Gene annotations	|	3	|	
   |	Co-expression	|	980	|	
@@ -123,7 +122,7 @@ TIGRFAMs is a collection of protein families, featuring curated multiple sequenc
   |	TF binding |	1	|	 
 
 
--**Web server**: [HumanBase](https://hb.flatironinstitute.org/)
+**Web server**: [HumanBase](https://hb.flatironinstitute.org/)
 ![HumanBase](/images/MSigDB.jpg?width=50pc)
 
 HumanBase from the following six analysis tools: 
@@ -132,10 +131,10 @@ HumanBase from the following six analysis tools:
 In order to leverage the vast collections of raw, noisy genomic data, they must be integrated, summarized, and presented in a biologically informative manner. We provide a means of mining tens of thousands of whole-genome experiments by way of functional interaction networks. Each interaction network represents a body of data, probabilistically weighted and  integrated, focused on a particular biological question. 
  
 **[Tissue-specific gene networks  (GIANT)](https://hb.flatironinstitute.org/gene/)**
-HumanBase builds genome-scale functional maps of human tissues by integrating a collection of data sets covering thousands of experiments contained in more than 14,000 distinct publications. We automatically assess each data set for its relevance to each of 144 tissue- and cell lineage–specific functional contexts. The resulting functional gene maps provide a detailed portrait of protein function and interactions in specific human tissues and cell lineages ranging from B lymphocytes to the renal glomerulus and the whole brain. This approach allows HumanBase to profile the specialized function of genes in a high-throughput manner, even in tissues and cell lineages for which no or few tissue-specific data exist.
+HumanBase builds genome-scale functional maps of human tissues by integrating a collection of data sets covering thousands of experiments contained in more than 14,000 distinct publications. We automatically assess each data set for its relevance to each of 144 tissueand cell lineage–specific functional contexts. The resulting functional gene maps provide a detailed portrait of protein function and interactions in specific human tissues and cell lineages ranging from B lymphocytes to the renal glomerulus and the whole brain. This approach allows HumanBase to profile the specialized function of genes in a high-throughput manner, even in tissues and cell lineages for which no or few tissue-specific data exist.
 
 **[Functional module detection](Functional module detection)**
-HumanBase applies community detection to find cohesive gene clusters from a provided gene list and a selected relevant tissue. Genes within a cluster share local network neighborhoods and together form a cohesive, specific functional module. Module detection enables systematic association of genes - even functionally uncharacterized genes - to specific processes and phenotypes represented in the detected modules. Functional modules are identified with tissue-specific networks, which predict gene interactions from massive data collections. Thus the discovered modules potentially capture higher-order tissue-specific function.
+HumanBase applies community detection to find cohesive gene clusters from a provided gene list and a selected relevant tissue. Genes within a cluster share local network neighborhoods and together form a cohesive, specific functional module. Module detection enables systematic association of genes even functionally uncharacterized genes to specific processes and phenotypes represented in the detected modules. Functional modules are identified with tissue-specific networks, which predict gene interactions from massive data collections. Thus the discovered modules potentially capture higher-order tissue-specific function.
 
 **[GWAS re-prioritization (NetWAS)](https://hb.flatironinstitute.org/netwas/)**
 Tissue-specific networks provide a new means to generate hypotheses related to the molecular basis of human disease. In NetWAS, the statistical associations from a standard GWAS guide the analysis of functional networks. NetWAS, in conjunction with tissue-specific networks, effectively reprioritizes statistical associations from GWAS to identify disease-associated genes. This reprioritization method is driven by GWAS discovery and does not depend on prior disease knowledge.
@@ -150,25 +149,25 @@ ExPecto makes highly accurate cell-type-specific predictions of gene expression 
 
 ## 1.4.5 **DISGENET**
 
--**Introduction**: DISGENET plus is a discovery platform that integrates human gene and variant-disease associations from various expert curated databases and the scientific literature. Information extracted from expert-curated resources and directly from the literature using state-of-the-art text mining technologies (92 % F-score). All disease classes included supporting applications in any therapeutic area. And the DISGENET database also provided the [CLINICAL BIOMARKERS](https://www.disgenet.org/biomarkers/) app. The Clinical Biomarkers App contains more than 3,000 biomarkers measured in 43,000 Clinical Trials involving 2,600 conditions.
+**Introduction**: DISGENET plus is a discovery platform that integrates human gene and variant-disease associations from various expert curated databases and the scientific literature. Information extracted from expert-curated resources and directly from the literature using state-of-the-art text mining technologies (92 % F-score). All disease classes included supporting applications in any therapeutic area. And the DISGENET database also provided the [CLINICAL BIOMARKERS](https://www.disgenet.org/biomarkers/) app. The Clinical Biomarkers App contains more than 3,000 biomarkers measured in 43,000 Clinical Trials involving 2,600 conditions.
 
   <center><b>Data Source Statistics</b></center>  
   |	Type	  |	Resource number	|
-  | :------ | :--------- |
+  | :-----| :--------|
   |	Gene and variant-disease associations |More than 2 millions |	
   |	Gene    |	24,643 |	
   |	Genomic variants	|	565,000 |	
   |	Diseases and phenotypes |34,000	|	
 
 
--**Installation**:The database offers the [Cytoscape](https://apps.cytoscape.org/apps/disgenetapp) command for scripting purposes.
+**Installation**:The database offers the [Cytoscape](https://apps.cytoscape.org/apps/disgenetapp) command for scripting purposes.
 Install the latest version of this package by entering the following in R:
 ```{r eval=FALSE}
 library(devtools)
 install_bitbucket("ibi_group/disgenet2r")
 ```
 
--**Web server**: [DISGENET](https://www.disgenet.org/home/),
+**Web server**: [DISGENET](https://www.disgenet.org/home/),
 [DISGENET plus](https://www.disgenetplus.com/)
 ![HumanBase](/images/MSigDB.jpg?width=50pc)
 
@@ -176,87 +175,87 @@ install_bitbucket("ibi_group/disgenet2r")
 
 ## 1.4.6 **VaProS**
 
--**Introduction**: VaProS, VAriation effect on PROtein Structure and function, is a new data cloud for Structural Life Science and is the core technology to lead the collaboration between the discipline in Structural Biology and the whole Life Sciences. Led by the initiative of National Institute of Genetics, VaProS has been developed around the Integrated Structural Biology Database at Institute for Protein Research in Osaka University, together with the selected outcomes from Protein 3000 Project, Targeted Proteins Research Program, Genome Network Project and Cell Innovation Project. 
+**Introduction**: VaProS, VAriation effect on PROtein Structure and function, is a new data cloud for Structural Life Science and is the core technology to lead the collaboration between the discipline in Structural Biology and the whole Life Sciences. Led by the initiative of National Institute of Genetics, VaProS has been developed around the Integrated Structural Biology Database at Institute for Protein Research in Osaka University, together with the selected outcomes from Protein 3000 Project, Targeted Proteins Research Program, Genome Network Project and Cell Innovation Project. 
 ![VaProS](/images/VaProS2.jpg?width=50pc)
 
--**Web server**: [VaProS](https://www.disgenet.org/home/),
+**Web server**: [VaProS](https://www.disgenet.org/home/),
 ![VaProS](/images/VaProS.jpg?width=50pc)
 
 ---
 
 ## 1.4.7 **Autophagy Database**
 
--**Introduction**: A database of up-to-date proteins related to autophagy (self-digestion process in eukaryotic cells). The information here includes from protein sequences to protein-protein interactions and is human curated.
+**Introduction**: A database of up-to-date proteins related to autophagy (self-digestion process in eukaryotic cells). The information here includes from protein sequences to protein-protein interactions and is human curated.
 
--**Web server**: [Autophagy Database](http://www.tanpaku.org/autophagy/index.html),
+**Web server**: [Autophagy Database](http://www.tanpaku.org/autophagy/index.html),
 
 ---
 
 ## 1.4.8 **MitoCarta3.0**
 
--**Introduction**: MitoCarta3.0 is an inventory of 1136 human and 1140 mouse genes encoding proteins with strong support of mitochondrial localization, now with sub-mitochondrial compartment and pathway annotations. MitoCarta3.0, released 2020, uses manual literature curation to revise the previous MitoCarta2.0 inventory (78 added and 100 removed genes), provide annotation of sub-mitochondrial localization, and assign genes to a custom ontology of 149 mitochondrial pathways. 
+**Introduction**: MitoCarta3.0 is an inventory of 1136 human and 1140 mouse genes encoding proteins with strong support of mitochondrial localization, now with sub-mitochondrial compartment and pathway annotations. MitoCarta3.0, released 2020, uses manual literature curation to revise the previous MitoCarta2.0 inventory (78 added and 100 removed genes), provide annotation of sub-mitochondrial localization, and assign genes to a custom ontology of 149 mitochondrial pathways. 
 
--**Web server**: [MitoCarta3.0](http://www.broadinstitute.org/mitocarta),
+**Web server**: [MitoCarta3.0](http://www.broadinstitute.org/mitocarta),
 
 ---
 
 ## 1.4.9 **OMIM**
 
--**Introduction**: OMIM is a comprehensive, authoritative compendium of human genes and genetic phenotypes that is freely available and updated daily. The full-text, referenced overviews in OMIM contain information on all known mendelian disorders and over 16,000 genes. OMIM focuses on the relationship between phenotype and genotype. 
+**Introduction**: OMIM is a comprehensive, authoritative compendium of human genes and genetic phenotypes that is freely available and updated daily. The full-text, referenced overviews in OMIM contain information on all known mendelian disorders and over 16,000 genes. OMIM focuses on the relationship between phenotype and genotype. 
 
   <center><b>Data Source Statistics</b></center>  
   |	Type	  |	Resource number	|
-  | :------ | :--------- |
+  | :-----| :--------|
   |	Gene description |	16,874	|
   |	Gene and phenotype, combined |	27	|
   |	Phenotype description, molecular basis known |	6,509	|
   |	Phenotype description or locus, molecular basis unknown |	1,510	|
   |	Other, mainly phenotypes with suspected mendelian basis	|	1,750	|
 
--**Web server**: [OMIM](https://omim.org/),
+**Web server**: [OMIM](https://omim.org/),
 ![OMIM](/images/OMIM.jpg?width=50pc)
 
 ---
 
 ## 1.4.10 **HGMD**
 
--**Introduction**: The Human Gene Mutation Database (HGMD) constitutes a comprehensive collection of published germline mutations in nuclear genes that are thought to underlie, or are closely associated with human inherited disease. The database contains in excess of 289,000 different gene lesions identified in over 11,100 genes manually curated from 72,987 articles published in over 3100 peer-reviewed journals. 
+**Introduction**: The Human Gene Mutation Database (HGMD) constitutes a comprehensive collection of published germline mutations in nuclear genes that are thought to underlie, or are closely associated with human inherited disease. The database contains in excess of 289,000 different gene lesions identified in over 11,100 genes manually curated from 72,987 articles published in over 3100 peer-reviewed journals. 
 ![HGMD](/images/HGMD.jpg?width=50pc)
 
--**Web server**: [HGMD](http://www.hgmd.org)
+**Web server**: [HGMD](http://www.hgmd.org)
 
 ---
 
 ## 1.4.11 **CancerSEA**
 
--**Introduction**: CancerSEA is the first dedicated database that aims to comprehensively resolve distinct functional states of cancer cells at the single-cell level. It portrays a cancer single-cell functional state atlas, involving 14 functional states (including stemness, invasion, metastasis, proliferation, EMT, angiogenesis, apoptosis, cell cycle, differentiation, DNA damage, DNA repair, hypoxia, inflammation and quiescence) of 41,900 cancer single cells from 25 cancer types. CancerSEA allows users to query which functional states the gene or gene list of interest is related to in different cancers. Furthermore, it provides PCG/lncRNA repertoires frequently associated with functional states at single-cell resolution across all cancer types, in a specific cancer type and in individual cancer single-cell datasets. Finally, CancerSEA provides a user-friendly interface for comprehensively searching, browsing, visualizing and downloading functional state activity profiles, PCGs/lncRNAs expression profiles and 14 functional state signatures.
+**Introduction**: CancerSEA is the first dedicated database that aims to comprehensively resolve distinct functional states of cancer cells at the single-cell level. It portrays a cancer single-cell functional state atlas, involving 14 functional states (including stemness, invasion, metastasis, proliferation, EMT, angiogenesis, apoptosis, cell cycle, differentiation, DNA damage, DNA repair, hypoxia, inflammation and quiescence) of 41,900 cancer single cells from 25 cancer types. CancerSEA allows users to query which functional states the gene or gene list of interest is related to in different cancers. Furthermore, it provides PCG/lncRNA repertoires frequently associated with functional states at single-cell resolution across all cancer types, in a specific cancer type and in individual cancer single-cell datasets. Finally, CancerSEA provides a user-friendly interface for comprehensively searching, browsing, visualizing and downloading functional state activity profiles, PCGs/lncRNAs expression profiles and 14 functional state signatures.
 
--**Web server**: [CancerSEA](http://biocc.hrbmu.edu.cn/CancerSEA/home.jsp)
+**Web server**: [CancerSEA](http://biocc.hrbmu.edu.cn/CancerSEA/home.jsp)
 ![CancerSEA](/images/CancerSEA.jpg?width=50pc)
 
 ## 1.4.12 **The Human Phenotype Ontology (HPO)**
 
-- **Introduction**: The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Each term in the HPO describes a phenotypic abnormality, such as Atrial septal defect. The HPO is currently being developed using the medical literature, Orphanet, DECIPHER, and OMIM. HPO currently contains over 13,000 terms and over 156,000 annotations to hereditary diseases. The HPO project and others have developed software for phenotype-driven differential diagnostics, genomic diagnostics, and translational research.
+**Introduction**: The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Each term in the HPO describes a phenotypic abnormality, such as Atrial septal defect. The HPO is currently being developed using the medical literature, Orphanet, DECIPHER, and OMIM. HPO currently contains over 13,000 terms and over 156,000 annotations to hereditary diseases. The HPO project and others have developed software for phenotype-driven differential diagnostics, genomic diagnostics, and translational research.
   
-- **Application**: The Human Phenotype Ontology tutorial can be found at
+**Application**: The Human Phenotype Ontology tutorial can be found at
 <https://hpo.jax.org/app/resources/clinician-guide>.
              
-- **Web server**: [The Human Phenotype Ontology](https://hpo.jax.org/app/)
+**Web server**: [The Human Phenotype Ontology](https://hpo.jax.org/app/)
 ![HPO](/images/HPO.jpg?width=60pc)
 
 ## 1.4.13 **GeneCards**
 
-- **Introduction**: GeneCards is a searchable, integrative database that provides comprehensive, user-friendly information on all annotated and predicted human genes. The knowledgebase automatically integrates gene-centric data from ~150 web sources, including genomic, transcriptomic, proteomic, genetic, clinical and functional information.
+**Introduction**: GeneCards is a searchable, integrative database that provides comprehensive, user-friendly information on all annotated and predicted human genes. The knowledgebase automatically integrates gene-centric data from ~150 web sources, including genomic, transcriptomic, proteomic, genetic, clinical and functional information.
   
-- **Application**: The GeneCards tutorial can be found at
+**Application**: The GeneCards tutorial can be found at
 <https://www.genecards.org/Guide>.
              
-- **Web server**: [GeneCards](https://hpo.jax.org/app/)
+**Web server**: [GeneCards](https://hpo.jax.org/app/)
 ![GeneCards](/images/GeneCards.jpg?width=60pc)
 
 ## 1.4.14 **GeneALaCart**
 
-- **Introduction**: GeneALaCart generates a file of GeneCards annotations associated with your list of genes. For each query, you supply the "batch" of gene identifiers and select the annotations that interest you; GeneALaCart then extracts the information from GeneCards, and produces a customized results file.
+**Introduction**: GeneALaCart generates a file of GeneCards annotations associated with your list of genes. For each query, you supply the "batch" of gene identifiers and select the annotations that interest you; GeneALaCart then extracts the information from GeneCards, and produces a customized results file.
              
-- **Web server**: [GeneALaCart](https://genealacart.genecards.org/)
+**Web server**: [GeneALaCart](https://genealacart.genecards.org/)
 ![GeneCards](/images/GeneALaCart.jpg?width=60pc)

@@ -11,11 +11,11 @@ weight: 1
 
 ## 2.1.1 **STRING**
 
-- **Introduction**: STRING is a database of known and predicted protein-protein interactions. The interactions include direct (physical) and indirect (functional) associations; they stem from computational prediction, from knowledge transfer between organisms, and from interactions aggregated from other (primary) databases.
+**Introduction**: STRING is a database of known and predicted protein-protein interactions. The interactions include direct (physical) and indirect (functional) associations; they stem from computational prediction, from knowledge transfer between organisms, and from interactions aggregated from other (primary) databases.
 
  <center><b>Database information</b></center> 
   | Type             | Number           | 
-  | :--------------- | :--------------- | 
+  | :--------------| :--------------| 
   | Bacteria          | 12025     |
   | Eukaryotes       |1597|
   | Archaea |472|
@@ -23,16 +23,16 @@ weight: 1
  
  
 
-- **Installation**: In addition to apps, STRING offers easy access to open source in Python at [here](https://string-db.org/cgi/help?sessionId=bQqiYxvVSWzd).
+**Installation**: In addition to apps, STRING offers easy access to open source in Python at [here](https://string-db.org/cgi/help?sessionId=bQqiYxvVSWzd).
 
-- **Web server**: [STRING](https://string-db.org/).
+**Web server**: [STRING](https://string-db.org/).
 ![STRING](/images/STRING.jpg?width=50pc)
 
 ---
 
 ## 2.1.2 **IMEx**
 
-- **Introduction**: The IMEx Consortium is an international collaboration between a group of major public interaction data providers who have agreed to share curation effort and:
+**Introduction**: The IMEx Consortium is an international collaboration between a group of major public interaction data providers who have agreed to share curation effort and:
  1.Develop and work to a single set of curation rules when capturing data from directly deposited interaction data, pre-prints and publications in peer-reviewed journals
  2.Capture full details of an interaction in a “deep” curation model
  3.Perform a complete curation of all protein-protein interactions experimentally demonstrated within a publication
@@ -61,18 +61,18 @@ weight: 1
  + BioGRID (Observer)
  + PrimesDB (Observer)
  
-- **Web server**: [IMEx](http://www.imexconsortium.org/).
+**Web server**: [IMEx](http://www.imexconsortium.org/).
 ![IMEx](/images/IMEx.png?width=90pc)
 
 ---
 
 ## 2.1.3 **IntAct**
 
-- **Introduction**: IntAct is a hello from rcg-inn-app publicly available database of the genes, proteins, experimentally-verified interactions and signaling pathways involved in the innate immune response of humans, mice and bovines to microbial infection. The database captures an improved coverage of the innate immunity interactome by integrating known interactions and pathways from major public databases together with manually-curated data into a centralised resource. To date, 18,780 interactions have been manually curated by the IntAct curation team. The database can be mined as a knowledgebase or used with our integrated bioinformatics and visualization tools for the systems level analysis of the innate immune response.
+**Introduction**: IntAct is a hello from rcg-inn-app publicly available database of the genes, proteins, experimentally-verified interactions and signaling pathways involved in the innate immune response of humans, mice and bovines to microbial infection. The database captures an improved coverage of the innate immunity interactome by integrating known interactions and pathways from major public databases together with manually-curated data into a centralised resource. To date, 18,780 interactions have been manually curated by the IntAct curation team. The database can be mined as a knowledgebase or used with our integrated bioinformatics and visualization tools for the systems level analysis of the innate immune response.
 
  <center><b>Data Source Statistics</b></center>
   | Type               | Number           | 
-  | :----------------- | :--------------- | 
+  | :----------------| :--------------| 
   |Binary Interactions |1,194,594|
   |Interactions        | 750,480 |
   |Interactors         | 118,924 |
@@ -85,167 +85,167 @@ weight: 1
   |Genes               |1,278  |
   | Interaction Dectection Methods|	245|
  
-- **Application**: The IntAct tutorial can be found at
+**Application**: The IntAct tutorial can be found at
 <https://www.ebi.ac.uk/intact/documentation/user-guide>.
 
 
-- **Web server**: [IntAct](https://www.ebi.ac.uk/intact/home).
+**Web server**: [IntAct](https://www.ebi.ac.uk/intact/home).
 ![IntAct](/images/IntAct.png?width=50pc)
  
 ---
 
 ## 2.1.4 **DIP**
 
-- **Introduction**: The DIP database catalogs experimentally determined interactions between proteins. It combines information from a variety of sources to create a single, consistent set of protein-protein interactions. The data stored within the DIP database were curated, both, manually by expert curators and also automatically using computational approaches that utilize the the knowledge about the protein-protein interaction networks extracted from the most reliable, core subset of the DIP data. Please, check the reference page to find articles describing the DIP database in greater detail.  
+**Introduction**: The DIP database catalogs experimentally determined interactions between proteins. It combines information from a variety of sources to create a single, consistent set of protein-protein interactions. The data stored within the DIP database were curated, both, manually by expert curators and also automatically using computational approaches that utilize the the knowledge about the protein-protein interaction networks extracted from the most reliable, core subset of the DIP data. Please, check the reference page to find articles describing the DIP database in greater detail.  
 
   <center><b>Database information</b></center> 
   | Type             | Number           | 
-  | :--------------- | :--------------- | 
+  | :--------------| :--------------| 
   | Proteins          | 28850     |
   | Organisms| 834|
   | Interactions|81923|
   | Data sources (articles)|8234|
  
-- **Application**: The DIP tutorial can be found at <https://dip.doe-mbi.ucla.edu/dip/Guide.cgi?SM=0:1>.
-- **Web server**: [DIP](https://dip.doe-mbi.ucla.edu/dip/Main.cgi).
+**Application**: The DIP tutorial can be found at <https://dip.doe-mbi.ucla.edu/dip/Guide.cgi?SM=0:1>.
+**Web server**: [DIP](https://dip.doe-mbi.ucla.edu/dip/Main.cgi).
 ![DIP](/images/DIP.jpg?width=50pc)
 
 ---
 
 ## 2.1.5 **BioGRID**
 
-- **Introduction**: BioGRID is a biomedical interaction repository with data compiled through comprehensive curation efforts. Our current index is version 4.4.215 and searches 81,230 publications for 2,551,504 protein and genetic interactions, 29,417 chemical interactions and 1,128,339 post translational modifications from major model organism species. All data are freely provided via our search index and available for download in many standardized formats.  
-![BioGRID1](/images/BioGRID1.jpg?width=90pc)
+**Introduction**: BioGRID is a biomedical interaction repository with data compiled through comprehensive curation efforts. Our current index is version 4.4.215 and searches 81,230 publications for 2,551,504 protein and genetic interactions, 29,417 chemical interactions and 1,128,339 post translational modifications from major model organism species. All data are freely provided via our search index and available for download in many standardized formats.  
+![BioGRID1](/images/BioGRID1.jpg?width=60pc)
 
-- **Installation**: In addition to apps, BioGRID offers easy access to open source in Python at [here](https://github.com/BioGRID/BIOGRID-REST-EXAMPLES).
+**Installation**: In addition to apps, BioGRID offers easy access to open source in Python at [here](https://github.com/BioGRID/BIOGRID-REST-EXAMPLES).
 
-- **Application**: The BioGRID tutorial can be found at <https://wiki.thebiogrid.org/doku.php/search_tips>.
+**Application**: The BioGRID tutorial can be found at <https://wiki.thebiogrid.org/doku.php/search_tips>.
 
-- **Web server**: [BioGRID](https://thebiogrid.org/).
+**Web server**: [BioGRID](https://thebiogrid.org/).
 ![BioGRID](/images/BioGRID.jpg?width=50pc)
 
 ---
 
 ## 2.1.6 **MINT**
 
-- **Introduction**: MINT focuses on experimentally verified protein-protein interactions mined from the scientific literature by expert curators. It is a database designed to store data on functional interactions between proteins. Beyond cataloguing binary complexes, MINT was conceived to store other types of functional interactions, including enzymatic modifications of one of the partners.
+**Introduction**: MINT focuses on experimentally verified protein-protein interactions mined from the scientific literature by expert curators. It is a database designed to store data on functional interactions between proteins. Beyond cataloguing binary complexes, MINT was conceived to store other types of functional interactions, including enzymatic modifications of one of the partners.
 
   <center><b>Database information</b></center> 
   | Type             | Number           | 
-  | :--------------- | :--------------- | 
+  | :--------------| :--------------| 
   | Species          | 10     |
   | Publications|	6284|
   | Interactions|	132633|
   | Interactors |	27089|
   | Organisms   | 668|
  
-- **Web server**: [MINT](https://mint.bio.uniroma2.it/).
+**Web server**: [MINT](https://mint.bio.uniroma2.it/).
 ![MINT](/images/MINT.jpg?width=70pc)
 
 ---
 
 ## 2.1.7 **InnateDB**
 
-- **Introduction**: InnateDB is a hello from rcg-inn-app publicly available database of the genes, proteins, experimentally-verified interactions and signaling pathways involved in the innate immune response of humans, mice and bovines to microbial infection. The database captures an improved coverage of the innate immunity interactome by integrating known interactions and pathways from major public databases together with manually-curated data into a centralised resource. To date, 18,780 interactions have been manually curated by the InnateDB curation team. The database can be mined as a knowledgebase or used with our integrated bioinformatics and visualization tools for the systems level analysis of the innate immune response.
+**Introduction**: InnateDB is a hello from rcg-inn-app publicly available database of the genes, proteins, experimentally-verified interactions and signaling pathways involved in the innate immune response of humans, mice and bovines to microbial infection. The database captures an improved coverage of the innate immunity interactome by integrating known interactions and pathways from major public databases together with manually-curated data into a centralised resource. To date, 18,780 interactions have been manually curated by the InnateDB curation team. The database can be mined as a knowledgebase or used with our integrated bioinformatics and visualization tools for the systems level analysis of the innate immune response.
 
 
-- **Application**: The InnateDB tutorial can be found at <https://www.innatedb.com/redirect.do?go=helpbatch>.
+**Application**: The InnateDB tutorial can be found at <https://www.innatedb.com/redirect.do?go=helpbatch>.
 
-- **Web server**: [InnateDB](https://www.innatedb.com/).
+**Web server**: [InnateDB](https://www.innatedb.com/).
 ![InnateDB](/images/InnateDB.jpg?width=50pc)
 
 ---
 
 ## 2.1.8 **HuRI**
 
-- **Introduction**: The HuRI (Human Reference Interactome Mapping) Project has grown in several distinct stages primarily defined by the number of human protein-coding genes amenable to screening for which at least one Gateway-cloned Open Reading Frame (ORF) was available at the time of the project. A first human reference interactome (HuRI) map has been generated where 17,500 proteins have been tested. The entirety of all interactions identified in systematic screens at CCSB forms HI-union.
+**Introduction**: The HuRI (Human Reference Interactome Mapping) Project has grown in several distinct stages primarily defined by the number of human protein-coding genes amenable to screening for which at least one Gateway-cloned Open Reading Frame (ORF) was available at the time of the project. A first human reference interactome (HuRI) map has been generated where 17,500 proteins have been tested. The entirety of all interactions identified in systematic screens at CCSB forms HI-union.
 ![HuRI](/images/HuRI.jpg?width=50pc)
  
-- **Web server**: [HuRI](http://www.interactome-atlas.org/).
+**Web server**: [HuRI](http://www.interactome-atlas.org/).
 
 ---
 
 ## 2.1.9 **InWeb**
 
-- **Introduction**: InWeb (InWeb_InBioMap) is an integrated human protein–protein interaction network. InWeb consisted of 585,843 interactions, aggregated from 8 source databases and spanning 87% of reviewed human UniProt IDs.  The stringent orthology majority-voting scheme to map interactions from other organisms was applied. Importantly, 57% of the total data come directly from experiments with human proteins, 68% from either mouse or human, and 95% from human, mouse, rat, cow, nematode, fly, or yeast.
+**Introduction**: InWeb (InWeb_InBioMap) is an integrated human protein–protein interaction network. InWeb consisted of 585,843 interactions, aggregated from 8 source databases and spanning 87% of reviewed human UniProt IDs.  The stringent orthology majority-voting scheme to map interactions from other organisms was applied. Importantly, 57% of the total data come directly from experiments with human proteins, 68% from either mouse or human, and 95% from human, mouse, rat, cow, nematode, fly, or yeast.
  
-- **Web server**: [InWeb](http://www.inweb.gr/).
+**Web server**: [InWeb](http://www.inweb.gr/).
 ![InWeb](/images/InWeb.jpg?width=50pc)
 
 ---
 
 ## 2.1.10 **NDEx**
 
-- **Introduction**: The NDEx Project provides an open-source framework where scientists and organizations can store, share, manipulate, and publish biological network knowledge.
+**Introduction**: The NDEx Project provides an open-source framework where scientists and organizations can store, share, manipulate, and publish biological network knowledge.
 One of the goals of the project is to create a home for models that are currently available only as figures, tables, or supplementary information, such as networks produced via systematic mining and integration of large-scale molecular data.
 The NDEx project does not compete with existing pathway and interaction databases, such as Pathway Commons, KEGG, or Reactome; instead, NDEx provides a novel, common distribution channel for these efforts, preserving their identity and attribution rather than subsuming them.
 
-- **Application**: The NDEx tutorial can be found at
+**Application**: The NDEx tutorial can be found at
 <https://home.ndexbio.org/quick-start/>.
 
-- **Web server**: [NDEx](https://www.ndexbio.org/#/).
+**Web server**: [NDEx](https://www.ndexbio.org/#/).
 ![NDEx](/images/NDEx.jpg?width=50pc)
 
 ---
 
 ## 2.1.11 **IID**
 
-- **Introduction**: IID is an online database of detected and predicted protein-protein interactions (PPIs) in 18 species including human, 5 model organisms, and 12 domesticated species. It annotates PPIs with comprehensive information about conditions where they occur (e.g., developmental stages, tissues), conservation across species, directionality, druggability, duration, and membership in protein complexes comprising more than two proteins.
+**Introduction**: IID is an online database of detected and predicted protein-protein interactions (PPIs) in 18 species including human, 5 model organisms, and 12 domesticated species. It annotates PPIs with comprehensive information about conditions where they occur (e.g., developmental stages, tissues), conservation across species, directionality, druggability, duration, and membership in protein complexes comprising more than two proteins.
 ![IID1](/images/IID1.jpg?width=60pc)
 
-- **Application**: The IID tutorial can be found at <http://iid.ophid.utoronto.ca/>.
+**Application**: The IID tutorial can be found at <http://iid.ophid.utoronto.ca/>.
 
-- **Web server**: [IID](http://iid.ophid.utoronto.ca/).
+**Web server**: [IID](http://iid.ophid.utoronto.ca/).
 ![IID](/images/IID.jpg?width=50pc)
 
 ---
 
 ## 2.1.12 **SIGNOR**
 
-- **Introduction**:SIGNOR is a resource that annotates experimental evidence about causal interactions between proteins and other entities of biological relevance: stimuli, phenotypes, enzyme inhibitors, complexes, protein families etc. Each entry points to the experimental evidence supporting the interaction and is enriched by additional relevant metadata such as the effect of the interaction on the activity of the target entity, the molecular mechanism underlying this effect, etc… The curated data can be displayed as signed directed graphs by a graph drawing tool.
-![SIGNOR1](/images/SIGNOR1.jpg?width=90pc)
+**Introduction**:SIGNOR is a resource that annotates experimental evidence about causal interactions between proteins and other entities of biological relevance: stimuli, phenotypes, enzyme inhibitors, complexes, protein families etc. Each entry points to the experimental evidence supporting the interaction and is enriched by additional relevant metadata such as the effect of the interaction on the activity of the target entity, the molecular mechanism underlying this effect, etc… The curated data can be displayed as signed directed graphs by a graph drawing tool.
+![SIGNOR1](/images/SIGNOR1.jpg?width=50pc)
 
  
-- **Application**: The SIGNOR tutorial can be found at <https://signor.uniroma2.it/user_guide/>.
+**Application**: The SIGNOR tutorial can be found at <https://signor.uniroma2.it/user_guide/>.
  
-- **Web server**: [SIGNOR](https://signor.uniroma2.it/).
+**Web server**: [SIGNOR](https://signor.uniroma2.it/).
 ![SIGNOR](/images/SIGNOR.jpg?width=50pc)
 
 ---
  
 ## 2.1.13 **MatrixDB**
 
-- **Introduction**: MatrixDB is a freely available database focused on interactions established by extracellular matrix proteins, proteoglycans and polysaccharides. MatrixDB stores experimental data established by full-length proteins, matricryptins, glycosaminoglycans, lipids and cations. MatrixDB reports interactions with individual polypeptide chains or with multimers (e.g. collagens, laminins, thrombospondins) when appropriate.   
+**Introduction**: MatrixDB is a freely available database focused on interactions established by extracellular matrix proteins, proteoglycans and polysaccharides. MatrixDB stores experimental data established by full-length proteins, matricryptins, glycosaminoglycans, lipids and cations. MatrixDB reports interactions with individual polypeptide chains or with multimers (e.g. collagens, laminins, thrombospondins) when appropriate.   
 ![MatrixDB1](/images/MatrixDB1.jpg?width=50pc)
  
-- **Application**: The MatrixDB tutorial can be found at <http://matrixdb.univ-lyon1.fr/data/Tutorial_MatrixDB_v3.pdf>.
+**Application**: The MatrixDB tutorial can be found at <http://matrixdb.univ-lyon1.fr/data/Tutorial_MatrixDB_v3.pdf>.
  
-- **Web server**: [MatrixDB](http://matrixdb.univ-lyon1.fr/).
+**Web server**: [MatrixDB](http://matrixdb.univ-lyon1.fr/).
 ![MatrixDB](/images/MatrixDB.jpg?width=50pc)
 
 ---
 
 ## 2.1.14 **I2D**
 
-- **Introduction**: To faciliate experimentation and integrated computational analysis with model organism PPI networks, we have integrated known, experimental and predicted PPIs for five model organisms and human in the I2D database. I2D is developed and maintained by Jurisica Lab at Ontario Cancer Institute, PMH. I2D will continue to expand as new protein-protein interaction data becomes available.  
+**Introduction**: To faciliate experimentation and integrated computational analysis with model organism PPI networks, we have integrated known, experimental and predicted PPIs for five model organisms and human in the I2D database. I2D is developed and maintained by Jurisica Lab at Ontario Cancer Institute, PMH. I2D will continue to expand as new protein-protein interaction data becomes available.  
 
   <center><b>Database information</b></center> 
   | Type             | Number           | 
-  | :--------------- | :--------------- | 
+  | :--------------| :--------------| 
   | Source Interactions   | 687,072     |
   | Predicted Interactions| 619,398|
 
-- **Web server**: [I2D](http://ophid.utoronto.ca/ophidv2.204/index.jsp).
+**Web server**: [I2D](http://ophid.utoronto.ca/ophidv2.204/index.jsp).
 ![I2D](/images/I2D.jpg?width=50pc)
 
 ---
 
 ## 2.1.15 **SPIKE**
 
-- **Introduction**:SPIKE is a database of highly curated human signaling pathways with an associated interactive software tool. Users can view and download individual pathway maps and browse the entire database from this website, or launch a map viewer tool that allows dynamic visualization of the database and save networks in XGMML format that can be viewed in all generic XGMML viewers.
+**Introduction**:SPIKE is a database of highly curated human signaling pathways with an associated interactive software tool. Users can view and download individual pathway maps and browse the entire database from this website, or launch a map viewer tool that allows dynamic visualization of the database and save networks in XGMML format that can be viewed in all generic XGMML viewers.
 
-- **Application**: The MatrixDB tutorial can be found at
+**Application**: The MatrixDB tutorial can be found at
 <http://www.cs.tau.ac.il/~spike/Webstart/help/DB_browser/index.html>.
 
-- **Web server**: [SPIKE](https://www.cs.tau.ac.il/~spike/).
+**Web server**: [SPIKE](https://www.cs.tau.ac.il/~spike/).
 ![SPIKE](/images/SPIKE.jpg?width=50pc)

@@ -10,4 +10,4 @@ weight: 1
 # Gene Function Annotations
 Discover the basic biological function of genes. 👨🏻‍💻👨🏻‍💻👨🏻‍💻
 
-![](/images/annotation.gif?width=50pc)
+![](/images/annotation.png?width=30pc)
