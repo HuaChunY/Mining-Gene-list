@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Text Mining on Gene list mining</title>
+    <title>Text Mining on DEGminer</title>
     <link>/text-mining/</link>
-    <description>Recent content in Text Mining on Gene list mining</description>
+    <description>Recent content in Text Mining on DEGminer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/text-mining/index.xml" rel="self" type="application/rss+xml" />
     <item>

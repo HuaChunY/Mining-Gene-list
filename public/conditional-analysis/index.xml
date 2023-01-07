@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Condition-specific Analysis on Gene list mining</title>
+    <title>Condition-specific Analysis on DEGminer</title>
     <link>/conditional-analysis/</link>
-    <description>Recent content in Condition-specific Analysis on Gene list mining</description>
+    <description>Recent content in Condition-specific Analysis on DEGminer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/conditional-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
