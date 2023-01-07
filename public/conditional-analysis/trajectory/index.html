@@ -7,27 +7,26 @@
     <meta name="description" content="Gene list">
 <meta name="author" content="Huachun Yin">
 
-    <link rel="icon" href="../../images/favicon.png" type="image/png">
-
+    <link rel="shortcut icon" href="../../images/logo.png" type="image/x-icon"/>
     <title>Tajectory inference - Gene list mining</title>
 
     
-    <link href="../../css/nucleus.css?1672904510" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1672904510" rel="stylesheet">
-    <link href="../../css/hybrid.css?1672904510" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1672904510" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1672904510" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1672904510" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1672904510" rel="stylesheet">
-    <link href="../../css/theme.css?1672904510" rel="stylesheet">
-    <link href="../../css/tabs.css?1672904510" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1672904510" rel="stylesheet">
+    <link href="../../css/nucleus.css?1673066633" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1673066633" rel="stylesheet">
+    <link href="../../css/hybrid.css?1673066633" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1673066633" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1673066633" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1673066633" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1673066633" rel="stylesheet">
+    <link href="../../css/theme.css?1673066633" rel="stylesheet">
+    <link href="../../css/tabs.css?1673066633" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1673066633" rel="stylesheet">
     
-    <link href="../../css/theme-mine.css?1672904510" rel="stylesheet">
+    <link href="../../css/theme-mine.css?1673066633" rel="stylesheet">
     
-    <link href="../../css/foo.css?1672904510" rel="stylesheet"><link href="../../css/bar.css?1672904510" rel="stylesheet">
+    <link href="../../css/foo.css?1673066633" rel="stylesheet"><link href="../../css/bar.css?1673066633" rel="stylesheet">
 
-    <script src="../../js/jquery-3.3.1.min.js?1672904510"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1673066633"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -56,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1672904510"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1672904510"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1673066633"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1673066633"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1672904510"></script>
+<script type="text/javascript" src="../../js/search.js?1673066633"></script>
 
     
   </div>
@@ -777,10 +776,8 @@
 <div id="slingshot" class="section level2">
 <h2>5.3.1 <strong>slingshot</strong></h2>
 <p><img src="../../images/slingshot_sticker.png?width=20pc" /></p>
-<ul>
-<li><p><strong>Introduction</strong>: Provides functions for inferring continuous, branching lineage structures in low-dimensional data. Slingshot was designed to model developmental trajectories in single-cell RNA sequencing data and serve as a component in an analysis pipeline after dimensionality reduction and clustering. It is flexible enough to handle arbitrarily many branching events and allows for the incorporation of prior knowledge through supervised graph construction.</p></li>
-<li><p><strong>Installation</strong>: To install this package, start R and enter:</p></li>
-</ul>
+<p><strong>Introduction</strong>: Provides functions for inferring continuous, branching lineage structures in low-dimensional data. Slingshot was designed to model developmental trajectories in single-cell RNA sequencing data and serve as a component in an analysis pipeline after dimensionality reduction and clustering. It is flexible enough to handle arbitrarily many branching events and allows for the incorporation of prior knowledge through supervised graph construction.</p>
+<p><strong>Installation</strong>: To install this package, start R and enter:</p>
 <pre class="r"><code>if (!requireNamespace(&quot;BiocManager&quot;, quietly=TRUE))
     install.packages(&quot;BiocManager&quot;)
 BiocManager::install(&quot;kstreet13/slingshot&quot;)</code></pre>
@@ -789,27 +786,21 @@ BiocManager::install(&quot;kstreet13/slingshot&quot;)</code></pre>
 </div>
 <div id="cellrank" class="section level2">
 <h2>5.3.2 <strong>CellRank</strong></h2>
-<ul>
-<li><p><strong>Introduction</strong>: CellRank is a toolkit to uncover cellular dynamics based on Markov state modeling of single-cell data. It contains two main modules: kernels compute cell-cell transition probabilities and estimators generate hypothesis based on these.</p></li>
-<li><p><strong>Installation</strong>: CellRank requires Python version &gt;= 3.7 to run. We recommend using Miniconda to manage the environments.</p></li>
-</ul>
+<p><strong>Introduction</strong>: CellRank is a toolkit to uncover cellular dynamics based on Markov state modeling of single-cell data. It contains two main modules: kernels compute cell-cell transition probabilities and estimators generate hypothesis based on these.</p>
+<p><strong>Installation</strong>: CellRank requires Python version &gt;= 3.7 to run. We recommend using Miniconda to manage the environments.</p>
 <p>CellRank can be installed via:</p>
 <pre class="python"><code>conda install -c conda-forge -c bioconda cellrank
 # or with extra libraries, useful for large datasets
 conda install -c conda-forge -c bioconda cellrank-krylov</code></pre>
-<ul>
-<li><strong>Web server</strong>: <a href="https://cellrank.org/">CellRank</a>.
-<img src="../../images/CellRank.jpg?width=50pc" alt="CellRank" /></li>
-</ul>
+<p><strong>Web server</strong>: <a href="https://cellrank.org/">CellRank</a>.
+<img src="../../images/CellRank.jpg?width=50pc" alt="CellRank" /></p>
 <hr />
 </div>
 <div id="cytotree" class="section level2">
 <h2>5.3.3 <strong>CytoTree</strong></h2>
 <p><img src="../../images/CytoTree.png?width=15pc" /></p>
-<ul>
-<li><p><strong>Introduction</strong>: CytoTree, an R/Bioconductor package for trajectory inference, pseudotime estimation and visualization of flow and mass cytometry data. The CytoTree package offers a complete up-to-date analysis workflow for flow and mass cytometry data that includes subpopulation classification, dimensionality reduction, trajectory construction, differentially expressed marker calculation, pseudotime estimation, intermediate state identification and visualization. The CytoTree runs on several platforms, such as UNIX, Windows, and macOS, and provides an up-to-date, feature-rich and readily scalable workflow.</p></li>
-<li><p><strong>Installation</strong>: To install this package, start R and enter:</p></li>
-</ul>
+<p><strong>Introduction</strong>: CytoTree, an R/Bioconductor package for trajectory inference, pseudotime estimation and visualization of flow and mass cytometry data. The CytoTree package offers a complete up-to-date analysis workflow for flow and mass cytometry data that includes subpopulation classification, dimensionality reduction, trajectory construction, differentially expressed marker calculation, pseudotime estimation, intermediate state identification and visualization. The CytoTree runs on several platforms, such as UNIX, Windows, and macOS, and provides an up-to-date, feature-rich and readily scalable workflow.</p>
+<p><strong>Installation</strong>: To install this package, start R and enter:</p>
 <pre class="r"><code># If not already installed
 install.packages(&quot;devtools&quot;) 
 devtools::install_github(&quot;JhuangLab/CytoTree&quot;)</code></pre>
@@ -823,10 +814,8 @@ BiocManager::install(&quot;CytoTree&quot;)</code></pre>
 <div id="veloviz" class="section level2">
 <h2>5.3.4 <strong>VeloViz</strong></h2>
 <p><img src="../../images/VeloViz.png?width=15pc" /></p>
-<ul>
-<li><p><strong>Introduction</strong>: VeloViz creates an RNA-velocity-informed 2D embedding for single cell transcriptomics data.</p></li>
-<li><p><strong>Installation</strong>: To install this package, start R and enter:</p></li>
-</ul>
+<p><strong>Introduction</strong>: VeloViz creates an RNA-velocity-informed 2D embedding for single cell transcriptomics data.</p>
+<p><strong>Installation</strong>: To install this package, start R and enter:</p>
 <pre class="r"><code>require(remotes)
 remotes::install_github(&#39;JEFworks-Lab/veloviz&#39;)</code></pre>
 <p>VeloViz is also available on Bioconductor:</p>
@@ -839,46 +828,36 @@ BiocManager::install(&quot;veloviz&quot;)</code></pre>
 </div>
 <div id="asc-seurat" class="section level2">
 <h2>5.3.5 <strong>Asc-Seurat</strong></h2>
-<ul>
-<li><p><strong>Introduction</strong>: Asc-Seurat (Analytical single-cell Seurat-based web application) is a web application based on Shiny. Pronounced as “ask Seurat”, it provides a click-based, easy-to-install, and easy-to-use interface that allows the execution of all steps necessary for scRNA-seq analysis. It integrates many of the capabilities of the Seurat and Dynverse and also allows an instantaneous functional annotation of genes of interest using BioMart.</p></li>
-<li><p><strong>Installation</strong>: To install Asc-Seurat, it is necessary to have Docker installed on the machine. Docker needs to be correctly installed and configured in the user’s machine. Check the installation instructions provided by Docker at (<a href="https://docs.docker.com/engine/install" class="uri">https://docs.docker.com/engine/install</a>).</p></li>
-<li><p><strong>Web server</strong>: <a href="https://asc-seurat.readthedocs.io/en/latest/index.html">Asc-Seurat</a>.</p></li>
-</ul>
+<p><strong>Introduction</strong>: Asc-Seurat (Analytical single-cell Seurat-based web application) is a web application based on Shiny. Pronounced as “ask Seurat”, it provides a click-based, easy-to-install, and easy-to-use interface that allows the execution of all steps necessary for scRNA-seq analysis. It integrates many of the capabilities of the Seurat and Dynverse and also allows an instantaneous functional annotation of genes of interest using BioMart.</p>
+<p><strong>Installation</strong>: To install Asc-Seurat, it is necessary to have Docker installed on the machine. Docker needs to be correctly installed and configured in the user’s machine. Check the installation instructions provided by Docker at (<a href="https://docs.docker.com/engine/install" class="uri">https://docs.docker.com/engine/install</a>).</p>
+<p><strong>Web server</strong>: <a href="https://asc-seurat.readthedocs.io/en/latest/index.html">Asc-Seurat</a>.</p>
 <hr />
 </div>
 <div id="vetra" class="section level2">
 <h2>5.3.6 <strong>VeTra</strong></h2>
-<ul>
-<li><p><strong>Introduction</strong>: A tool for infering scRNA_seq trajectory from RNA velocity</p></li>
-<li><p><strong>Installation</strong>: The script works on python. R 3.6(or higher version) and “princurve” package in R are required. TF(Transfer entroy) inference needs openmpi installation on Linux OS. If you only want to infer trajectories of datasets, it is unnessary to install “openmpi” and “JPype”.</p></li>
-</ul>
+<p><strong>Introduction</strong>: A tool for infering scRNA_seq trajectory from RNA velocity</p>
+<p><strong>Installation</strong>: The script works on python. R 3.6(or higher version) and “princurve” package in R are required. TF(Transfer entroy) inference needs openmpi installation on Linux OS. If you only want to infer trajectories of datasets, it is unnessary to install “openmpi” and “JPype”.</p>
 <hr />
 </div>
 <div id="timeor" class="section level2">
 <h2>5.3.7 <strong>TIMEOR</strong></h2>
 <p><img src="../../images/TIMEOR.png?width=25pc" /></p>
-<ul>
-<li><p><strong>Introduction</strong>: Temporally unified RNA velocity for single cell trajectory inference (UniTVelo) is implementated on Python 3 and TensorFlow 2. The model estimates velocity of each gene and updates cell time based on phase portraits concurrently. The major features of UniTVelo are: 1)Using spliced RNA oriented design to model RNA velocity and transcription rates. 2) Introducing a unified latent time (Unified-time mode) across whole transcriptome to incorporate stably and monotonically changed genes. 3) Retaining gene-spcific time matrics (Independent mode) for complex datasets</p></li>
-<li><p><strong>Installation</strong>: To run TIMEOR outside of website (recommended for preprocessing from raw .fastq files), users may use Docker and Docker Hub. First, the TIMEOR repository must be cloned (<a href="https://github.com/ashleymaeconard/TIMEOR.git" class="uri">https://github.com/ashleymaeconard/TIMEOR.git</a>). To use Docker, it must be installed (version 20.10.0 recommended).</p></li>
-<li><p><strong>Web server</strong>: <a href="https://timeor.brown.edu/app/timeor">TIMEOR</a>.</p></li>
-</ul>
+<p><strong>Introduction</strong>: Temporally unified RNA velocity for single cell trajectory inference (UniTVelo) is implementated on Python 3 and TensorFlow 2. The model estimates velocity of each gene and updates cell time based on phase portraits concurrently. The major features of UniTVelo are: 1)Using spliced RNA oriented design to model RNA velocity and transcription rates. 2) Introducing a unified latent time (Unified-time mode) across whole transcriptome to incorporate stably and monotonically changed genes. 3) Retaining gene-spcific time matrics (Independent mode) for complex datasets</p>
+<p><strong>Installation</strong>: To run TIMEOR outside of website (recommended for preprocessing from raw .fastq files), users may use Docker and Docker Hub. First, the TIMEOR repository must be cloned (<a href="https://github.com/ashleymaeconard/TIMEOR.git" class="uri">https://github.com/ashleymaeconard/TIMEOR.git</a>). To use Docker, it must be installed (version 20.10.0 recommended).</p>
+<p><strong>Web server</strong>: <a href="https://timeor.brown.edu/app/timeor">TIMEOR</a>.</p>
 <hr />
 </div>
 <div id="unitvelo" class="section level2">
 <h2>5.3.8 <strong>UniTVelo</strong></h2>
 <p><img src="../../images/UniTVelo.png?width=25pc" /></p>
-<ul>
-<li><p><strong>Introduction</strong>: Temporally unified RNA velocity for single cell trajectory inference (UniTVelo) is implementated on Python 3 and TensorFlow 2. The model estimates velocity of each gene and updates cell time based on phase portraits concurrently. The major features of UniTVelo are: 1)Using spliced RNA oriented design to model RNA velocity and transcription rates. 2) Introducing a unified latent time (Unified-time mode) across whole transcriptome to incorporate stably and monotonically changed genes. 3) Retaining gene-spcific time matrics (Independent mode) for complex datasets</p></li>
-<li><p><strong>Installation</strong>: The installation process is provided in <a href="https://github.com/StatBiomed/UniTVelo" class="uri">https://github.com/StatBiomed/UniTVelo</a></p></li>
-</ul>
+<p><strong>Introduction</strong>: Temporally unified RNA velocity for single cell trajectory inference (UniTVelo) is implementated on Python 3 and TensorFlow 2. The model estimates velocity of each gene and updates cell time based on phase portraits concurrently. The major features of UniTVelo are: 1)Using spliced RNA oriented design to model RNA velocity and transcription rates. 2) Introducing a unified latent time (Unified-time mode) across whole transcriptome to incorporate stably and monotonically changed genes. 3) Retaining gene-spcific time matrics (Independent mode) for complex datasets</p>
+<p><strong>Installation</strong>: The installation process is provided in <a href="https://github.com/StatBiomed/UniTVelo" class="uri">https://github.com/StatBiomed/UniTVelo</a></p>
 <hr />
 </div>
 <div id="tips" class="section level2">
 <h2>5.3.9 <strong>TIPS</strong></h2>
-<ul>
-<li><p><strong>Introduction</strong>: Trajectory Inference of Pathway Significance through Pseudotime Comparison for Functional Assessment of single-cell RNAseq Data.</p></li>
-<li><p><strong>Installation</strong>: To install this package, start R and enter:</p></li>
-</ul>
+<p><strong>Introduction</strong>: Trajectory Inference of Pathway Significance through Pseudotime Comparison for Functional Assessment of single-cell RNAseq Data.</p>
+<p><strong>Installation</strong>: To install this package, start R and enter:</p>
 <pre class="r"><code>install.packages(c(&quot;shiny&quot;,&quot;shinydashboard&quot;,&quot;markdown&quot;,&quot;ggplot2&quot;,&quot;Seurat&quot;,&quot;kohonen&quot;,&quot;viridis&quot;))
 
 if (!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE))
@@ -893,19 +872,15 @@ shiny::runApp(&quot;TIPS&quot;)</code></pre>
 </div>
 <div id="velo-predictor" class="section level2">
 <h2>5.3.10 <strong>Velo-Predictor</strong></h2>
-<ul>
-<li><p><strong>Introduction</strong>: Velo-Predictor, an ensemble learning pipeline for RNA velocity prediction. While RNA velocity estimation is not straightforward, the pipeline can simplify the procedure by learning a predictive model from gene expression data.</p></li>
-<li><p><strong>Installation</strong>: The installation process is provided in <a href="https://github.com/clay001/Velo-Predictor" class="uri">https://github.com/clay001/Velo-Predictor</a></p></li>
-</ul>
+<p><strong>Introduction</strong>: Velo-Predictor, an ensemble learning pipeline for RNA velocity prediction. While RNA velocity estimation is not straightforward, the pipeline can simplify the procedure by learning a predictive model from gene expression data.</p>
+<p><strong>Installation</strong>: The installation process is provided in <a href="https://github.com/clay001/Velo-Predictor" class="uri">https://github.com/clay001/Velo-Predictor</a></p>
 <hr />
 </div>
 <div id="origins" class="section level2">
 <h2>5.3.11 <strong>ORIGINS</strong></h2>
 <p><img src="../../images/ORIGINS.png?width=15pc" /></p>
-<ul>
-<li><p><strong>Introduction</strong>: Temporally unified RNA velocity for single cell trajectory inference (UniTVelo) is implementated on Python 3 and TensorFlow 2. The model estimates velocity of each gene and updates cell time based on phase portraits concurrently. The major features of UniTVelo are: 1)Using spliced RNA oriented design to model RNA velocity and transcription rates. 2) Introducing a unified latent time (Unified-time mode) across whole transcriptome to incorporate stably and monotonically changed genes. 3) Retaining gene-spcific time matrics (Independent mode) for complex datasets</p></li>
-<li><p><strong>Installation</strong>: To install this package, start R and enter:</p></li>
-</ul>
+<p><strong>Introduction</strong>: Temporally unified RNA velocity for single cell trajectory inference (UniTVelo) is implementated on Python 3 and TensorFlow 2. The model estimates velocity of each gene and updates cell time based on phase portraits concurrently. The major features of UniTVelo are: 1)Using spliced RNA oriented design to model RNA velocity and transcription rates. 2) Introducing a unified latent time (Unified-time mode) across whole transcriptome to incorporate stably and monotonically changed genes. 3) Retaining gene-spcific time matrics (Independent mode) for complex datasets</p>
+<p><strong>Installation</strong>: To install this package, start R and enter:</p>
 <pre class="r"><code>install.packages(&quot;remotes&quot;)
 
 remotes::install_github(&quot;danielasenraoka/ORIGINS&quot;)</code></pre>
@@ -1359,16 +1334,16 @@ remotes::install_github(&quot;danielasenraoka/ORIGINS&quot;)</code></pre>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1672904510"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1672904510"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1672904510"></script>
-    <script src="../../js/jquery.sticky.js?1672904510"></script>
-    <script src="../../js/featherlight.min.js?1672904510"></script>
-    <script src="../../js/highlight.pack.js?1672904510"></script>
+    <script src="../../js/clipboard.min.js?1673066633"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1673066633"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1673066633"></script>
+    <script src="../../js/jquery.sticky.js?1673066633"></script>
+    <script src="../../js/featherlight.min.js?1673066633"></script>
+    <script src="../../js/highlight.pack.js?1673066633"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1672904510"></script>
-    <script src="../../js/learn.js?1672904510"></script>
-    <script src="../../js/hugo-learn.js?1672904510"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1673066633"></script>
+    <script src="../../js/learn.js?1673066633"></script>
+    <script src="../../js/hugo-learn.js?1673066633"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
