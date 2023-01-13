@@ -11,6 +11,11 @@ weight: 5
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
+
+For the construction of regulatory networks, in addition to the development of diverse databases, tools for visualizing networks are important methods for mining and presenting gene networks.
+
+**Breaking**: Eight popular network visualization and module analysis tools are recommended, and those tools may predict and visualize gene-gene, TF-gene, MiRNA-gene, ceRNA, etc.
+
 ---
 
 ## 2.5.1 **GeneMANIA**

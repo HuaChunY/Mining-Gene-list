@@ -11,6 +11,10 @@ weight: 1
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
+Survival analysis is the study of survival times and of the factors that influence them. This method that requires extra documentation of time periods and events, has the potential to be used in a number of fields, such as ecology, medicine and botany.
+
+**Breaking**: Some user-friendly survival analysis tools are provided in this section.
+
 ---
 
 ## 7.1.1 **UALCAN**

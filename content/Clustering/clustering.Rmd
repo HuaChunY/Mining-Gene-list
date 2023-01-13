@@ -10,6 +10,10 @@ weight: 1
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
+Unsupervised cluster analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups or modelling to predict unknown samples.
+
+**Breaking**: Some well-used and comprehensive clustering tools are provided in this section.
+
 ---
 
 ## 6.1.1 **Nbclust**

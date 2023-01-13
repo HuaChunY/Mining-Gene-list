@@ -56,11 +56,11 @@ p
 ## 1.2.3 **agriGO 2.0**
  
 **Introduction**: AgriGO v2.0 is a web-based tool and database for gene ontology analyses. It specifically focuses on agricultural species and is user-friendly. AgriGO v2.0 is designed to provide deep support to the agricultural community in the realm of ontology analyses. New advantages and features of agriGO v2.0 are as follows:
-1). The agriGO v2.0 focuses on agricultural species in particular. It    supports species and datatypes. 
-2). A new species’ classification system, single species analysis and    reference datatype priorities help users to perform fast and accurate    analyses.
-3). Analysis tools, including the Singular Enrichment Analysis (SEA),    Parametric Analysis of Gene set Enrichment (PAGE), BLAST4ID (Transfer IDs by    BLAST) and SEACOMPARE (Cross comparison of SEA) were retained. These tools    provide users with means for data mining and systematic result exploration    and will allow better data analyses and interpretations.
-4). Custom analysis tools including custom direct acyclic graph (DAG) tree    and Scatter Plot were developed. These tools increase input flexibility.
-5). A Batch SEA tool of multiple inputs, such as time-course samples, was    provided, as well as the distributions of the p-values (PVD) of the    significant GO terms randomly generated.
+1). The agriGO v2.0 focuses on agricultural species in particular. It supports species and datatypes. 
+2). A new species’ classification system, single species analysis and reference datatype priorities help users to perform fast and accurate analyses.
+3). Analysis tools, including the Singular Enrichment Analysis (SEA), Parametric Analysis of Gene set Enrichment (PAGE), BLAST4ID (Transfer IDs by BLAST) and SEACOMPARE (Cross comparison of SEA) were retained. These tools    provide users with means for data mining and systematic result exploration and will allow better data analyses and interpretations.
+4). Custom analysis tools including custom direct acyclic graph (DAG) tree and Scatter Plot were developed. These tools increase input flexibility.
+5). A Batch SEA tool of multiple inputs, such as time-course samples, was provided, as well as the distributions of the p-values (PVD) of the significant GO terms randomly generated.
 
   <center><b>Species information</b></center>
   | Category   | Classification | Species counts   |  
@@ -159,7 +159,7 @@ Pathways (curated by PANTHER and by Reactome)
 
 ---
 
-## 1.2.9 **GOTermFinder**
+## 1.2.10 **GOTermFinder**
 
 **Introduction**: GOTermFinder comprises a set of objectoriented Perl modules for accessing Gene Ontology (GO) information and evaluating and visualizing the collective annotation of a list of genes to GO terms. It can be used to draw conclusions from microarray and other biological data, calculating the statistical significance of each annotation. GO::TermFinder can be used on any system on which Perl can be run, either as a command line application, in single or batch mode, or as a web-based CGI script.
 

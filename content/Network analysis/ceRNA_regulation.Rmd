@@ -11,6 +11,11 @@ weight: 4
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
+
+Post-transcriptional crosstalk and communication between RNAs yield large regulatory competing endogenous RNA (ceRNA) networks via shared microRNAs. The ceRNA crosstalk represents a novel layer of gene regulation that controls both physiological and pathological processes such as development and complex diseases.
+
+**Breaking**: Eight ceRNA related databses are summarized in this section.
+
 ---
 
 ## 2.4.1 **ENCODE**

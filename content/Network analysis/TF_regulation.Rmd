@@ -11,6 +11,11 @@ weight: 2
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
+Transcription factors (TFs) are key regulators of intrinsic cellular processes, such as differentiation and development, and of the cellular response to external perturbation through signaling pathways. Most TFs recognize and bind to specific DNA sequences named as transcription factor biding sites, leading to specific spatiotemporal expression patterns of target genes.
+
+**Breaking**: Four TF target specific resources are collected.
+
+
 ---
 
 ## 2.2.1 **JASPAR**

@@ -6,6 +6,10 @@ output:
 weight: 4
 ---
 
+Cell communication across multiple cell types and tissues strictly mediates proper functioning of metazoans and extensively relies on interactions between secreted ligands and cell-surface receptors. The basic principle of cell communication is to predict ligand-receptor interactions between two conditions based on the differential expression of receptors in one cell/sample type and the differential expression of ligands in another cell/sample type. It offers a chance for DEGs to have a role in cell communication analysis.
+
+**Breaking**: A considerable number of databases collect the ligand-receptor pairs and developed to calculate communication scores between different cells/samples according to the gene expression. Some tools are linked in this document.
+
 ---
 
 ## 5.4.1 **IUPHAR**

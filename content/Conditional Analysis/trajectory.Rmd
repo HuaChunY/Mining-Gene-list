@@ -6,6 +6,10 @@ output:
 weight: 3
 ---
 
+Trajectory inference aims at estimating dynamic changes in a single-cell transcriptome landscape, assuming that the cell-wise transcriptome is a static snapshot at a time point along some cellular process. The pseudotime and RNA velocity both are considered as the trajectory inference.Highly variable genes, represented by DEGs, thus contribute an important role in the pseudotime and RNA velocity analysis.
+
+**Breaking**: A plethora of trajectory inference methods has been developed over the past few years, and 11 user-friendly tools are recommended in this document.
+
 ---
 
 ## 5.3.1 **slingshot**
