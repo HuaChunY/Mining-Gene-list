@@ -177,3 +177,51 @@ install.packages("remotes")
 remotes::install_github("danielasenraoka/ORIGINS")
 ```
 
+---
+
+## 5.3.12 **PAGA**
+
+**Introduction**: PAGA maps preserve the global topology of data, allow analyzing data at different resolutions, and result in much higher computational efficiency of the typical exploratory data analysis workflow. PAGA-initialized manifold learning algorithms converge faster, produce embeddings that are more faithful to the global topology of high-dimensional data, and introduce an entropy-based measure for quantifying such faithfulness. According to the [evaluation research](https://www.nature.com/articles/s41587-019-0071-9) of trajectory methods, PAGA can model all trajectory types and performs better than any other method.
+
+**Installation**: PAGA is implemented in Scanpy via [scanpy.tl.paga](https://scanpy.readthedocs.io/en/latest/generated/scanpy.tl.paga.html). To use this method, please install [Scanpy](https://scanpy.readthedocs.io/en/latest/index.html) first:
+
+```python
+pip install scanpy
+```
+
+---
+
+## 5.3.13 **SCORPIUS**
+
+**Introduction**: SCORPIUS, an unsupervised approach for inferring linear developmental chronologies from single-cell RNA sequencing data. In comparison to similar approaches, it has three main advantages:
+
+1. It accurately reconstructs **linear dynamic processes**.
+
+2. It automatically identifies marker genes, speeding up knowledge discovery.
+
+3. It is fully unsupervised. Prior knowledge of the relevant marker genes or cellular states of individual cells is not required.
+
+**Installation**: SCORPIUS can be used by installing the R package:
+
+```{r eval=FALSE}
+install.packages("SCORPIUS")
+```
+
+Or install the development version via:
+```{r eval=FALSE}
+devtools::install_github("rcannood/SCORPIUS", build_vignettes = TRUE)
+```
+
+---
+
+## 5.3.14 **STEMNET**
+
+**Introduction**: STEMNET is used to estimate the progression of single stem cells to distinct lineages. As an input, it takes a single cell gene expression matrix and a vector annotating, for each cell, if the cell is part of a given developmental endpoint or if it an immature cell. It then estimates the direction and amount of priming for each stem cell and creates visualizations of the lineage priming process.
+
+**Installation**: To install this package, start R and enter:
+
+```{r eval=FALSE}
+install.packages("devtools")
+devtools::install_git('https://git.embl.de/velten/STEMNET/', build_vignettes=TRUE)
+```
+
