@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/conditional-analysis/spatialandtemporal/</guid>
-      <description>5.1.1 GEPIA 5.1.2 HumanBase-ExPecto 5.1.3 Expression Atlas 5.1.4 ToppCluster 5.1.5 GENT2 5.1.6 TISSUES 5.1.7 TissueEnrich 5.1.8 ORGANizer 5.1.9 deTS 5.1.10 WebCSEA 5.1.11 TEnGExA 5.1.12 Dynamic-BM 5.1.13 ADEIP 5.1.1 GEPIA Introduction: GEPIA is a newly developed interactive web server for analyzing the RNA sequencing expression data of 9,736 tumors and 8,587 normal samples from the TCGA and the GTEx projects, using a standard processing pipeline. GEPIA provides customizable functions such as tumor/normal differential expression analysis, profiling according to cancer types or pathological stages, patient survival analysis, similar gene detection, correlation analysis and dimensionality reduction analysis.</description>
+      <description>5.1.1 GEPIA 5.1.2 HumanBase-ExPecto 5.1.3 Expression Atlas 5.1.4 ToppCluster 5.1.5 GENT2 5.1.6 TISSUES 5.1.7 TissueEnrich 5.1.8 ORGANizer 5.1.9 deTS 5.1.10 WebCSEA 5.1.11 TEnGExA 5.1.12 Dynamic-BM 5.1.13 ADEIP The tissues or development stages of organisms have the common biological process, but the gene expression patterns of them are different, which means that different regulatory procedures control the specificity of the spatial and temporal variation. Understanding the specific expression and regulation of genes in spatial and temporal variation is helpful to better explore the genetic relationship and etiology of tissues and development stages, as well as to discover new specific therapeutic targets.</description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/conditional-analysis/trajectory/</guid>
-      <description>5.3.1 slingshot 5.3.2 CellRank 5.3.3 CytoTree 5.3.4 VeloViz 5.3.5 Asc-Seurat 5.3.6 VeTra 5.3.7 TIMEOR 5.3.8 UniTVelo 5.3.9 TIPS 5.3.10 Velo-Predictor 5.3.11 ORIGINS 5.3.1 slingshot Introduction: Provides functions for inferring continuous, branching lineage structures in low-dimensional data. Slingshot was designed to model developmental trajectories in single-cell RNA sequencing data and serve as a component in an analysis pipeline after dimensionality reduction and clustering. It is flexible enough to handle arbitrarily many branching events and allows for the incorporation of prior knowledge through supervised graph construction.</description>
+      <description>5.3.1 slingshot 5.3.2 CellRank 5.3.3 CytoTree 5.3.4 VeloViz 5.3.5 Asc-Seurat 5.3.6 VeTra 5.3.7 TIMEOR 5.3.8 UniTVelo 5.3.9 TIPS 5.3.10 Velo-Predictor 5.3.11 ORIGINS 5.3.12 PAGA 5.3.13 SCORPIUS 5.3.14 STEMNET Trajectory inference aims at estimating dynamic changes in a single-cell transcriptome landscape, assuming that the cell-wise transcriptome is a static snapshot at a time point along some cellular process. The pseudotime and RNA velocity both are considered as the trajectory inference.Highly variable genes, represented by DEGs, thus contribute an important role in the pseudotime and RNA velocity analysis.</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/conditional-analysis/cellcomunication/</guid>
-      <description>5.4.1 IUPHAR 5.4.2 CellPhoneDB 5.4.3 FANTOM5 5.4.4 Cell-Cell Interaction Database 5.4.5 ligand-receptor pairs in literature 5.4.6 DLRP 5.4.7 ConnectomeDB 5.4.8 CellTalkDB 5.4.9 ICELLNET 5.4.10 Cellinker 5.4.11 PlantPhoneDB 5.4.12 CellCallEXT 5.4.13 CellChat 5.4.14 Giotto 5.4.15 SingleCellSignalR 5.4.16 CellCall 5.4.17 TraSig 5.4.18 celltalker 5.4.19 iTALK 5.4.20 PyMINEr 5.4.21 DeepCCI 5.4.22 NicheNet 5.4.23 SpaOTsc 5.4.24 CCCExplorer 5.4.25 SoptSC 5.4.26 NATMI 5.4.27 scConnect 5.4.28 FunRes 5.4.29 scTensor 5.4.1 IUPHAR Introduction: The International Union of Basic and Clinical Pharmacology (IUPHAR) / British Pharmacological Society (BPS) Guide to PHARMACOLOGY is an expert-curated resource of ligand-activity-target relationships, the majority of which come from high-quality pharmacological and medicinal chemistry literature.</description>
+      <description>5.4.1 IUPHAR 5.4.2 CellPhoneDB 5.4.3 FANTOM5 5.4.4 Cell-Cell Interaction Database 5.4.5 ligand-receptor pairs in literature 5.4.6 DLRP 5.4.7 ConnectomeDB 5.4.8 CellTalkDB 5.4.9 ICELLNET 5.4.10 Cellinker 5.4.11 PlantPhoneDB 5.4.12 CellCallEXT 5.4.13 CellChat 5.4.14 Giotto 5.4.15 SingleCellSignalR 5.4.16 CellCall 5.4.17 TraSig 5.4.18 celltalker 5.4.19 iTALK 5.4.20 PyMINEr 5.4.21 DeepCCI 5.4.22 NicheNet 5.4.23 SpaOTsc 5.4.24 CCCExplorer 5.4.25 SoptSC 5.4.26 NATMI 5.4.27 scConnect 5.4.28 FunRes 5.4.29 scTensor Cell communication across multiple cell types and tissues strictly mediates proper functioning of metazoans and extensively relies on interactions between secreted ligands and cell-surface receptors.</description>
     </item>
     
   </channel>

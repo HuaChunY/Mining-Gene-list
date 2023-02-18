@@ -11,22 +11,22 @@
     <title>Tajectory inference   DEGminer</title>
 
     
-    <link href="../../css/nucleus.css?1673079252" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1673079252" rel="stylesheet">
-    <link href="../../css/hybrid.css?1673079252" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1673079252" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1673079252" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1673079252" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1673079252" rel="stylesheet">
-    <link href="../../css/theme.css?1673079252" rel="stylesheet">
-    <link href="../../css/tabs.css?1673079252" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1673079252" rel="stylesheet">
+    <link href="../../css/nucleus.css?1676691301" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1676691301" rel="stylesheet">
+    <link href="../../css/hybrid.css?1676691301" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1676691301" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1676691301" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1676691301" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1676691301" rel="stylesheet">
+    <link href="../../css/theme.css?1676691301" rel="stylesheet">
+    <link href="../../css/tabs.css?1676691301" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1676691301" rel="stylesheet">
     
-    <link href="../../css/theme-mine.css?1673079252" rel="stylesheet">
+    <link href="../../css/theme-mine.css?1676691301" rel="stylesheet">
     
-    <link href="../../css/foo.css?1673079252" rel="stylesheet"><link href="../../css/bar.css?1673079252" rel="stylesheet">
+    <link href="../../css/foo.css?1676691301" rel="stylesheet"><link href="../../css/bar.css?1676691301" rel="stylesheet">
 
-    <script src="../../js/jquery-3.3.1.min.js?1673079252"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1676691301"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1673079252"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1673079252"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1676691301"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1676691301"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1673079252"></script>
+<script type="text/javascript" src="../../js/search.js?1676691301"></script>
 
     
   </div>
@@ -777,9 +777,14 @@
 <li><a href="#tips" id="toc-tips">5.3.9 <strong>TIPS</strong></a></li>
 <li><a href="#velo-predictor" id="toc-velo-predictor">5.3.10 <strong>Velo-Predictor</strong></a></li>
 <li><a href="#origins" id="toc-origins">5.3.11 <strong>ORIGINS</strong></a></li>
+<li><a href="#paga" id="toc-paga">5.3.12 <strong>PAGA</strong></a></li>
+<li><a href="#scorpius" id="toc-scorpius">5.3.13 <strong>SCORPIUS</strong></a></li>
+<li><a href="#stemnet" id="toc-stemnet">5.3.14 <strong>STEMNET</strong></a></li>
 </ul>
 </div>
 
+<p>Trajectory inference aims at estimating dynamic changes in a single-cell transcriptome landscape, assuming that the cell-wise transcriptome is a static snapshot at a time point along some cellular process. The pseudotime and RNA velocity both are considered as the trajectory inference.Highly variable genes, represented by DEGs, thus contribute an important role in the pseudotime and RNA velocity analysis.</p>
+<p><strong>Breaking</strong>: A plethora of trajectory inference methods has been developed over the past few years, and 11 user-friendly tools are recommended in this document.</p>
 <hr />
 <div id="slingshot" class="section level2">
 <h2>5.3.1 <strong>slingshot</strong></h2>
@@ -892,6 +897,35 @@ shiny::runApp(&quot;TIPS&quot;)</code></pre>
 <pre class="r"><code>install.packages(&quot;remotes&quot;)
 
 remotes::install_github(&quot;danielasenraoka/ORIGINS&quot;)</code></pre>
+<hr />
+</div>
+<div id="paga" class="section level2">
+<h2>5.3.12 <strong>PAGA</strong></h2>
+<p><strong>Introduction</strong>: PAGA maps preserve the global topology of data, allow analyzing data at different resolutions, and result in much higher computational efficiency of the typical exploratory data analysis workflow. PAGA-initialized manifold learning algorithms converge faster, produce embeddings that are more faithful to the global topology of high-dimensional data, and introduce an entropy-based measure for quantifying such faithfulness. According to the <a href="https://www.nature.com/articles/s41587-019-0071-9">evaluation research</a> of trajectory methods, PAGA can model all trajectory types and performs better than any other method.</p>
+<p><strong>Installation</strong>: PAGA is implemented in Scanpy via <a href="https://scanpy.readthedocs.io/en/latest/generated/scanpy.tl.paga.html">scanpy.tl.paga</a>. To use this method, please install <a href="https://scanpy.readthedocs.io/en/latest/index.html">Scanpy</a> first:</p>
+<pre class="python"><code>pip install scanpy</code></pre>
+<hr />
+</div>
+<div id="scorpius" class="section level2">
+<h2>5.3.13 <strong>SCORPIUS</strong></h2>
+<p><strong>Introduction</strong>: SCORPIUS, an unsupervised approach for inferring linear developmental chronologies from single-cell RNA sequencing data. In comparison to similar approaches, it has three main advantages:</p>
+<ol style="list-style-type: decimal">
+<li><p>It accurately reconstructs <strong>linear dynamic processes</strong>.</p></li>
+<li><p>It automatically identifies marker genes, speeding up knowledge discovery.</p></li>
+<li><p>It is fully unsupervised. Prior knowledge of the relevant marker genes or cellular states of individual cells is not required.</p></li>
+</ol>
+<p><strong>Installation</strong>: SCORPIUS can be used by installing the R package:</p>
+<pre class="r"><code>install.packages(&quot;SCORPIUS&quot;)</code></pre>
+<p>Or install the development version via:</p>
+<pre class="r"><code>devtools::install_github(&quot;rcannood/SCORPIUS&quot;, build_vignettes = TRUE)</code></pre>
+<hr />
+</div>
+<div id="stemnet" class="section level2">
+<h2>5.3.14 <strong>STEMNET</strong></h2>
+<p><strong>Introduction</strong>: STEMNET is used to estimate the progression of single stem cells to distinct lineages. As an input, it takes a single cell gene expression matrix and a vector annotating, for each cell, if the cell is part of a given developmental endpoint or if it an immature cell. It then estimates the direction and amount of priming for each stem cell and creates visualizations of the lineage priming process.</p>
+<p><strong>Installation</strong>: To install this package, start R and enter:</p>
+<pre class="r"><code>install.packages(&quot;devtools&quot;)
+devtools::install_git(&#39;https://git.embl.de/velten/STEMNET/&#39;, build_vignettes=TRUE)</code></pre>
 </div>
 
 
@@ -1342,16 +1376,16 @@ remotes::install_github(&quot;danielasenraoka/ORIGINS&quot;)</code></pre>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1673079252"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1673079252"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1673079252"></script>
-    <script src="../../js/jquery.sticky.js?1673079252"></script>
-    <script src="../../js/featherlight.min.js?1673079252"></script>
-    <script src="../../js/highlight.pack.js?1673079252"></script>
+    <script src="../../js/clipboard.min.js?1676691301"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1676691301"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1676691301"></script>
+    <script src="../../js/jquery.sticky.js?1676691301"></script>
+    <script src="../../js/featherlight.min.js?1676691301"></script>
+    <script src="../../js/highlight.pack.js?1676691301"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1673079252"></script>
-    <script src="../../js/learn.js?1673079252"></script>
-    <script src="../../js/hugo-learn.js?1673079252"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1676691301"></script>
+    <script src="../../js/learn.js?1676691301"></script>
+    <script src="../../js/hugo-learn.js?1676691301"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

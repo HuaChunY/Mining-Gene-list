@@ -12,7 +12,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/clustering/clustering/</guid>
-      <description>6.1.1 Nbclust 6.1.2 ClustVis 6.1.3 Medusa 6.1.4 wcd 6.1.5 FUAT 6.1.6 hiplot 6.1.7 cola 6.1.1 Nbclust Introduction: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user. In addition, it provides a function to perform k-means and hierarchical clustering with different distance measures and aggregation methods. Any combination of validation indices and clustering methods can be requested in a single function call.</description>
+      <description>6.1.1 Nbclust 6.1.2 ClustVis 6.1.3 Medusa 6.1.4 wcd 6.1.5 FUAT 6.1.6 hiplot 6.1.7 cola Unsupervised cluster analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups or modelling to predict unknown samples.
+Breaking: Some well-used and comprehensive clustering tools are provided in this section.
+6.1.1 Nbclust Introduction: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user.</description>
     </item>
     
     <item>
@@ -21,7 +23,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/gene_network/</guid>
-      <description>2.1.1 STRING 2.1.2 IMEx 2.1.3 IntAct 2.1.4 DIP 2.1.5 BioGRID 2.1.6 MINT 2.1.7 InnateDB 2.1.8 HuRI 2.1.9 InWeb 2.1.10 NDEx 2.1.11 IID 2.1.12 SIGNOR 2.1.13 MatrixDB 2.1.14 I2D 2.1.15 SPIKE 2.1.1 STRING Introduction: STRING is a database of known and predicted protein-protein interactions. The interactions include direct (physical) and indirect (functional) associations; they stem from computational prediction, from knowledge transfer between organisms, and from interactions aggregated from other (primary) databases.</description>
+      <description>2.1.1 STRING 2.1.2 IMEx 2.1.3 IntAct 2.1.4 DIP 2.1.5 BioGRID 2.1.6 MINT 2.1.7 InnateDB 2.1.8 HuRI 2.1.9 InWeb 2.1.10 NDEx 2.1.11 IID 2.1.12 SIGNOR 2.1.13 MatrixDB 2.1.14 I2D 2.1.15 SPIKE Gene regulatory network (GRN) is the important mechanism of maintaining life process, controlling biochemical reaction and regulating compound level, which reveal the essential rules of a large number of biological processes and reactions in organisms.
+Breaking: Fifteen well-known gene/protein regulatory databases are cataloged, covering genes/proteins across species.</description>
     </item>
     
     <item>
@@ -30,8 +33,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/text-mining/text_mining/</guid>
-      <description>3.1.1 PubTator central 3.1.2 Phenomizer 3.1.3 BioGraph 3.1.4 WordCloud 3.1.5 BEST 3.1.6 iPTMnet 3.1.7 Genes2WordCloud 3.1.8 TeamTat 3.1.9 CADA 3.1.10 CROssBAR 3.1.1 PubTator central Introduction: PubTator Central (PTC) is a Web-based system providing automatic annotations of biomedical concepts such as genes and mutations in PubMed abstracts and PMC full-text articles. PTC expands the widely-used PubTator system.
-Installation: In addition to apps, PubTator central offers easy access to download source in Python, Perl and Java.</description>
+      <description>3.1.1 PubTator central 3.1.2 Phenomizer 3.1.3 BioGraph 3.1.4 WordCloud 3.1.5 BEST 3.1.6 iPTMnet 3.1.7 Genes2WordCloud 3.1.8 TeamTat 3.1.9 CADA 3.1.10 CROssBAR Mining valuable hidden knowledge from large-scale data relies on the support of reasoning technology. Knowledge graphs, as a new type of knowledge representation, have gained much attention in natural language processing. Knowledge graphs can effectively organize and represent knowledge so that it can be efficiently utilized in advanced applications.</description>
     </item>
     
     <item>
@@ -41,7 +43,7 @@ Installation: In addition to apps, PubTator central offers easy access to downlo
       
       <guid>/gene-annotation/orth/</guid>
       <description>1.1.1 biomaRt 1.1.2 homologene 1.1.3 g:Orth 1.1.4 OmaDB 1.1.5 EggNOG 1.1.6 OrthoVenn2 1.1.7 OrthoDB 1.1.8 ORCAN 1.1.9 KEGG Orthology 1.1.10 InParanoid 1.1.11 COG This document was provided to support the orthologous gene mapping across species (especially non-model taxa) for the downstream data analysis.
-Breaking: A summary of ten R packages and web services tools,including the number of species, package installation, operating vignettes.
+Breaking: A summary of eleven R packages and web services tools, including the number of species, package installation, operating vignettes.
 1.1.1 biomaRt Introduction: In recent years a wealth of biological data has become available in public data repositories.</description>
     </item>
     
@@ -51,7 +53,7 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/parmocogenomics/drug/</guid>
-      <description>4.1.1 Clue 4.1.2 CREEDS 4.1.3 L1000CDS² 4.1.4 PharmacoGx 4.1.5 DrugComboRanker 4.1.6 SEP-L1000 4.1.7 L1000FWD 4.1.8 Mantra 4.1.9 DvD 4.1.10 DSEA 4.1.11 cogena 4.1.12 gene2drug 4.1.13 DeSigN 4.1.14 ksRepo 4.1.15 iLINCS 4.1.16 Gene Expression Signature 4.1.17 PDOD 4.1.18 SigCom LINCS 4.1.19 DTX 4.1.20 Phosprof 4.1.1 Clue Introduction: CLUE is a cloud-based software platform for the analysis of perturbational datasets generated using gene expression (L1000) and proteomic (P100 and GCP) assays. The CLUE platform provides integrated access to datasets, results from the processing and analysis of these data, and software tools that the community can leverage to advance their research.</description>
+      <description>4.1.1 Clue 4.1.2 CREEDS 4.1.3 L1000CDS² 4.1.4 PharmacoGx 4.1.5 DrugComboRanker 4.1.6 SEP-L1000 4.1.7 L1000FWD 4.1.8 Mantra 4.1.9 DvD 4.1.10 DSEA 4.1.11 cogena 4.1.12 gene2drug 4.1.13 DeSigN 4.1.14 ksRepo 4.1.15 iLINCS 4.1.16 Gene Expression Signature 4.1.17 PDOD 4.1.18 SigCom LINCS 4.1.19 DTX 4.1.20 Phosprof Drug repurposing (alternatively called “new uses for old drugs”) is a strategy for identifying new uses for approved or investigational drugs that are outside the scope of the original medical indication.</description>
     </item>
     
     <item>
@@ -60,7 +62,7 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/conditional-analysis/spatialandtemporal/</guid>
-      <description>5.1.1 GEPIA 5.1.2 HumanBase-ExPecto 5.1.3 Expression Atlas 5.1.4 ToppCluster 5.1.5 GENT2 5.1.6 TISSUES 5.1.7 TissueEnrich 5.1.8 ORGANizer 5.1.9 deTS 5.1.10 WebCSEA 5.1.11 TEnGExA 5.1.12 Dynamic-BM 5.1.13 ADEIP 5.1.1 GEPIA Introduction: GEPIA is a newly developed interactive web server for analyzing the RNA sequencing expression data of 9,736 tumors and 8,587 normal samples from the TCGA and the GTEx projects, using a standard processing pipeline. GEPIA provides customizable functions such as tumor/normal differential expression analysis, profiling according to cancer types or pathological stages, patient survival analysis, similar gene detection, correlation analysis and dimensionality reduction analysis.</description>
+      <description>5.1.1 GEPIA 5.1.2 HumanBase-ExPecto 5.1.3 Expression Atlas 5.1.4 ToppCluster 5.1.5 GENT2 5.1.6 TISSUES 5.1.7 TissueEnrich 5.1.8 ORGANizer 5.1.9 deTS 5.1.10 WebCSEA 5.1.11 TEnGExA 5.1.12 Dynamic-BM 5.1.13 ADEIP The tissues or development stages of organisms have the common biological process, but the gene expression patterns of them are different, which means that different regulatory procedures control the specificity of the spatial and temporal variation. Understanding the specific expression and regulation of genes in spatial and temporal variation is helpful to better explore the genetic relationship and etiology of tissues and development stages, as well as to discover new specific therapeutic targets.</description>
     </item>
     
     <item>
@@ -69,7 +71,9 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/survival-analysis/survival_analysis/</guid>
-      <description>7.1.1 UALCAN 7.1.2 survival 7.1.3 KM plotter 7.1.4 survminer 7.1.1 UALCAN Introduction: UALCAN is a comprehensive, user-friendly, and interactive web resource for analyzing cancer OMICS data. It is built on PERL-CGI with high quality graphics using javascript and CSS. UALCAN is designed to, a) provide easy access to publicly available cancer OMICS data (TCGA, MET500, CPTAC and CBTTC), b) allow users to identify biomarkers or to perform in silico validation of potential genes of interest, c) provide graphs and plots depicting expression profile and patient survival information for protein-coding, miRNA-coding and lincRNA-coding genes, d) evaluate epigenetic regulation of gene expression by promoter methylation, e) perform pan-cancer gene expression analysis, f) Provide additional information about the selected genes/targets by linking to HPRD, GeneCards, Pubmed, TargetScan, The human protein atlas, DRUGBANK, Open Targets and the GTEx.</description>
+      <description>7.1.1 UALCAN 7.1.2 survival 7.1.3 KM plotter 7.1.4 survminer Survival analysis is the study of survival times and of the factors that influence them. This method that requires extra documentation of time periods and events, has the potential to be used in a number of fields, such as ecology, medicine and botany.
+Breaking: Some user-friendly survival analysis tools are provided in this section.
+7.1.1 UALCAN Introduction: UALCAN is a comprehensive, user-friendly, and interactive web resource for analyzing cancer OMICS data.</description>
     </item>
     
     <item>
@@ -87,7 +91,7 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/gene-annotation/goananotation/</guid>
-      <description>1.2.1 WEGO 2.0 1.2.2 g:GOSt 1.2.3 agriGO 2.0 1.2.4 UniProtKB 1.2.5 PANTHER 1.2.6 GOrilla 1.2.7 WEGO 2.0 1.2.8 GOEAST 1.2.9 ShinyGO 1.2.9 GOTermFinder Gene Ontology project is established to standardized describe the gene product’s functional information and help the biologist answer the specific queries about gene function. The formal vocabulary about gene functions and products promotes a high level of annotation review integration from various databases. Breaking: A plethora of tools linking the Gene Ontology knowledgebase exist to annotate and visualize the genes function.</description>
+      <description>1.2.1 WEGO 2.0 1.2.2 g:GOSt 1.2.3 agriGO 2.0 1.2.4 UniProtKB 1.2.5 PANTHER 1.2.6 GOrilla 1.2.7 WEGO 2.0 1.2.8 GOEAST 1.2.9 ShinyGO 1.2.10 GOTermFinder Gene Ontology project is established to standardized describe the gene product’s functional information and help the biologist answer the specific queries about gene function. The formal vocabulary about gene functions and products promotes a high level of annotation review integration from various databases. Breaking: A plethora of tools linking the Gene Ontology knowledgebase exist to annotate and visualize the genes function.</description>
     </item>
     
     <item>
@@ -96,7 +100,9 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/tf_regulation/</guid>
-      <description>2.2.1 JASPAR 2.2.2 AnimalTFDB 2.2.3 CHEA 2.2.4 RegNetwork 2.2.1 JASPAR Introduction: JASPAR is a regularly maintained open-access database storing manually curated transcription factors (TF) binding profiles as position frequency matrices (PFMs). PFMs summarize occurrences of each nucleotide at each position in a set of observed TF-DNA interactions. PFMs can be transformed to probabilistic or energistic models to construct position weight matrices (PWMs) or position-specific scoring matrices (PSSMs), which can be used to scan any DNA sequence to predict TF binding sites (TFBSs).</description>
+      <description>2.2.1 JASPAR 2.2.2 AnimalTFDB 2.2.3 CHEA 2.2.4 RegNetwork Transcription factors (TFs) are key regulators of intrinsic cellular processes, such as differentiation and development, and of the cellular response to external perturbation through signaling pathways. Most TFs recognize and bind to specific DNA sequences named as transcription factor biding sites, leading to specific spatiotemporal expression patterns of target genes.
+Breaking: Four TF target specific resources are collected.
+2.2.1 JASPAR Introduction: JASPAR is a regularly maintained open-access database storing manually curated transcription factors (TF) binding profiles as position frequency matrices (PFMs).</description>
     </item>
     
     <item>
@@ -114,7 +120,7 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/mirna_regulation/</guid>
-      <description>2.3.1 TargetScan 2.3.2 miRBase 2.3.3 miRDB 2.3.4 RNAhybrid 2.3.5 miRTarbase 2.3.6 miR2Disease 2.3.7 TarBase 2.3.8 mirDIP 2.3.1 TargetScan Introduction: TargetScan predicts biological targets of miRNAs by searching for the presence of conserved 8mer, 7mer, and 6mer sites that match the seed region of each miRNA (Lewis et al., 2005). As options, predictions with only poorly conserved sites and predictions with nonconserved miRNAs are also provided. Also identified are sites with mismatches in the seed region that are compensated by conserved 3’ pairing (Friedman et al.</description>
+      <description>2.3.1 TargetScan 2.3.2 miRBase 2.3.3 miRDB 2.3.4 RNAhybrid 2.3.5 miRTarbase 2.3.6 miR2Disease 2.3.7 TarBase 2.3.8 mirDIP miRNAs control the regulation of the majority of genes post-transcriptionally. Most miRNAs are involved in molecular pathways that influence inflammation, cell cycle regulation and carcinogenesis resulting in the onset or progression of pathological conditions. Investigating these interactions will be pivotal for understanding the etiology of pathologic processes, the potential new treatment strategies and for preventing diseases.</description>
     </item>
     
     <item>
@@ -123,7 +129,7 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/conditional-analysis/trajectory/</guid>
-      <description>5.3.1 slingshot 5.3.2 CellRank 5.3.3 CytoTree 5.3.4 VeloViz 5.3.5 Asc-Seurat 5.3.6 VeTra 5.3.7 TIMEOR 5.3.8 UniTVelo 5.3.9 TIPS 5.3.10 Velo-Predictor 5.3.11 ORIGINS 5.3.1 slingshot Introduction: Provides functions for inferring continuous, branching lineage structures in low-dimensional data. Slingshot was designed to model developmental trajectories in single-cell RNA sequencing data and serve as a component in an analysis pipeline after dimensionality reduction and clustering. It is flexible enough to handle arbitrarily many branching events and allows for the incorporation of prior knowledge through supervised graph construction.</description>
+      <description>5.3.1 slingshot 5.3.2 CellRank 5.3.3 CytoTree 5.3.4 VeloViz 5.3.5 Asc-Seurat 5.3.6 VeTra 5.3.7 TIMEOR 5.3.8 UniTVelo 5.3.9 TIPS 5.3.10 Velo-Predictor 5.3.11 ORIGINS 5.3.12 PAGA 5.3.13 SCORPIUS 5.3.14 STEMNET Trajectory inference aims at estimating dynamic changes in a single-cell transcriptome landscape, assuming that the cell-wise transcriptome is a static snapshot at a time point along some cellular process. The pseudotime and RNA velocity both are considered as the trajectory inference.Highly variable genes, represented by DEGs, thus contribute an important role in the pseudotime and RNA velocity analysis.</description>
     </item>
     
     <item>
@@ -132,7 +138,7 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/conditional-analysis/cellcomunication/</guid>
-      <description>5.4.1 IUPHAR 5.4.2 CellPhoneDB 5.4.3 FANTOM5 5.4.4 Cell-Cell Interaction Database 5.4.5 ligand-receptor pairs in literature 5.4.6 DLRP 5.4.7 ConnectomeDB 5.4.8 CellTalkDB 5.4.9 ICELLNET 5.4.10 Cellinker 5.4.11 PlantPhoneDB 5.4.12 CellCallEXT 5.4.13 CellChat 5.4.14 Giotto 5.4.15 SingleCellSignalR 5.4.16 CellCall 5.4.17 TraSig 5.4.18 celltalker 5.4.19 iTALK 5.4.20 PyMINEr 5.4.21 DeepCCI 5.4.22 NicheNet 5.4.23 SpaOTsc 5.4.24 CCCExplorer 5.4.25 SoptSC 5.4.26 NATMI 5.4.27 scConnect 5.4.28 FunRes 5.4.29 scTensor 5.4.1 IUPHAR Introduction: The International Union of Basic and Clinical Pharmacology (IUPHAR) / British Pharmacological Society (BPS) Guide to PHARMACOLOGY is an expert-curated resource of ligand-activity-target relationships, the majority of which come from high-quality pharmacological and medicinal chemistry literature.</description>
+      <description>5.4.1 IUPHAR 5.4.2 CellPhoneDB 5.4.3 FANTOM5 5.4.4 Cell-Cell Interaction Database 5.4.5 ligand-receptor pairs in literature 5.4.6 DLRP 5.4.7 ConnectomeDB 5.4.8 CellTalkDB 5.4.9 ICELLNET 5.4.10 Cellinker 5.4.11 PlantPhoneDB 5.4.12 CellCallEXT 5.4.13 CellChat 5.4.14 Giotto 5.4.15 SingleCellSignalR 5.4.16 CellCall 5.4.17 TraSig 5.4.18 celltalker 5.4.19 iTALK 5.4.20 PyMINEr 5.4.21 DeepCCI 5.4.22 NicheNet 5.4.23 SpaOTsc 5.4.24 CCCExplorer 5.4.25 SoptSC 5.4.26 NATMI 5.4.27 scConnect 5.4.28 FunRes 5.4.29 scTensor Cell communication across multiple cell types and tissues strictly mediates proper functioning of metazoans and extensively relies on interactions between secreted ligands and cell-surface receptors.</description>
     </item>
     
     <item>
@@ -141,7 +147,9 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/cerna_regulation/</guid>
-      <description>2.4.1 ENCODE 2.4.2 starBase 2.4.3 miRcode 2.4.4 DIANA-LncBase 2.4.5 OmniPath 2.4.6 ceRDB 2.4.7 LncACTdb 2.4.8 PceRBase 2.4.1 ENCODE Introduction: The ENCODE Portal, developed and maintained by the Data Coordination Center (ENCODE DCC), is the canonical source for all experimental metadata and data from ENCODE and associated projects. The ENCODE Portal contains raw and ground-level analysis data generated by participating mapping centers using a wide-range of assays (integrative analysis data are available at the SCREEN portal.</description>
+      <description>2.4.1 ENCODE 2.4.2 starBase 2.4.3 miRcode 2.4.4 DIANA-LncBase 2.4.5 OmniPath 2.4.6 ceRDB 2.4.7 LncACTdb 2.4.8 PceRBase Post-transcriptional crosstalk and communication between RNAs yield large regulatory competing endogenous RNA (ceRNA) networks via shared microRNAs. The ceRNA crosstalk represents a novel layer of gene regulation that controls both physiological and pathological processes such as development and complex diseases.
+Breaking: Eight ceRNA related databses are summarized in this section.
+2.4.1 ENCODE Introduction: The ENCODE Portal, developed and maintained by the Data Coordination Center (ENCODE DCC), is the canonical source for all experimental metadata and data from ENCODE and associated projects.</description>
     </item>
     
     <item>
@@ -159,8 +167,9 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/analysis_visualization/</guid>
-      <description>2.5.1 GeneMANIA 2.5.2 NetworkAnalyst 2.5.3 ConsensusPathDB 2.5.4 iRegulon 2.5.5 NAViGaTOR 2.5.6 FunCoup 2.5.7 miRTargetLink 2.5.8 FFLtool 2.5.1 GeneMANIA Introduction: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data. Association data include protein and genetic interactions, pathways, co-expression, co-localization and protein domain similarity.
-Data Source Statistics Type Number species 9 Data sources 22 Network 7 Installation:The GeneMANIA app offers a cytoscape command for scripting purposes.</description>
+      <description>2.5.1 GeneMANIA 2.5.2 NetworkAnalyst 2.5.3 ConsensusPathDB 2.5.4 iRegulon 2.5.5 NAViGaTOR 2.5.6 FunCoup 2.5.7 miRTargetLink 2.5.8 FFLtool For the construction of regulatory networks, in addition to the development of diverse databases, tools for visualizing networks are important methods for mining and presenting gene networks.
+Breaking: Eight popular network visualization and module analysis tools are recommended, and those tools may predict and visualize gene-gene, TF-gene, MiRNA-gene, ceRNA, etc.
+2.5.1 GeneMANIA Introduction: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data.</description>
     </item>
     
   </channel>

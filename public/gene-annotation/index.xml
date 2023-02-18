@@ -13,7 +13,7 @@
       
       <guid>/gene-annotation/orth/</guid>
       <description>1.1.1 biomaRt 1.1.2 homologene 1.1.3 g:Orth 1.1.4 OmaDB 1.1.5 EggNOG 1.1.6 OrthoVenn2 1.1.7 OrthoDB 1.1.8 ORCAN 1.1.9 KEGG Orthology 1.1.10 InParanoid 1.1.11 COG This document was provided to support the orthologous gene mapping across species (especially non-model taxa) for the downstream data analysis.
-Breaking: A summary of ten R packages and web services tools,including the number of species, package installation, operating vignettes.
+Breaking: A summary of eleven R packages and web services tools, including the number of species, package installation, operating vignettes.
 1.1.1 biomaRt Introduction: In recent years a wealth of biological data has become available in public data repositories.</description>
     </item>
     
@@ -23,7 +23,7 @@ Breaking: A summary of ten R packages and web services tools,including the numbe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/gene-annotation/goananotation/</guid>
-      <description>1.2.1 WEGO 2.0 1.2.2 g:GOSt 1.2.3 agriGO 2.0 1.2.4 UniProtKB 1.2.5 PANTHER 1.2.6 GOrilla 1.2.7 WEGO 2.0 1.2.8 GOEAST 1.2.9 ShinyGO 1.2.9 GOTermFinder Gene Ontology project is established to standardized describe the gene product’s functional information and help the biologist answer the specific queries about gene function. The formal vocabulary about gene functions and products promotes a high level of annotation review integration from various databases. Breaking: A plethora of tools linking the Gene Ontology knowledgebase exist to annotate and visualize the genes function.</description>
+      <description>1.2.1 WEGO 2.0 1.2.2 g:GOSt 1.2.3 agriGO 2.0 1.2.4 UniProtKB 1.2.5 PANTHER 1.2.6 GOrilla 1.2.7 WEGO 2.0 1.2.8 GOEAST 1.2.9 ShinyGO 1.2.10 GOTermFinder Gene Ontology project is established to standardized describe the gene product’s functional information and help the biologist answer the specific queries about gene function. The formal vocabulary about gene functions and products promotes a high level of annotation review integration from various databases. Breaking: A plethora of tools linking the Gene Ontology knowledgebase exist to annotate and visualize the genes function.</description>
     </item>
     
     <item>
