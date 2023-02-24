@@ -38,13 +38,15 @@
   </url><url>
     <loc>/network-analysis/cerna_regulation/</loc>
   </url><url>
-    <loc>/gene-annotation/other_gene_annotation/</loc>
+    <loc>/gene-annotation/enrichment/</loc>
   </url><url>
     <loc>/parmocogenomics/</loc>
   </url><url>
     <loc>/network-analysis/analysis_visualization/</loc>
   </url><url>
     <loc>/conditional-analysis/</loc>
+  </url><url>
+    <loc>/gene-annotation/other_gene_annotation/</loc>
   </url><url>
     <loc>/clustering/</loc>
   </url><url>
