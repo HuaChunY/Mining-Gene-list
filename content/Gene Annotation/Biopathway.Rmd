@@ -8,7 +8,7 @@ weight: 3
 
 Pathways are biological networks defining how biomolecules cooperate to accomplish cellular tasks in different conditions. Pathways are assembled from physically interacting molecules such as proteins and thus, it is particularly important to the annotation of those proteins in the pathway. 
 
-**Breaking**: Twenty-four pathway academics databases are summarized in this document.
+**Breaking**: Thirty pathway academics databases are summarized in this document.
 
 ---
 
