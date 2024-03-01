@@ -16,7 +16,7 @@ Interpreting the relationship between molecular mechanisms and phenotypes, in ad
 
 **Introduction**: [InterPro](https://www.ebi.ac.uk/interpro/) is the world's most comprehensive resource for protein family and domain information. InterPro integrates protein signatures from 13 member databases, which use a variety of different methods to classify proteins. Each of the databases has a particular focus (e.g. protein domains defined from structure, or full length protein families with shared function). 
 
-InterPro integrates signatures from the following 13 member databases: CATH,   CDD, HAMAP, MobiDB Lite, Panther, Pfam, PIRSF, PRINTS, Prosite, SFLD, SMART,   SUPERFAMILY AND TIGRfams.
+InterPro integrates signatures from the following 13 member databases: CATH,   CDD, HAMAP, MobiDB Lite, Panther, Pfam, PIRSF, PRINTS, Prosite, SFLD, SMART,   SUPERFAMILY AND NCBIfam.
   
 **[CATH-Gene3D](https://www.cathdb.info/)**
 ![CATH](/images/cath_logo.png?width=10pc)
@@ -75,15 +75,13 @@ SFLD (Structure-Function Linkage Database) is a hierarchical classification of e
 SMART (a Simple Modular Architecture Research Tool) allows the identification and annotation of genetically mobile domains and the analysis of domain architectures. 
   
 **[SUPERFAMILY](https://supfam.mrc-lmb.cam.ac.uk/)**
-![SUPERFAMILY](/images/superfamily_logo.png?width=10pc  )
+![SUPERFAMILY](/images/superfamily_logo.png?width=10pc)
   
 SUPERFAMILY is a library of profile hidden Markov models that represent all proteins of known structure. The library is based on the SCOP classification of proteins: each model corresponds to a SCOP domain and aims to represent the entire SCOP superfamily that the domain belongs to.
   
   
-**[TIGRFAMs](http://tigrfams.jcvi.org/cgi-bin/index.cgi)**
-![TIGRFAMs](/images/tigrfam_logo.png?width=10pc)
-  
-TIGRFAMs is a collection of protein families, featuring curated multiple sequence alignments, hidden Markov models (HMMs) and annotation, which provides a tool for identifying functionally related proteins based on sequence homology. 
+**[NCBIfam](https://www.ncbi.nlm.nih.gov/genome/annotation_prok/evidence/)**
+![NCBIfam](/images/NCBIfam.jpg?)
 
 ---
 
