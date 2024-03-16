@@ -10,9 +10,9 @@ weight: 1
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
-Unsupervised cluster analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups or modelling to predict unknown samples.
+Unsupervised or supervised classification and clustering analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups or modelling to predict unknown samples.
 
-**Breaking**: Some well-used and comprehensive clustering tools are provided in this section.
+**Breaking**: Some well-used and comprehensive classification and clustering tools are provided in this section.
 
 ---
 
@@ -107,11 +107,19 @@ vignette("vignette", "clustvis")
  
 ---
 
-## 6.1.5 **FUAT** 
+## 6.1.5 **TimeClust** 
 
-**Introduction**: A desktop software, namely FUAT, is developed to analyze, explore and visualize different aspects of obtained fuzzy clusters which are segmented by fuzzy c-means algorithm. Moreover, to obtain and inform optimal cluster count, FUAT is equipped with Expectation Maximization algorithm. 
+**Introduction**: TimeClust is an user-friendly software package to cluster genes according to their temporal expression profiles. It can be conveniently used to analyze data obtained from DNA microarray time-course experiments. It implements two original algorithms expressed designed for clustering short time series together with hierarchical clustering and self-organizing maps. TimeClust executable files for Windows and LINUX platforms can be downloaded free of charge for non-profit institutions from the following web site: http://aimed11.unipv.it/TimeClust. 
   
-**Installation**: desktop software: <10.1016/j.eswa.2012.05.038>
+**Installation**: The TimeClust software can be downloaded freely for non-profit institutions from http://aimed11.unipv.it/TimeClust. Executable files for Windows and LINUX platforms are available. The program requires the user to install the MATLAB runtime libraries, that are distributed together with the TimeClust files. The installation steps are here detailed.
+
+How to install TimeClust:
+
+1. Download the distribution file for the desired platform.
+2. Extract all files from the zip file on a temporary directory.
+3. Install the MATLAB libraries trough the MCRInstaller (if the same version of the MATLAB library files are not already installed) in the following way:
+
+**Application**: The TimeClust vignette can be found at (http://aimed11.unipv.it/TimeClust/example.pdf).
 
 ---
 

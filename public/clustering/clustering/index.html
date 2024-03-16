@@ -11,22 +11,22 @@
     <title>Clustering Analysis   DEGminer</title>
 
     
-    <link href="../../css/nucleus.css?1709260248" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1709260248" rel="stylesheet">
-    <link href="../../css/hybrid.css?1709260248" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1709260248" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1709260248" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1709260248" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1709260248" rel="stylesheet">
-    <link href="../../css/theme.css?1709260248" rel="stylesheet">
-    <link href="../../css/tabs.css?1709260248" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1709260248" rel="stylesheet">
+    <link href="../../css/nucleus.css?1710579104" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1710579104" rel="stylesheet">
+    <link href="../../css/hybrid.css?1710579104" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1710579104" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1710579104" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1710579104" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1710579104" rel="stylesheet">
+    <link href="../../css/theme.css?1710579104" rel="stylesheet">
+    <link href="../../css/tabs.css?1710579104" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1710579104" rel="stylesheet">
     
-    <link href="../../css/theme-mine.css?1709260248" rel="stylesheet">
+    <link href="../../css/theme-mine.css?1710579104" rel="stylesheet">
     
-    <link href="../../css/foo.css?1709260248" rel="stylesheet"><link href="../../css/bar.css?1709260248" rel="stylesheet">
+    <link href="../../css/foo.css?1710579104" rel="stylesheet"><link href="../../css/bar.css?1710579104" rel="stylesheet">
 
-    <script src="../../js/jquery-3.3.1.min.js?1709260248"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1710579104"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1709260248"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1709260248"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1710579104"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1710579104"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1709260248"></script>
+<script type="text/javascript" src="../../js/search.js?1710579104"></script>
 
     
   </div>
@@ -587,13 +587,13 @@
  
   
     
-    <li data-nav-id="/clustering/" title="Clustering Analysis" class="dd-item
+    <li data-nav-id="/clustering/" title="Classification and Clustering" class="dd-item
         parent
         
         
         ">
       <a href="../../clustering/">
-          Clustering Analysis
+          Classification and Clustering
           
       </a>
       
@@ -642,13 +642,13 @@
  
   
     
-    <li data-nav-id="/survival-analysis/" title="Survival Analysis" class="dd-item
+    <li data-nav-id="/survival-analysis/" title="Gene-Phenotype Association Analysis" class="dd-item
         
         
         
         ">
       <a href="../../survival-analysis/">
-          Survival Analysis
+          Gene-Phenotype Association Analysis
           
       </a>
       
@@ -736,7 +736,7 @@
             
           
           
-            <a href='../../'></a> > <a href='../../clustering/'>Clustering Analysis</a> > Clustering Analysis
+            <a href='../../'></a> > <a href='../../clustering/'>Classification and Clustering</a> > Clustering Analysis
           
         
           
@@ -780,14 +780,14 @@
 <li><a href="#clustvis" id="toc-clustvis">6.1.2 <strong>ClustVis</strong></a></li>
 <li><a href="#medusa" id="toc-medusa">6.1.3 <strong>Medusa</strong></a></li>
 <li><a href="#wcd" id="toc-wcd">6.1.4 <strong>wcd</strong></a></li>
-<li><a href="#fuat" id="toc-fuat">6.1.5 <strong>FUAT</strong></a></li>
+<li><a href="#timeclust" id="toc-timeclust">6.1.5 <strong>TimeClust</strong></a></li>
 <li><a href="#hiplot" id="toc-hiplot">6.1.6 <strong>hiplot</strong></a></li>
 <li><a href="#cola" id="toc-cola">6.1.7 <strong>cola</strong></a></li>
 </ul>
 </div>
 
-<p>Unsupervised cluster analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups or modelling to predict unknown samples.</p>
-<p><strong>Breaking</strong>: Some well-used and comprehensive clustering tools are provided in this section.</p>
+<p>Unsupervised or supervised classification and clustering analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups or modelling to predict unknown samples.</p>
+<p><strong>Breaking</strong>: Some well-used and comprehensive classification and clustering tools are provided in this section.</p>
 <hr />
 <div id="nbclust" class="section level2">
 <h2>6.1.1 <strong>Nbclust</strong></h2>
@@ -833,8 +833,8 @@ wget https://github.com/taunometsalu/ClustVis/archive/master.zip
 unzip master.zip
 chmod -R go+rx ~/customClustvis/
 sudo docker run -d \
-    --name customClustvis \
-    -p &lt;myPort&gt;:3838 \
+	--name customClustvis \
+	-p &lt;myPort&gt;:3838 \
     -v ~/customClustvis/ClustVis-master/:/srv/shiny-server/:ro \
     taunometsalu/clustvis</code></pre>
 <p>To start using ClustVis R package, you can look at the examples in the vignette that comes with the package from <a href="https://github.com/taunometsalu/ClustVis">github</a>:</p>
@@ -895,10 +895,17 @@ vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
 <img src="../../images/wcd.jpg?width=50pc" alt="wcd" /></p>
 <hr />
 </div>
-<div id="fuat" class="section level2">
-<h2>6.1.5 <strong>FUAT</strong></h2>
-<p><strong>Introduction</strong>: A desktop software, namely FUAT, is developed to analyze, explore and visualize different aspects of obtained fuzzy clusters which are segmented by fuzzy c-means algorithm. Moreover, to obtain and inform optimal cluster count, FUAT is equipped with Expectation Maximization algorithm.</p>
-<p><strong>Installation</strong>: desktop software: &lt;10.1016/j.eswa.2012.05.038&gt;</p>
+<div id="timeclust" class="section level2">
+<h2>6.1.5 <strong>TimeClust</strong></h2>
+<p><strong>Introduction</strong>: TimeClust is an user-friendly software package to cluster genes according to their temporal expression profiles. It can be conveniently used to analyze data obtained from DNA microarray time-course experiments. It implements two original algorithms expressed designed for clustering short time series together with hierarchical clustering and self-organizing maps. TimeClust executable files for Windows and LINUX platforms can be downloaded free of charge for non-profit institutions from the following web site: <a href="http://aimed11.unipv.it/TimeClust" class="uri">http://aimed11.unipv.it/TimeClust</a>.</p>
+<p><strong>Installation</strong>: The TimeClust software can be downloaded freely for non-profit institutions from <a href="http://aimed11.unipv.it/TimeClust" class="uri">http://aimed11.unipv.it/TimeClust</a>. Executable files for Windows and LINUX platforms are available. The program requires the user to install the MATLAB runtime libraries, that are distributed together with the TimeClust files. The installation steps are here detailed.</p>
+<p>How to install TimeClust:</p>
+<ol style="list-style-type: decimal">
+<li>Download the distribution file for the desired platform.</li>
+<li>Extract all files from the zip file on a temporary directory.</li>
+<li>Install the MATLAB libraries trough the MCRInstaller (if the same version of the MATLAB library files are not already installed) in the following way:</li>
+</ol>
+<p><strong>Application</strong>: The TimeClust vignette can be found at (<a href="http://aimed11.unipv.it/TimeClust/example.pdf" class="uri">http://aimed11.unipv.it/TimeClust/example.pdf</a>).</p>
 <hr />
 </div>
 <div id="hiplot" class="section level2">
@@ -1394,10 +1401,10 @@ BiocManager::install(&quot;cola&quot;)</code></pre>
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../clustering/" title="Clustering Analysis"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../clustering/" title="Classification and Clustering"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../survival-analysis/" title="Survival Analysis" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../survival-analysis/" title="Gene-Phenotype Association Analysis" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1407,16 +1414,16 @@ BiocManager::install(&quot;cola&quot;)</code></pre>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1709260248"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1709260248"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1709260248"></script>
-    <script src="../../js/jquery.sticky.js?1709260248"></script>
-    <script src="../../js/featherlight.min.js?1709260248"></script>
-    <script src="../../js/highlight.pack.js?1709260248"></script>
+    <script src="../../js/clipboard.min.js?1710579104"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1710579104"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1710579104"></script>
+    <script src="../../js/jquery.sticky.js?1710579104"></script>
+    <script src="../../js/featherlight.min.js?1710579104"></script>
+    <script src="../../js/highlight.pack.js?1710579104"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1709260248"></script>
-    <script src="../../js/learn.js?1709260248"></script>
-    <script src="../../js/hugo-learn.js?1709260248"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1710579104"></script>
+    <script src="../../js/learn.js?1710579104"></script>
+    <script src="../../js/hugo-learn.js?1710579104"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
