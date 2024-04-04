@@ -1,9 +1,9 @@
 ---
-title: "Survival Analysis"
+title: "Time-to-event analysis"
 output:
   blogdown::html_page:
     toc: true
-weight: 1
+weight: 2
 ---
 
 
@@ -11,13 +11,13 @@ weight: 1
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
-Survival analysis is the study of survival times and of the factors that influence them. This method that requires extra documentation of time periods and events, has the potential to be used in a number of fields, such as ecology, medicine and botany.
+Time-to-event analysis is the study of specific events occur times and of the factors that influence them. This method that requires extra documentation of time periods and events, has the potential to be used in a number of fields, such as ecology, medicine and botany.
 
-**Breaking**: Some user-friendly survival analysis tools are provided in this section.
+**Breaking**: Some user-friendly time-to-event analysis tools are provided in this section.
 
 ---
 
-## 7.1.1 **UALCAN**
+## 7.2.1 **UALCAN**
 
 **Introduction**: UALCAN is a comprehensive, user-friendly, and interactive web resource for analyzing cancer OMICS data. It is built on PERL-CGI with high quality graphics using javascript and CSS. UALCAN is designed to, a) provide easy access to publicly available cancer OMICS data (TCGA, MET500, CPTAC and CBTTC), b) allow users to identify biomarkers or to perform in silico validation of potential genes of interest, c) provide graphs and plots depicting expression profile and patient survival information for protein-coding, miRNA-coding and lincRNA-coding genes, d) evaluate epigenetic regulation of gene expression by promoter methylation, e) perform pan-cancer gene expression analysis, f) Provide additional information about the selected genes/targets by linking to HPRD, GeneCards, Pubmed, TargetScan, The human protein atlas, DRUGBANK, Open Targets and the GTEx. These resources allow researchers to gather valuable information and data about the genes/targets of interest, g) provide clinical proteomic consortium data analysis including total/phospho-proteins and h) provide pediatric brain tumor gene expression and protein expression analysis. 
 
@@ -28,7 +28,7 @@ Survival analysis is the study of survival times and of the factors that influen
  
 ---
 
-## 7.1.2 **survival**
+## 7.2.2 **survival**
 
 **Introduction**: survival is package for survival Analysis, and contains the core survival analysis routines, including definition of Surv objects, Kaplan-Meier and Aalen-Johansen (multi-state) curves, Cox models, and parametric accelerated failure time models.
  
@@ -41,7 +41,7 @@ install.packages("survival")
 
 ---
 
-## 7.1.3 **KM plotter**
+## 7.2.3 **KM plotter**
 
 **Introduction**: The Kaplan Meier plotter is capable to assess the correlation between the expression of all genes (mRNA, miRNA, protein) and survival in 30k+ samples from 21 tumor types including breast, ovarian, lung, & gastric cancer. Sources for the databases include GEO, EGA, and TCGA. Primary purpose of the tool is a meta-analysis based discovery and validation of survival biomarkers for cancer research. 
 
@@ -60,7 +60,7 @@ install.packages("survival")
  
 ---
 
-## 7.1.4 **survminer**
+## 7.2.4 **survminer**
 
 **Introduction**: A package contains the function 'ggsurvplot()' for drawing easily beautiful
 and 'ready-to-publish' survival curves with the 'number at risk' table
@@ -68,7 +68,7 @@ and 'censoring count plot'. Other functions are also available to plot
 adjusted curves for `Cox` model and to visually examine 'Cox' model assumptions
 
  
-**Installation**: **Installation**:To install this package, start R (version "4.2") and enter:
+**Installation**: To install this package, start R (version "4.2") and enter:
 ```{r}
 install.packages("survminer")
 ```

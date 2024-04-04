@@ -1,0 +1,160 @@
+---
+title: "Gene and phenotype association analysis"
+output:
+  blogdown::html_page:
+    toc: true
+weight: 1
+---
+
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+Gene-phenotype association analysis provides valuable insights into the genetic basis of phenotypic traits and diseases, offering opportunities for biomarker discovery, personalized medicine, drug target identification, and elucidation of disease mechanisms.
+
+**Breaking**: Some user-friendly gene-phenotype association analysis tools are provided in this section.
+
+---
+
+## 7.1.1 **PrediXcan**
+
+**Introduction**: PrediXcan is a command-line tool that predicts gene expression from genotype data and performs gene-based association tests, allowing researchers to prioritize genes that are likely to be causal for a phenotype. PrediXcan consists of two steps: 1) Predict gene expression (or whatever biology the models predict) in a cohort with available genotypes; 2) Run associations to a trait measured in the cohort. 
+
+**Installation**: To run PrediXcan you will need:
+
+- Software Requirements:
+1.	Linux or Mac OS
+2.	Python 2.7
+3.	numpy package
+4.	R
+
+- Scripts:
+1.	PrediXcan.py
+2.	PrediXcanAssociation.R
+
+- Input Files:
+1. genotype file
+2. sample file
+3. transcriptome prediction model (sqlite db to be downloaded from PredictDB.)
+4. phenotype file
+5. filter file - Specifies a subset of rows on which to perform association tests (optional)
+
+**Application**: The PrediXcan vignette can be found at <https://github.com/hakyimlab/PrediXcan>.
+ 
+---
+
+## 7.1.2 **MetaXcan**
+
+**Introduction**: MetaXcan is a set of tools to integrate genomic information of biological mechanisms with complex traits. Almost all of the software here is command-line based. This software has been recently migrated to python 3 as python 2 has been sunset.
+ 
+**Installation**: The software is developed and tested in Linux and Mac OS environments. The main S-PrediXcan script is also supported in Windows.
+
+To run S-PrediXcan, you need Python 3.5 or higher, with the following libraries:
+numpy (>=1.11.1)
+scipy (>=0.18.1)
+pandas (>=0.18.1)
+sqlalchemy is needed at some unit tests.
+
+To run PrediXcan Associations and MulTiXcan, you also need:
+patsy (>=0.5.0)
+statsmodels (>=0.8.0)
+h5py (>=2.7.1)
+h5py-cache (>=1.0.0) *Now folded into h5py
+
+To run prediction of biological mechanisms on individual-level data, you will also need:
+bgen_reader (>=3.0.3)
+cyvcf2 (>=0.8.0)
+R with ggplot and dplyr is needed for some optional statistics and charts.
+
+
+**Application**: The MetaXcan vignette can be found at <https://github.com/hakyimlab/MetaXcan>.
+
+---
+
+## 7.1.3 **Fusion**
+
+**Introduction**: FUSION is a suite of tools for performing transcriptome-wide and regulome-wide association studies (TWAS and RWAS). FUSION builds predictive models of the genetic component of a functional/molecular phenotype and predicts and tests that component for association with disease using GWAS summary statistics. The goal is to identify associations between a GWAS phenotype and a functional phenotype that was only measured in reference data. We provide precomputed predictive models from multiple studies to facilitate this analysis.
+
+**Installation**:
+
+- Download and unpack the FUSION software package from github:
+
+```
+wget https://github.com/gusevlab/fusion_twas/archive/master.zip
+unzip master.zip
+cd fusion_twas-master
+```
+
+- Download and unpack the (1000 Genomes)  LD reference data:
+
+```
+wget https://data.broadinstitute.org/alkesgroup/FUSION/LDREF.tar.bz2
+tar xjvf LDREF.tar.bz2
+```
+
+- Download and unpack the plink2R library (by Gad Abraham):
+
+```
+wget https://github.com/gabraham/plink2R/archive/master.zip
+unzip master.zip
+```
+
+- Launch R and install required libraries:
+
+```{r}
+install.packages(c('optparse','RColorBrewer'))
+install.packages('plink2R-master/plink2R/',repos = NULL)
+```
+
+If computing your own weights, the following additional steps are required
+- Add the bundled GCTA binary `gcta_nr_robust` to path (coded by Po-Ru Loh for robust non-linear optimization)
+- Download and install PLINK2, add `plink` to path
+- Launch R and install the following required libraries:
+
+```{r}
+install.packages(c('glmnet','methods'))
+```
+
+
+- If using BSLMM, download and install GEMMA software, add to path. Generate a symbolic link to the output by calling `ln -s ./ output` in the directory where you will run `FUSION.weights.R` (this is a workaround because GEMMA requires results to go into an `output` subdirectory).
+
+
+**Application**: The Fusion vignette can be found at <http://gusevlab.org/projects/fusion/>.
+
+ 
+---
+
+## 7.1.4 **SMR**
+
+**Introduction**: The SMR software tool was originally developed to implement the SMR & HEIDI methods to test for pleiotropic association between the expression level of a gene and a complex trait of interest using summary-level data from GWAS and expression quantitative trait loci (eQTL) studies (Zhu et al. 2016 Nature Genetics). The SMR & HEIDI methodology can be interpreted as an analysis to test if the effect size of a SNP on the phenotype is mediated by gene expression. This tool can therefore be used to prioritize genes underlying GWAS hits for follow-up functional studies. The methods are applicable to all kinds of molecular QTL (xQTL) data, including DNA methylation QTL (mQTL) and protein abundance QTL (pQTL).
+
+ 
+**Installation**: The source code are released under GPL v2.
+
+Source code: smr_v1.3.1_src.tar.gz <https://yanglab.westlake.edu.cn/software/smr/download/smr_v1.3.1_src.tar.gz>.
+
+**Application**: The SMR vignette can be found at <https://yanglab.westlake.edu.cn/software/smr/#Overview>.
+
+---
+
+## 7.1.5 **PTWAS**
+
+**Introduction**: A computational framework, probabilistic transcriptome-wide association study (PTWAS) can investigate causal relationships between gene expressions and complex traits. PTWAS applies the established principles from instrumental variables analysis and takes advantage of probabilistic eQTL annotations to delineate and tackle the unique challenges arising in TWAS. PTWAS not only confers higher power than the existing methods but also provides novel functionalities to evaluate the causal assumptions and estimate tissue- or cell-type-specific gene-to-trait effects.
+
+ 
+**Installation**: Software requirement
+
+The bare minimum set of software packages for running PTWAS scan, validation, and estimation procedures are:
+
+- GAMBIT: software package implementing generalized burden test using GWAS summary statistics (https://github.com/corbinq/GAMBIT).
+- PTWAS_est: perl script for causal assumption validation and effect estimation (https://github.com/xqwen/ptwas/tree/master/PTWAS_est/).
+- tabix: <https://github.com/samtools/tabix>.
+
+To compute PTWAS composite instrumental variables/eQTL weights for scan analysis from users’ own eQTL data, it requires additional software packages/libraries
+
+- DAP: Bayesian multi-SNP analysis software for fine-mapping eQTLs (https://github.com/xqwen/dap).
+- ptwas_builder: utility to extract information from DAP output (part of the DAP distribution): <https://github.com/xqwen/dap/tree/master/ptwas_builder>.
+- make_GAMBIT_DB.R: R script to format GAMBIT weights file. Requires data.table library <https://github.com/xqwen/ptwas/tree/master/PTWAS_scan/>.
+
+**Application**: The PTWAS vignette can be found at <https://xqwen.github.io/ptwas/>.
