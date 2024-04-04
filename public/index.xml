@@ -7,14 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Clustering Analysis</title>
-      <link>/clustering/clustering/</link>
+      <title>Classification Analysis</title>
+      <link>/clustering/classification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/clustering/clustering/</guid>
-      <description>6.1.1 Nbclust 6.1.2 ClustVis 6.1.3 Medusa 6.1.4 wcd 6.1.5 TimeClust 6.1.6 hiplot 6.1.7 cola Unsupervised or supervised classification and clustering analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups or modelling to predict unknown samples.
-Breaking: Some well-used and comprehensive classification and clustering tools are provided in this section.
-6.1.1 Nbclust Introduction: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user.</description>
+      <guid>/clustering/classification/</guid>
+      <description>6.1.1 caret 6.1.2 Tidymodels 6.1.3 mlr3 6.1.4 MASS Classification analysis models essential features of samples derived from different treatments or diseased states to effectively predict unknown samples, facilitating the identification and diagnosis of subtypes or stages of diseases.
+Breaking: Some well-used and comprehensive classification tools are provided in this section.
+6.1.1 caret Introduction: The caret package (short for Classification and REgression Training) is a set of functions that attempt to streamline the process for creating predictive models.</description>
+    </item>
+    
+    <item>
+      <title>Gene and phenotype association analysis</title>
+      <link>/survival-analysis/gene_phenotype_association/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/survival-analysis/gene_phenotype_association/</guid>
+      <description>7.1.1 PrediXcan 7.1.2 MetaXcan 7.1.3 Fusion 7.1.4 SMR 7.1.5 PTWAS Gene-phenotype association analysis provides valuable insights into the genetic basis of phenotypic traits and diseases, offering opportunities for biomarker discovery, personalized medicine, drug target identification, and elucidation of disease mechanisms.
+Breaking: Some user-friendly gene-phenotype association analysis tools are provided in this section.
+7.1.1 PrediXcan Introduction: PrediXcan is a command-line tool that predicts gene expression from genotype data and performs gene-based association tests, allowing researchers to prioritize genes that are likely to be causal for a phenotype.</description>
     </item>
     
     <item>
@@ -66,14 +77,14 @@ Breaking: A summary of eleven R packages and web services tools, including the n
     </item>
     
     <item>
-      <title>Survival Analysis</title>
-      <link>/survival-analysis/survival_analysis/</link>
+      <title>Clustering Analysis</title>
+      <link>/clustering/clustering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/survival-analysis/survival_analysis/</guid>
-      <description>7.1.1 UALCAN 7.1.2 survival 7.1.3 KM plotter 7.1.4 survminer Survival analysis is the study of survival times and of the factors that influence them. This method that requires extra documentation of time periods and events, has the potential to be used in a number of fields, such as ecology, medicine and botany.
-Breaking: Some user-friendly survival analysis tools are provided in this section.
-7.1.1 UALCAN Introduction: UALCAN is a comprehensive, user-friendly, and interactive web resource for analyzing cancer OMICS data.</description>
+      <guid>/clustering/clustering/</guid>
+      <description>6.2.1 Nbclust 6.2.2 ClustVis 6.2.3 Medusa 6.2.4 wcd 6.2.5 TimeClust 6.2.6 hiplot 6.2.7 cola Unsupervised or supervised clustering analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups.
+Breaking: Some well-used and comprehensive clustering tools are provided in this section.
+6.2.1 Nbclust Introduction: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user.</description>
     </item>
     
     <item>
@@ -103,6 +114,17 @@ Breaking: Some user-friendly survival analysis tools are provided in this sectio
       <description>2.2.1 JASPAR 2.2.2 AnimalTFDB 2.2.3 CHEA 2.2.4 RegNetwork Transcription factors (TFs) are key regulators of intrinsic cellular processes, such as differentiation and development, and of the cellular response to external perturbation through signaling pathways. Most TFs recognize and bind to specific DNA sequences named as transcription factor biding sites, leading to specific spatiotemporal expression patterns of target genes.
 Breaking: Four TF target specific resources are collected.
 2.2.1 JASPAR Introduction: JASPAR is a regularly maintained open-access database storing manually curated transcription factors (TF) binding profiles as position frequency matrices (PFMs).</description>
+    </item>
+    
+    <item>
+      <title>Time-to-event analysis</title>
+      <link>/survival-analysis/survival_analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/survival-analysis/survival_analysis/</guid>
+      <description>7.2.1 UALCAN 7.2.2 survival 7.2.3 KM plotter 7.2.4 survminer Time-to-event analysis is the study of specific events occur times and of the factors that influence them. This method that requires extra documentation of time periods and events, has the potential to be used in a number of fields, such as ecology, medicine and botany.
+Breaking: Some user-friendly time-to-event analysis tools are provided in this section.
+7.2.1 UALCAN Introduction: UALCAN is a comprehensive, user-friendly, and interactive web resource for analyzing cancer OMICS data.</description>
     </item>
     
     <item>

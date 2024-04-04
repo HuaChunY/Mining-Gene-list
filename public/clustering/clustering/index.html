@@ -11,22 +11,22 @@
     <title>Clustering Analysis   DEGminer</title>
 
     
-    <link href="../../css/nucleus.css?1710579104" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1710579104" rel="stylesheet">
-    <link href="../../css/hybrid.css?1710579104" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1710579104" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1710579104" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1710579104" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1710579104" rel="stylesheet">
-    <link href="../../css/theme.css?1710579104" rel="stylesheet">
-    <link href="../../css/tabs.css?1710579104" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1710579104" rel="stylesheet">
+    <link href="../../css/nucleus.css?1712239655" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1712239655" rel="stylesheet">
+    <link href="../../css/hybrid.css?1712239655" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1712239655" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1712239655" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1712239655" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1712239655" rel="stylesheet">
+    <link href="../../css/theme.css?1712239655" rel="stylesheet">
+    <link href="../../css/tabs.css?1712239655" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1712239655" rel="stylesheet">
     
-    <link href="../../css/theme-mine.css?1710579104" rel="stylesheet">
+    <link href="../../css/theme-mine.css?1712239655" rel="stylesheet">
     
-    <link href="../../css/foo.css?1710579104" rel="stylesheet"><link href="../../css/bar.css?1710579104" rel="stylesheet">
+    <link href="../../css/foo.css?1712239655" rel="stylesheet"><link href="../../css/bar.css?1712239655" rel="stylesheet">
 
-    <script src="../../js/jquery-3.3.1.min.js?1710579104"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1712239655"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1710579104"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1710579104"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1712239655"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1712239655"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1710579104"></script>
+<script type="text/javascript" src="../../js/search.js?1712239655"></script>
 
     
   </div>
@@ -614,6 +614,27 @@
  
   
     
+      <li data-nav-id="/clustering/classification/" title="Classification Analysis" class="dd-item ">
+        <a href="../../clustering/classification/">
+        Classification Analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
       <li data-nav-id="/clustering/clustering/" title="Clustering Analysis" class="dd-item active">
         <a href="../../clustering/clustering/">
         Clustering Analysis
@@ -669,9 +690,30 @@
  
   
     
-      <li data-nav-id="/survival-analysis/survival_analysis/" title="Survival Analysis" class="dd-item ">
+      <li data-nav-id="/survival-analysis/gene_phenotype_association/" title="Gene and phenotype association analysis" class="dd-item ">
+        <a href="../../survival-analysis/gene_phenotype_association/">
+        Gene and phenotype association analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/survival-analysis/survival_analysis/" title="Time-to-event analysis" class="dd-item ">
         <a href="../../survival-analysis/survival_analysis/">
-        Survival Analysis
+        Time-to-event analysis
         
         </a>
     </li>
@@ -776,21 +818,21 @@
 
 <div id="TOC">
 <ul>
-<li><a href="#nbclust" id="toc-nbclust">6.1.1 <strong>Nbclust</strong></a></li>
-<li><a href="#clustvis" id="toc-clustvis">6.1.2 <strong>ClustVis</strong></a></li>
-<li><a href="#medusa" id="toc-medusa">6.1.3 <strong>Medusa</strong></a></li>
-<li><a href="#wcd" id="toc-wcd">6.1.4 <strong>wcd</strong></a></li>
-<li><a href="#timeclust" id="toc-timeclust">6.1.5 <strong>TimeClust</strong></a></li>
-<li><a href="#hiplot" id="toc-hiplot">6.1.6 <strong>hiplot</strong></a></li>
-<li><a href="#cola" id="toc-cola">6.1.7 <strong>cola</strong></a></li>
+<li><a href="#nbclust" id="toc-nbclust">6.2.1 <strong>Nbclust</strong></a></li>
+<li><a href="#clustvis" id="toc-clustvis">6.2.2 <strong>ClustVis</strong></a></li>
+<li><a href="#medusa" id="toc-medusa">6.2.3 <strong>Medusa</strong></a></li>
+<li><a href="#wcd" id="toc-wcd">6.2.4 <strong>wcd</strong></a></li>
+<li><a href="#timeclust" id="toc-timeclust">6.2.5 <strong>TimeClust</strong></a></li>
+<li><a href="#hiplot" id="toc-hiplot">6.2.6 <strong>hiplot</strong></a></li>
+<li><a href="#cola" id="toc-cola">6.2.7 <strong>cola</strong></a></li>
 </ul>
 </div>
 
-<p>Unsupervised or supervised classification and clustering analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups or modelling to predict unknown samples.</p>
-<p><strong>Breaking</strong>: Some well-used and comprehensive classification and clustering tools are provided in this section.</p>
+<p>Unsupervised or supervised clustering analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups.</p>
+<p><strong>Breaking</strong>: Some well-used and comprehensive clustering tools are provided in this section.</p>
 <hr />
 <div id="nbclust" class="section level2">
-<h2>6.1.1 <strong>Nbclust</strong></h2>
+<h2>6.2.1 <strong>Nbclust</strong></h2>
 <p><strong>Introduction</strong>: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user. In addition, it provides a function to perform k-means and hierarchical clustering with different distance measures and aggregation methods. Any combination of validation indices and clustering methods can be requested in a single function call. This enables the user to simultaneously evaluate several clustering schemes while varying the number of clusters, to help determining the most appropriate number of clusters for the data set of interest.</p>
 <p><strong>Installation</strong>: To install this package, start R (version “4.2”) and enter:</p>
 <pre class="r"><code>install.packages(Nbclust)</code></pre>
@@ -798,7 +840,7 @@
 <hr />
 </div>
 <div id="clustvis" class="section level2">
-<h2>6.1.2 <strong>ClustVis</strong></h2>
+<h2>6.2.2 <strong>ClustVis</strong></h2>
 <p><strong>Introduction</strong>: This web tool allows users to upload their own data and easily create Principal Component Analysis (PCA) plots and heatmaps. Data can be uploaded as a file or by copy-pasteing it to the text box. Data format is shown under “Help” tab.</p>
 <center>
 <b>Data Source Statistics</b>
@@ -851,7 +893,7 @@ vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
 <hr />
 </div>
 <div id="medusa" class="section level2">
-<h2>6.1.3 <strong>Medusa</strong></h2>
+<h2>6.2.3 <strong>Medusa</strong></h2>
 <p><strong>Introduction</strong>: Medusa3 is a java standalone application for visualization and clustering analysis of biological networks in 2D. It is highly interactive and it supports weighted and multi-edged graphs where each edge between two bioentities can represent a different biological concept. Comparing to previous versions, it is currently enriched with a variety of layout and clustering methods for more intuitive visualizations. It is easy to integrate with web application since it is offered as an applet.</p>
 <center>
 <b>Data Source Statistics</b>
@@ -879,7 +921,7 @@ vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
 </tbody>
 </table>
 <p><strong>Installation</strong>:The latest version 3.0 can be downloaded directly from here.
-(<a href="https://docs.google.com/uc?id=0B-FSkXfyY2AFZTUxYWIxMTgtMjJiYy00NTMyLTlmMzUtZDdiZDFlZGRhYjUw&amp;export=download&amp;hl=en" class="uri">https://docs.google.com/uc?id=0B-FSkXfyY2AFZTUxYWIxMTgtMjJiYy00NTMyLTlmMzUtZDdiZDFlZGRhYjUw&amp;export=download&amp;hl=en</a>)</p>
+<a href="https://docs.google.com/uc?id=0B-FSkXfyY2AFZTUxYWIxMTgtMjJiYy00NTMyLTlmMzUtZDdiZDFlZGRhYjUw&amp;export=download&amp;hl=en" class="uri">https://docs.google.com/uc?id=0B-FSkXfyY2AFZTUxYWIxMTgtMjJiYy00NTMyLTlmMzUtZDdiZDFlZGRhYjUw&amp;export=download&amp;hl=en</a></p>
 <p><strong>Application</strong>: The Medusa tutorial can be found at
 <a href="https://sites.google.com/site/medusa3visualization/tutorial" class="uri">https://sites.google.com/site/medusa3visualization/tutorial</a></p>
 <p><strong>Web server</strong>: <a href="https://sites.google.com/site/medusa3visualization/">Medusa</a>.
@@ -887,7 +929,7 @@ vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
 <hr />
 </div>
 <div id="wcd" class="section level2">
-<h2>6.1.4 <strong>wcd</strong></h2>
+<h2>6.2.4 <strong>wcd</strong></h2>
 <p><strong>Introduction</strong>: wcd is an open source tool for clustering expressed sequence tags. It implements matching using either d2 or edit distance, which provides sensitive matching. Heuristics speed up the clustering process. wcd parallelises well under MPI and also provides Pthreads clustering. wcd has a very compact memory representation which means that large files can be clustered on a single processor (and it can run quite happily without MPI or Pthreads headers or libraries being available).</p>
 <p><strong>Application</strong>: The wcd tutorial can be found at
 <a href="https://code.google.com/archive/about" class="uri">https://code.google.com/archive/about</a>.</p>
@@ -896,8 +938,8 @@ vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
 <hr />
 </div>
 <div id="timeclust" class="section level2">
-<h2>6.1.5 <strong>TimeClust</strong></h2>
-<p><strong>Introduction</strong>: TimeClust is an user-friendly software package to cluster genes according to their temporal expression profiles. It can be conveniently used to analyze data obtained from DNA microarray time-course experiments. It implements two original algorithms expressed designed for clustering short time series together with hierarchical clustering and self-organizing maps. TimeClust executable files for Windows and LINUX platforms can be downloaded free of charge for non-profit institutions from the following web site: <a href="http://aimed11.unipv.it/TimeClust" class="uri">http://aimed11.unipv.it/TimeClust</a>.</p>
+<h2>6.2.5 <strong>TimeClust</strong></h2>
+<p><strong>Introduction</strong>: TimeClust is an user-friendly software package to cluster genes according to their temporal expression profiles. It can be conveniently used to analyze data obtained from DNA microarray time-course experiments. It implements two original algorithms expressed designed for clustering short time series together with hierarchical clustering and self-organizing maps. TimeClust executable files for Windows and LINUX platforms can be downloaded free of charge for non-profit institutions from the following web site <a href="http://aimed11.unipv.it/TimeClust" class="uri">http://aimed11.unipv.it/TimeClust</a>.</p>
 <p><strong>Installation</strong>: The TimeClust software can be downloaded freely for non-profit institutions from <a href="http://aimed11.unipv.it/TimeClust" class="uri">http://aimed11.unipv.it/TimeClust</a>. Executable files for Windows and LINUX platforms are available. The program requires the user to install the MATLAB runtime libraries, that are distributed together with the TimeClust files. The installation steps are here detailed.</p>
 <p>How to install TimeClust:</p>
 <ol style="list-style-type: decimal">
@@ -905,11 +947,59 @@ vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
 <li>Extract all files from the zip file on a temporary directory.</li>
 <li>Install the MATLAB libraries trough the MCRInstaller (if the same version of the MATLAB library files are not already installed) in the following way:</li>
 </ol>
-<p><strong>Application</strong>: The TimeClust vignette can be found at (<a href="http://aimed11.unipv.it/TimeClust/example.pdf" class="uri">http://aimed11.unipv.it/TimeClust/example.pdf</a>).</p>
+<ul>
+<li>for Windows machines</li>
+</ul>
+<ol style="list-style-type: lower-alpha">
+<li><p>run the MCRInstaller.exe. The setup wizard starts.</p></li>
+<li><p>add the following directory to your system path: <mcr_root></p></li>
+</ol>
+<ul>
+<li>for Unix machines</li>
+</ul>
+<ol style="list-style-type: lower-alpha">
+<li><p>copy the MCRInstaller.zip in the installation directory and unzip the MCRInstaller.zip file.</p></li>
+<li><p>update your dynamic library path as follows:</p></li>
+</ol>
+<p><em>Linux x86 32bit</em></p>
+<pre><code> export LD_LIBRARY_PATH=&quot;&lt;mcr_root&gt;/&lt;ver&gt;/bin/glnx86:&lt;mcr_root&gt;/&lt;ver&gt;/runtime/glnx86:&lt;mcr_root&gt;/&lt;ver&gt;/sys/os/glnx86:&lt;mcr_root&gt;/&lt;ver&gt;/sys/java/jre/glnx86/jre1.5.0/lib/i386/native_threads:&lt;mcr_root&gt;/&lt;ver&gt;/sys/java/jre/glnx86/jre1.5.0/lib/i386/client:&lt;mcr_root&gt;/&lt;ver&gt;/sys/java/jre/glnx86/jre1.5.0/lib/i386:&quot;
+export XAPPLRESDIR=&quot;&lt;mcr_root&gt;/&lt;ver&gt;/X11/app-defaults&quot;</code></pre>
+<p><em>Linux x86-64 64bit</em></p>
+<pre><code>export LD_LIBRARY_PATH=&quot;&lt;mcr_root&gt;/&lt;ver&gt;/runtime/glnxa64:&lt;mcr_root&gt;/&lt;ver&gt;/sys/os/glnxa64:&lt;mcr_root&gt;/&lt;ver&gt;/sys/java/jre/glnxa64/jre1.4.2/lib/amd64/native_threads:&lt;mcr_root&gt;/&lt;ver&gt;/sys/java/jre/glnxa64/jre1.4.2/lib/amd64/client:&lt;mcr_root&gt;/&lt;ver&gt;/sys/java/jre/glnxa64/jre1.4.2/lib/amd64:&quot;
+export XAPPLRESDIR=&quot;&lt;mcr_root&gt;/&lt;ver&gt;/X11/app-defaults&quot;</code></pre>
+<p>Note. If you have already installed MATLAB on your machine there is
+a limitation regarding directories on your path: this tool requires
+that mcr_root directory is first on the path, MATLAB requires that
+the matlabroot directory is first on the path.</p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Copy the TimeClust executable file and the TimeClust.CTF file in
+your application root directory.</p></li>
+<li><p>Run for the first time the TimeClust executable file and close
+the application. In this step the TimeClust_mcr directory and its
+subdirectories are created.</p></li>
+<li><p>Open the config.txt file in the TimeClust_mcr/TimeClust1.3
+directory to configure your application. In particular, set:</p></li>
+</ol>
+<ul>
+<li><p>at the line 2 of this file, the desired web site to open from the
+TimeClust tool (default site is www.geneontology.org)</p></li>
+<li><p>at the line 4, the command line to start the preferred editor to
+show text files (this step is not necessary for Windows platforms,
+the default text editor will be used).</p></li>
+<li><p>at line 6, the command line to start the web browser to use (this
+step is not necessary for Windows platforms, the default web browser
+will be used).</p></li>
+</ul>
+<ol start="7" style="list-style-type: decimal">
+<li>Run again the TimeClust executable file and try with the small
+data set distributed together the software tool if all works as
+reported in the user’s guide.</li>
+</ol>
+<p><strong>Application</strong>: The TimeClust vignette can be found at <a href="http://aimed11.unipv.it/TimeClust/example.pdf" class="uri">http://aimed11.unipv.it/TimeClust/example.pdf</a>.</p>
 <hr />
 </div>
 <div id="hiplot" class="section level2">
-<h2>6.1.6 <strong>hiplot</strong></h2>
+<h2>6.2.6 <strong>hiplot</strong></h2>
 <p><strong>Introduction</strong>: we newly developed a pool of biomedical visualization and modeling functions (240+), and proposed a scalable and emerging one-stop web service, Hiplot, with versatile task plugins, such as basic statistics, regression, clustering, genomics, transcriptomics, time series, meta-analysis, and risk models. It provides more simple web and command-line interfaces compared with other similar platforms, and is supported and maintained by the openbiox open source community.</p>
 <center>
 <b>Data Source Statistics</b>
@@ -942,7 +1032,7 @@ vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
 <hr />
 </div>
 <div id="cola" class="section level2">
-<h2>6.1.7 <strong>cola</strong></h2>
+<h2>6.2.7 <strong>cola</strong></h2>
 <p><strong>Introduction</strong>: The cola package provides a general framework for subgroup classification by consensus partitioning. It has the following features: 1. It modularizes the consensus partitioning processes that various methods can be easily integrated. 2. It provides rich visualizations for interpreting the results. 3. It allows running multiple methods at the same time and provides functionalities to straightforward compare results. 4. It provides a new method to extract features which are more efficient to separate subgroups. 5. It automatically generates detailed reports for the complete analysis. 6. It allows applying consensus partitioning in a hierarchical manner.</p>
 <p><strong>Installation</strong>:To install this package, start R (version “4.2”) and enter:</p>
 <pre class="r"><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))
@@ -1342,6 +1432,25 @@ BiocManager::install(&quot;cola&quot;)</code></pre>
             
                 
                     
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -1372,6 +1481,22 @@ BiocManager::install(&quot;cola&quot;)</code></pre>
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1401,7 +1526,7 @@ BiocManager::install(&quot;cola&quot;)</code></pre>
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../clustering/" title="Classification and Clustering"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../clustering/classification/" title="Classification Analysis"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="../../survival-analysis/" title="Gene-Phenotype Association Analysis" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1414,16 +1539,16 @@ BiocManager::install(&quot;cola&quot;)</code></pre>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1710579104"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1710579104"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1710579104"></script>
-    <script src="../../js/jquery.sticky.js?1710579104"></script>
-    <script src="../../js/featherlight.min.js?1710579104"></script>
-    <script src="../../js/highlight.pack.js?1710579104"></script>
+    <script src="../../js/clipboard.min.js?1712239655"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1712239655"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1712239655"></script>
+    <script src="../../js/jquery.sticky.js?1712239655"></script>
+    <script src="../../js/featherlight.min.js?1712239655"></script>
+    <script src="../../js/highlight.pack.js?1712239655"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1710579104"></script>
-    <script src="../../js/learn.js?1710579104"></script>
-    <script src="../../js/hugo-learn.js?1710579104"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1712239655"></script>
+    <script src="../../js/learn.js?1712239655"></script>
+    <script src="../../js/hugo-learn.js?1712239655"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

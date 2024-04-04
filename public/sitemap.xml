@@ -2,7 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/clustering/clustering/</loc>
+    <loc>/clustering/classification/</loc>
+  </url><url>
+    <loc>/survival-analysis/gene_phenotype_association/</loc>
   </url><url>
     <loc>/gene-annotation/</loc>
   </url><url>
@@ -16,7 +18,7 @@
   </url><url>
     <loc>/conditional-analysis/spatialandtemporal/</loc>
   </url><url>
-    <loc>/survival-analysis/survival_analysis/</loc>
+    <loc>/clustering/clustering/</loc>
   </url><url>
     <loc>/conditional-analysis/cellcomposition/</loc>
   </url><url>
@@ -25,6 +27,8 @@
     <loc>/network-analysis/</loc>
   </url><url>
     <loc>/network-analysis/tf_regulation/</loc>
+  </url><url>
+    <loc>/survival-analysis/survival_analysis/</loc>
   </url><url>
     <loc>/gene-annotation/biopathway/</loc>
   </url><url>
