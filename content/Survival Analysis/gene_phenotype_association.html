@@ -9,11 +9,11 @@ weight: 1
 
 <div id="TOC">
 <ul>
-<li><a href="#predixcan" id="toc-predixcan">7.1.1 <strong>PrediXcan</strong></a></li>
-<li><a href="#metaxcan" id="toc-metaxcan">7.1.2 <strong>MetaXcan</strong></a></li>
-<li><a href="#fusion" id="toc-fusion">7.1.3 <strong>Fusion</strong></a></li>
-<li><a href="#smr" id="toc-smr">7.1.4 <strong>SMR</strong></a></li>
-<li><a href="#ptwas" id="toc-ptwas">7.1.5 <strong>PTWAS</strong></a></li>
+<li><a href="#predixcan" id="toc-predixcan">8.1.1 <strong>PrediXcan</strong></a></li>
+<li><a href="#metaxcan" id="toc-metaxcan">8.1.2 <strong>MetaXcan</strong></a></li>
+<li><a href="#fusion" id="toc-fusion">8.1.3 <strong>Fusion</strong></a></li>
+<li><a href="#smr" id="toc-smr">8.1.4 <strong>SMR</strong></a></li>
+<li><a href="#ptwas" id="toc-ptwas">8.1.5 <strong>PTWAS</strong></a></li>
 </ul>
 </div>
 
@@ -21,7 +21,7 @@ weight: 1
 <p><strong>Breaking</strong>: Some user-friendly gene-phenotype association analysis tools are provided in this section.</p>
 <hr />
 <div id="predixcan" class="section level2">
-<h2>7.1.1 <strong>PrediXcan</strong></h2>
+<h2>8.1.1 <strong>PrediXcan</strong></h2>
 <p><strong>Introduction</strong>: PrediXcan is a command-line tool that predicts gene expression from genotype data and performs gene-based association tests, allowing researchers to prioritize genes that are likely to be causal for a phenotype. PrediXcan consists of two steps: 1) Predict gene expression (or whatever biology the models predict) in a cohort with available genotypes; 2) Run associations to a trait measured in the cohort.</p>
 <p><strong>Installation</strong>: To run PrediXcan you will need:</p>
 <ul>
@@ -54,7 +54,7 @@ weight: 1
 <hr />
 </div>
 <div id="metaxcan" class="section level2">
-<h2>7.1.2 <strong>MetaXcan</strong></h2>
+<h2>8.1.2 <strong>MetaXcan</strong></h2>
 <p><strong>Introduction</strong>: MetaXcan is a set of tools to integrate genomic information of biological mechanisms with complex traits. Almost all of the software here is command-line based. This software has been recently migrated to python 3 as python 2 has been sunset.</p>
 <p><strong>Installation</strong>: The software is developed and tested in Linux and Mac OS environments. The main S-PrediXcan script is also supported in Windows.</p>
 <p>To run S-PrediXcan, you need Python 3.5 or higher, with the following libraries:
@@ -75,7 +75,7 @@ R with ggplot and dplyr is needed for some optional statistics and charts.</p>
 <hr />
 </div>
 <div id="fusion" class="section level2">
-<h2>7.1.3 <strong>Fusion</strong></h2>
+<h2>8.1.3 <strong>Fusion</strong></h2>
 <p><strong>Introduction</strong>: FUSION is a suite of tools for performing transcriptome-wide and regulome-wide association studies (TWAS and RWAS). FUSION builds predictive models of the genetic component of a functional/molecular phenotype and predicts and tests that component for association with disease using GWAS summary statistics. The goal is to identify associations between a GWAS phenotype and a functional phenotype that was only measured in reference data. We provide precomputed predictive models from multiple studies to facilitate this analysis.</p>
 <p><strong>Installation</strong>:</p>
 <ul>
@@ -111,7 +111,7 @@ install.packages(&#39;plink2R-master/plink2R/&#39;,repos = NULL)</code></pre>
 <hr />
 </div>
 <div id="smr" class="section level2">
-<h2>7.1.4 <strong>SMR</strong></h2>
+<h2>8.1.4 <strong>SMR</strong></h2>
 <p><strong>Introduction</strong>: The SMR software tool was originally developed to implement the SMR &amp; HEIDI methods to test for pleiotropic association between the expression level of a gene and a complex trait of interest using summary-level data from GWAS and expression quantitative trait loci (eQTL) studies (Zhu et al. 2016 Nature Genetics). The SMR &amp; HEIDI methodology can be interpreted as an analysis to test if the effect size of a SNP on the phenotype is mediated by gene expression. This tool can therefore be used to prioritize genes underlying GWAS hits for follow-up functional studies. The methods are applicable to all kinds of molecular QTL (xQTL) data, including DNA methylation QTL (mQTL) and protein abundance QTL (pQTL).</p>
 <p><strong>Installation</strong>: The source code are released under GPL v2.</p>
 <p>Source code: smr_v1.3.1_src.tar.gz <a href="https://yanglab.westlake.edu.cn/software/smr/download/smr_v1.3.1_src.tar.gz" class="uri">https://yanglab.westlake.edu.cn/software/smr/download/smr_v1.3.1_src.tar.gz</a>.</p>
@@ -119,7 +119,7 @@ install.packages(&#39;plink2R-master/plink2R/&#39;,repos = NULL)</code></pre>
 <hr />
 </div>
 <div id="ptwas" class="section level2">
-<h2>7.1.5 <strong>PTWAS</strong></h2>
+<h2>8.1.5 <strong>PTWAS</strong></h2>
 <p><strong>Introduction</strong>: A computational framework, probabilistic transcriptome-wide association study (PTWAS) can investigate causal relationships between gene expressions and complex traits. PTWAS applies the established principles from instrumental variables analysis and takes advantage of probabilistic eQTL annotations to delineate and tackle the unique challenges arising in TWAS. PTWAS not only confers higher power than the existing methods but also provides novel functionalities to evaluate the causal assumptions and estimate tissue- or cell-type-specific gene-to-trait effects.</p>
 <p><strong>Installation</strong>: Software requirement</p>
 <p>The bare minimum set of software packages for running PTWAS scan, validation, and estimation procedures are:</p>

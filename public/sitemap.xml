@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/conditional-analysis/cellmarkers/cellcomposition/</loc>
+  </url><url>
     <loc>/clustering/classification/</loc>
   </url><url>
     <loc>/survival-analysis/gene_phenotype_association/</loc>
@@ -20,11 +22,13 @@
   </url><url>
     <loc>/clustering/clustering/</loc>
   </url><url>
-    <loc>/conditional-analysis/cellcomposition/</loc>
+    <loc>/conditional-analysis/cellmarkers/</loc>
+  </url><url>
+    <loc>/conditional-analysis/cellmarkers/trajectory/</loc>
+  </url><url>
+    <loc>/enrichment/</loc>
   </url><url>
     <loc>/gene-annotation/goananotation/</loc>
-  </url><url>
-    <loc>/network-analysis/</loc>
   </url><url>
     <loc>/network-analysis/tf_regulation/</loc>
   </url><url>
@@ -32,25 +36,25 @@
   </url><url>
     <loc>/gene-annotation/biopathway/</loc>
   </url><url>
+    <loc>/conditional-analysis/cellmarkers/cellcomunication/</loc>
+  </url><url>
     <loc>/network-analysis/mirna_regulation/</loc>
   </url><url>
-    <loc>/conditional-analysis/trajectory/</loc>
-  </url><url>
-    <loc>/text-mining/</loc>
-  </url><url>
-    <loc>/conditional-analysis/cellcomunication/</loc>
+    <loc>/network-analysis/</loc>
   </url><url>
     <loc>/network-analysis/cerna_regulation/</loc>
   </url><url>
-    <loc>/gene-annotation/enrichment/</loc>
+    <loc>/enrichment/enrichment/</loc>
   </url><url>
-    <loc>/parmocogenomics/</loc>
+    <loc>/gene-annotation/other_gene_annotation/</loc>
+  </url><url>
+    <loc>/text-mining/</loc>
   </url><url>
     <loc>/network-analysis/analysis_visualization/</loc>
   </url><url>
-    <loc>/conditional-analysis/</loc>
+    <loc>/parmocogenomics/</loc>
   </url><url>
-    <loc>/gene-annotation/other_gene_annotation/</loc>
+    <loc>/conditional-analysis/</loc>
   </url><url>
     <loc>/clustering/</loc>
   </url><url>

@@ -7,14 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Classification Analysis</title>
+      <title>Cell deconvolution</title>
+      <link>/conditional-analysis/cellmarkers/cellcomposition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/conditional-analysis/cellmarkers/cellcomposition/</guid>
+      <description>6.2.1.1 CIERSORT 6.2.1.2 ESTIMATE 6.2.1.2 xCell 6.2.1.3 TIMER 6.2.1.4 MCPcounter 6.2.1.5 Bseq_SC 6.2.1.6 EPIC 6.2.1.7 quanTIseq 6.2.1.8 Abbas et al. 6.2.1.7 ABIS 6.2.1.8 ImmuCellAI 6.2.1.9 MuSiC 6.2.1.10 DeconRNASeq 6.2.1.11 Max Schelker et al. 6.2.1.12 DSA 6.2.1.13 singscore 6.2.1.13 Ting Gong et al. 6.2.1.14 PERT 6.2.1.14 ImmuCC 6.2.1.15 immunoStates 6.2.1.16 DCQ 6.2.1.17 SCDC 6.2.1.18 Edec 6.2.1.19 MMAD 6.2.1.20 scBio 6.2.1.21 debCAM 6.2.1.22 TEMT 6.2.1.23 DeMixT 6.2.1.24 Dtangle 6.2.1.25 FARDEEP 6.2.1.26 TOAST 6.</description>
+    </item>
+    
+    <item>
+      <title>Classification analysis</title>
       <link>/clustering/classification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/clustering/classification/</guid>
-      <description>6.1.1 caret 6.1.2 Tidymodels 6.1.3 mlr3 6.1.4 MASS Classification analysis models essential features of samples derived from different treatments or diseased states to effectively predict unknown samples, facilitating the identification and diagnosis of subtypes or stages of diseases.
+      <description>7.1.1 caret 7.1.2 Tidymodels 7.1.3 mlr3 7.1.4 MASS Classification analysis models essential features of samples derived from different treatments or diseased states to effectively predict unknown samples, facilitating the identification and diagnosis of subtypes or stages of diseases.
 Breaking: Some well-used and comprehensive classification tools are provided in this section.
-6.1.1 caret Introduction: The caret package (short for Classification and REgression Training) is a set of functions that attempt to streamline the process for creating predictive models.</description>
+7.1.1 caret Introduction: The caret package (short for Classification and REgression Training) is a set of functions that attempt to streamline the process for creating predictive models.</description>
     </item>
     
     <item>
@@ -23,9 +32,9 @@ Breaking: Some well-used and comprehensive classification tools are provided in 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/survival-analysis/gene_phenotype_association/</guid>
-      <description>7.1.1 PrediXcan 7.1.2 MetaXcan 7.1.3 Fusion 7.1.4 SMR 7.1.5 PTWAS Gene-phenotype association analysis provides valuable insights into the genetic basis of phenotypic traits and diseases, offering opportunities for biomarker discovery, personalized medicine, drug target identification, and elucidation of disease mechanisms.
+      <description>8.1.1 PrediXcan 8.1.2 MetaXcan 8.1.3 Fusion 8.1.4 SMR 8.1.5 PTWAS Gene-phenotype association analysis provides valuable insights into the genetic basis of phenotypic traits and diseases, offering opportunities for biomarker discovery, personalized medicine, drug target identification, and elucidation of disease mechanisms.
 Breaking: Some user-friendly gene-phenotype association analysis tools are provided in this section.
-7.1.1 PrediXcan Introduction: PrediXcan is a command-line tool that predicts gene expression from genotype data and performs gene-based association tests, allowing researchers to prioritize genes that are likely to be causal for a phenotype.</description>
+8.1.1 PrediXcan Introduction: PrediXcan is a command-line tool that predicts gene expression from genotype data and performs gene-based association tests, allowing researchers to prioritize genes that are likely to be causal for a phenotype.</description>
     </item>
     
     <item>
@@ -34,17 +43,17 @@ Breaking: Some user-friendly gene-phenotype association analysis tools are provi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/gene_network/</guid>
-      <description>2.1.1 STRING 2.1.2 IMEx 2.1.3 IntAct 2.1.4 DIP 2.1.5 BioGRID 2.1.6 MINT 2.1.7 InnateDB 2.1.8 HuRI 2.1.9 InWeb 2.1.10 NDEx 2.1.11 IID 2.1.12 SIGNOR 2.1.13 MatrixDB 2.1.14 I2D 2.1.15 SPIKE Gene regulatory network (GRN) is the important mechanism of maintaining life process, controlling biochemical reaction and regulating compound level, which reveal the essential rules of a large number of biological processes and reactions in organisms.
+      <description>3.1.1 STRING 3.1.2 IMEx 3.1.3 IntAct 3.1.4 DIP 3.1.5 BioGRID 3.1.6 MINT 3.1.7 InnateDB 3.1.8 HuRI 3.1.9 InWeb 3.1.10 NDEx 3.1.11 IID 3.1.12 SIGNOR 3.1.13 MatrixDB 3.1.14 I2D 3.1.15 SPIKE Gene regulatory network (GRN) is the important mechanism of maintaining life process, controlling biochemical reaction and regulating compound level, which reveal the essential rules of a large number of biological processes and reactions in organisms.
 Breaking: Fifteen well-known gene/protein regulatory databases are cataloged, covering genes/proteins across species.</description>
     </item>
     
     <item>
-      <title>Knowledge Graph/text mining</title>
+      <title>Knowledge graph/text mining</title>
       <link>/text-mining/text_mining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/text-mining/text_mining/</guid>
-      <description>3.1.1 PubTator central 3.1.2 Phenomizer 3.1.3 BioGraph 3.1.4 WordCloud 3.1.5 BEST 3.1.6 iPTMnet 3.1.7 Genes2WordCloud 3.1.8 TeamTat 3.1.9 CADA 3.1.10 CROssBAR Mining valuable hidden knowledge from large-scale data relies on the support of reasoning technology. Knowledge graphs, as a new type of knowledge representation, have gained much attention in natural language processing. Knowledge graphs can effectively organize and represent knowledge so that it can be efficiently utilized in advanced applications.</description>
+      <description>4.1.1 PubTator central 4.1.2 Phenomizer 4.1.3 BioGraph 4.1.4 WordCloud 4.1.5 BEST 4.1.6 iPTMnet 4.1.7 Genes2WordCloud 4.1.8 TeamTat 4.1.9 CADA 4.1.10 CROssBAR Mining valuable hidden knowledge from large-scale data relies on the support of reasoning technology. Knowledge graphs, as a new type of knowledge representation, have gained much attention in natural language processing. Knowledge graphs can effectively organize and represent knowledge so that it can be efficiently utilized in advanced applications.</description>
     </item>
     
     <item>
@@ -59,12 +68,12 @@ Breaking: A summary of eleven R packages and web services tools, including the n
     </item>
     
     <item>
-      <title>Prediction of Potential Drug (Pharmocogenomics)</title>
+      <title>Prediction of potential drug (Pharmocogenomics)</title>
       <link>/parmocogenomics/drug/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/parmocogenomics/drug/</guid>
-      <description>4.1.1 Clue 4.1.2 CREEDS 4.1.3 L1000CDS² 4.1.4 PharmacoGx 4.1.5 DrugComboRanker 4.1.6 SEP-L1000 4.1.7 L1000FWD 4.1.8 Mantra 4.1.9 DvD 4.1.10 DSEA 4.1.11 cogena 4.1.12 gene2drug 4.1.13 DeSigN 4.1.14 ksRepo 4.1.15 iLINCS 4.1.16 Gene Expression Signature 4.1.17 PDOD 4.1.18 SigCom LINCS 4.1.19 DTX 4.1.20 Phosprof Drug repurposing (alternatively called “new uses for old drugs”) is a strategy for identifying new uses for approved or investigational drugs that are outside the scope of the original medical indication.</description>
+      <description>5.1.1 Clue 5.1.2 CREEDS 5.1.3 L1000CDS² 5.1.4 PharmacoGx 5.1.5 DrugComboRanker 5.1.6 SEP-L1000 5.1.7 L1000FWD 5.1.8 Mantra 5.1.9 DvD 5.1.10 DSEA 5.1.11 cogena 5.1.12 gene2drug 5.1.13 DeSigN 5.1.14 ksRepo 5.1.15 iLINCS 5.1.16 Gene Expression Signature 5.1.17 PDOD 5.1.18 SigCom LINCS 5.1.19 DTX 5.1.20 Phosprof Drug repurposing (alternatively called “new uses for old drugs”) is a strategy for identifying new uses for approved or investigational drugs that are outside the scope of the original medical indication.</description>
     </item>
     
     <item>
@@ -73,27 +82,27 @@ Breaking: A summary of eleven R packages and web services tools, including the n
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/conditional-analysis/spatialandtemporal/</guid>
-      <description>5.1.1 GEPIA 5.1.2 HumanBase-ExPecto 5.1.3 Expression Atlas 5.1.4 ToppCluster 5.1.5 GENT2 5.1.6 TISSUES 5.1.7 TissueEnrich 5.1.8 ORGANizer 5.1.9 deTS 5.1.10 WebCSEA 5.1.11 TEnGExA 5.1.12 Dynamic-BM 5.1.13 ADEIP The tissues or development stages of organisms have the common biological process, but the gene expression patterns of them are different, which means that different regulatory procedures control the specificity of the spatial and temporal variation. Understanding the specific expression and regulation of genes in spatial and temporal variation is helpful to better explore the genetic relationship and etiology of tissues and development stages, as well as to discover new specific therapeutic targets.</description>
+      <description>6.1.1 GEPIA 6.1.2 HumanBase-ExPecto 6.1.3 Expression Atlas 6.1.4 ToppCluster 6.1.5 GENT2 6.1.6 TISSUES 6.1.7 TissueEnrich 6.1.8 ORGANizer 6.1.9 deTS 6.1.10 WebCSEA 6.1.11 TEnGExA 6.1.12 Dynamic-BM 6.1.13 ADEIP The tissues or development stages of organisms have the common biological process, but the gene expression patterns of them are different, which means that different regulatory procedures control the specificity of the spatial and temporal variation. Understanding the specific expression and regulation of genes in spatial and temporal variation is helpful to better explore the genetic relationship and etiology of tissues and development stages, as well as to discover new specific therapeutic targets.</description>
     </item>
     
     <item>
-      <title>Clustering Analysis</title>
+      <title>Clustering analysis</title>
       <link>/clustering/clustering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/clustering/clustering/</guid>
-      <description>6.2.1 Nbclust 6.2.2 ClustVis 6.2.3 Medusa 6.2.4 wcd 6.2.5 TimeClust 6.2.6 hiplot 6.2.7 cola Unsupervised or supervised clustering analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups.
+      <description>7.2.1 Nbclust 7.2.2 ClustVis 7.2.3 Medusa 7.2.4 wcd 7.2.5 TimeClust 7.2.6 hiplot 7.2.7 cola Unsupervised or supervised clustering analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups.
 Breaking: Some well-used and comprehensive clustering tools are provided in this section.
-6.2.1 Nbclust Introduction: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user.</description>
+7.2.1 Nbclust Introduction: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user.</description>
     </item>
     
     <item>
-      <title>Discovering the cell markers</title>
-      <link>/conditional-analysis/cellcomposition/</link>
+      <title>Dynamics inference</title>
+      <link>/conditional-analysis/cellmarkers/trajectory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/conditional-analysis/cellcomposition/</guid>
-      <description>5.2.1 CIERSORT 5.2.2 ESTIMATE 5.2.2 xCell 5.2.3 TIMER 5.2.4 MCPcounter 5.2.5 Bseq_SC 5.2.6 EPIC 5.2.7 quanTIseq 5.2.8 Abbas et al. 5.2.7 ABIS 5.2.8 ImmuCellAI 5.2.9 MuSiC 5.2.10 DeconRNASeq 5.2.11 Max Schelker et al. 5.2.12 DSA 5.2.13 singscore 5.2.13 Ting Gong et al. 5.2.14 PERT 5.2.14 ImmuCC 5.2.15 immunoStates 5.2.16 DCQ 5.2.17 SCDC 5.2.18 Edec 5.2.19 MMAD 5.2.20 scBio 5.2.21 debCAM 5.2.22 TEMT 5.2.23 DeMixT 5.2.24 Dtangle 5.2.25 FARDEEP 5.2.26 TOAST 5.</description>
+      <guid>/conditional-analysis/cellmarkers/trajectory/</guid>
+      <description>6.2.2.1 slingshot 6.2.2.2 CellRank 6.2.2.3 CytoTree 6.2.2.4 VeloViz 6.2.2.5 Asc-Seurat 6.2.2.6 VeTra 6.2.2.7 TIMEOR 6.2.2.8 UniTVelo 6.2.2.9 TIPS 6.2.2.10 Velo-Predictor 6.2.2.11 ORIGINS 6.2.2.12 PAGA 6.2.2.13 SCORPIUS 6.2.2.14 STEMNET Trajectory inference aims at estimating dynamic changes in a single-cell transcriptome landscape, assuming that the cell-wise transcriptome is a static snapshot at a time point along some cellular process. The pseudotime and RNA velocity both are considered as the trajectory inference.Highly variable genes, represented by DEGs, thus contribute an important role in the pseudotime and RNA velocity analysis.</description>
     </item>
     
     <item>
@@ -111,9 +120,9 @@ Breaking: Some well-used and comprehensive clustering tools are provided in this
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/tf_regulation/</guid>
-      <description>2.2.1 JASPAR 2.2.2 AnimalTFDB 2.2.3 CHEA 2.2.4 RegNetwork Transcription factors (TFs) are key regulators of intrinsic cellular processes, such as differentiation and development, and of the cellular response to external perturbation through signaling pathways. Most TFs recognize and bind to specific DNA sequences named as transcription factor biding sites, leading to specific spatiotemporal expression patterns of target genes.
-Breaking: Four TF target specific resources are collected.
-2.2.1 JASPAR Introduction: JASPAR is a regularly maintained open-access database storing manually curated transcription factors (TF) binding profiles as position frequency matrices (PFMs).</description>
+      <description>3.2.1 JASPAR 3.2.2 AnimalTFDB 3.2.3 ChEA3 3.2.4 RegNetwork 3.2.5 PlantCARE Transcription factors (TFs) are key regulators of intrinsic cellular processes, such as differentiation and development, and of the cellular response to external perturbation through signaling pathways. Most TFs recognize and bind to specific DNA sequences named as transcription factor biding sites, leading to specific spatiotemporal expression patterns of target genes.
+Breaking: Five TF target specific resources are collected.
+3.2.1 JASPAR Introduction: JASPAR is a regularly maintained open-access database storing manually curated transcription factors (TF) binding profiles as position frequency matrices (PFMs).</description>
     </item>
     
     <item>
@@ -122,9 +131,9 @@ Breaking: Four TF target specific resources are collected.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/survival-analysis/survival_analysis/</guid>
-      <description>7.2.1 UALCAN 7.2.2 survival 7.2.3 KM plotter 7.2.4 survminer Time-to-event analysis is the study of specific events occur times and of the factors that influence them. This method that requires extra documentation of time periods and events, has the potential to be used in a number of fields, such as ecology, medicine and botany.
+      <description>8.2.1 UALCAN 8.2.2 survival 8.2.3 KM plotter 8.2.4 survminer Time-to-event analysis is the study of specific events occur times and of the factors that influence them. This method that requires extra documentation of time periods and events, has the potential to be used in a number of fields, such as ecology, medicine and botany.
 Breaking: Some user-friendly time-to-event analysis tools are provided in this section.
-7.2.1 UALCAN Introduction: UALCAN is a comprehensive, user-friendly, and interactive web resource for analyzing cancer OMICS data.</description>
+8.2.1 UALCAN Introduction: UALCAN is a comprehensive, user-friendly, and interactive web resource for analyzing cancer OMICS data.</description>
     </item>
     
     <item>
@@ -137,30 +146,21 @@ Breaking: Some user-friendly time-to-event analysis tools are provided in this s
     </item>
     
     <item>
+      <title>Cell-cell communication</title>
+      <link>/conditional-analysis/cellmarkers/cellcomunication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/conditional-analysis/cellmarkers/cellcomunication/</guid>
+      <description>6.2.3.1 IUPHAR 6.2.3.2 CellPhoneDB 6.2.3.3 FANTOM5 6.2.3.4 Cell-Cell Interaction Database 6.2.3.5 ligand-receptor pairs in literature 6.2.3.6 DLRP 6.2.3.7 ConnectomeDB 6.2.3.8 CellTalkDB 6.2.3.9 ICELLNET 6.2.3.10 Cellinker 6.2.3.11 PlantPhoneDB 6.2.3.12 CellCallEXT 6.2.3.13 CellChat 6.2.3.14 Giotto 6.2.3.15 SingleCellSignalR 6.2.3.16 CellCall 6.2.3.17 TraSig 6.2.3.18 celltalker 6.2.3.19 iTALK 6.2.3.20 PyMINEr 6.2.3.21 DeepCCI 6.2.3.22 NicheNet 6.2.3.23 SpaOTsc 6.2.3.24 CCCExplorer 6.2.3.25 SoptSC 6.2.3.26 NATMI 6.2.3.27 scConnect 6.2.3.28 FunRes 6.2.3.29 scTensor Cell communication across multiple cell types and tissues strictly mediates proper functioning of metazoans and extensively relies on interactions between secreted ligands and cell-surface receptors.</description>
+    </item>
+    
+    <item>
       <title>miRNA-gene interaction database</title>
       <link>/network-analysis/mirna_regulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/mirna_regulation/</guid>
-      <description>2.3.1 TargetScan 2.3.2 miRBase 2.3.3 miRDB 2.3.4 RNAhybrid 2.3.5 miRTarbase 2.3.6 miR2Disease 2.3.7 TarBase 2.3.8 mirDIP miRNAs control the regulation of the majority of genes post-transcriptionally. Most miRNAs are involved in molecular pathways that influence inflammation, cell cycle regulation and carcinogenesis resulting in the onset or progression of pathological conditions. Investigating these interactions will be pivotal for understanding the etiology of pathologic processes, the potential new treatment strategies and for preventing diseases.</description>
-    </item>
-    
-    <item>
-      <title>Tajectory inference</title>
-      <link>/conditional-analysis/trajectory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/conditional-analysis/trajectory/</guid>
-      <description>5.3.1 slingshot 5.3.2 CellRank 5.3.3 CytoTree 5.3.4 VeloViz 5.3.5 Asc-Seurat 5.3.6 VeTra 5.3.7 TIMEOR 5.3.8 UniTVelo 5.3.9 TIPS 5.3.10 Velo-Predictor 5.3.11 ORIGINS 5.3.12 PAGA 5.3.13 SCORPIUS 5.3.14 STEMNET Trajectory inference aims at estimating dynamic changes in a single-cell transcriptome landscape, assuming that the cell-wise transcriptome is a static snapshot at a time point along some cellular process. The pseudotime and RNA velocity both are considered as the trajectory inference.Highly variable genes, represented by DEGs, thus contribute an important role in the pseudotime and RNA velocity analysis.</description>
-    </item>
-    
-    <item>
-      <title>Cell communication</title>
-      <link>/conditional-analysis/cellcomunication/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/conditional-analysis/cellcomunication/</guid>
-      <description>5.4.1 IUPHAR 5.4.2 CellPhoneDB 5.4.3 FANTOM5 5.4.4 Cell-Cell Interaction Database 5.4.5 ligand-receptor pairs in literature 5.4.6 DLRP 5.4.7 ConnectomeDB 5.4.8 CellTalkDB 5.4.9 ICELLNET 5.4.10 Cellinker 5.4.11 PlantPhoneDB 5.4.12 CellCallEXT 5.4.13 CellChat 5.4.14 Giotto 5.4.15 SingleCellSignalR 5.4.16 CellCall 5.4.17 TraSig 5.4.18 celltalker 5.4.19 iTALK 5.4.20 PyMINEr 5.4.21 DeepCCI 5.4.22 NicheNet 5.4.23 SpaOTsc 5.4.24 CCCExplorer 5.4.25 SoptSC 5.4.26 NATMI 5.4.27 scConnect 5.4.28 FunRes 5.4.29 scTensor Cell communication across multiple cell types and tissues strictly mediates proper functioning of metazoans and extensively relies on interactions between secreted ligands and cell-surface receptors.</description>
+      <description>3.3.1 TargetScan 3.3.2 miRBase 3.3.3 miRDB 3.3.4 RNAhybrid 3.3.5 miRTarbase 3.3.6 miR2Disease 3.3.7 TarBase 3.3.8 mirDIP miRNAs control the regulation of the majority of genes post-transcriptionally. Most miRNAs are involved in molecular pathways that influence inflammation, cell cycle regulation and carcinogenesis resulting in the onset or progression of pathological conditions. Investigating these interactions will be pivotal for understanding the etiology of pathologic processes, the potential new treatment strategies and for preventing diseases.</description>
     </item>
     
     <item>
@@ -169,29 +169,18 @@ Breaking: Some user-friendly time-to-event analysis tools are provided in this s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/cerna_regulation/</guid>
-      <description>2.4.1 ENCODE 2.4.2 starBase 2.4.3 miRcode 2.4.4 DIANA-LncBase 2.4.5 OmniPath 2.4.6 ceRDB 2.4.7 LncACTdb 2.4.8 PceRBase Post-transcriptional crosstalk and communication between RNAs yield large regulatory competing endogenous RNA (ceRNA) networks via shared microRNAs. The ceRNA crosstalk represents a novel layer of gene regulation that controls both physiological and pathological processes such as development and complex diseases.
+      <description>3.4.1 ENCODE 3.4.2 starBase 3.4.3 miRcode 3.4.4 DIANA-LncBase 3.4.5 OmniPath 3.4.6 ceRDB 3.4.7 LncACTdb 3.4.8 PceRBase Post-transcriptional crosstalk and communication between RNAs yield large regulatory competing endogenous RNA (ceRNA) networks via shared microRNAs. The ceRNA crosstalk represents a novel layer of gene regulation that controls both physiological and pathological processes such as development and complex diseases.
 Breaking: Eight ceRNA related databses are summarized in this section.
-2.4.1 ENCODE Introduction: The ENCODE Portal, developed and maintained by the Data Coordination Center (ENCODE DCC), is the canonical source for all experimental metadata and data from ENCODE and associated projects.</description>
+3.4.1 ENCODE Introduction: The ENCODE Portal, developed and maintained by the Data Coordination Center (ENCODE DCC), is the canonical source for all experimental metadata and data from ENCODE and associated projects.</description>
     </item>
     
     <item>
       <title>Enrichment analysis</title>
-      <link>/gene-annotation/enrichment/</link>
+      <link>/enrichment/enrichment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gene-annotation/enrichment/</guid>
-      <description>1.4.1 DAVID 1.4.2 GSEA 1.4.3 clusterProfiler 1.4.4 Enrichr 1.4.5 KOBAS 1.4.6 ToppGene 1.4.7 Metascape 1.4.8 WebGestalt 1.4.9 STEM 1.4.10 GAGE 1.4.11 GeneCodis 1.4.12 GeneTrail 1.4.13 PageMan 1.4.14 ErmineJ 1.4.15 EnrichNet 1.4.16 DOSE 1.4.17 SciMiner 1.4.18 ProfCom 1.4.19 hypeR 1.4.20 CIE 1.4.21 GeneAnswers 1.4.22 SIGNAL 1.4.23 Network2Canvas 1.4.24 HPOSim GO Enrichment 1.4.25 BiNGO 1.4.26 GOrilla 1.4.27 WEGO 1.4.28 GOstats 1.4.29 GO Term Finder 1.4.30 topGO 1.4.31 GOEAST 1.4.32 FuncAssociate 1.4.33 Ontologizer 1.</description>
-    </item>
-    
-    <item>
-      <title>Analysis and Visualization Tools</title>
-      <link>/network-analysis/analysis_visualization/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/network-analysis/analysis_visualization/</guid>
-      <description>2.5.1 GeneMANIA 2.5.2 NetworkAnalyst 2.5.3 ConsensusPathDB 2.5.4 iRegulon 2.5.5 NAViGaTOR 2.5.6 FunCoup 2.5.7 miRTargetLink 2.5.8 FFLtool For the construction of regulatory networks, in addition to the development of diverse databases, tools for visualizing networks are important methods for mining and presenting gene networks.
-Breaking: Eight popular network visualization and module analysis tools are recommended, and those tools may predict and visualize gene-gene, TF-gene, MiRNA-gene, ceRNA, etc.
-2.5.1 GeneMANIA Introduction: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data.</description>
+      <guid>/enrichment/enrichment/</guid>
+      <description>2.1.1 DAVID 2.1.2 GSEA 2.1.3 clusterProfiler 2.1.4 Enrichr 2.1.5 KOBAS 2.1.6 ToppGene 2.1.7 Metascape 2.1.8 WebGestalt 2.1.9 STEM 2.1.10 GAGE 2.1.11 GeneCodis 2.1.12 GeneTrail 2.1.13 PageMan 2.1.14 ErmineJ 2.1.15 EnrichNet 2.1.16 DOSE 2.1.17 SciMiner 2.1.18 ProfCom 2.1.19 hypeR 2.1.20 CIE 2.1.21 GeneAnswers 2.1.22 SIGNAL 2.1.23 Network2Canvas 2.1.24 HPOSim GO Enrichment 2.1.25 BiNGO 2.1.26 GOrilla 2.1.27 WEGO 2.1.28 GOstats 2.1.29 GO Term Finder 2.1.30 topGO 2.1.31 GOEAST 2.1.32 FuncAssociate 2.1.33 Ontologizer 2.</description>
     </item>
     
     <item>
@@ -200,7 +189,18 @@ Breaking: Eight popular network visualization and module analysis tools are reco
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/gene-annotation/other_gene_annotation/</guid>
-      <description>1.5.1 InterPro consortium database 1.5.2 UCSC Genome Browser database 1.5.3 MSigDB 1.5.4 HumanBase 1.5.5 DISGENET 1.5.6 VaProS 1.5.7 Autophagy Database 1.5.8 MitoCarta3.0 1.5.9 OMIM 1.5.10 HGMD 1.5.11 CancerSEA 1.5.12 The Human Phenotype Ontology (HPO) 1.5.13 GeneCards 1.5.14 GeneALaCart Interpreting the relationship between molecular mechanisms and phenotypes, in addition to the GO and pathway annotation, other functional attributes also provide a window into the genes, such as, diseases-associated gene annotations, human/mouse phenotypes, hallmark genes, oncogenic signature, immunologic signature, cell type signature, chromosome cytoband, subcellular locations, developmental stage, gene variant, literatures, domains annotaions, etc.</description>
+      <description>1.4.1 InterPro consortium database 1.4.2 UCSC Genome Browser database 1.4.3 MSigDB 1.4.4 HumanBase 1.4.5 DISGENET 1.4.6 VaProS 1.4.7 Autophagy Database 1.4.8 MitoCarta3.0 1.4.9 OMIM 1.4.10 HGMD 1.4.11 CancerSEA 1.4.12 The Human Phenotype Ontology (HPO) 1.4.13 GeneCards 1.4.14 GeneALaCart Interpreting the relationship between molecular mechanisms and phenotypes, in addition to the GO and pathway annotation, other functional attributes also provide a window into the genes, such as, diseases-associated gene annotations, human/mouse phenotypes, hallmark genes, oncogenic signature, immunologic signature, cell type signature, chromosome cytoband, subcellular locations, developmental stage, gene variant, literatures, domains annotaions, etc.</description>
+    </item>
+    
+    <item>
+      <title>Analysis and visualization tools</title>
+      <link>/network-analysis/analysis_visualization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/network-analysis/analysis_visualization/</guid>
+      <description>3.5.1 GeneMANIA 3.5.2 NetworkAnalyst 3.5.3 ConsensusPathDB 3.5.4 iRegulon 3.5.5 NAViGaTOR 3.5.6 FunCoup 3.5.7 miRTargetLink 3.5.8 FFLtool For the construction of regulatory networks, in addition to the development of diverse databases, tools for visualizing networks are important methods for mining and presenting gene networks.
+Breaking: Eight popular network visualization and module analysis tools are recommended, and those tools may predict and visualize gene-gene, TF-gene, MiRNA-gene, ceRNA, etc.
+3.5.1 GeneMANIA Introduction: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data.</description>
     </item>
     
   </channel>

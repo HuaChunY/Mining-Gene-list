@@ -1,5 +1,5 @@
 ---
-title: "Clustering Analysis"
+title: "Clustering analysis"
 output:
   blogdown::html_page:
     toc: true
@@ -9,13 +9,13 @@ weight: 2
 
 <div id="TOC">
 <ul>
-<li><a href="#nbclust" id="toc-nbclust">6.2.1 <strong>Nbclust</strong></a></li>
-<li><a href="#clustvis" id="toc-clustvis">6.2.2 <strong>ClustVis</strong></a></li>
-<li><a href="#medusa" id="toc-medusa">6.2.3 <strong>Medusa</strong></a></li>
-<li><a href="#wcd" id="toc-wcd">6.2.4 <strong>wcd</strong></a></li>
-<li><a href="#timeclust" id="toc-timeclust">6.2.5 <strong>TimeClust</strong></a></li>
-<li><a href="#hiplot" id="toc-hiplot">6.2.6 <strong>hiplot</strong></a></li>
-<li><a href="#cola" id="toc-cola">6.2.7 <strong>cola</strong></a></li>
+<li><a href="#nbclust" id="toc-nbclust">7.2.1 <strong>Nbclust</strong></a></li>
+<li><a href="#clustvis" id="toc-clustvis">7.2.2 <strong>ClustVis</strong></a></li>
+<li><a href="#medusa" id="toc-medusa">7.2.3 <strong>Medusa</strong></a></li>
+<li><a href="#wcd" id="toc-wcd">7.2.4 <strong>wcd</strong></a></li>
+<li><a href="#timeclust" id="toc-timeclust">7.2.5 <strong>TimeClust</strong></a></li>
+<li><a href="#hiplot" id="toc-hiplot">7.2.6 <strong>hiplot</strong></a></li>
+<li><a href="#cola" id="toc-cola">7.2.7 <strong>cola</strong></a></li>
 </ul>
 </div>
 
@@ -23,7 +23,7 @@ weight: 2
 <p><strong>Breaking</strong>: Some well-used and comprehensive clustering tools are provided in this section.</p>
 <hr />
 <div id="nbclust" class="section level2">
-<h2>6.2.1 <strong>Nbclust</strong></h2>
+<h2>7.2.1 <strong>Nbclust</strong></h2>
 <p><strong>Introduction</strong>: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user. In addition, it provides a function to perform k-means and hierarchical clustering with different distance measures and aggregation methods. Any combination of validation indices and clustering methods can be requested in a single function call. This enables the user to simultaneously evaluate several clustering schemes while varying the number of clusters, to help determining the most appropriate number of clusters for the data set of interest.</p>
 <p><strong>Installation</strong>: To install this package, start R (version “4.2”) and enter:</p>
 <pre class="r"><code>install.packages(Nbclust)</code></pre>
@@ -31,7 +31,7 @@ weight: 2
 <hr />
 </div>
 <div id="clustvis" class="section level2">
-<h2>6.2.2 <strong>ClustVis</strong></h2>
+<h2>7.2.2 <strong>ClustVis</strong></h2>
 <p><strong>Introduction</strong>: This web tool allows users to upload their own data and easily create Principal Component Analysis (PCA) plots and heatmaps. Data can be uploaded as a file or by copy-pasteing it to the text box. Data format is shown under “Help” tab.</p>
 <center>
 <b>Data Source Statistics</b>
@@ -84,7 +84,7 @@ vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
 <hr />
 </div>
 <div id="medusa" class="section level2">
-<h2>6.2.3 <strong>Medusa</strong></h2>
+<h2>7.2.3 <strong>Medusa</strong></h2>
 <p><strong>Introduction</strong>: Medusa3 is a java standalone application for visualization and clustering analysis of biological networks in 2D. It is highly interactive and it supports weighted and multi-edged graphs where each edge between two bioentities can represent a different biological concept. Comparing to previous versions, it is currently enriched with a variety of layout and clustering methods for more intuitive visualizations. It is easy to integrate with web application since it is offered as an applet.</p>
 <center>
 <b>Data Source Statistics</b>
@@ -120,7 +120,7 @@ vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
 <hr />
 </div>
 <div id="wcd" class="section level2">
-<h2>6.2.4 <strong>wcd</strong></h2>
+<h2>7.2.4 <strong>wcd</strong></h2>
 <p><strong>Introduction</strong>: wcd is an open source tool for clustering expressed sequence tags. It implements matching using either d2 or edit distance, which provides sensitive matching. Heuristics speed up the clustering process. wcd parallelises well under MPI and also provides Pthreads clustering. wcd has a very compact memory representation which means that large files can be clustered on a single processor (and it can run quite happily without MPI or Pthreads headers or libraries being available).</p>
 <p><strong>Application</strong>: The wcd tutorial can be found at
 <a href="https://code.google.com/archive/about" class="uri">https://code.google.com/archive/about</a>.</p>
@@ -129,7 +129,7 @@ vignette(&quot;vignette&quot;, &quot;clustvis&quot;)</code></pre>
 <hr />
 </div>
 <div id="timeclust" class="section level2">
-<h2>6.2.5 <strong>TimeClust</strong></h2>
+<h2>7.2.5 <strong>TimeClust</strong></h2>
 <p><strong>Introduction</strong>: TimeClust is an user-friendly software package to cluster genes according to their temporal expression profiles. It can be conveniently used to analyze data obtained from DNA microarray time-course experiments. It implements two original algorithms expressed designed for clustering short time series together with hierarchical clustering and self-organizing maps. TimeClust executable files for Windows and LINUX platforms can be downloaded free of charge for non-profit institutions from the following web site <a href="http://aimed11.unipv.it/TimeClust" class="uri">http://aimed11.unipv.it/TimeClust</a>.</p>
 <p><strong>Installation</strong>: The TimeClust software can be downloaded freely for non-profit institutions from <a href="http://aimed11.unipv.it/TimeClust" class="uri">http://aimed11.unipv.it/TimeClust</a>. Executable files for Windows and LINUX platforms are available. The program requires the user to install the MATLAB runtime libraries, that are distributed together with the TimeClust files. The installation steps are here detailed.</p>
 <p>How to install TimeClust:</p>
@@ -190,7 +190,7 @@ reported in the user’s guide.</li>
 <hr />
 </div>
 <div id="hiplot" class="section level2">
-<h2>6.2.6 <strong>hiplot</strong></h2>
+<h2>7.2.6 <strong>hiplot</strong></h2>
 <p><strong>Introduction</strong>: we newly developed a pool of biomedical visualization and modeling functions (240+), and proposed a scalable and emerging one-stop web service, Hiplot, with versatile task plugins, such as basic statistics, regression, clustering, genomics, transcriptomics, time series, meta-analysis, and risk models. It provides more simple web and command-line interfaces compared with other similar platforms, and is supported and maintained by the openbiox open source community.</p>
 <center>
 <b>Data Source Statistics</b>
@@ -223,7 +223,7 @@ reported in the user’s guide.</li>
 <hr />
 </div>
 <div id="cola" class="section level2">
-<h2>6.2.7 <strong>cola</strong></h2>
+<h2>7.2.7 <strong>cola</strong></h2>
 <p><strong>Introduction</strong>: The cola package provides a general framework for subgroup classification by consensus partitioning. It has the following features: 1. It modularizes the consensus partitioning processes that various methods can be easily integrated. 2. It provides rich visualizations for interpreting the results. 3. It allows running multiple methods at the same time and provides functionalities to straightforward compare results. 4. It provides a new method to extract features which are more efficient to separate subgroups. 5. It automatically generates detailed reports for the complete analysis. 6. It allows applying consensus partitioning in a hierarchical manner.</p>
 <p><strong>Installation</strong>:To install this package, start R (version “4.2”) and enter:</p>
 <pre class="r"><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))

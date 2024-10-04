@@ -12,7 +12,7 @@ Enrichment analysis helps researchers gain mechanistic insight into gene lists g
 
 ---
 
-## 1.4.1 **DAVID**
+## 2.1.1 **DAVID**
 
 **Introduction**: DAVID is a popular bioinformatics resource system including a web server and web service for functional annotation and enrichment analyses of gene lists. It
 consists of a comprehensive knowledgebase and a set of functional analysis tools.
@@ -30,7 +30,7 @@ Download client code:
 
 ---
 
-## 1.4.2 **GSEA**
+## 2.1.2 **GSEA**
 
 **Introduction**: Gene Set Enrichment Analysis (GSEA) is a computational method that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two biological states (e.g. phenotypes). The Molecular Signatures Database (MSigDB) is a collection of annotated gene sets for use with GSEA software.The Molecular(MSigDB) is a collection of annotated gene sets for use with GSEA software. The 33196 gene sets in the Human Molecular Signatures Database (MSigDB) are divided into 9 major collections, and several sub-collections. The 15918 gene sets in the Mouse Molecular Signatures Database (MSigDB) are divided into 6 major collections, and several sub-collections.
 ![GSEA1](/images/GSEA1.jpg?width=50pc)
@@ -51,7 +51,7 @@ GSEA Desktop is 100% Pure Java. Java 8 is required for our pre-built binaries. B
  
 ---
 
-## 1.4.3 **clusterProfiler**
+## 2.1.3 **clusterProfiler**
 
 **Introduction**: This package supports functional characteristics of both coding and non-coding genomics data for thousands of species with up-to-date gene annotation. It provides a univeral interface for gene functional annotation from a variety of sources and thus can be applied in diverse scenarios. It provides a tidy interface to access, manipulate, and visualize enrichment results to help users achieve efficient data interpretation. Datasets obtained from multiple treatments and time points can be analyzed and compared in a single run, easily revealing functional consensus and differences among distinct conditions.
  
@@ -68,7 +68,7 @@ BiocManager::install("clusterProfiler")
 ---
 
 
-## 1.4.4 **Enrichr**
+## 2.1.4 **Enrichr**
 
 **Introduction**:Integrative web-based and mobile gene-list enrichment analysis tool that includes over 30 gene-set libraries, an alternative approach to rank enriched terms, and various interactive visualization approaches to display enrichment results using the JavaScript library Data Driven Documents (D3).
 ![Enrichr](/images/enrichr.jpg?width=50pc)
@@ -89,7 +89,7 @@ install.packages("enrichR")
 
 ---
 
-## 1.4.5 **KOBAS**
+## 2.1.5 **KOBAS**
 
 **Introduction**:KOBAS (KEGG Orthology Based Annotation System) is a web server for gene/protein functional annotation (Annotation module) and functional set enrichment (Enrichment module). Given a set of genes or proteins, it can determine whether a pathway, disease, or Gene Ontology(GO) term shows statistical significance. The current version is KOBAS 3.0 (also named KOBAS-i), which covers 5,944 species with incorporated knowledge.
 
@@ -106,7 +106,7 @@ KOBAS is composed of two functions, Annotation and Enrichment:gene list Enrichme
  
 ---
 
-## 1.4.6 **ToppGene**
+## 2.1.6 **ToppGene**
 
 **Introduction**: A one-stop portal for gene list enrichment analysis and candidate gene prioritization based on functional annotations and protein interactions network.
 ![ToppGene](/images/ToppGene.jpg?width=50pc)
@@ -117,7 +117,7 @@ KOBAS is composed of two functions, Annotation and Enrichment:gene list Enrichme
 
 ---
 
-## 1.4.7 **Metascape**
+## 2.1.7 **Metascape**
 
 **Introduction**:  Metascape is a web-based portal designed to provide a comprehensive gene list annotation and analysis resource for experimental biologists. In terms of design features, Metascape combines functional enrichment, interactome analysis, gene annotation, and membership search to leverage over 40 independent knowledgebases within one integrated portal.
 ![Metascape](/images/Metascape.jpg?width=50pc)
@@ -128,7 +128,7 @@ KOBAS is composed of two functions, Annotation and Enrichment:gene list Enrichme
 
 ---
 
-## 1.4.8 **WebGestalt**
+## 2.1.8 **WebGestalt**
 
 **Introduction**: WebGestalt (WEB-based Gene SeT AnaLysis Toolkit) is a functional enrichment analysis web tool. Data sources for WebGestalt supports 12 organisms, 354 gene identifiers from various databases and technology platforms, and 321,251 functional categories from public databases and computational analyses. Experimental data from organisms or with gene identifiers not covered by the WebGestalt database can also be analyzed in WebGestalt. WebGestalt supports three well-established and complementary methods for enrichment analysis, including Over-Representation Analysis (ORA), Gene Set Enrichment Analysis (GSEA), and Network Topology-based Analysis (NTA).
 
@@ -146,7 +146,7 @@ install.packages("WebGestaltR")
 
 ---
 
-## 1.4.9 **STEM**
+## 2.1.9 **STEM**
 
 **Introduction**: The Short Time-series Expression Miner (STEM) is a Java program for clustering, comparing, and visualizing short time series gene expression data from microarray experiments (~8 time points or fewer). STEM allows researchers to identify significant temporal expression profiles and the genes associated with these profiles and to compare the behavior of these genes across multiple conditions. STEM is fully integrated with the Gene Ontology (GO) database supporting GO category gene enrichment analyses for sets of genes having the same temporal expression pattern. STEM also supports the ability to easily determine and visualize the behavior of genes belonging to a given GO category or user defined gene set, identifying which temporal expression profiles were enriched for these genes. 
 
@@ -158,7 +158,7 @@ install.packages("WebGestaltR")
 
 ---
 
-## 1.4.10 **GAGE**
+## 2.1.10 **GAGE**
 
 **Introduction**: GAGE is a published method for gene set (enrichment or GSEA) or pathway analysis. GAGE is generally applicable independent of microarray or RNA-Seq data attributes including sample sizes, experimental designs, assay platforms, and other types of heterogeneity, and consistently achieves superior performance over other frequently used methods. In gage package, we provide functions for basic GAGE analysis, result processing and presentation. We have also built pipeline routines for of multiple GAGE analyses in a batch, comparison between parallel analyses, and combined analysis of heterogeneous data from different sources/studies. In addition, gage provide demo microarray data and commonly used gene set data based on KEGG pathways and GO terms. These funtions and data are also useful for gene set analysis using other methods.
 
@@ -175,7 +175,7 @@ BiocManager::install("gage")
 
 ---
 
-## 1.4.11 **GeneCodis**
+## 2.1.11 **GeneCodis**
 
 **Introduction**: GeneCodis is an API and web tool for the Singular and Modular Enrichment Analysis (SEA and MEA) of lists of genes, proteins, and regulatory elements: miRNAs, transcription factors (TFs), and CpGs. Look CoAnnotation in the next panel for more information on the Modular Enrichment Analysis. The enrichment analysis of regulatory elements, requires a different approach. Due to a gene selection bias (some genes are more targeted than others) in platforms and regulation networks it requires a test based on a non-central hypergeometric distribution, concretely, we use the Wallenius distribution. Our method is based on the GOseq implementation. Currently GeneCodis provides annotations for 14 different organisms and gather 21 annotation sources. These are updated every three months. 
 
@@ -188,7 +188,7 @@ BiocManager::install("gage")
 
 ---
 
-## 1.4.12 **GeneTrail**
+## 2.1.12 **GeneTrail**
 
 **Introduction**: GeneTrail is a web-interface providing access to different tools for the statistical analysis of molecular signatures. GeneTrail allows the integrated analysis of transcriptomic, miRNomic, genomic, and proteomic datasets. It offers multiple statistical tests, a large number of predefined reference sets, as well as a comprehensive collection of biological categories and enables direct comparisons between the computed results.
 
@@ -201,7 +201,7 @@ BiocManager::install("gage")
 
 ---
 
-## 1.4.13 **PageMan**
+## 2.1.13 **PageMan**
 
 **Introduction**: PageMan is a tool to get a quick overview of multiparallel experiments. PageMan also helps comparing experiments from different organisms.
 
@@ -211,7 +211,7 @@ BiocManager::install("gage")
 
 ---
 
-## 1.4.14 **ErmineJ**
+## 2.1.14 **ErmineJ**
 
 **Introduction**: ErmineJ performs analyses of gene sets in high-throughput genomics data such as gene expression profiling studies. A typical goal is to determine whether particular biological pathways are "doing something interesting" in an experiment that generates long lists of candidates. The software is designed to be used by biologists with little or no informatics background.
 
@@ -236,7 +236,7 @@ devtools::install_github('PavlidisLab/ermineR')
 
 ---
 
-## 1.4.15 **EnrichNet**
+## 2.1.15 **EnrichNet**
 
 **Introduction**: EnrichNet is a web-application that complements this classical overlap-based enrichment analysis by a new association measure that integrates information from the known network structure of interactions between proteins. 
 
@@ -271,7 +271,7 @@ Python example source code download [here](http://www.enrichnet.org/enrichnet_up
 
 ---
 
-## 1.4.16 **DOSE**
+## 2.1.16 **DOSE**
 
 **Introduction**: This package implements five methods proposed by Resnik, Schlicker, Jiang, Lin and Wang respectively for measuring semantic similarities among DO terms and gene products. Enrichment analyses including hypergeometric model and gene set enrichment analysis are also implemented for discovering disease associations of high-throughput biological data.
 
@@ -291,7 +291,7 @@ browseVignettes("DOSE")
 
 ---
 
-## 1.4.17 **SciMiner**
+## 2.1.17 **SciMiner**
 
 **Introduction**: SciMiner is a web-based literature mining and functional analysis tool that identifies genes and proteins using a context specific analysis of MEDLINE abstracts and full texts. SciMiner accepts a free text query string (PubMed Entrez search) or a list of PubMed Unique Identifiers (PMIDs) as input.
 
@@ -308,7 +308,7 @@ browseVignettes("DOSE")
 
 ---
 
-## 1.4.18 **ProfCom**
+## 2.1.18 **ProfCom**
 
 **Introduction**: ProfCom is a web-based tool for the interpretation of genes that were identified to be functionally linked by experiment. ProfCom automatically generates statistically valid hypotheses / biological models from gene or protein lists supplied by the user. This knowledge can help to improve your understanding of genetic mechanisms involved in biological phenomena under study.
 
@@ -318,7 +318,7 @@ browseVignettes("DOSE")
 
 ---
 
-## 1.4.19 **hypeR**
+## 2.1.19 **hypeR**
 
 **Introduction**: The hypeR package goes beyond performing basic enrichment, by providing a suite of methods designed to make routine geneset enrichment seamless for scientists working in R.
 
@@ -347,7 +347,7 @@ devtools::install_github("montilab/hypeR")
 
 ---
 
-## 1.4.20 **CIE**
+## 2.1.20 **CIE**
 
 **Introduction**: Causal Inference Enrichment (CIE) is a platform for identification of active transcriptional regulators from differential gene expression data. CIE provides directional (Ternary and Quaternary scoring statistic) and un-directional (Fisher's Exact) enrichment analysis on regulatory networks. Networks integrated within the platform include TRED, TRRUST, STRINGdb, ChIP-Atlas, and tissue corrected ChIP-Atlas. TRED and ChIP-Atlas are not annotated with information on the mode of regulation (activation vs. repression) and are suitable for use with Fisher's exact test only. Tissue corrected ChIP-Atlas is a network constructed by combining ChIP-Atlas with tissue-specific gene expression data from GTEx using a regularized Gaussian Graphical Model. This network is annotated with information on the mode of regulation and can be used with Fisher or Ternary enrichment methods. STRINGdb has mixed directionality and can be used with the Quaternary method.
 
@@ -365,7 +365,7 @@ BiocManager::install("org.Hs.eg.db")
 
 ---
 
-## 1.4.21 **GeneAnswers**
+## 2.1.21 **GeneAnswers**
 
 **Introduction**: GeneAnswers provides an integrated tool for biological or medical interpretation of the given one or more groups of genes by means of statistical test.
 
@@ -380,7 +380,7 @@ biocLite("GeneAnswers")
 
 ---
 
-## 1.4.22 **SIGNAL**
+## 2.1.22 **SIGNAL**
 
 **Introduction**: The SIGNAL platform is designed to facilitate robust hit selection from normalized high-throughput datasets.
 
@@ -393,7 +393,7 @@ biocLite("GeneAnswers")
 
 ---
 
-## 1.4.23 **Network2Canvas**
+## 2.1.23 **Network2Canvas**
 
 **Introduction**: Network2Canvas (N2C), a web application that provides an alternative way to view networks. N2C visualizes network nodes by placing them on a square toroidal grid. These nodes are then clustered together on the grid using simulated annealing to maximize local connections. For visualizing the canvas, a node’s brightness is made proportional to its local fitness; the brighter a node is, the stronger its connections to its neighbors. The grid is interactive, implemented in HTML5 and the Java Script library D3. 
 
@@ -406,7 +406,7 @@ biocLite("GeneAnswers")
 
 ---
 
-## 1.4.24 **HPOSim**
+## 2.1.24 **HPOSim**
 
 **Introduction**: This package implements multiple similarity measures for HPO terms, genes and diseases. It is aiming at phenotype analysis for gene sets and disease sets. Functions for HPO enrichment analysis is also provided.
 
@@ -423,7 +423,7 @@ install.packages("HPOSim")
 
 ---
 
-## 1.4.25 **BiNGO**
+## 2.1.25 **BiNGO**
 
 **Introduction**: BiNGO is a Java-based tool to determine which Gene Ontology (GO) categories are statistically overrepresented in a set of genes or a subgraph of a biological network. BiNGO is implemented as a plugin for Cytoscape, which is a an open source bioinformatics software platform for visualizing and integrating molecular interaction networks. BiNGO maps the predominant functional themes of a given gene set on the GO hierarchy, and outputs this mapping as a Cytoscape graph. Gene sets can either be selected or computed from a Cytoscape network (as subgraphs) or compiled from sources other than Cytoscape (e.g. a list of genes that are significantly upregulated in a microarray experiment). The main advantage of BiNGO over other GO tools is the fact that it can be used directly and interactively on molecular interaction graphs. Another plus is that BiNGO takes full advantage of Cytoscape's versatile visualization environment. This allows you to produce customized high-quality figures.
 
@@ -435,7 +435,7 @@ install.packages("HPOSim")
 
 ---
 
-## 1.4.26 **GOrilla**
+## 2.1.26 **GOrilla**
 
 **Introduction**: GOrilla is a tool for identifying and visualizing enriched GO terms in ranked lists of genes.
 
@@ -445,7 +445,7 @@ install.packages("HPOSim")
 
 ---
 
-## 1.4.27 **WEGO**
+## 2.1.27 **WEGO**
 
 **Introduction**: WEGO (Web Gene Ontology Annotation Plot) is a simple but useful tool for visualizing, comparing and plotting GO (Gene Ontology) annotation results. As the GO vocabulary became more and more popular, WEGO was widely adopted and used in many researches. 
 ![WEGO](/images/WEGO.jpg?width=50pc)
@@ -456,7 +456,7 @@ install.packages("HPOSim")
 
 ---
 
-## 1.4.28 **GOstats**
+## 2.1.28 **GOstats**
 
 **Introduction**: WEGO (Web Gene Ontology Annotation Plot) is a simple but useful tool for visualizing, comparing and plotting GO (Gene Ontology) annotation results. As the GO vocabulary became more and more popular, WEGO was widely adopted and used in many researches. 
 
@@ -472,7 +472,7 @@ BiocManager::install("GOstats")
 
 ---
 
-## 1.4.29 **GO Term Finder**
+## 2.1.29 **GO Term Finder**
 
 **Introduction**: The GO Term Finder (Version 0.86) searches for significant shared GO terms, or parents of those GO terms, used to describe the genes in your list to help you discover what the genes may have in common. To map annotations of a group of genes to more general terms and/or to bin them in broad categories, use the GO Slim Mapper.
 
@@ -481,7 +481,7 @@ BiocManager::install("GOstats")
 
 ---
 
-## 1.4.30 **topGO**
+## 2.1.30 **topGO**
 
 **Introduction**: topGO package provides tools for testing GO terms while accounting for the topology of the GO graph. Different test statistics and different methods for eliminating local similarities and dependencies between GO terms can be implemented and applied.
 
@@ -497,7 +497,7 @@ BiocManager::install("topGO")
 
 ---
 
-## 1.4.31 **GOEAST**
+## 2.1.31 **GOEAST**
 
 **Introduction**: GOEAST is web based software toolkit providing easy to use, visualizable, comprehensive and unbiased Gene Ontology (GO) analysis for high-throughput experimental results, especially for results from microarray hybridization experiments. The main function of GOEAST is to identify significantly enriched GO terms among give lists of genes using accurate statistical methods.
 ![GOEAST1](/images/GOEAST1.jpg?width=50pc)
@@ -509,7 +509,7 @@ BiocManager::install("topGO")
 
 ---
 
-## 1.4.32 **FuncAssociate**
+## 2.1.32 **FuncAssociate**
 
 **Introduction**: FuncAssociate is a web-based tool to help researchers use Gene Ontology attributes to characterize large sets of genes derived from experiment.
 
@@ -520,7 +520,7 @@ BiocManager::install("topGO")
 
 ---
 
-## 1.4.33 **Ontologizer**
+## 2.1.33 **Ontologizer**
 
 **Introduction**: Ontologizer is a tool for the statistical analysis and visualization of high-throughput biological data using Gene Ontology.
  
@@ -533,7 +533,7 @@ BiocManager::install("topGO")
 
 ---
 
-## 1.4.34 **GOSim**
+## 2.1.34 **GOSim**
 
 **Introduction**: This package implements several functions useful for computing similarities between GO terms and gene products based on their GO annotation. Moreover it allows for computing a GO enrichment analysis.
 
@@ -549,7 +549,7 @@ BiocManager::install("GOSim")
 
 ---
 
-## 1.4.35 **GoSurfer**
+## 2.1.35 **GoSurfer**
 
 **Introduction**: GoSurfer uses Gene Ontology (GO) information to analyze gene sets obtained from genome-wide computations or microarray analyses. GoSurfer is a graphical interactive data mining tool. It associates user input genes with GO terms and visualizes such GO terms as a hierarchical tree. Users can manipulate the tree output by various means, like setting heuristic thresholds or using statistical tests. Significantly important GO terms resulted from a statistical test can be highlighted. All related information are exportable either as texts or as graphics.
 
@@ -559,7 +559,7 @@ BiocManager::install("GOSim")
 
 ---
 
-## 1.4.36 **ShinyGO**
+## 2.1.36 **ShinyGO**
 
 **Introduction**: ShinyGO is an intuitive, graphical web application that can help researchers gain actionable insights from gene-sets based on a large annotation database derived from Ensembl and STRING-db for 59 plant, 256 animal, 115 archeal and 1678 bacterial species.
 ![ShinyGO](/images/ShinyGO.jpg?width=50pc)
@@ -568,7 +568,7 @@ BiocManager::install("GOSim")
 
 ---
 
-## 1.4.37 **ADGO**
+## 2.1.37 **ADGO**
 
 **Introduction**: ADGO provides biological interpretations for microarray data and list of genes (or proteins) via composite annotations.
 
@@ -579,7 +579,7 @@ BiocManager::install("GOSim")
 
 ---
 
-## 1.4.38 **tmod**
+## 2.1.38 **tmod**
 
 **Introduction**: The package includes several tools for testing the significance of enrichment of modules or other gene sets as well as visualisation of the features (genes, metabolites etc.) and gene sets, feature sets or transcriptional modules. 
 
@@ -592,7 +592,7 @@ install.packages("tmod")
 
 ---
 
-## 1.4.39 **modPhEA**
+## 2.1.39 **modPhEA**
 
 **Introduction**: model organism Phenotype Enrichment Analysis (modPhEA) is a freely available tool reports phenotypes that are associated with given gene sets. Currently, there are 132 animal and 50 fungal species which can be analyzed by modPhEA.
 
@@ -603,7 +603,7 @@ install.packages("tmod")
 
 ---
 
-## 1.4.40 **netGO**
+## 2.1.40 **netGO**
 
 **Introduction**: netGO is an R/Shiny package for network-integrated pathway enrichment analysis.netGO provides user-interactive visualization of enrichment analysis results and related networks.
 
@@ -640,7 +640,7 @@ obj = netGO(genes = brca[1:30], genesets, network, genesetV)
 
 ---
 
-## 1.4.41 **FunSet**
+## 2.1.41 **FunSet**
 
 **Introduction**: The FunSet webserver performs Gene Ontology (GO) enrichment analysis, identifying GO terms that are statistically overrepresented in a target set with respect to a background set. The enriched terms are displayed in a 2D plot that captures the semantic similarity between terms, with the option to cluster the terms and identify a representative term for each cluster. FunSet can be used interactively or programmatically, and allows users to download the enrichment results both in tabular form and in graphical form as SVG files or in data format as JSON or csv.
 
@@ -653,7 +653,7 @@ obj = netGO(genes = brca[1:30], genesets, network, genesetV)
 
 ---
 
-## 1.4.42 **SPEED2**
+## 2.1.42 **SPEED2**
 
 **Introduction**: SPEED2 is a signaling pathway annotation enrichment analysis tool with gene sets derived from manually curated pathway perturbation experiments in human cell lines. Identifying modulated pathways upstream of differentially expressed genes can facilitate the understanding of involved regulatory mechanisms. Currently, only human genes and pathways are supported. SPEED2 gene sets are extracted from publically available microarray data from the GEO database, which have been selected for pathway specific perturbations. This new version contains 16 instead of 11 pathways, and is based on three times more experimental data sets. It also uses different statistical methods to derive and score signatures.
 
@@ -664,7 +664,7 @@ obj = netGO(genes = brca[1:30], genesets, network, genesetV)
  
 ---
 
-## 1.4.43 **TACCO**
+## 2.1.43 **TACCO**
 
 **Introduction**: TACCO is a database designed specifically for connecting transcriptome alterations, pathway alterations and clinical outcomes in cancers. Users can either select differentially expressed genes with different criteria within the TACCO database or upload their own gene list to be analyzed. Users can then perform KEGG pathway enrichment analysis, Gene ontology analysis or construct a multiple gene model for the prognosis prediction using this gene list.
 
@@ -674,7 +674,7 @@ obj = netGO(genes = brca[1:30], genesets, network, genesetV)
 
 ---
 
-## 1.4.44 **PathVisio**
+## 2.1.44 **PathVisio**
 
 **Introduction**: PathVisio is a free open-source pathway analysis and drawing software which allows drawing, editing, and analyzing biological pathways. It is developed in Java and can be extended with plugins.
 
@@ -686,7 +686,7 @@ Current version: [PathVisio 3.3.0](https://github.com/PathVisio/pathvisio/releas
 
 ---
 
-## 1.4.45 **NetWalker**
+## 2.1.45 **NetWalker**
 
 **Introduction**: NetWalker is a desktop application for functional analyses of large-scale genomics datasets within the context of molecular networks.
 
@@ -698,7 +698,7 @@ Current version: [PathVisio 3.3.0](https://github.com/PathVisio/pathvisio/releas
 
 ---
 
-## 1.4.46 **Graphite Web**
+## 2.1.46 **Graphite Web**
 
 **Introduction**: Graphite web is a public web server for the analysis and visualization of biological pathways using high-throughput gene expression data. It supports five different gene set analysis, three species and two databases of pathways. Graphite web has a powerful pathway visualization that makes results interpretation easily accessible to the user.
 
@@ -710,7 +710,7 @@ Current version: [PathVisio 3.3.0](https://github.com/PathVisio/pathvisio/releas
  
 ---
 
-## 1.4.47 **Paintomics**
+## 2.1.47 **Paintomics**
 
 **Introduction**: Paintomics is a web tool for the integrative visualization of multiple omic datasets onto KEGG (102.0 April 1 2022), Reactome (Version 76 21 March 2021) and MapMan (GoMapMan 25 May 2018) biological pathway maps. Currently, Paintomics supports integrated visualization of multiple species of different biological kingdoms and offers user the possibility to request any other organism present in the KEGG, Reactome and MapMan database. We will update all those databases annually.
 
@@ -728,7 +728,7 @@ ls $PWD/paintomics3
  
 ---
 
-## 1.4.48 **HisCoM-PAGE**
+## 2.1.48 **HisCoM-PAGE**
 
 **Introduction**: Hierarchical Structural Component Models of Pathway A nalysis using Gene Expression data (HisCoM-PAGE) is a novel statistical approach for an analysis of gene expression data using pathway information.
 
@@ -741,7 +741,7 @@ All source code is written in R code: [Download zip](http://statgen.snu.ac.kr/so
  
 ---
 
-## 1.4.49 **PAGWAS**
+## 2.1.49 **PAGWAS**
 
 **Introduction**: Bayesian hierarchical methods for pathway analysis of genomewide association data: Normal/Bayes factors and Sparse Normal/Adaptive lasso. The Frequentist Fisher’s method is included as well.
 
@@ -754,7 +754,7 @@ install.packages("PAGWAS")
 
 ---
 
-## 1.4.50 **DecoPath**
+## 2.1.50 **DecoPath**
 
 **Introduction**: DecoPath is a scientific web application that has been developed in an academic capacity and thus comes with no warranty or guarantee of maintenance, support, or back-up of data.
 

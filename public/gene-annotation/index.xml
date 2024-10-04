@@ -36,21 +36,12 @@ Breaking: A summary of eleven R packages and web services tools, including the n
     </item>
     
     <item>
-      <title>Enrichment analysis</title>
-      <link>/gene-annotation/enrichment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/gene-annotation/enrichment/</guid>
-      <description>1.4.1 DAVID 1.4.2 GSEA 1.4.3 clusterProfiler 1.4.4 Enrichr 1.4.5 KOBAS 1.4.6 ToppGene 1.4.7 Metascape 1.4.8 WebGestalt 1.4.9 STEM 1.4.10 GAGE 1.4.11 GeneCodis 1.4.12 GeneTrail 1.4.13 PageMan 1.4.14 ErmineJ 1.4.15 EnrichNet 1.4.16 DOSE 1.4.17 SciMiner 1.4.18 ProfCom 1.4.19 hypeR 1.4.20 CIE 1.4.21 GeneAnswers 1.4.22 SIGNAL 1.4.23 Network2Canvas 1.4.24 HPOSim GO Enrichment 1.4.25 BiNGO 1.4.26 GOrilla 1.4.27 WEGO 1.4.28 GOstats 1.4.29 GO Term Finder 1.4.30 topGO 1.4.31 GOEAST 1.4.32 FuncAssociate 1.4.33 Ontologizer 1.</description>
-    </item>
-    
-    <item>
       <title>Other gene annotation</title>
       <link>/gene-annotation/other_gene_annotation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/gene-annotation/other_gene_annotation/</guid>
-      <description>1.5.1 InterPro consortium database 1.5.2 UCSC Genome Browser database 1.5.3 MSigDB 1.5.4 HumanBase 1.5.5 DISGENET 1.5.6 VaProS 1.5.7 Autophagy Database 1.5.8 MitoCarta3.0 1.5.9 OMIM 1.5.10 HGMD 1.5.11 CancerSEA 1.5.12 The Human Phenotype Ontology (HPO) 1.5.13 GeneCards 1.5.14 GeneALaCart Interpreting the relationship between molecular mechanisms and phenotypes, in addition to the GO and pathway annotation, other functional attributes also provide a window into the genes, such as, diseases-associated gene annotations, human/mouse phenotypes, hallmark genes, oncogenic signature, immunologic signature, cell type signature, chromosome cytoband, subcellular locations, developmental stage, gene variant, literatures, domains annotaions, etc.</description>
+      <description>1.4.1 InterPro consortium database 1.4.2 UCSC Genome Browser database 1.4.3 MSigDB 1.4.4 HumanBase 1.4.5 DISGENET 1.4.6 VaProS 1.4.7 Autophagy Database 1.4.8 MitoCarta3.0 1.4.9 OMIM 1.4.10 HGMD 1.4.11 CancerSEA 1.4.12 The Human Phenotype Ontology (HPO) 1.4.13 GeneCards 1.4.14 GeneALaCart Interpreting the relationship between molecular mechanisms and phenotypes, in addition to the GO and pathway annotation, other functional attributes also provide a window into the genes, such as, diseases-associated gene annotations, human/mouse phenotypes, hallmark genes, oncogenic signature, immunologic signature, cell type signature, chromosome cytoband, subcellular locations, developmental stage, gene variant, literatures, domains annotaions, etc.</description>
     </item>
     
   </channel>

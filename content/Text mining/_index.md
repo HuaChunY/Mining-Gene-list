@@ -1,11 +1,11 @@
 ---
 title: "Text Mining"
 chapter: true
-weight: 3
+weight: 4
 ---
 
 
-### Chapter 3
+### Chapter 4
 
 # Text Mining
 Mining useful information literally and draw knowledge graphs. 📖📖📖

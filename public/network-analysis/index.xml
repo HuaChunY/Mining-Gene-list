@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/gene_network/</guid>
-      <description>2.1.1 STRING 2.1.2 IMEx 2.1.3 IntAct 2.1.4 DIP 2.1.5 BioGRID 2.1.6 MINT 2.1.7 InnateDB 2.1.8 HuRI 2.1.9 InWeb 2.1.10 NDEx 2.1.11 IID 2.1.12 SIGNOR 2.1.13 MatrixDB 2.1.14 I2D 2.1.15 SPIKE Gene regulatory network (GRN) is the important mechanism of maintaining life process, controlling biochemical reaction and regulating compound level, which reveal the essential rules of a large number of biological processes and reactions in organisms.
+      <description>3.1.1 STRING 3.1.2 IMEx 3.1.3 IntAct 3.1.4 DIP 3.1.5 BioGRID 3.1.6 MINT 3.1.7 InnateDB 3.1.8 HuRI 3.1.9 InWeb 3.1.10 NDEx 3.1.11 IID 3.1.12 SIGNOR 3.1.13 MatrixDB 3.1.14 I2D 3.1.15 SPIKE Gene regulatory network (GRN) is the important mechanism of maintaining life process, controlling biochemical reaction and regulating compound level, which reveal the essential rules of a large number of biological processes and reactions in organisms.
 Breaking: Fifteen well-known gene/protein regulatory databases are cataloged, covering genes/proteins across species.</description>
     </item>
     
@@ -22,9 +22,9 @@ Breaking: Fifteen well-known gene/protein regulatory databases are cataloged, co
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/tf_regulation/</guid>
-      <description>2.2.1 JASPAR 2.2.2 AnimalTFDB 2.2.3 CHEA 2.2.4 RegNetwork Transcription factors (TFs) are key regulators of intrinsic cellular processes, such as differentiation and development, and of the cellular response to external perturbation through signaling pathways. Most TFs recognize and bind to specific DNA sequences named as transcription factor biding sites, leading to specific spatiotemporal expression patterns of target genes.
-Breaking: Four TF target specific resources are collected.
-2.2.1 JASPAR Introduction: JASPAR is a regularly maintained open-access database storing manually curated transcription factors (TF) binding profiles as position frequency matrices (PFMs).</description>
+      <description>3.2.1 JASPAR 3.2.2 AnimalTFDB 3.2.3 ChEA3 3.2.4 RegNetwork 3.2.5 PlantCARE Transcription factors (TFs) are key regulators of intrinsic cellular processes, such as differentiation and development, and of the cellular response to external perturbation through signaling pathways. Most TFs recognize and bind to specific DNA sequences named as transcription factor biding sites, leading to specific spatiotemporal expression patterns of target genes.
+Breaking: Five TF target specific resources are collected.
+3.2.1 JASPAR Introduction: JASPAR is a regularly maintained open-access database storing manually curated transcription factors (TF) binding profiles as position frequency matrices (PFMs).</description>
     </item>
     
     <item>
@@ -33,7 +33,7 @@ Breaking: Four TF target specific resources are collected.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/mirna_regulation/</guid>
-      <description>2.3.1 TargetScan 2.3.2 miRBase 2.3.3 miRDB 2.3.4 RNAhybrid 2.3.5 miRTarbase 2.3.6 miR2Disease 2.3.7 TarBase 2.3.8 mirDIP miRNAs control the regulation of the majority of genes post-transcriptionally. Most miRNAs are involved in molecular pathways that influence inflammation, cell cycle regulation and carcinogenesis resulting in the onset or progression of pathological conditions. Investigating these interactions will be pivotal for understanding the etiology of pathologic processes, the potential new treatment strategies and for preventing diseases.</description>
+      <description>3.3.1 TargetScan 3.3.2 miRBase 3.3.3 miRDB 3.3.4 RNAhybrid 3.3.5 miRTarbase 3.3.6 miR2Disease 3.3.7 TarBase 3.3.8 mirDIP miRNAs control the regulation of the majority of genes post-transcriptionally. Most miRNAs are involved in molecular pathways that influence inflammation, cell cycle regulation and carcinogenesis resulting in the onset or progression of pathological conditions. Investigating these interactions will be pivotal for understanding the etiology of pathologic processes, the potential new treatment strategies and for preventing diseases.</description>
     </item>
     
     <item>
@@ -42,20 +42,20 @@ Breaking: Four TF target specific resources are collected.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/cerna_regulation/</guid>
-      <description>2.4.1 ENCODE 2.4.2 starBase 2.4.3 miRcode 2.4.4 DIANA-LncBase 2.4.5 OmniPath 2.4.6 ceRDB 2.4.7 LncACTdb 2.4.8 PceRBase Post-transcriptional crosstalk and communication between RNAs yield large regulatory competing endogenous RNA (ceRNA) networks via shared microRNAs. The ceRNA crosstalk represents a novel layer of gene regulation that controls both physiological and pathological processes such as development and complex diseases.
+      <description>3.4.1 ENCODE 3.4.2 starBase 3.4.3 miRcode 3.4.4 DIANA-LncBase 3.4.5 OmniPath 3.4.6 ceRDB 3.4.7 LncACTdb 3.4.8 PceRBase Post-transcriptional crosstalk and communication between RNAs yield large regulatory competing endogenous RNA (ceRNA) networks via shared microRNAs. The ceRNA crosstalk represents a novel layer of gene regulation that controls both physiological and pathological processes such as development and complex diseases.
 Breaking: Eight ceRNA related databses are summarized in this section.
-2.4.1 ENCODE Introduction: The ENCODE Portal, developed and maintained by the Data Coordination Center (ENCODE DCC), is the canonical source for all experimental metadata and data from ENCODE and associated projects.</description>
+3.4.1 ENCODE Introduction: The ENCODE Portal, developed and maintained by the Data Coordination Center (ENCODE DCC), is the canonical source for all experimental metadata and data from ENCODE and associated projects.</description>
     </item>
     
     <item>
-      <title>Analysis and Visualization Tools</title>
+      <title>Analysis and visualization tools</title>
       <link>/network-analysis/analysis_visualization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/network-analysis/analysis_visualization/</guid>
-      <description>2.5.1 GeneMANIA 2.5.2 NetworkAnalyst 2.5.3 ConsensusPathDB 2.5.4 iRegulon 2.5.5 NAViGaTOR 2.5.6 FunCoup 2.5.7 miRTargetLink 2.5.8 FFLtool For the construction of regulatory networks, in addition to the development of diverse databases, tools for visualizing networks are important methods for mining and presenting gene networks.
+      <description>3.5.1 GeneMANIA 3.5.2 NetworkAnalyst 3.5.3 ConsensusPathDB 3.5.4 iRegulon 3.5.5 NAViGaTOR 3.5.6 FunCoup 3.5.7 miRTargetLink 3.5.8 FFLtool For the construction of regulatory networks, in addition to the development of diverse databases, tools for visualizing networks are important methods for mining and presenting gene networks.
 Breaking: Eight popular network visualization and module analysis tools are recommended, and those tools may predict and visualize gene-gene, TF-gene, MiRNA-gene, ceRNA, etc.
-2.5.1 GeneMANIA Introduction: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data.</description>
+3.5.1 GeneMANIA Introduction: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data.</description>
     </item>
     
   </channel>

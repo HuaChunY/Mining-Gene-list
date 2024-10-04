@@ -1,9 +1,9 @@
 ---
-title: "Discovering the cell markers"
+title: "Cell deconvolution"
 output:
   blogdown::html_page:
     toc: true
-weight: 2
+weight: 1
 ---
 
 The cell marks are widely used to label cell types for individual cells, enabling capture of the initial viewing of cell compositions. The large amount of cell markers from experimental researches and scRNA-seq were identified. In particular, the core cell type-specific DEGs recommended as cell markers contribute to the cell annotation. As well, the developmental and tissue-related DEGs as cell markers will help the cell annotation of spatial and temporal expression pattens. Meanwhile, the proportions of cell types enable to quantitatively estimate by deconvolution algorithms based on cell type-specific markers. 
@@ -12,7 +12,7 @@ The cell marks are widely used to label cell types for individual cells, enablin
 
 ---
 
-## 5.2.1 **CIERSORT**
+## 6.2.1.1 **CIERSORT**
 
 **Introduction**: CIBERSORT( or CIBERSORTx) is a gene expression-based deconvolution algorithm that provides an estimation of the abundances of member cell types in a mixed cell population using gene expression data. CIBERSORTx allows users to process gene expression data representing a bulk admixture of different cell types, along with a signature matrix file that enumerates the genes defining the expression profile for each cell type of interest. For the latter, users can either use exissting/curated signature matrices for reference cell types, or can create custom signature gene files by providing the reference gene expression profiles o of pure cell populations. Moreover, given the increasing use of single cell transcriptome sequencing, CIBERSORTx also provides the option to derive signature matrices from sinqle-cell RNA sequencing data.
 
@@ -20,7 +20,7 @@ The cell marks are widely used to label cell types for individual cells, enablin
 
 ---
 
-## 5.2.2 **ESTIMATE**
+## 6.2.1.2 **ESTIMATE**
 
 **Introduction**: ESTIMATE (Estimation of STromal and Immune cells in MAlignant Tumor tissues using Expression data) provides researchers with scores for tumor purity, the level of stromal cells present, and the infiltration level of immune cells in tumor tissues based on expression data. This website is designed to view and download stromal, immune, and ESTIMATE scores for each sample across all TCGA (The Cancer Genome Atlas) tumor types and platforms. ESTIMATE algorithm is based on single sample Gene Set Enrichment Analysis and generates three scores:
  1.stromal score (that captures the presence of stroma in tumor tissue),
@@ -38,7 +38,7 @@ install.packages("estimate", repos=rforge, dependencies=TRUE)
 
 ---
 
-## 5.2.2 **xCell**
+## 6.2.1.2 **xCell**
 
 **Introduction**: xCell is a webtool that performs cell type enrichment analysis from gene expression data for 64 immune and stroma cell types. xCell is a gene signatures-based method learned from thousands of pure cell types from various sources. xCell applies a novel technique for reducing associations between closely related cell types. xCell signatures were validated using extensive in-silico simulations and also cytometry immunophenotyping, and were shown to outperform previous methods. xCell allows researchers to reliably portray the cellular heterogeneity landscape of tissue expression profiles.
 
@@ -51,7 +51,7 @@ devtools::install_github('dviraran/xCell')
 
 ---
 
-## 5.2.3 **TIMER**
+## 6.2.1.3 **TIMER**
 
 **Introduction**: TIMER web server is a comprehensive resource for systematical analysis of immune infiltrates across diverse cancer types. The abundances of six immune infiltrates (B cells, CD4+ T cells, CD8+ T cells, Neutrophils, Macrophages, and Dendritic cells) are estimated by TIMER algorithm. TIMER web server allows users to input function-specific parameters, with resulting figures dynamically displayed to conveniently access the tumor immunological, clinical, and genomic features.
 
@@ -67,7 +67,7 @@ devtools::install_github('dviraran/xCell')
 
 ---
 
-## 5.2.4 **MCPcounter**
+## 6.2.1.4 **MCPcounter**
 
 **Introduction**: MCP-counter (Microenvironment Cell Populations-counter) method, which allows the robust quantification of the absolute abundance of eight immune and two stromal cell populations in heterogeneous tissues from transcriptomic data. 
 
@@ -78,7 +78,7 @@ devtools::install_github('dviraran/xCell')
 
 ---
 
-## 5.2.5 **Bseq_SC**
+## 6.2.1.5 **Bseq_SC**
 
 **Introduction**: BSeq-sc is a bioinformatics analysis pipeline that leverages single-cell sequencing data to estimate cell type proportion and cell type-specific gene expression differences from
 RNA-seq data from bulk tissue samples.
@@ -97,7 +97,7 @@ library(bseqsc)
 
 ---
 
-## 5.2.6 **EPIC**
+## 6.2.1.6 **EPIC**
 
 **Introduction**: EPIC application is designed to Estimate the Proportion of Immune and Cancer cells from bulk tumor gene expression data. This is done by fitting gene expression reference profiles from the main non-malignant cell types and simultaneously accounting for an uncharacterized cell type without prior knowledge about it (e.g. cancer cells in solid tumors samples). the reference gene expression profiles derived from the main tumor infiltrating cell types (i.e. immune subsets, stromal and endothelial cells). This method could however also be applied to predict the cell fractions in other types of mixed samples if reference gene expression profiles from these other cell types are available. The main function in this package is EPIC. It needs as input a matrix of the TPM (or RPKM) gene expression from the samples for which to estimate cell proportions.
 
@@ -113,7 +113,7 @@ A pyhton wrapper has been written by Stephen C. Van Nostrand from MIT and is ava
 
 ---
 
-## 5.2.7 **quanTIseq**
+## 6.2.1.7 **quanTIseq**
 ![](/images/quanTIseq.png?width=15pc)
 
 **Introduction**:  quanTIseq is a computational pipeline for the quantification of the Tumor Immune contexture from human RNA-seq data. quanTIseq takes as input FASTQ files of RNA-seq reads from tumor samples or other cell mixtures and quantifies via deconvolution the proportions of ten different immune cell types and the fraction of other uncharacterized cells present in the heterogeneous sample.
@@ -130,7 +130,7 @@ A pyhton wrapper has been written by Stephen C. Van Nostrand from MIT and is ava
 
 ---
 
-## 5.2.8 **Abbas *et al.* **
+## 6.2.1.8 **Abbas *et al.* **
 
 **Introduction**: Abbas *et al.* demonstrate that microarray expression deconvolution accurately quantifies the constituents of real blood samples and mixtures of immune-derived cell lines. 
 
@@ -138,7 +138,7 @@ A pyhton wrapper has been written by Stephen C. Van Nostrand from MIT and is ava
 
 ---
 
-## 5.2.7 **ABIS**
+## 6.2.1.7 **ABIS**
 
 **Introduction**:  This Shiny app performs absolute deconvolution on RNA-Seq and microarray data. It also contain a Gene Viewer page where the expression of a gene can be visualized across 29 immune cell types.
 
@@ -153,7 +153,7 @@ shiny::runGitHub("ABIS", user="giannimonaco")
 
 ---
 
-## 5.2.8 **ImmuCellAI**
+## 6.2.1.8 **ImmuCellAI**
 
 **Introduction**: ImmuCellAI (Immune Cell Abundance Identifier) is a tool to estimate the abundance of 24 immune cells from gene expression dataset including RNA-Seq and microarray data, in which the 24 immune cells are comprised of 18 T-cell subtypes and 6 other immune cells: B cell, NK cell, Monocyte cell, Macrophage cell, Neutrophil cell and DC cell. Besides, ImmuCellAI can be applied to estimate the difference of immune cell infiltration in divers groups as well as predict patients response to immune checkpoint blockade therapy.
 
@@ -178,7 +178,7 @@ install_github("lydiaMyr/ImmuCellAI-mouse@main")
 
 ---
 
-## 5.2.9 **MuSiC**
+## 6.2.1.9 **MuSiC**
 
 **Introduction**: MuSiC is an analysis toolkit for single-cell RNA-Seq experiments. To use this package, you will need the R statistical computing environment (version 3.0 or later) and several packages available through Bioconductor and CRAN.
 
@@ -196,7 +196,7 @@ library(MuSiC)
 
 ---
 
-## 5.2.10 **DeconRNASeq**
+## 6.2.1.10 **DeconRNASeq**
 
 **Introduction**: DeconSeq is an R package for deconvolution of heterogeneous tissues based on mRNA-Seq data. It modeled expression levels from heterogeneous cell populations in mRNA-Seq as the weighted average of expression from different constituting cell types and predicted cell type proportions of single expression profiles.
 
@@ -210,7 +210,7 @@ BiocManager::install("DeconRNASeq")
 
 ---
 
-## 5.2.11 **Max Schelker *et al.* **
+## 6.2.1.11 **Max Schelker *et al.* **
 
 **Introduction**:  Max Schelker *et al.* demonstrate how to derive the cellular composition of a solid tumour from bulk gene expression data by mathematical deconvolution, using indication-specific and cell type-specific reference gene expression profiles (RGEPs) from tumour-derived single-cell RNA sequencing data.
 
@@ -218,7 +218,7 @@ BiocManager::install("DeconRNASeq")
  
 ---
 
-## 5.2.12 **DSA**
+## 6.2.1.12 **DSA**
 
 **Introduction**: DSA (Digital Sorting Algorithm) is a algorithm for extracting cell-type specific gene expression profiles from mixed tissue samples that is unbiased and does not require prior knowledge of cell type frequencies.
 
@@ -229,7 +229,7 @@ install.packages("DSA")
 
 ---
 
-## 5.2.13 **singscore**
+## 6.2.1.13 **singscore**
 
 **Introduction**:  A simple single-sample gene signature scoring method that uses rank-based statistics to analyze the sample's gene expression profile. It scores the expression activities of gene sets at a single-sample level.
 
@@ -243,7 +243,7 @@ BiocManager::install("singscore")
 
 ---
 
-## 5.2.13 **Ting Gong *et al.* **
+## 6.2.1.13 **Ting Gong *et al.* **
 
 **Introduction**: An approach that builds upon a linear latent variable model where expression levels from mixed cell populations are modeled as the weighted average of expression from different cell types.
 
@@ -251,7 +251,7 @@ BiocManager::install("singscore")
 
 ---
 
-## 5.2.14 **PERT**
+## 6.2.1.14 **PERT**
 
 **Introduction**:  A method for expression deconvolution of human blood samples from varied microenvironmental and developmental conditions.
 
@@ -259,7 +259,7 @@ BiocManager::install("singscore")
 
 ---
 
-## 5.2.14 **ImmuCC**
+## 6.2.1.14 **ImmuCC**
 
 **Introduction**:  Four files including "ImmuCellDB","tissue_immucc","seq_ImmuCC" and "array_ImmuCC" were uesed to analyze cell populations.
 
@@ -267,7 +267,7 @@ BiocManager::install("singscore")
 
 ---
 
-## 5.2.15 **immunoStates**
+## 6.2.1.15 **immunoStates**
 
 **Introduction**: A basis matrix built using 6160 samples with different disease states across 42 microarray platforms. The immunoStates significantly reduces biological and technical biases.
 
@@ -275,7 +275,7 @@ BiocManager::install("singscore")
 
 ---
 
-## 5.2.16 **DCQ**
+## 6.2.1.16 **DCQ**
 
 **Introduction**: DCQ application is operational on different browsers including FireFox version 22
 (22.0 and higher), Chrome version 28 (28.0.1500.72 and higher), Safari version 6
@@ -290,7 +290,7 @@ install.packages("ComICS")
 
 ---
 
-## 5.2.17 **SCDC**
+## 6.2.1.17 **SCDC**
 
 **Introduction**: SCDC is a deconvolution method for bulk RNA-seq that leverages cell-type specific gene expressions from multiple scRNA-seq reference datasets. SCDC adopts an ENSEMBLE method to integrate deconvolution results from different scRNA-seq datasets that are produced in different laboratories and at different times, implicitly addressing the batch-effect confounding.
 
@@ -314,7 +314,7 @@ remotes::install_github("renozao/xbioc")
 
 ---
 
-## 5.2.18 **Edec**
+## 6.2.1.18 **Edec**
 
 **Introduction**: EDec (Epigenomic Deconvolution) is a technique that, starting from methylation and gene expression profiles of bulk tissue samples, infers cell type composition of each input sample as well as DNA methylation and gene transcription profiles of constituent cell types.
 
@@ -327,7 +327,7 @@ devtools::install_github("BRL-BCM/EDec")
 
 ---
 
-## 5.2.19 **MMAD**
+## 6.2.1.19 **MMAD**
 
 **Introduction**: MMAD is capable of performing robust tissue micro-dissection in silico, and which can improve the detection of differentially expressed genes. MMAD software is implemented in MATLAB. The MMAD.zip file contains a brief user guide and MATLAB source code for implementation of MMAD.
 
@@ -336,7 +336,7 @@ devtools::install_github("BRL-BCM/EDec")
 
 ---
 
-## 5.2.20 **scBio**
+## 6.2.1.20 **scBio**
 
 **Introduction**: Single Cell Genomics for Enhancing Cell Composition Inference from Bulk Genomics Data
 Cellular population mapping (CPM) a deconvolution algorithm in which single-cell genomics is required in only one or a few samples, where in other samples of the same tissue, only bulk genomics is measured and the underlying fine resolution cellular heterogeneity is inferred.
@@ -351,7 +351,7 @@ install.packages("DSA")
 
 ---
  
-## 5.2.21 **debCAM**
+## 6.2.1.21 **debCAM**
 
 **Introduction**: An R package for fully unsupervised deconvolution of complex tissues. It provides basic functions to perform unsupervised deconvolution on mixture expression profiles by Convex Analysis of Mixtures (CAM) and some auxiliary functions to help understand the subpopulation-specific results. It also implements functions to perform supervised deconvolution based on prior knowledge of molecular markers, S matrix or A matrix. Combining molecular markers from CAM and from prior knowledge can achieve semi-supervised deconvolution of mixtures.
 
@@ -367,7 +367,7 @@ BiocManager::install("debCAM")
 
 ---
  
-## 5.2.22 **TEMT**
+## 6.2.1.22 **TEMT**
 
 **Introduction**: TEMT (transcript Estimation from mixed tissue samples) is a probabilistic model-based approach, and estimate the transcript abundances of single cell type of interest via the RNA-Seq data from heterogeneous tissue sample. TEMT has incorporated the positional and sequence-specific bias, and with the online EM algorithm adopted, it has a time requirement proportional to the data size and a constant memory requirement.
 
@@ -375,7 +375,7 @@ BiocManager::install("debCAM")
 
 ---
 
-## 5.2.23 **DeMixT**
+## 6.2.1.23 **DeMixT**
 
 **Introduction**: A deconvolution framework for mixed transcriptomes from heterogeneous tumor samples with two or three components using expression data from RNAseq or microarray platforms. DeMixT is a frequentist-based method and fast in yielding accurate estimates of cell proportions  compart-ment-specific expression profiles for two-component and three-component deconvolution problem. Our method promises to provide deeper insight into cancer biomarkers and assist in the development of novel prognostic markers and therapeutic strategies. The function DeMixT is designed to finish the whole pipeline of deconvolution for two or three components. DeMixT.S1 function is designed to estimate the proportions of all mixed samples for each mixing component. DeMixT.S2 function is designed to estimate the component-specific deconvolved expressions of individual mixed samples for a given set of genes.
 
@@ -393,7 +393,7 @@ DeMixT_0.2.1: <http://bioinformatics.mdanderson.org/Software/DeMixT/DeMixT_0.2.1
 
 ---
 
-## 5.2.24 **Dtangle**
+## 6.2.1.24 **Dtangle**
 
 **Introduction**: Dtangle is a new deconvolution method that is accurate, robust and simple to compute. It estimates cell type proportions using biologically plausible models of high throughput profiling technology.
 
@@ -409,7 +409,7 @@ install.packages("dtangle")
  
 ---
 
-## 5.2.25 **FARDEEP**
+## 6.2.1.25 **FARDEEP**
 
 **Introduction**: FARDEEP (Fast And Robust DEconvolution of Expression Profiles) is a new machine learning tool for enumerating immune cell subsets from whole tumor tissue samples. FARDEEP utilizes an adaptive least trimmed square to automatically detect and remove outliers before estimating the cell compositions. 
 
@@ -417,7 +417,7 @@ install.packages("dtangle")
 
 ---
 
-## 5.2.26 **TOAST**
+## 6.2.1.26 **TOAST**
 
 **Introduction**: This package is devoted to analyzing high-throughput data (e.g. gene expression microarray, DNA methylation microarray, RNA-seq) from complex tissues. Current functionalities include 1. detect cell-type specific or cross-cell type differential signals 2. tree-based differential analysis 3. improve variable selection in reference-free deconvolution 4. partial reference-free deconvolution with prior knowledge.
 
@@ -433,7 +433,7 @@ BiocManager::install("TOAST")
 
 ---
 
-## 5.2.27 **CDSeq**
+## 6.2.1.27 **CDSeq**
 
 **Introduction**: CDSeq is a complete deconvolution method for dissecting bulk RNA-Seq data. The input of CDSeq is, ideally, bulk RNA-Seq read counts (similar to the input format required by DESeq2), and CDSeq will estimate, simultaneously, the cell-type-specific gene expression profiles and the sample-specific cell-type proportions, no reference of pure cell line GEPs or scRNAseq reference is needed for running CDSeq.
 
@@ -456,14 +456,14 @@ devtools::install_github("kkang7/CDSeq_R_Package", build_vignettes = TRUE)
 
 ---
 
-## 5.2.28 **Casey P. Shannon *et al.* **
+## 6.2.1.28 **Casey P. Shannon *et al.* **
 
 **Introduction**: A two-stage, in silico deconvolution approach that first predicts sample composition to biologically meaningful and homogeneous leukocyte sub-populations, and then performs cell type-specific differential expression analysis in these same sub-populations, from peripheral whole blood expression data. 
 **Installation**: The deconvolution algorithms can be found here: <https://doi.org/10.1371/journal.pone.0095224>
 
 ---
 
-## 5.2.29 **deconvSeq**
+## 6.2.1.29 **deconvSeq**
 
 **Introduction**: R package for performing cell type deconvolution of bulk RNA sequencing, single cell RNA sequencing, and bisulfite sequencing data.
 
@@ -486,7 +486,7 @@ install_github("rosedu1/deconvSeq", dependencies=TRUE)
 
 ---
 
-## 5.2.30 **Xiaoqing Yu *et al.* **
+## 6.2.1.30 **Xiaoqing Yu *et al.* **
 
 **Introduction**: Xiaoqing Yu *et al.* introduce a scheme for characterizing cell compositions from bulk tumor gene expression by integrating signatures learned from scRNA-seq data. 
 
@@ -494,7 +494,7 @@ install_github("rosedu1/deconvSeq", dependencies=TRUE)
 
 ---
 
-## 5.2.31 **Digitaldlsorter**
+## 6.2.1.31 **Digitaldlsorter**
 
 **Introduction**: A pipeline to generate a Deep Neural Network cell type deconvolution model for bulk RNASeq samples from single cell rna-seq data. 
 
@@ -504,7 +504,7 @@ install_github("rosedu1/deconvSeq", dependencies=TRUE)
 
 ---
 
-## 5.2.32 **DeClust**
+## 6.2.1.32 **DeClust**
 
 **Introduction**: A reference-free deconvolution method to infer cancer cell-intrinsic subtypes and tumor-type-specific stromal profiles. 
 
@@ -512,7 +512,7 @@ install_github("rosedu1/deconvSeq", dependencies=TRUE)
 
 ---
 
-## 5.2.33 **MySort**
+## 6.2.1.33 **MySort**
 
 **Introduction**: MySort is a R program to estimate the fraction and abundance of immune cells based on gene expression profile in heterogeneous mixture tissues.
 
@@ -520,7 +520,7 @@ install_github("rosedu1/deconvSeq", dependencies=TRUE)
 
 ---
 
-## 5.2.34 **smcgenedeconv**
+## 6.2.1.34 **smcgenedeconv**
 
 **Introduction**: A sequential Monte Carlo approach to gene expression deconvolution.
 
@@ -529,7 +529,7 @@ install_github("rosedu1/deconvSeq", dependencies=TRUE)
 
 ---
 
-## 5.2.35 **Chiu Yen-Jung *et al.* **
+## 6.2.1.35 **Chiu Yen-Jung *et al.* **
 
 **Introduction**: The tool is designed to estimate the fractions of immune cells from the expression profiles of tissues, such as tumor masses, PBMCs, etc. The 8 immune cells treated in this method include naïve CD8 T cells, naïve CD4 T cells, alternatively activated macrophages, classically activated macrophages, regulatory T cells, T helper cells, natural killer cells, and dendritic cells.
 
@@ -538,7 +538,7 @@ install_github("rosedu1/deconvSeq", dependencies=TRUE)
 
 ---
 
-## 5.2.36 **NITUMID**
+## 6.2.1.36 **NITUMID**
 
 **Introduction**: NITUMID is the R implementation of Non-negative Matrix Factorization-based Immune-TUmor MIcroenvironment Deconvolution, a statistical framework for tumor immune microenvironment deconvolution. NITUMID takes gene expression matrix (either from RNA-Seq or microarray) as input, and use our own curated list of signature genes to estimate proportions of immune and tumor cells, as well as their corresponding mRNA levels. Current version of NITUMID only supports tumor microenvironment deconvolution for bulk melanoma data. And current framework includes 11 component cell types: Dendritic cells, CD4+ T cell, CD8+ T cell, Macrophages, B cells, Natural killer cells (NK/NKT), Monocytes, Plasma, MAST cell, Eosinophils and melanoma.
 
@@ -553,7 +553,7 @@ install_github("tdw1221/NITUMID")
 
 ---
 
-## 5.2.37 **ADAPTS**
+## 6.2.1.37 **ADAPTS**
 
 **Introduction**:  Augments existing or de-novo cell-type signature matrices to deconvolve bulk gene expression data This package expands on the techniques outlined in Newman et al.'s 2015 Nature Methods paper: 'Robust enumeration of cell subsets from tissue expression profiles'. to allow a user to easily add their own cell types (e.g. a tumor specific cell type) to Newman's LM22 or other signature matrix.
 
@@ -572,7 +572,7 @@ devtools::install_github('sdanzige/ADAPTS')
 
 ---
 
-## 5.2.38 **MOMF**
+## 6.2.1.38 **MOMF**
 
 **Introduction**:  MOMF (Multi-Omics Matrix Factorization) is a package, to estimate the cell-type compositions of bulk RNA sequencing (RNA-seq) data by leveraging cell type-specific gene expression levels from single-cell RNA sequencing (scRNA-seq) data. MOMF not only directly models the count nature of gene expression data, but also effectively accounts for the uncertainty of cell type-specific mean gene expression levels. 
 
@@ -588,7 +588,7 @@ devtools::install_github("sqsun/MOMF")
 
 ---
 
-## 5.2.39 **Deblender**
+## 6.2.1.39 **Deblender**
 
 **Introduction**: Deblender is a flexible complete deconvolution tool operating in semi−/unsupervised mode based on the user’s access to known marker gene lists and information about cell/tissue composition. In case of no prior knowledge, global gene expression variability is used in clustering the mixed data to substitute marker sets with cluster sets. 
 
@@ -596,7 +596,7 @@ devtools::install_github("sqsun/MOMF")
 
 ---
 
-## 5.2.40 **Lishuang Qi *et al.* **
+## 6.2.1.40 **Lishuang Qi *et al.* **
 
 **Introduction**: A modified semi-supervised nonnegative matrix factorization method for gene expression deconvolution.
 
@@ -604,7 +604,7 @@ devtools::install_github("sqsun/MOMF")
 
 ---
 
-## 5.2.41 **MIXTURE**
+## 6.2.1.41 **MIXTURE**
 
 **Introduction**: An analytical method based on a noise constrained recursive variable selection for a support vector regression. The MIXTURE shiny App has been only tested on Linux. The RUN_MIXTURE code was tested on Linux, Windows and Mac. On windows only one CPU core is allowed.
 
@@ -614,7 +614,7 @@ devtools::install_github("sqsun/MOMF")
 
 ---
 
-## 5.2.42 **Semi-CAM**
+## 6.2.1.42 **Semi-CAM**
 
 **Introduction**: A semi-supervised deconvolution method for bulk transcriptomic data with partial marker gene information.
 
@@ -657,7 +657,7 @@ library(CellMix)
 
 ---
 
-## 5.2.43 **DTD**
+## 6.2.1.43 **DTD**
 
 **Introduction**: DTD (Digital Tissue Deconvolution) reconstructs the cellular composition of a tissue from its bulk expression profile. In order to increase deconvolution accuracy, DTD adapts the deconvolution model to the tissue scenario via loss-function learning.
 Training is performed on 'in-silicio' training mixtures, for which the cellular composition are known.
@@ -681,7 +681,7 @@ browseVignettes("DTD")
 
 ---
 
-## 5.2.44 **Infino**
+## 6.2.1.44 **Infino**
 
 **Introduction**: DTD (Digital Tissue Deconvolution) reconstructs the cellular composition of a tissue from its bulk expression profile. In order to increase deconvolution accuracy, DTD adapts the deconvolution model to the tissue scenario via loss-function learning.
 Training is performed on 'in-silicio' training mixtures, for which the cellular composition are known.

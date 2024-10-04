@@ -51,4 +51,4 @@ home = [ "HTML", "RSS", "JSON"]
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = false
+      unsafe = true

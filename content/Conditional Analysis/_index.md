@@ -1,11 +1,11 @@
 ---
 title: "Condition-specific Analysis"
 chapter: true
-weight: 5
+weight: 6
 ---
 
 
-### Chapter 5
+### Chapter 6
 
 # Condition-specific Analysis
 Additional exploration strategies for specific conditions. ⏳⏳⏳

@@ -1,9 +1,9 @@
 ---
-title: "Tajectory inference"
+title: "Dynamics inference"
 output:
   blogdown::html_page:
     toc: true
-weight: 3
+weight: 2
 ---
 
 Trajectory inference aims at estimating dynamic changes in a single-cell transcriptome landscape, assuming that the cell-wise transcriptome is a static snapshot at a time point along some cellular process. The pseudotime and RNA velocity both are considered as the trajectory inference.Highly variable genes, represented by DEGs, thus contribute an important role in the pseudotime and RNA velocity analysis.
@@ -12,7 +12,7 @@ Trajectory inference aims at estimating dynamic changes in a single-cell transcr
 
 ---
 
-## 5.3.1 **slingshot**
+## 6.2.2.1 **slingshot**
 ![](/images/slingshot_sticker.png?width=20pc)
 
 **Introduction**: Provides functions for inferring continuous, branching lineage structures in low-dimensional data. Slingshot was designed to model developmental trajectories in single-cell RNA sequencing data and serve as a component in an analysis pipeline after dimensionality reduction and clustering. It is flexible enough to handle arbitrarily many branching events and allows for the incorporation of prior knowledge through supervised graph construction.
@@ -29,7 +29,7 @@ Python Version: An implementation of the Slingshot algorithm in python can be fo
 
 ---
 
-## 5.3.2 **CellRank**
+## 6.2.2.2 **CellRank**
 
 **Introduction**: CellRank is a toolkit to uncover cellular dynamics based on Markov state modeling of single-cell data. It contains two main modules: kernels compute cell-cell transition probabilities and estimators generate hypothesis based on these. 
 
@@ -48,7 +48,7 @@ conda install -c conda-forge -c bioconda cellrank-krylov
 
 ---
 
-## 5.3.3 **CytoTree**
+## 6.2.2.3 **CytoTree**
 ![](/images/CytoTree.png?width=15pc)
 
 **Introduction**: CytoTree, an R/Bioconductor package for trajectory inference, pseudotime estimation and visualization of flow and mass cytometry data. The CytoTree package offers a complete up-to-date analysis workflow for flow and mass cytometry data that includes subpopulation classification, dimensionality reduction, trajectory construction, differentially expressed marker calculation, pseudotime estimation, intermediate state identification and visualization. The CytoTree runs on several platforms, such as UNIX, Windows, and macOS, and provides an up-to-date, feature-rich and readily scalable workflow.
@@ -72,7 +72,7 @@ CytoTree Tutorial is provided in <https://ytdai.github.io/CytoTree/index.html>
 
 ---
 
-## 5.3.4 **VeloViz**
+## 6.2.2.4 **VeloViz**
 ![](/images/VeloViz.png?width=15pc)
 
 **Introduction**: VeloViz creates an RNA-velocity-informed 2D embedding for single cell transcriptomics data.
@@ -97,7 +97,7 @@ A example is provided in <https://github.com/JEFworks-Lab/veloviz>
 
 ---
 
-## 5.3.5 **Asc-Seurat**
+## 6.2.2.5 **Asc-Seurat**
 
 **Introduction**: Asc-Seurat (Analytical single-cell Seurat-based web application) is a web application based on Shiny. Pronounced as “ask Seurat”, it provides a click-based, easy-to-install, and easy-to-use interface that allows the execution of all steps necessary for scRNA-seq analysis. It integrates many of the capabilities of the Seurat and Dynverse and also allows an instantaneous functional annotation of genes of interest using BioMart.
 
@@ -107,7 +107,7 @@ A example is provided in <https://github.com/JEFworks-Lab/veloviz>
 
 ---
 
-## 5.3.6 **VeTra**
+## 6.2.2.6 **VeTra**
 
 **Introduction**: A tool for infering scRNA_seq trajectory from RNA velocity
 
@@ -115,7 +115,7 @@ A example is provided in <https://github.com/JEFworks-Lab/veloviz>
 
 ---
 
-## 5.3.7 **TIMEOR**
+## 6.2.2.7 **TIMEOR**
 ![](/images/TIMEOR.png?width=25pc)
 
 **Introduction**: Temporally unified RNA velocity for single cell trajectory inference (UniTVelo) is implementated on Python 3 and TensorFlow 2. The model estimates velocity of each gene and updates cell time based on phase portraits concurrently. The major features of UniTVelo are: 1)Using spliced RNA oriented design to model RNA velocity and transcription rates. 2) Introducing a unified latent time (Unified-time mode) across whole transcriptome to incorporate stably and monotonically changed genes. 3) Retaining gene-spcific time matrics (Independent mode) for complex datasets
@@ -126,7 +126,7 @@ A example is provided in <https://github.com/JEFworks-Lab/veloviz>
 
 ---
 
-## 5.3.8 **UniTVelo**
+## 6.2.2.8 **UniTVelo**
 ![](/images/UniTVelo.png?width=25pc)
 
 **Introduction**: Temporally unified RNA velocity for single cell trajectory inference (UniTVelo) is implementated on Python 3 and TensorFlow 2. The model estimates velocity of each gene and updates cell time based on phase portraits concurrently. The major features of UniTVelo are: 1)Using spliced RNA oriented design to model RNA velocity and transcription rates. 2) Introducing a unified latent time (Unified-time mode) across whole transcriptome to incorporate stably and monotonically changed genes. 3) Retaining gene-spcific time matrics (Independent mode) for complex datasets
@@ -135,7 +135,7 @@ A example is provided in <https://github.com/JEFworks-Lab/veloviz>
 
 ---
 
-## 5.3.9 **TIPS**
+## 6.2.2.9 **TIPS**
 
 **Introduction**: Trajectory Inference of Pathway Significance through Pseudotime Comparison for Functional Assessment of single-cell RNAseq Data.
 
@@ -156,7 +156,7 @@ shiny::runApp("TIPS")
 
 ---
 
-## 5.3.10 **Velo-Predictor**
+## 6.2.2.10 **Velo-Predictor**
 
 **Introduction**: Velo-Predictor, an ensemble learning pipeline for RNA velocity prediction. While RNA velocity estimation is not straightforward, the pipeline can simplify the procedure by learning a predictive model from gene expression data.
 
@@ -164,7 +164,7 @@ shiny::runApp("TIPS")
 
 ---
 
-## 5.3.11 **ORIGINS**
+## 6.2.2.11 **ORIGINS**
 ![](/images/ORIGINS.png?width=15pc)
 
 **Introduction**: Temporally unified RNA velocity for single cell trajectory inference (UniTVelo) is implementated on Python 3 and TensorFlow 2. The model estimates velocity of each gene and updates cell time based on phase portraits concurrently. The major features of UniTVelo are: 1)Using spliced RNA oriented design to model RNA velocity and transcription rates. 2) Introducing a unified latent time (Unified-time mode) across whole transcriptome to incorporate stably and monotonically changed genes. 3) Retaining gene-spcific time matrics (Independent mode) for complex datasets
@@ -179,7 +179,7 @@ remotes::install_github("danielasenraoka/ORIGINS")
 
 ---
 
-## 5.3.12 **PAGA**
+## 6.2.2.12 **PAGA**
 
 **Introduction**: PAGA maps preserve the global topology of data, allow analyzing data at different resolutions, and result in much higher computational efficiency of the typical exploratory data analysis workflow. PAGA-initialized manifold learning algorithms converge faster, produce embeddings that are more faithful to the global topology of high-dimensional data, and introduce an entropy-based measure for quantifying such faithfulness. According to the [evaluation research](https://www.nature.com/articles/s41587-019-0071-9) of trajectory methods, PAGA can model all trajectory types and performs better than any other method.
 
@@ -191,7 +191,7 @@ pip install scanpy
 
 ---
 
-## 5.3.13 **SCORPIUS**
+## 6.2.2.13 **SCORPIUS**
 
 **Introduction**: SCORPIUS, an unsupervised approach for inferring linear developmental chronologies from single-cell RNA sequencing data. In comparison to similar approaches, it has three main advantages:
 
@@ -214,7 +214,7 @@ devtools::install_github("rcannood/SCORPIUS", build_vignettes = TRUE)
 
 ---
 
-## 5.3.14 **STEMNET**
+## 6.2.2.14 **STEMNET**
 
 **Introduction**: STEMNET is used to estimate the progression of single stem cells to distinct lineages. As an input, it takes a single cell gene expression matrix and a vector annotating, for each cell, if the cell is part of a given developmental endpoint or if it an immature cell. It then estimates the direction and amount of priming for each stem cell and creates visualizations of the lineage priming process.
 

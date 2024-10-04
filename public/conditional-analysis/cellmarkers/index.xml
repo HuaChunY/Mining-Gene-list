@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Discovering tissue-specific gene markers on DEGminer</title>
+    <link>/conditional-analysis/cellmarkers/</link>
+    <description>Recent content in Discovering tissue-specific gene markers on DEGminer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/conditional-analysis/cellmarkers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cell deconvolution</title>
+      <link>/conditional-analysis/cellmarkers/cellcomposition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/conditional-analysis/cellmarkers/cellcomposition/</guid>
+      <description>6.2.1.1 CIERSORT 6.2.1.2 ESTIMATE 6.2.1.2 xCell 6.2.1.3 TIMER 6.2.1.4 MCPcounter 6.2.1.5 Bseq_SC 6.2.1.6 EPIC 6.2.1.7 quanTIseq 6.2.1.8 Abbas et al. 6.2.1.7 ABIS 6.2.1.8 ImmuCellAI 6.2.1.9 MuSiC 6.2.1.10 DeconRNASeq 6.2.1.11 Max Schelker et al. 6.2.1.12 DSA 6.2.1.13 singscore 6.2.1.13 Ting Gong et al. 6.2.1.14 PERT 6.2.1.14 ImmuCC 6.2.1.15 immunoStates 6.2.1.16 DCQ 6.2.1.17 SCDC 6.2.1.18 Edec 6.2.1.19 MMAD 6.2.1.20 scBio 6.2.1.21 debCAM 6.2.1.22 TEMT 6.2.1.23 DeMixT 6.2.1.24 Dtangle 6.2.1.25 FARDEEP 6.2.1.26 TOAST 6.</description>
+    </item>
+    
+    <item>
+      <title>Dynamics inference</title>
+      <link>/conditional-analysis/cellmarkers/trajectory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/conditional-analysis/cellmarkers/trajectory/</guid>
+      <description>6.2.2.1 slingshot 6.2.2.2 CellRank 6.2.2.3 CytoTree 6.2.2.4 VeloViz 6.2.2.5 Asc-Seurat 6.2.2.6 VeTra 6.2.2.7 TIMEOR 6.2.2.8 UniTVelo 6.2.2.9 TIPS 6.2.2.10 Velo-Predictor 6.2.2.11 ORIGINS 6.2.2.12 PAGA 6.2.2.13 SCORPIUS 6.2.2.14 STEMNET Trajectory inference aims at estimating dynamic changes in a single-cell transcriptome landscape, assuming that the cell-wise transcriptome is a static snapshot at a time point along some cellular process. The pseudotime and RNA velocity both are considered as the trajectory inference.Highly variable genes, represented by DEGs, thus contribute an important role in the pseudotime and RNA velocity analysis.</description>
+    </item>
+    
+    <item>
+      <title>Cell-cell communication</title>
+      <link>/conditional-analysis/cellmarkers/cellcomunication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/conditional-analysis/cellmarkers/cellcomunication/</guid>
+      <description>6.2.3.1 IUPHAR 6.2.3.2 CellPhoneDB 6.2.3.3 FANTOM5 6.2.3.4 Cell-Cell Interaction Database 6.2.3.5 ligand-receptor pairs in literature 6.2.3.6 DLRP 6.2.3.7 ConnectomeDB 6.2.3.8 CellTalkDB 6.2.3.9 ICELLNET 6.2.3.10 Cellinker 6.2.3.11 PlantPhoneDB 6.2.3.12 CellCallEXT 6.2.3.13 CellChat 6.2.3.14 Giotto 6.2.3.15 SingleCellSignalR 6.2.3.16 CellCall 6.2.3.17 TraSig 6.2.3.18 celltalker 6.2.3.19 iTALK 6.2.3.20 PyMINEr 6.2.3.21 DeepCCI 6.2.3.22 NicheNet 6.2.3.23 SpaOTsc 6.2.3.24 CCCExplorer 6.2.3.25 SoptSC 6.2.3.26 NATMI 6.2.3.27 scConnect 6.2.3.28 FunRes 6.2.3.29 scTensor Cell communication across multiple cell types and tissues strictly mediates proper functioning of metazoans and extensively relies on interactions between secreted ligands and cell-surface receptors.</description>
+    </item>
+    
+  </channel>
+</rss>

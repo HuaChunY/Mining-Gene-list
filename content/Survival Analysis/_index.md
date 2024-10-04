@@ -1,11 +1,11 @@
 ---
 title: "Gene-Phenotype Association Analysis"
 chapter: true
-weight: 7
+weight: 8
 ---
 
 
-### Chapter 7
+### Chapter 8
 
 # Gene-Phenotype Association Analysis
 Uncover the risk significance of certain phenotype to the gene. 😷😷😷

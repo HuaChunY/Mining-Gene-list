@@ -1,11 +1,11 @@
 ---
 title: "Prediction of Potential Drugs"
 chapter: true
-weight: 4
+weight: 5
 ---
 
 
-### Chapter 4
+### Chapter 5
 
 # Parmocogenomics
 Infer the potential drugs or small molecules which may have impact on disease and phenotype. 💊💊💊

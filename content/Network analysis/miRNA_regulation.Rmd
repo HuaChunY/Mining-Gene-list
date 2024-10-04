@@ -18,7 +18,7 @@ miRNAs control the regulation of the majority of genes post-transcriptionally. M
 
 ---
 
-## 2.3.1 **TargetScan**
+## 3.3.1 **TargetScan**
 
 **Introduction**: TargetScan predicts biological targets of miRNAs by searching for the presence of conserved 8mer, 7mer, and 6mer sites that match the seed region of each miRNA (Lewis et al., 2005). As options, predictions with only poorly conserved sites and predictions with nonconserved miRNAs are also provided. Also identified are sites with mismatches in the seed region that are compensated by conserved 3' pairing (Friedman et al., 2009).  
  
@@ -31,7 +31,7 @@ miRNAs control the regulation of the majority of genes post-transcriptionally. M
 
 ---
 
-## 2.3.2 **miRBase**
+## 3.3.2 **miRBase**
 
 **Introduction**: The miRBase database aims to provide integrated interfaces to comprehensive microRNA sequence data, annotation and predicted gene targets. miRBase takes over functionality from the microRNA Registry and fulfils three main roles: the miRBase Registry acts as an independent arbiter of microRNA gene nomenclature, assigning names prior to publication of novel miRNA sequences. miRBase Sequences is the primary online repository for miRNA sequence data and annotation. miRBase Targets is a comprehensive new database of predicted miRNA target genes. miRBase catalogs, names and distributes microRNA gene sequences. The latest release of miRBase (v22) contains microRNA sequences from 271 organisms: 38 589 hairpin precursors and 48 860 mature microRNAs.
  
@@ -43,7 +43,7 @@ miRNAs control the regulation of the majority of genes post-transcriptionally. M
  
  ---
 
-## 2.3.3 **miRDB**
+## 3.3.3 **miRDB**
 
 **Introduction**: miRDB is an online database for miRNA target prediction and functional annotations. All the targets in miRDB were predicted by a bioinformatics tool, MirTarget, which was developed by analyzing thousands of miRNA-target interactions from high-throughput sequencing experiments. Common features associated with miRNA binding and target downregulation have been identified and used to predict miRNA targets with machine learning methods. miRDB hosts predicted miRNA targets in five species: human, mouse, rat, dog and chicken. Users may also provide their own sequences for custom target prediction using the updated prediction algorithm. In addition, through combined computational analyses and literature mining, functionally active miRNAs in humans and mice were identified. These miRNAs, as well as associated functional annotations, are presented in the FuncMir Collection in miRDB.   
 
@@ -63,7 +63,7 @@ miRNAs control the regulation of the majority of genes post-transcriptionally. M
  
 ---
 
-## 2.3.4 **RNAhybrid**
+## 3.3.4 **RNAhybrid**
 
 **Introduction**: RNAhybrid is a tool for finding minimum free energy hybridization of a long (target) and a short (query) RNA. The hybridization is performed in a kind of domain mode, ie. the short sequence is hybridized to the best fitting parts of the long one. The tool is primarily meant as a means for microRNA target prediction.
 ![miRTarbase](/images/miRTarbase.jpg?width=60pc)
@@ -77,7 +77,7 @@ miRNAs control the regulation of the majority of genes post-transcriptionally. M
 
 ---
 
-## 2.3.5 **miRTarbase**
+## 3.3.5 **miRTarbase**
 
 **Introduction**: As a database, miRTarBase has accumulated more than three hundred and sixty thousand miRNA-target interactions (MTIs), which are collected by manually surveying pertinent literature after NLP of the text systematically to filter research articles related to functional studies of miRNAs. Generally, the collected MTIs are validated experimentally by reporter assay, western blot, microarray and next-generation sequencing experiments. While containing the largest amount of validated MTIs, the miRTarBase provides the most updated collection by comparing with other similar, previously developed databases.  
 ![miRTarbase](/images/miRTarbase.jpg?width=60pc)
@@ -91,7 +91,7 @@ miRNAs control the regulation of the majority of genes post-transcriptionally. M
 
 ---
 
-## 2.3.6 **miR2Disease**
+## 3.3.6 **miR2Disease**
 
 **Introduction**: A manually curated database, aims at providing a comprehensive resource of miRNA deregulation in various human diseases. Each entry in the miR2Disease contains detailed information on a miRNA-disease relationship, including miRNA ID, disease name, a brief description of the miRNA-disease relationship, miRNA expression pattern in the disease state, detection method for miRNA expression, experimentally verified miRNA target gene(s), and literature reference .
  + Number of miRNAs: 349
@@ -102,7 +102,7 @@ miRNAs control the regulation of the majority of genes post-transcriptionally. M
  
 ---
 
-## 2.3.7 **TarBase**
+## 3.3.7 **TarBase**
 
 **Introduction**: Computational predictive models are a key element of current systems biology. The focus of the DIANA lab is on the development of algorithms, databases and tools for interpreting and archiving genomic data in the framework of a systemic analysis. Current emphasis is on the analysis of microRNA (miRNA) and protein coding genes. MiRNAs are recently identified to be very abundant in mammalian organisms and play a key role in regulating development. Comprehensive models work and integrate data at various levels of biological detail. Therefore the activities of the DIANA lab range from the analysis of expression regulation from deep sequencing data, the annotation of miRNA regulatory elements and targets to the interpretation of the role of miRNAs in various diseases.
 ![TarBase](/images/TarBase.jpg?width=60pc)
@@ -115,7 +115,7 @@ miRNAs control the regulation of the majority of genes post-transcriptionally. M
 
 ---
 
-## 2.3.8 **mirDIP**
+## 3.3.8 **mirDIP**
 
 **Introduction**: mirDIP provide nearly 152 million human microRNA–target predictions, which were collected across 30 different resources. ![mirDIP1](/images/mirDIP1.png?width=50pc)
  

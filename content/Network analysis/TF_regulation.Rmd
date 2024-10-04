@@ -13,12 +13,12 @@ knitr::opts_chunk$set(eval = FALSE)
 
 Transcription factors (TFs) are key regulators of intrinsic cellular processes, such as differentiation and development, and of the cellular response to external perturbation through signaling pathways. Most TFs recognize and bind to specific DNA sequences named as transcription factor biding sites, leading to specific spatiotemporal expression patterns of target genes.
 
-**Breaking**: Four TF target specific resources are collected.
+**Breaking**: Five TF target specific resources are collected.
 
 
 ---
 
-## 2.2.1 **JASPAR**
+## 3.2.1 **JASPAR**
 
 **Introduction**: JASPAR is a regularly maintained open-access database storing manually curated transcription factors (TF) binding profiles as position frequency matrices (PFMs). PFMs summarize occurrences of each nucleotide at each position in a set of observed TF-DNA interactions. PFMs can be transformed to probabilistic or energistic models to construct position weight matrices (PWMs) or position-specific scoring matrices (PSSMs), which can be used to scan any DNA sequence to predict TF binding sites (TFBSs). The JASPAR database provides TFBSs predicted using the profiles in the CORE collection.
 ![JASPAR1](/images/JASPAR1.jpg?width=50pc)
@@ -64,7 +64,7 @@ BiocManager::install("JASPAR2014")
 
 ---
 
-## 2.2.2 **AnimalTFDB**
+## 3.2.2 **AnimalTFDB**
 
 **Introduction**: AnimalTFDB is a comprehensive database including classification and annotation of genome-wide transcription factors (TFs) and transcription cofactors in 183 animal genomes. In AnimalTFDB v4.0, there are total 270k TFs which are further classified into 73 families and six categories based on their DNA-binding domain (DBD). Meanwhile, there are also 150k cofactors classified into 82 families and six categories.
 
@@ -85,13 +85,16 @@ BiocManager::install("JASPAR2014")
 
 ---
 
-## 2.2.3 **CHEA**
+## 3.2.3 **ChEA3**
 
-link to SigCom LINCS
+**Introduction**: ChIP-X Enrichment Analysis 3 (ChEA3) is a transcription factor enrichment analysis tool that ranks TFs associated with user-submitted gene sets. The ChEA3 background database contains a collection of gene set libraries generated from multiple sources including TF–gene co-expression from RNAseq studies, TF–target associations from ChIP-seq experiments, and TF–gene co-occurrence computed from crowd-submitted gene lists. Enrichment results from these distinct sources are integrated to generate a composite rank that improves the prediction of the correct upstream TF compared to ranks produced by individual libraries.
+
+**Web server**: [ChEA3](https://maayanlab.cloud/chea3/).
+![ChEA3](/images/ChEA3.jpg?width=50pc)
 
 ---
 
-## 2.2.4 **RegNetwork**
+## 3.2.4 **RegNetwork**
 
 **Introduction**: RegNetwork is a database of transcriptional and posttranscriptional regulatory networks in human and mouse. TF and miRNA are two major regulators controlling gene expression. RegNetwork collects the knowledge-based regulatory relationships, as well as some potentially regulatory relationships between the two regulators and targets. It provides a platform of depositing the known and predicted gene regulations in the transcriptional and posttranscriptional levels simultaneously. The knowledge-derived regulatory networks is expected to be greatly beneficial for identifying critical regulatory programs in various context-specific conditions.
 ![RegNetwork1](/images/RegNetwork1.jpg?width=50pc)
@@ -100,3 +103,12 @@ link to SigCom LINCS
  
 **Web server**: [RegNetwork](https://regnetworkweb.org/).
 ![RegNetwork](/images/RegNetwork.jpg?width=70pc)
+
+
+## 3.2.5 **PlantCARE**
+
+**Introduction**: PlantCARE (Plant Cis-Acting Regulatory Elements Database) is a specialized resource that catalogs _cis_-regulatory elements (CAREs) in various plant species, providing an intuitive web interface for users to search and navigate its comprehensive dataset. It features detailed information on _cis_-elements, associated genes, and their functional annotations, supporting gene regulatory network studies and experimental validation efforts. The database allows for comparative analyses across different plant species and includes downloadable datasets for further research. Regular updates and links to relevant scientific literature enhance its utility, making PlantCARE a vital tool for researchers in plant molecular biology and agricultural biotechnology, facilitating insights into gene regulation mechanisms essential for improving crop traits. Especially, it adopts a quality-based clustering method and a motif search algorithm called Motif Sampler, and a probabilistic approach based on Gibbs Sampling, which looks for over-represented motifs in upstream regions and is beneficial for predicting binding motifs of TFs in the gene promoters of plants.
+![PlantCARE1](/images/PlantCARE1.jpg?width=50pc)
+
+**Web server**: [PlantCARE](https://bioinformatics.psb.ugent.be/webtools/plantcare/html/).
+![PlantCARE](/images/PlantCARE.jpg?width=50pc)

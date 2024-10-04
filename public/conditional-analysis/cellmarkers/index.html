@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="Gene list">
+<meta name="author" content="Huachun Yin">
+
+    <link rel="shortcut icon" href="../../images/logo.png" type="image/x-icon"/>
+    <title>Discovering tissue-specific gene markers   DEGminer</title>
+
+    
+    <link href="../../css/nucleus.css?1728032112" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1728032112" rel="stylesheet">
+    <link href="../../css/hybrid.css?1728032112" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1728032112" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1728032112" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1728032112" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1728032112" rel="stylesheet">
+    <link href="../../css/theme.css?1728032112" rel="stylesheet">
+    <link href="../../css/tabs.css?1728032112" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1728032112" rel="stylesheet">
+    
+    <link href="../../css/theme-mine.css?1728032112" rel="stylesheet">
+    
+    <link href="../../css/foo.css?1728032112" rel="stylesheet"><link href="../../css/bar.css?1728032112" rel="stylesheet">
+
+    <script src="../../js/jquery-3.3.1.min.js?1728032112"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="../../conditional-analysis/cellmarkers/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="../../">
+    <img id="DGEs" src="../../images/logo.png" width="162" height="185" class="zoom">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1728032112"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1728032112"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1728032112"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/gene-annotation/" title="Gene Function Annotations" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../gene-annotation/">
+          Gene Function Annotations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/orth/" title="Orthologous gene mapping across species" class="dd-item ">
+        <a href="../../gene-annotation/orth/">
+        Orthologous gene mapping across species
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/goananotation/" title="Gene ontology annotation " class="dd-item ">
+        <a href="../../gene-annotation/goananotation/">
+        Gene ontology annotation 
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/biopathway/" title="Biological pathway annotation" class="dd-item ">
+        <a href="../../gene-annotation/biopathway/">
+        Biological pathway annotation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/gene-annotation/other_gene_annotation/" title="Other gene annotation" class="dd-item ">
+        <a href="../../gene-annotation/other_gene_annotation/">
+        Other gene annotation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/enrichment/" title="Enrichment Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../enrichment/">
+          Enrichment Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/enrichment/enrichment/" title="Enrichment analysis" class="dd-item ">
+        <a href="../../enrichment/enrichment/">
+        Enrichment analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/network-analysis/" title="Network and Module Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../network-analysis/">
+          Network and Module Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/gene_network/" title="Gene regulatory network analysis" class="dd-item ">
+        <a href="../../network-analysis/gene_network/">
+        Gene regulatory network analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/tf_regulation/" title="TF gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/tf_regulation/">
+        TF gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/mirna_regulation/" title="miRNA-gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/mirna_regulation/">
+        miRNA-gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/cerna_regulation/" title="ceRNA-gene interaction database" class="dd-item ">
+        <a href="../../network-analysis/cerna_regulation/">
+        ceRNA-gene interaction database
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/network-analysis/analysis_visualization/" title="Analysis and visualization tools" class="dd-item ">
+        <a href="../../network-analysis/analysis_visualization/">
+        Analysis and visualization tools
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/text-mining/" title="Text Mining" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../text-mining/">
+          Text Mining
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/text-mining/text_mining/" title="Knowledge graph/text mining" class="dd-item ">
+        <a href="../../text-mining/text_mining/">
+        Knowledge graph/text mining
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/parmocogenomics/" title="Prediction of Potential Drugs" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../parmocogenomics/">
+          Prediction of Potential Drugs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/parmocogenomics/drug/" title="Prediction of potential drug (Pharmocogenomics)" class="dd-item ">
+        <a href="../../parmocogenomics/drug/">
+        Prediction of potential drug (Pharmocogenomics)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/conditional-analysis/" title="Condition-specific Analysis" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../conditional-analysis/">
+          Condition-specific Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/spatialandtemporal/" title="Spatial and temporal variation" class="dd-item ">
+        <a href="../../conditional-analysis/spatialandtemporal/">
+        Spatial and temporal variation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/conditional-analysis/cellmarkers/" title="Discovering tissue-specific gene markers" class="dd-item
+        
+        active
+        
+        ">
+      <a href="../../conditional-analysis/cellmarkers/">
+          Discovering tissue-specific gene markers
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellmarkers/cellcomposition/" title="Cell deconvolution" class="dd-item ">
+        <a href="../../conditional-analysis/cellmarkers/cellcomposition/">
+        Cell deconvolution
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellmarkers/trajectory/" title="Dynamics inference" class="dd-item ">
+        <a href="../../conditional-analysis/cellmarkers/trajectory/">
+        Dynamics inference
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/conditional-analysis/cellmarkers/cellcomunication/" title="Cell-cell communication" class="dd-item ">
+        <a href="../../conditional-analysis/cellmarkers/cellcomunication/">
+        Cell-cell communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/clustering/" title="Classification and Clustering" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../clustering/">
+          Classification and Clustering
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/clustering/classification/" title="Classification analysis" class="dd-item ">
+        <a href="../../clustering/classification/">
+        Classification analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/clustering/clustering/" title="Clustering analysis" class="dd-item ">
+        <a href="../../clustering/clustering/">
+        Clustering analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/survival-analysis/" title="Gene-Phenotype Association Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../survival-analysis/">
+          Gene-Phenotype Association Analysis
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/survival-analysis/gene_phenotype_association/" title="Gene and phenotype association analysis" class="dd-item ">
+        <a href="../../survival-analysis/gene_phenotype_association/">
+        Gene and phenotype association analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/survival-analysis/survival_analysis/" title="Time-to-event analysis" class="dd-item ">
+        <a href="../../survival-analysis/survival_analysis/">
+        Time-to-event analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'></a> > <a href='../../conditional-analysis/'>Condition-specific Analysis</a> > Discovering tissue-specific gene markers
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+
+	<h3 id="chapter-62">Chapter 6.2</h3>
+<h1 id="discovering-tissue-specific-gene-markers">Discovering tissue-specific gene markers</h1>
+<p>Potential biological implications from cell deconvolution, dynamics inference and cell-cell communication. ⏳⏳⏳
+<img src="../../images/condition.png?width=30pc" alt=""></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+            </div> 
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../conditional-analysis/spatialandtemporal/" title="Spatial and temporal variation"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../conditional-analysis/cellmarkers/cellcomposition/" title="Cell deconvolution" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1728032112"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1728032112"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1728032112"></script>
+    <script src="../../js/jquery.sticky.js?1728032112"></script>
+    <script src="../../js/featherlight.min.js?1728032112"></script>
+    <script src="../../js/highlight.pack.js?1728032112"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1728032112"></script>
+    <script src="../../js/learn.js?1728032112"></script>
+    <script src="../../js/hugo-learn.js?1728032112"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>

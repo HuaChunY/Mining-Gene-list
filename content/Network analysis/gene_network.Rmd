@@ -14,7 +14,7 @@ Gene regulatory network (GRN) is the important mechanism of maintaining life pro
 
 ---
 
-## 2.1.1 **STRING**
+## 3.1.1 **STRING**
 
 **Introduction**: STRING is a database of known and predicted protein-protein interactions. The interactions include direct (physical) and indirect (functional) associations; they stem from computational prediction, from knowledge transfer between organisms, and from interactions aggregated from other (primary) databases.
 
@@ -35,7 +35,7 @@ Gene regulatory network (GRN) is the important mechanism of maintaining life pro
 
 ---
 
-## 2.1.2 **IMEx**
+## 3.1.2 **IMEx**
 
 **Introduction**: The IMEx Consortium is an international collaboration between a group of major public interaction data providers who have agreed to share curation effort and:
  1.Develop and work to a single set of curation rules when capturing data from directly deposited interaction data, pre-prints and publications in peer-reviewed journals
@@ -71,7 +71,7 @@ Gene regulatory network (GRN) is the important mechanism of maintaining life pro
 
 ---
 
-## 2.1.3 **IntAct**
+## 3.1.3 **IntAct**
 
 **Introduction**: IntAct is a hello from rcg-inn-app publicly available database of the genes, proteins, experimentally-verified interactions and signaling pathways involved in the innate immune response of humans, mice and bovines to microbial infection. The database captures an improved coverage of the innate immunity interactome by integrating known interactions and pathways from major public databases together with manually-curated data into a centralised resource. To date, 18,780 interactions have been manually curated by the IntAct curation team. The database can be mined as a knowledgebase or used with our integrated bioinformatics and visualization tools for the systems level analysis of the innate immune response.
 
@@ -99,7 +99,7 @@ Gene regulatory network (GRN) is the important mechanism of maintaining life pro
  
 ---
 
-## 2.1.4 **DIP**
+## 3.1.4 **DIP**
 
 **Introduction**: The DIP database catalogs experimentally determined interactions between proteins. It combines information from a variety of sources to create a single, consistent set of protein-protein interactions. The data stored within the DIP database were curated, both, manually by expert curators and also automatically using computational approaches that utilize the the knowledge about the protein-protein interaction networks extracted from the most reliable, core subset of the DIP data. Please, check the reference page to find articles describing the DIP database in greater detail.  
 
@@ -117,7 +117,7 @@ Gene regulatory network (GRN) is the important mechanism of maintaining life pro
 
 ---
 
-## 2.1.5 **BioGRID**
+## 3.1.5 **BioGRID**
 
 **Introduction**: BioGRID is a biomedical interaction repository with data compiled through comprehensive curation efforts. Our current index is version 4.4.215 and searches 81,230 publications for 2,551,504 protein and genetic interactions, 29,417 chemical interactions and 1,128,339 post translational modifications from major model organism species. All data are freely provided via our search index and available for download in many standardized formats.  
 ![BioGRID1](/images/BioGRID1.jpg?width=60pc)
@@ -131,7 +131,7 @@ Gene regulatory network (GRN) is the important mechanism of maintaining life pro
 
 ---
 
-## 2.1.6 **MINT**
+## 3.1.6 **MINT**
 
 **Introduction**: MINT focuses on experimentally verified protein-protein interactions mined from the scientific literature by expert curators. It is a database designed to store data on functional interactions between proteins. Beyond cataloguing binary complexes, MINT was conceived to store other types of functional interactions, including enzymatic modifications of one of the partners.
 
@@ -149,7 +149,7 @@ Gene regulatory network (GRN) is the important mechanism of maintaining life pro
 
 ---
 
-## 2.1.7 **InnateDB**
+## 3.1.7 **InnateDB**
 
 **Introduction**: InnateDB is a hello from rcg-inn-app publicly available database of the genes, proteins, experimentally-verified interactions and signaling pathways involved in the innate immune response of humans, mice and bovines to microbial infection. The database captures an improved coverage of the innate immunity interactome by integrating known interactions and pathways from major public databases together with manually-curated data into a centralised resource. To date, 18,780 interactions have been manually curated by the InnateDB curation team. The database can be mined as a knowledgebase or used with our integrated bioinformatics and visualization tools for the systems level analysis of the innate immune response.
 
@@ -161,7 +161,7 @@ Gene regulatory network (GRN) is the important mechanism of maintaining life pro
 
 ---
 
-## 2.1.8 **HuRI**
+## 3.1.8 **HuRI**
 
 **Introduction**: The HuRI (Human Reference Interactome Mapping) Project has grown in several distinct stages primarily defined by the number of human protein-coding genes amenable to screening for which at least one Gateway-cloned Open Reading Frame (ORF) was available at the time of the project. A first human reference interactome (HuRI) map has been generated where 17,500 proteins have been tested. The entirety of all interactions identified in systematic screens at CCSB forms HI-union.
 ![HuRI](/images/HuRI.jpg?width=50pc)
@@ -170,7 +170,7 @@ Gene regulatory network (GRN) is the important mechanism of maintaining life pro
 
 ---
 
-## 2.1.9 **InWeb**
+## 3.1.9 **InWeb**
 
 **Introduction**: InWeb (InWeb_InBioMap) is an integrated human protein–protein interaction network. InWeb consisted of 585,843 interactions, aggregated from 8 source databases and spanning 87% of reviewed human UniProt IDs.  The stringent orthology majority-voting scheme to map interactions from other organisms was applied. Importantly, 57% of the total data come directly from experiments with human proteins, 68% from either mouse or human, and 95% from human, mouse, rat, cow, nematode, fly, or yeast.
  
@@ -179,7 +179,7 @@ Gene regulatory network (GRN) is the important mechanism of maintaining life pro
 
 ---
 
-## 2.1.10 **NDEx**
+## 3.1.10 **NDEx**
 
 **Introduction**: The NDEx Project provides an open-source framework where scientists and organizations can store, share, manipulate, and publish biological network knowledge.
 One of the goals of the project is to create a home for models that are currently available only as figures, tables, or supplementary information, such as networks produced via systematic mining and integration of large-scale molecular data.
@@ -193,7 +193,7 @@ The NDEx project does not compete with existing pathway and interaction database
 
 ---
 
-## 2.1.11 **IID**
+## 3.1.11 **IID**
 
 **Introduction**: IID is an online database of detected and predicted protein-protein interactions (PPIs) in 18 species including human, 5 model organisms, and 12 domesticated species. It annotates PPIs with comprehensive information about conditions where they occur (e.g., developmental stages, tissues), conservation across species, directionality, druggability, duration, and membership in protein complexes comprising more than two proteins.
 ![IID1](/images/IID1.jpg?width=60pc)
@@ -205,7 +205,7 @@ The NDEx project does not compete with existing pathway and interaction database
 
 ---
 
-## 2.1.12 **SIGNOR**
+## 3.1.12 **SIGNOR**
 
 **Introduction**:SIGNOR is a resource that annotates experimental evidence about causal interactions between proteins and other entities of biological relevance: stimuli, phenotypes, enzyme inhibitors, complexes, protein families etc. Each entry points to the experimental evidence supporting the interaction and is enriched by additional relevant metadata such as the effect of the interaction on the activity of the target entity, the molecular mechanism underlying this effect, etc… The curated data can be displayed as signed directed graphs by a graph drawing tool.
 ![SIGNOR1](/images/SIGNOR1.jpg?width=50pc)
@@ -218,7 +218,7 @@ The NDEx project does not compete with existing pathway and interaction database
 
 ---
  
-## 2.1.13 **MatrixDB**
+## 3.1.13 **MatrixDB**
 
 **Introduction**: MatrixDB is a freely available database focused on interactions established by extracellular matrix proteins, proteoglycans and polysaccharides. MatrixDB stores experimental data established by full-length proteins, matricryptins, glycosaminoglycans, lipids and cations. MatrixDB reports interactions with individual polypeptide chains or with multimers (e.g. collagens, laminins, thrombospondins) when appropriate.   
 ![MatrixDB1](/images/MatrixDB1.jpg?width=50pc)
@@ -230,7 +230,7 @@ The NDEx project does not compete with existing pathway and interaction database
 
 ---
 
-## 2.1.14 **I2D**
+## 3.1.14 **I2D**
 
 **Introduction**: To faciliate experimentation and integrated computational analysis with model organism PPI networks, we have integrated known, experimental and predicted PPIs for five model organisms and human in the I2D database. I2D is developed and maintained by Jurisica Lab at Ontario Cancer Institute, PMH. I2D will continue to expand as new protein-protein interaction data becomes available.  
 
@@ -245,7 +245,7 @@ The NDEx project does not compete with existing pathway and interaction database
 
 ---
 
-## 2.1.15 **SPIKE**
+## 3.1.15 **SPIKE**
 
 **Introduction**:SPIKE is a database of highly curated human signaling pathways with an associated interactive software tool. Users can view and download individual pathway maps and browse the entire database from this website, or launch a map viewer tool that allows dynamic visualization of the database and save networks in XGMML format that can be viewed in all generic XGMML viewers.
 

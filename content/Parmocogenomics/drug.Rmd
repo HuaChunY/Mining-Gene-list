@@ -1,5 +1,5 @@
 ---
-title: "Prediction of Potential Drug (Pharmocogenomics)"
+title: "Prediction of potential drug (Pharmocogenomics)"
 output:
   blogdown::html_page:
     toc: true
@@ -17,7 +17,7 @@ Drug repurposing (alternatively called “new uses for old drugs”) is a strate
 
 ---
 
-## 4.1.1 **Clue**
+## 5.1.1 **Clue**
 
 **Introduction**: CLUE is a cloud-based software platform for the analysis of perturbational datasets generated using gene expression (L1000) and proteomic (P100 and GCP) assays. The CLUE platform provides integrated access to datasets, results from the processing and analysis of these data, and software tools that the community can leverage to advance their research.
 
@@ -46,7 +46,7 @@ BiocManager::install("cmapR")
  
 ---
 
-## 4.1.2 **CREEDS**
+## 5.1.2 **CREEDS**
 
 **Introduction**: CREEDS is a knowledgebase for associations between drugs, genes and diseases based on the data from a crowdsourcing microtask project implemented to annotate and reanalyze gene expression profiles from GEO. Signatures of these data are unique and are manually validated for quality. This database visualizes all of the signatures in a packed circles layout in which similar signatures are closer to each other. Furthermore, it has interactive heatmaps of hierarchically clustered matrices of all signatures.
 
@@ -55,7 +55,7 @@ BiocManager::install("cmapR")
 
 ---
 
-## 4.1.3 **L1000CDS²**
+## 5.1.3 **L1000CDS²**
 
 **Introduction**: L1000CDS² is a LINCS L1000 characteristic direction signature search engine. It enables users to find consensus L1000 small molecule signatures that match user input signatures. The underlying dataset for the search engine is a portion of the LINCS L1000 small molecule expression profiles generated at the Broad Institute by the Connectivity Map team. The differentially expressed (DE) genes of these profiles were calculated using the characteristic direction method. Depending on the user’s input, L1000CDS² uses either a gene-set method or cosine distance method to compare the input signatures to the L1000 signatures to perform the search. When up/down gene lists are submitted to L1000CDS², the search engine compares the input gene lists to the DE genes computed from the LINCS L1000 data and descriptive information of the top 50 matched signatures is returned. When a signature is submitted to L1000CDS² in the format of "gene symbol, expression value", the search engine calculates a cosine distance between the input signature and every characteristic direction signature in the underlying dataset, and the top 50 signatures of either the largest (reverse mode) or the smallest (mimic mode) cosine distances are returned. L1000CDS² leverages the efficiency of matrix operations to perform the search. The search finishes a query against more than 20,000 signatures in less than a decisecond using the gene-set method or less than 4 seconds using the cosine distance method. 
 
@@ -78,7 +78,7 @@ L1000CDS² emained with 33,197 significant signatures served by the default sear
 
 ---
 
-## 4.1.4 **PharmacoGx**
+## 5.1.4 **PharmacoGx**
 
 **Introduction**: Contains a set of functions to perform large-scale analysis of pharmaco-genomic data. These include the PharmacoSet object for storing the results of pharmacogenomic experiments, as well as a number of functions for computing common summaries of drug-dose response and correlating them with the molecular features in a cancer cell-line.
 
@@ -95,7 +95,7 @@ Or install package from [github](https://github.com/bhklab/PharmacoGx)
 
 ---
 
-## 4.1.5 **DrugComboRanker**
+## 5.1.5 **DrugComboRanker**
 
 **Introduction**:DrugComboRanker is a computational tool that prioritizes synergistic drug combinations and uncovers their mechanisms of action. It can identify drug combinations by searching for drugs whose targets are enriched in the complementary signaling modules of the disease signaling network to predict top ranked drug combinations and map the drug targets on the disease signaling network to highlight the mechanisms of action of the drug combinations.
 
@@ -110,7 +110,7 @@ The Python code download from [github](https://github.com/methodistsmab/DrugComb
 
 ---
 
-## 4.1.6 **SEP-L1000**
+## 5.1.6 **SEP-L1000**
 
 **Introduction**:A web portal for browsing and searching predictive small-molecule/ADR connections. A machine learning classifier was presented to prioritize ADRs for approved drugs and pre-clinical small-molecule compounds by combining chemical structure (CS) and gene expression (GE) features.   The GE data is from the Library of Integrated Network-based Cellular Signatures (LINCS) L1000 dataset that measured changes in GE before and after treatment of human cells with over 20,000 small molecule compounds including most of the FDA-approved drugs. 
 
@@ -121,7 +121,7 @@ The Python code download from [github](https://github.com/methodistsmab/DrugComb
 
 ---
 
-## 4.1.7 **L1000FWD**
+## 5.1.7 **L1000FWD**
 
 **Introduction**: L1000 fireworks display (L1000FWD) is a web application that provides interactive visualization of over 16,000 drug and small-molecule induced gene expression signatures. L1000FWD enables coloring of signatures by different attributes such as cell type, time point, concentration, as well as drug attributes such as MOA and clinical phase. Signature similarity search is implemented to enable the search for mimicking or opposing signatures given as input of up and down gene sets. Each point on the L1000FWD interactive map is linked to a signature landing page, which provides multifaceted knowledge from various sources about the signature and the drug. Notably such information includes most frequent diagnoses, co-prescribed drugs and age distribution of prescriptions as extracted from the Mount Sinai Health System electronic medical records (EMR). Overall, L1000FWD serves as a platform for identifying functions for novel small molecules using unsupervised clustering, as well as for exploring drug MOA.
 ![L1000FWD](/images/L1000FWD.png?width=40pc)
@@ -133,7 +133,7 @@ The Python code download from [github](https://github.com/methodistsmab/DrugComb
 
 ---
 
-## 4.1.8 **Mantra**
+## 5.1.8 **Mantra**
 
 **Introduction**: Mode of Action by NeTwoRk Analysis (MANTRA) is a computational tool for the analysis of the Mode of Action (MoA) of novel drugs and the identification of known and approved candidates for “drug repositioning”. It is based on network theory and non-parametric statistics on gene expression data. In order to study a novel drug users have to give to MANTRA one or more genome-wide ranked list of genes sorted according to their differential expression in a treatment with the drug. On the basis of this input, MANTRA automatically integrates this novel drug in a huge network of compounds in which the topology reveals similarities and differences in MoA. To make novel hypothesis on known and FDA approved drugs, hence to find “repositionable drugs”, users have just to explore this drug network.
 
@@ -145,7 +145,7 @@ The Python code download from [github](https://github.com/methodistsmab/DrugComb
 
 ---
 
-## 4.1.9 **DvD**
+## 5.1.9 **DvD**
 
 **Introduction**: Drug versus Disease (DvD) provides a pipeline, available through R or Cytoscape, for the comparison of drug and disease gene expression profiles from public microarray repositories. Dynamic access to both Array Express and GEO is provided, with automatic annotation and generation of differential expression profiles. These profiles can be compared to a reference set of profiles from the Connectivity Map or to a users own set of data. Correlations between profiles are calculated using Gene Set Enrichment Analysis. Resulting matches between drug and disease profiles can be viewed in a network representation within the Cytoscape plug-in. Negatively correlated (enriched) profiles can be used to generate hypotheses of drug-repurposing whilst positively correlated (enriched) profiles may be used to infer side-effects of drugs.
 
@@ -168,7 +168,7 @@ Make sure you have Cytoscape installed. You can download it from <http://www.cyt
 
 ---
 
-## 4.1.10 **DSEA**
+## 5.1.10 **DSEA**
 
 **Introduction**: The Drug Set Enrichment Analysis (DSEA) works on the same principles as GSEA, but using an inverse preparation and interpretation of the data. A set of drugs of interest is tested against a database of pathways. Each pathway in the database is stored as a ranked list of drugs (Perturbagen Expression Profile), sorted from the one most up-regulating the pathway (or gene) to the one most down-regulating it. Current data is based on the Cmap 2.0.
 Pathways analyzed by the DSEA are defined as gene sets collected by various sources, as summarized in the following table:
@@ -182,7 +182,7 @@ Pathways analyzed by the DSEA are defined as gene sets collected by various sour
 
 ---
 
-## 4.1.11 **cogena**
+## 5.1.11 **cogena**
 
 **Introduction**: cogena is a workflow for co-expressed gene-set enrichment analysis. It aims to discovery smaller scale, but highly correlated cellular events that may be of great biological relevance. A novel pipeline for drug discovery and drug repositioning based on the cogena workflow is proposed. Particularly, candidate drugs can be predicted based on the gene expression of disease-related data, or other similar drugs can be identified based on the gene expression of drug-related data. Moreover, the drug mode of action can be disclosed by the associated pathway analysis. In summary, cogena is a flexible workflow for various gene set enrichment analysis for co-expressed genes, with a focus on pathway/GO analysis and drug repositioning. 
 
@@ -199,7 +199,7 @@ BiocManager::install("cogena")
 
 ---
 
-## 4.1.12 **gene2drug**
+## 5.1.12 **gene2drug**
 
 **Introduction**: Gene2drug ranks small molecules according to their ability to dysregulate an input set of pathways. Sets of pathways can be defined starting from a gene and exploiting its pathway annotations from a number of publicly available databases.The list of 10 databases supported is: Gene Ontology BP, MF, CC (through BiomaRt); CP, KEGG, BIOCARTA, REACTOME, CGP, TFT (through MSigDB); MIPS Corum; Single-gene Sets.
  
@@ -217,7 +217,7 @@ The following data are stored in tab-separated plain text files:
  
 ---
 
-## 4.1.13 **DeSigN**
+## 5.1.13 **DeSigN**
 
 **Introduction**: DeSigN (Differentially Expressed Gene Signatures Inhibitors) is a CMap-inspired bioinformatics pipeline that enables gene expression patterns from experimental data to be linked to gene expression patterns associated with drug response in a cancer cell line database.
 
@@ -226,7 +226,7 @@ The following data are stored in tab-separated plain text files:
 
 ---
 
-## 4.1.14 **ksRepo**
+## 5.1.14 **ksRepo**
 
 **Introduction**:  This package enables investigators to mix and match various types of case/control gene lists with any gene::drug interaction database to predict repositioning oportunities. 
 
@@ -246,7 +246,7 @@ library(ksRepo)
 ---
 
 
-## 4.1.15 **iLINCS**
+## 5.1.15 **iLINCS**
 
 **Introduction**: iLINCS (Integrative LINCS) is an integrative web platform for analysis of LINCS data and signatures. The portal provides biologists-friendly user interfaces for analyzing transcriptomics and proteomics LINCS datasets. The portal integrates R analytical engine via several R tools for web-computing (rserve, opencpu, Shiny, rgl) and DCIC developed web tools and applications (FTreeView, Enrichr) into a coherent web platform for LINCS data analysis. Users can follow several workflows which allow them to identify differentially expressed genes, proteins and phosphoproteins in LINCS datasets and use them in analysis of other LINCS and non-LINCS dataset (eg TCGA and GEO transcriptomic datasets), and in the analysis of LINCS L1000 signatures. In this way, the platform facilitates integrative analysis of LINCS data and signatures. The mechanistic interpretation of LINCS transcriptomic and proteomics signatures is facilitated by the enrichment analysis via Enrichr and DAVID, and by pathways analysis using the R implementation of the SPIA algorithm. 
 
@@ -266,7 +266,7 @@ BiocManager::install("Biobase")
  
 ---
 
-## 4.1.16 **Gene Expression Signature**
+## 5.1.16 **Gene Expression Signature**
 
 **Introduction**: This package gives the implementations of the gene expression signature and its distance to each. Gene expression signature is represented as a list of genes whose expression is correlated with a biological state of interest. And its distance is defined using a nonparametric, rank-based pattern-matching strategy based on the Kolmogorov-Smirnov statistic. Gene expression signature and its distance can be used to detect similarities among the signatures of drugs, diseases, and biological states of interest.
 
@@ -288,7 +288,7 @@ remotes::install_github("yiluheihei/GeneExpressionSignature")
 
 ---
 
-## 4.1.17 **PDOD**
+## 5.1.17 **PDOD**
 
 **Introduction**: This web page presents implementation of our PDOD approach. PDOD (Prediction of Drugs having Opposite effects on Diseases) can discover drugs likely to restore altered states of disease genes. You can submit a gene list with their Entrez gene IDs and altered states in diseases. Scoring function of PDOD gives a high score to a drug satisfying two conditions: (i) target proteins of the drug are close to disease genes; (ii) the drug activates down-regulated disease genes and inhibits up-regulated genes through drug-target interactions (DTIs) and molecular pathway. DTIs in our PDOD were obtained from DrugBank and backbone network was constructed from relations of KEGG human pathways including activation, inhibition, expression, and repression. Then, you will get top 10 high scored drugs likely to have reverse effects on your genes if more than one gene existed in our backbone network. 
              
@@ -296,7 +296,7 @@ remotes::install_github("yiluheihei/GeneExpressionSignature")
 
 ---
 
-## 4.1.18 **SigCom LINCS**
+## 5.1.18 **SigCom LINCS**
 
 **Introduction**: Millions of transcriptomics samples were generated by the Library of Integrated Network-Based Cellular Signatures (LINCS) program. When these data are processed into searchable signatures along with signatures extracted from Genotype-Tissue Expression (GTEx), and Gene Expression Omnibus, connections between drugs, genes, pathways, and diseases can be illuminated. SigCom LINCS is a web-based search engine that serves over 1.5 million gene expression signatures processed, analyzed, and visualized from LINCS, GTEx, and GEO. SigCom LINCS is built from the Signature Commons framework, a cloud-agnostic generic platform that can be used to stand up Data Commons with a focus on searchable signatures. SigCom LINCS provides rapid signature similarity search for mimickers and reversers given sets of up and down genes. Additionally, users of SigCom LINCS can perform a metadata search to find and analyze subsets of signatures, and find information about genes and drugs. SigCom LINCS is findable, accessible, interoperable, and reusable (FAIR) compliant with metadata linked to standard ontologies and vocabularies while all data and signatures within SigCom LINCS are available for download and via a well-documented API.
 ![SigComLINCS](/images/SigComLINCS.jpg?width=50pc)
@@ -310,7 +310,7 @@ remotes::install_github("yiluheihei/GeneExpressionSignature")
  
 ---
 
-## 4.1.19 **DTX**
+## 5.1.19 **DTX**
 
 **Introduction**: Calculate a drug-target-likeness score of a protein of interest for a given disease according to molecular features of nodes/edges in the shortest paths between them by a machine learning approach. 
 
@@ -322,7 +322,7 @@ Database relations:
  
 ---
 
-## 4.1.20 **Phosprof**
+## 5.1.20 **Phosprof**
 
 **Introduction**:  Phosprof (phosphorylation profiling database) is a database to present cellular response to representative drugs as the significant pathways. It based on the analysis of collected experimental data of phosphorylation activities using protein arrays. Phosphorylation activity measurement allows evaluation of signal transduction activity directly and provides direct estimation of responsible pathway of a cellular event. Comparison between various approved drugs, whose target phen-type is already known, can be helpful for drug development.
 

@@ -1,5 +1,5 @@
 ---
-title: "Clustering Analysis"
+title: "Clustering analysis"
 output:
   blogdown::html_page:
     toc: true
@@ -16,7 +16,7 @@ Unsupervised or supervised clustering analysis has been an integral part of tran
 
 ---
 
-## 6.2.1 **Nbclust**
+## 7.2.1 **Nbclust**
 
 **Introduction**: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user. In addition, it provides a function to perform k-means and hierarchical clustering with different distance measures and aggregation methods. Any combination of validation indices and clustering methods can be requested in a single function call. This enables the user to simultaneously evaluate several clustering schemes while varying the number of clusters, to help determining the most appropriate number of clusters for the data set of interest.
 
@@ -29,7 +29,7 @@ install.packages(Nbclust)
 
 ---
 
-## 6.2.2 **ClustVis**
+## 7.2.2 **ClustVis**
 
 **Introduction**: This web tool allows users to upload their own data and easily create Principal Component Analysis (PCA) plots and heatmaps. Data can be uploaded as a file or by copy-pasteing it to the text box. Data format is shown under "Help" tab. 
 
@@ -73,7 +73,7 @@ vignette("vignette", "clustvis")
 
 ---
 
-## 6.2.3 **Medusa**
+## 7.2.3 **Medusa**
 
 **Introduction**: Medusa3 is a java standalone application for visualization and clustering analysis of biological networks in 2D. It is highly interactive and it supports weighted and multi-edged graphs where each edge between two bioentities can represent a different biological concept. Comparing to previous versions, it is currently enriched with a variety of layout and clustering methods for more intuitive visualizations. It is easy to integrate with web application since it is offered as an applet. 
 
@@ -95,7 +95,7 @@ vignette("vignette", "clustvis")
  
 ---
 
-## 6.2.4 **wcd**
+## 7.2.4 **wcd**
 
 **Introduction**: wcd is an open source tool for clustering expressed sequence tags. It implements matching using either d2 or edit distance, which provides sensitive matching. Heuristics speed up the clustering process. wcd parallelises well under MPI and also provides Pthreads clustering. wcd has a very compact memory representation which means that large files can be clustered on a single processor (and it can run quite happily without MPI or Pthreads headers or libraries being available).  
 
@@ -107,7 +107,7 @@ vignette("vignette", "clustvis")
  
 ---
 
-## 6.2.5 **TimeClust** 
+## 7.2.5 **TimeClust** 
 
 **Introduction**: TimeClust is an user-friendly software package to cluster genes according to their temporal expression profiles. It can be conveniently used to analyze data obtained from DNA microarray time-course experiments. It implements two original algorithms expressed designed for clustering short time series together with hierarchical clustering and self-organizing maps. TimeClust executable files for Windows and LINUX platforms can be downloaded free of charge for non-profit institutions from the following web site <http://aimed11.unipv.it/TimeClust>. 
   
@@ -177,7 +177,7 @@ reported in the user's guide.
 
 ---
 
-## 6.2.6 **hiplot**
+## 7.2.6 **hiplot**
 
 **Introduction**: we newly developed a pool of biomedical visualization and modeling functions (240+), and proposed a scalable and emerging one-stop web service, Hiplot, with versatile task plugins, such as basic statistics, regression, clustering, genomics, transcriptomics, time series, meta-analysis, and risk models. It provides more simple web and command-line interfaces compared with other similar platforms, and is supported and maintained by the openbiox open source community. 
 
@@ -194,7 +194,7 @@ reported in the user's guide.
 
 ---
 
-## 6.2.7 **cola**
+## 7.2.7 **cola**
 
 **Introduction**: The cola package provides a general framework for subgroup classification by consensus partitioning. It has the following features: 1. It modularizes the consensus partitioning processes that various methods can be easily integrated. 2. It provides rich visualizations for interpreting the results. 3. It allows running multiple methods at the same time and provides functionalities to straightforward compare results. 4. It provides a new method to extract features which are more efficient to separate subgroups. 5. It automatically generates detailed reports for the complete analysis. 6. It allows applying consensus partitioning in a hierarchical manner. 
 

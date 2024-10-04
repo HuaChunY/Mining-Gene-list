@@ -12,9 +12,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/survival-analysis/gene_phenotype_association/</guid>
-      <description>7.1.1 PrediXcan 7.1.2 MetaXcan 7.1.3 Fusion 7.1.4 SMR 7.1.5 PTWAS Gene-phenotype association analysis provides valuable insights into the genetic basis of phenotypic traits and diseases, offering opportunities for biomarker discovery, personalized medicine, drug target identification, and elucidation of disease mechanisms.
+      <description>8.1.1 PrediXcan 8.1.2 MetaXcan 8.1.3 Fusion 8.1.4 SMR 8.1.5 PTWAS Gene-phenotype association analysis provides valuable insights into the genetic basis of phenotypic traits and diseases, offering opportunities for biomarker discovery, personalized medicine, drug target identification, and elucidation of disease mechanisms.
 Breaking: Some user-friendly gene-phenotype association analysis tools are provided in this section.
-7.1.1 PrediXcan Introduction: PrediXcan is a command-line tool that predicts gene expression from genotype data and performs gene-based association tests, allowing researchers to prioritize genes that are likely to be causal for a phenotype.</description>
+8.1.1 PrediXcan Introduction: PrediXcan is a command-line tool that predicts gene expression from genotype data and performs gene-based association tests, allowing researchers to prioritize genes that are likely to be causal for a phenotype.</description>
     </item>
     
     <item>
@@ -23,9 +23,9 @@ Breaking: Some user-friendly gene-phenotype association analysis tools are provi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/survival-analysis/survival_analysis/</guid>
-      <description>7.2.1 UALCAN 7.2.2 survival 7.2.3 KM plotter 7.2.4 survminer Time-to-event analysis is the study of specific events occur times and of the factors that influence them. This method that requires extra documentation of time periods and events, has the potential to be used in a number of fields, such as ecology, medicine and botany.
+      <description>8.2.1 UALCAN 8.2.2 survival 8.2.3 KM plotter 8.2.4 survminer Time-to-event analysis is the study of specific events occur times and of the factors that influence them. This method that requires extra documentation of time periods and events, has the potential to be used in a number of fields, such as ecology, medicine and botany.
 Breaking: Some user-friendly time-to-event analysis tools are provided in this section.
-7.2.1 UALCAN Introduction: UALCAN is a comprehensive, user-friendly, and interactive web resource for analyzing cancer OMICS data.</description>
+8.2.1 UALCAN Introduction: UALCAN is a comprehensive, user-friendly, and interactive web resource for analyzing cancer OMICS data.</description>
     </item>
     
   </channel>

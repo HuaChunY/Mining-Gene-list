@@ -17,7 +17,7 @@ Gene-phenotype association analysis provides valuable insights into the genetic 
 
 ---
 
-## 7.1.1 **PrediXcan**
+## 8.1.1 **PrediXcan**
 
 **Introduction**: PrediXcan is a command-line tool that predicts gene expression from genotype data and performs gene-based association tests, allowing researchers to prioritize genes that are likely to be causal for a phenotype. PrediXcan consists of two steps: 1) Predict gene expression (or whatever biology the models predict) in a cohort with available genotypes; 2) Run associations to a trait measured in the cohort. 
 
@@ -44,7 +44,7 @@ Gene-phenotype association analysis provides valuable insights into the genetic 
  
 ---
 
-## 7.1.2 **MetaXcan**
+## 8.1.2 **MetaXcan**
 
 **Introduction**: MetaXcan is a set of tools to integrate genomic information of biological mechanisms with complex traits. Almost all of the software here is command-line based. This software has been recently migrated to python 3 as python 2 has been sunset.
  
@@ -72,7 +72,7 @@ R with ggplot and dplyr is needed for some optional statistics and charts.
 
 ---
 
-## 7.1.3 **Fusion**
+## 8.1.3 **Fusion**
 
 **Introduction**: FUSION is a suite of tools for performing transcriptome-wide and regulome-wide association studies (TWAS and RWAS). FUSION builds predictive models of the genetic component of a functional/molecular phenotype and predicts and tests that component for association with disease using GWAS summary statistics. The goal is to identify associations between a GWAS phenotype and a functional phenotype that was only measured in reference data. We provide precomputed predictive models from multiple studies to facilitate this analysis.
 
@@ -125,7 +125,7 @@ install.packages(c('glmnet','methods'))
  
 ---
 
-## 7.1.4 **SMR**
+## 8.1.4 **SMR**
 
 **Introduction**: The SMR software tool was originally developed to implement the SMR & HEIDI methods to test for pleiotropic association between the expression level of a gene and a complex trait of interest using summary-level data from GWAS and expression quantitative trait loci (eQTL) studies (Zhu et al. 2016 Nature Genetics). The SMR & HEIDI methodology can be interpreted as an analysis to test if the effect size of a SNP on the phenotype is mediated by gene expression. This tool can therefore be used to prioritize genes underlying GWAS hits for follow-up functional studies. The methods are applicable to all kinds of molecular QTL (xQTL) data, including DNA methylation QTL (mQTL) and protein abundance QTL (pQTL).
 
@@ -138,7 +138,7 @@ Source code: smr_v1.3.1_src.tar.gz <https://yanglab.westlake.edu.cn/software/smr
 
 ---
 
-## 7.1.5 **PTWAS**
+## 8.1.5 **PTWAS**
 
 **Introduction**: A computational framework, probabilistic transcriptome-wide association study (PTWAS) can investigate causal relationships between gene expressions and complex traits. PTWAS applies the established principles from instrumental variables analysis and takes advantage of probabilistic eQTL annotations to delineate and tackle the unique challenges arising in TWAS. PTWAS not only confers higher power than the existing methods but also provides novel functionalities to evaluate the causal assumptions and estimate tissue- or cell-type-specific gene-to-trait effects.
 

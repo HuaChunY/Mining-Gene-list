@@ -1,12 +1,12 @@
 ---
 title: "Network and Module Analysis"
 chapter: true
-weight: 2
+weight: 3
 ---
 
 
-### Chapter 2
+### Chapter 3
 
-# Gene-associated network analysis
+# Network and module analysis
 Find meaningful gene modules and construct the networks. 🌐🌐🌐
 ![](/images/network.gif?width=45pc)

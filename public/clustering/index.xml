@@ -7,25 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/clustering/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Classification Analysis</title>
+      <title>Classification analysis</title>
       <link>/clustering/classification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/clustering/classification/</guid>
-      <description>6.1.1 caret 6.1.2 Tidymodels 6.1.3 mlr3 6.1.4 MASS Classification analysis models essential features of samples derived from different treatments or diseased states to effectively predict unknown samples, facilitating the identification and diagnosis of subtypes or stages of diseases.
+      <description>7.1.1 caret 7.1.2 Tidymodels 7.1.3 mlr3 7.1.4 MASS Classification analysis models essential features of samples derived from different treatments or diseased states to effectively predict unknown samples, facilitating the identification and diagnosis of subtypes or stages of diseases.
 Breaking: Some well-used and comprehensive classification tools are provided in this section.
-6.1.1 caret Introduction: The caret package (short for Classification and REgression Training) is a set of functions that attempt to streamline the process for creating predictive models.</description>
+7.1.1 caret Introduction: The caret package (short for Classification and REgression Training) is a set of functions that attempt to streamline the process for creating predictive models.</description>
     </item>
     
     <item>
-      <title>Clustering Analysis</title>
+      <title>Clustering analysis</title>
       <link>/clustering/clustering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/clustering/clustering/</guid>
-      <description>6.2.1 Nbclust 6.2.2 ClustVis 6.2.3 Medusa 6.2.4 wcd 6.2.5 TimeClust 6.2.6 hiplot 6.2.7 cola Unsupervised or supervised clustering analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups.
+      <description>7.2.1 Nbclust 7.2.2 ClustVis 7.2.3 Medusa 7.2.4 wcd 7.2.5 TimeClust 7.2.6 hiplot 7.2.7 cola Unsupervised or supervised clustering analysis has been an integral part of transcriptomics, playing an important role in the identification of sub-groups.
 Breaking: Some well-used and comprehensive clustering tools are provided in this section.
-6.2.1 Nbclust Introduction: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user.</description>
+7.2.1 Nbclust Introduction: The R package provides 30 indices which determine the number of clusters in a data set and it offers also the best clustering scheme from different results to the user.</description>
     </item>
     
   </channel>
