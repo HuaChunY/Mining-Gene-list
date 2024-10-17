@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/conditional-analysis/cellmarkers/trajectory/</guid>
-      <description>6.2.2.1 slingshot 6.2.2.2 CellRank 6.2.2.3 CytoTree 6.2.2.4 VeloViz 6.2.2.5 Asc-Seurat 6.2.2.6 VeTra 6.2.2.7 TIMEOR 6.2.2.8 UniTVelo 6.2.2.9 TIPS 6.2.2.10 Velo-Predictor 6.2.2.11 ORIGINS 6.2.2.12 PAGA 6.2.2.13 SCORPIUS 6.2.2.14 STEMNET Trajectory inference aims at estimating dynamic changes in a single-cell transcriptome landscape, assuming that the cell-wise transcriptome is a static snapshot at a time point along some cellular process. The pseudotime and RNA velocity both are considered as the trajectory inference.Highly variable genes, represented by DEGs, thus contribute an important role in the pseudotime and RNA velocity analysis.</description>
+      <description>6.2.2.1 slingshot 6.2.2.2 CellRank 6.2.2.3 CytoTree 6.2.2.4 VeloViz 6.2.2.5 Asc-Seurat 6.2.2.6 VeTra 6.2.2.7 TIMEOR 6.2.2.8 UniTVelo 6.2.2.9 TIPS 6.2.2.10 Velo-Predictor 6.2.2.11 ORIGINS 6.2.2.12 PAGA 6.2.2.13 SCORPIUS 6.2.2.14 STEMNET 6.2.2.15 Monocle3 6.2.2.16 scVelo 6.2.2.17 veloVI Trajectory inference aims at estimating dynamic changes in a single-cell transcriptome landscape, assuming that the cell-wise transcriptome is a static snapshot at a time point along some cellular process. The pseudotime and RNA velocity both are considered as the trajectory inference.</description>
     </item>
     
     <item>

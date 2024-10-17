@@ -225,3 +225,85 @@ install.packages("devtools")
 devtools::install_git('https://git.embl.de/velten/STEMNET/', build_vignettes=TRUE)
 ```
 
+
+---
+
+## 6.2.2.15 **Monocle3**
+
+**Introduction**: The Monocle 3 package provides a toolkit for analyzing single-cell gene expression experiments, particularly as a powerful tool to infer cellular differentiation trajectory and dissect cell decisions during branch points. It is widely used by computational biologists and other researchers as it offers a streamlined analytical workflow for single-cell transcriptomics data, including three main types of analysis:
+
+1. Clustering, classifying, and counting cells. 
+2. Constructing single-cell trajectories.
+3. Differential expression analysis.
+
+**Installation**: To install this package, start R and enter:
+
+```{r eval=FALSE}
+### Install BiocManager first
+if (!requireNamespace("BiocManager", quietly = TRUE))
+install.packages("BiocManager")
+BiocManager::install(version = "3.14")
+
+### Install dependencies
+BiocManager::install(c('BiocGenerics', 'DelayedArray', 'DelayedMatrixStats',
+                       'limma', 'lme4', 'S4Vectors', 'SingleCellExperiment',
+                       'SummarizedExperiment', 'batchelor', 'HDF5Array',
+                       'terra', 'ggrastr'))
+
+### Install Monocle3
+install.packages("devtools")
+devtools::install_github('cole-trapnell-lab/monocle3')
+
+### Install development version of monocle3
+devtools::install_github('cole-trapnell-lab/monocle3', ref="develop")
+```
+
+**Web server**: [Monocle3](https://cole-trapnell-lab.github.io/monocle3/).
+![Monocle3](/images/Monocle3.jpg?width=60pc)
+
+---
+
+## 6.2.2.16 **scVelo**
+
+**Introduction**: scVelo employs a likelihood-based dynamical model to solve the full transcriptional dynamics of splicing kinetics, which distinguishes it with other algorithms obtaining velocities as the deviation of the observed ratio of spliced and unspliced mRNA from an inferred steady state. It also provides three existing approaches to perform RNA velocity estimation:
+
+1. steady-state/deterministic model (using steady-state residuals)
+2. stochastic model (using second-order moments),
+3. dynamical model (using a likelihood-based framework).
+
+**Installation**: To install this tool, start command line and enter:
+
+```{bash eval=FALSE}
+### Install scVelo from PyPI using:
+pip install -U scvelo
+
+### Install development version of scVelo
+pip install git+https://github.com/theislab/scvelo@main
+### OR
+git clone https://github.com/theislab/scvelo && cd scvelo
+git checkout --track origin/main
+pip install -e .
+```
+
+**Web server**: [scvelo](https://scvelo.readthedocs.io/en/stable/).
+![scvelo](/images/scVelo.jpg?width=60pc)
+
+---
+
+## 6.2.2.17 **veloVI**
+
+**Introduction**: veloVI (velocity variational inference) learns a gene-specifc dynamical model of RNA metabolism and provides a transcriptome-wide quantifcation of velocity uncertainty, which can be used for assessing whether RNA velocity analysis is suitable for a given dataset. It is also a flexible framework for modeling RNA dynamics by adapting the underlying dynamical model to use time-dependent transcription rates.
+
+**Installation**: To install this package, start command line and enter:
+
+```{bash eval=FALSE}
+### Install the latest release on PyPI:
+pip install velovi
+
+### Install the latest development version:
+pip install git+https://github.com/yoseflab/velovi.git@main
+```
+
+It has been wrapped by [scvi-tools](https://docs.scvi-tools.org/en/stable/index.html), where you can find the API reference of veloVI.
+
+**Web server**: [veloVI](https://docs.scvi-tools.org/en/stable/api/reference/scvi.external.VELOVI.html#scvi.external.VELOVI).
